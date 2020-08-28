@@ -1,0 +1,3 @@
+BFD architecture lookup failed: does your Binutils support bfd_arch_i386?
+insn_compare: ir/translate.cpp:29: asm_program_t* fake_prog_for_arch(asmir_arch): Assertion `bfd->arch_info' failed.
+Aborted (core dumped)
