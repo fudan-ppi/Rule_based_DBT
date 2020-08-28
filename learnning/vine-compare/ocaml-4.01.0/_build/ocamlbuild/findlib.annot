@@ -1,0 +1,2717 @@
+"ocamlbuild/findlib.ml" 30 1172 1176 "ocamlbuild/findlib.ml" 30 1172 1181
+type(
+  error -> 'a
+)
+ident(
+  def error "ocamlbuild/findlib.ml" 32 1211 1211 "ocamlbuild/findlib.ml" 1 0 -1
+)
+"ocamlbuild/findlib.ml" 30 1172 1182 "ocamlbuild/findlib.ml" 30 1172 1183
+type(
+  error
+)
+ident(
+  def x "ocamlbuild/findlib.ml" 30 1172 1186 "ocamlbuild/findlib.ml" 30 1172 1209
+)
+"ocamlbuild/findlib.ml" 30 1172 1186 "ocamlbuild/findlib.ml" 30 1172 1191
+type(
+  exn -> 'a
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"ocamlbuild/findlib.ml" 30 1172 1207 "ocamlbuild/findlib.ml" 30 1172 1208
+type(
+  error
+)
+ident(
+  int_ref x "ocamlbuild/findlib.ml" 30 1172 1182 "ocamlbuild/findlib.ml" 30 1172 1183
+)
+"ocamlbuild/findlib.ml" 30 1172 1192 "ocamlbuild/findlib.ml" 30 1172 1209
+type(
+  exn
+)
+"ocamlbuild/findlib.ml" 30 1172 1186 "ocamlbuild/findlib.ml" 30 1172 1209
+type(
+  'a
+)
+"ocamlbuild/findlib.ml" 32 1211 1215 "ocamlbuild/findlib.ml" 32 1211 1230
+type(
+  error -> string
+)
+ident(
+  def string_of_error "ocamlbuild/findlib.ml" 44 1666 1666 "ocamlbuild/findlib.ml" 1 0 -1
+)
+"ocamlbuild/findlib.ml" 33 1242 1246 "ocamlbuild/findlib.ml" 33 1242 1266
+type(
+  error
+)
+"ocamlbuild/findlib.ml" 34 1270 1276 "ocamlbuild/findlib.ml" 34 1270 1299
+type(
+  string
+)
+"ocamlbuild/findlib.ml" 35 1300 1325 "ocamlbuild/findlib.ml" 35 1300 1326
+type(
+  string
+)
+ident(
+  def p "ocamlbuild/findlib.ml" 36 1334 1340 "ocamlbuild/findlib.ml" 38 1436 1466
+)
+"ocamlbuild/findlib.ml" 35 1300 1328 "ocamlbuild/findlib.ml" 35 1300 1329
+type(
+  string
+)
+ident(
+  def d "ocamlbuild/findlib.ml" 36 1334 1340 "ocamlbuild/findlib.ml" 38 1436 1466
+)
+"ocamlbuild/findlib.ml" 35 1300 1304 "ocamlbuild/findlib.ml" 35 1300 1330
+type(
+  error
+)
+"ocamlbuild/findlib.ml" 36 1334 1340 "ocamlbuild/findlib.ml" 36 1334 1354
+type(
+  (string -> string -> string, unit, string) format ->
+  string -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"ocamlbuild/findlib.ml" 37 1355 1363 "ocamlbuild/findlib.ml" 38 1436 1462
+type(
+  (string -> string -> string, unit, string) format
+)
+"ocamlbuild/findlib.ml" 38 1436 1463 "ocamlbuild/findlib.ml" 38 1436 1464
+type(
+  string
+)
+ident(
+  int_ref d "ocamlbuild/findlib.ml" 35 1300 1328 "ocamlbuild/findlib.ml" 35 1300 1329
+)
+"ocamlbuild/findlib.ml" 38 1436 1465 "ocamlbuild/findlib.ml" 38 1436 1466
+type(
+  string
+)
+ident(
+  int_ref p "ocamlbuild/findlib.ml" 35 1300 1325 "ocamlbuild/findlib.ml" 35 1300 1326
+)
+"ocamlbuild/findlib.ml" 36 1334 1340 "ocamlbuild/findlib.ml" 38 1436 1466
+call(
+  tail
+)
+type(
+  string
+)
+"ocamlbuild/findlib.ml" 39 1467 1489 "ocamlbuild/findlib.ml" 39 1467 1490
+type(
+  string
+)
+ident(
+  def p "ocamlbuild/findlib.ml" 40 1494 1500 "ocamlbuild/findlib.ml" 40 1494 1553
+)
+"ocamlbuild/findlib.ml" 39 1467 1471 "ocamlbuild/findlib.ml" 39 1467 1490
+type(
+  error
+)
+"ocamlbuild/findlib.ml" 40 1494 1500 "ocamlbuild/findlib.ml" 40 1494 1514
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"ocamlbuild/findlib.ml" 40 1494 1515 "ocamlbuild/findlib.ml" 40 1494 1551
+type(
+  (string -> string, unit, string) format
+)
+"ocamlbuild/findlib.ml" 40 1494 1552 "ocamlbuild/findlib.ml" 40 1494 1553
+type(
+  string
+)
+ident(
+  int_ref p "ocamlbuild/findlib.ml" 39 1467 1489 "ocamlbuild/findlib.ml" 39 1467 1490
+)
+"ocamlbuild/findlib.ml" 40 1494 1500 "ocamlbuild/findlib.ml" 40 1494 1553
+call(
+  tail
+)
+type(
+  string
+)
+"ocamlbuild/findlib.ml" 41 1554 1577 "ocamlbuild/findlib.ml" 41 1554 1578
+type(
+  string
+)
+ident(
+  def p "ocamlbuild/findlib.ml" 42 1586 1592 "ocamlbuild/findlib.ml" 42 1586 1664
+)
+"ocamlbuild/findlib.ml" 41 1554 1580 "ocamlbuild/findlib.ml" 41 1554 1581
+type(
+  string
+)
+ident(
+  def e "ocamlbuild/findlib.ml" 42 1586 1592 "ocamlbuild/findlib.ml" 42 1586 1664
+)
+"ocamlbuild/findlib.ml" 41 1554 1558 "ocamlbuild/findlib.ml" 41 1554 1582
+type(
+  error
+)
+"ocamlbuild/findlib.ml" 42 1586 1592 "ocamlbuild/findlib.ml" 42 1586 1606
+type(
+  (string -> string -> string, unit, string) format ->
+  string -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"ocamlbuild/findlib.ml" 42 1586 1607 "ocamlbuild/findlib.ml" 42 1586 1660
+type(
+  (string -> string -> string, unit, string) format
+)
+"ocamlbuild/findlib.ml" 42 1586 1661 "ocamlbuild/findlib.ml" 42 1586 1662
+type(
+  string
+)
+ident(
+  int_ref p "ocamlbuild/findlib.ml" 41 1554 1577 "ocamlbuild/findlib.ml" 41 1554 1578
+)
+"ocamlbuild/findlib.ml" 42 1586 1663 "ocamlbuild/findlib.ml" 42 1586 1664
+type(
+  string
+)
+ident(
+  int_ref e "ocamlbuild/findlib.ml" 41 1554 1580 "ocamlbuild/findlib.ml" 41 1554 1581
+)
+"ocamlbuild/findlib.ml" 42 1586 1592 "ocamlbuild/findlib.ml" 42 1586 1664
+call(
+  tail
+)
+type(
+  string
+)
+"ocamlbuild/findlib.ml" 32 1211 1233 "ocamlbuild/findlib.ml" 42 1586 1664
+type(
+  error -> string
+)
+"ocamlbuild/findlib.ml" 44 1666 1670 "ocamlbuild/findlib.ml" 44 1666 1682
+type(
+  error -> 'a
+)
+ident(
+  def report_error "ocamlbuild/findlib.ml" 48 1734 1734 "ocamlbuild/findlib.ml" 1 0 -1
+)
+"ocamlbuild/findlib.ml" 44 1666 1683 "ocamlbuild/findlib.ml" 44 1666 1684
+type(
+  error
+)
+ident(
+  def e "ocamlbuild/findlib.ml" 45 1687 1689 "ocamlbuild/findlib.ml" 46 1724 1732
+)
+"ocamlbuild/findlib.ml" 45 1687 1689 "ocamlbuild/findlib.ml" 45 1687 1702
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.prerr_endline
+)
+"ocamlbuild/findlib.ml" 45 1687 1704 "ocamlbuild/findlib.ml" 45 1687 1719
+type(
+  error -> string
+)
+ident(
+  int_ref string_of_error "ocamlbuild/findlib.ml" 32 1211 1215 "ocamlbuild/findlib.ml" 32 1211 1230
+)
+"ocamlbuild/findlib.ml" 45 1687 1720 "ocamlbuild/findlib.ml" 45 1687 1721
+type(
+  error
+)
+ident(
+  int_ref e "ocamlbuild/findlib.ml" 44 1666 1683 "ocamlbuild/findlib.ml" 44 1666 1684
+)
+"ocamlbuild/findlib.ml" 45 1687 1703 "ocamlbuild/findlib.ml" 45 1687 1722
+call(
+  stack
+)
+type(
+  string
+)
+"ocamlbuild/findlib.ml" 45 1687 1689 "ocamlbuild/findlib.ml" 45 1687 1722
+call(
+  stack
+)
+type(
+  unit
+)
+"ocamlbuild/findlib.ml" 46 1724 1726 "ocamlbuild/findlib.ml" 46 1724 1730
+type(
+  int -> 'a
+)
+ident(
+  ext_ref Pervasives.exit
+)
+"ocamlbuild/findlib.ml" 46 1724 1731 "ocamlbuild/findlib.ml" 46 1724 1732
+type(
+  int
+)
+"ocamlbuild/findlib.ml" 46 1724 1726 "ocamlbuild/findlib.ml" 46 1724 1732
+call(
+  tail
+)
+type(
+  'a
+)
+"ocamlbuild/findlib.ml" 45 1687 1689 "ocamlbuild/findlib.ml" 46 1724 1732
+type(
+  'a
+)
+"ocamlbuild/findlib.ml" 48 1734 1738 "ocamlbuild/findlib.ml" 48 1734 1747
+type(
+  string
+)
+ident(
+  def ocamlfind "ocamlbuild/findlib.ml" 50 1763 1763 "ocamlbuild/findlib.ml" 1 0 -1
+)
+"ocamlbuild/findlib.ml" 48 1734 1750 "ocamlbuild/findlib.ml" 48 1734 1761
+type(
+  string
+)
+"ocamlbuild/findlib.ml" 61 1967 1971 "ocamlbuild/findlib.ml" 61 1967 1979
+type(
+  (string, package) Hashtbl.t
+)
+ident(
+  def packages "ocamlbuild/findlib.ml" 63 2001 2001 "ocamlbuild/findlib.ml" 1 0 -1
+)
+"ocamlbuild/findlib.ml" 61 1967 1982 "ocamlbuild/findlib.ml" 61 1967 1996
+type(
+  ?random:bool -> int -> (string, package) Hashtbl.t
+)
+ident(
+  ext_ref Hashtbl.create
+)
+"ocamlbuild/findlib.ml" 61 1967 1997 "ocamlbuild/findlib.ml" 61 1967 1999
+type(
+  int
+)
+"ocamlbuild/findlib.ml" 61 1967 1982 "ocamlbuild/findlib.ml" 61 1967 1999
+call(
+  stack
+)
+type(
+  (string, package) Hashtbl.t
+)
+"ocamlbuild/findlib.ml" 63 2001 2005 "ocamlbuild/findlib.ml" 63 2001 2018
+type(
+  (Lexing.lexbuf -> 'a) -> ('b, unit, string, 'a) format4 -> 'b
+)
+ident(
+  def run_and_parse "ocamlbuild/findlib.ml" 68 2137 2137 "ocamlbuild/findlib.ml" 1 0 -1
+)
+"ocamlbuild/findlib.ml" 63 2001 2019 "ocamlbuild/findlib.ml" 63 2001 2024
+type(
+  Lexing.lexbuf -> 'a
+)
+ident(
+  def lexer "ocamlbuild/findlib.ml" 63 2001 2025 "ocamlbuild/findlib.ml" 66 2124 2135
+)
+"ocamlbuild/findlib.ml" 63 2001 2025 "ocamlbuild/findlib.ml" 63 2001 2032
+type(
+  ('b, unit, string, 'a) format4
+)
+ident(
+  def command "ocamlbuild/findlib.ml" 64 2035 2037 "ocamlbuild/findlib.ml" 66 2124 2135
+)
+"ocamlbuild/findlib.ml" 64 2035 2037 "ocamlbuild/findlib.ml" 64 2035 2052
+type(
+  (string -> 'a) -> ('b, unit, string, 'a) format4 -> 'b
+)
+ident(
+  ext_ref Printf.ksprintf
+)
+"ocamlbuild/findlib.ml" 65 2053 2062 "ocamlbuild/findlib.ml" 65 2053 2069
+type(
+  string
+)
+ident(
+  def command "ocamlbuild/findlib.ml" 65 2053 2073 "ocamlbuild/findlib.ml" 65 2053 2122
+)
+"ocamlbuild/findlib.ml" 65 2053 2073 "ocamlbuild/findlib.ml" 65 2053 2078
+type(
+  Lexing.lexbuf -> 'a
+)
+ident(
+  int_ref lexer "ocamlbuild/findlib.ml" 63 2001 2019 "ocamlbuild/findlib.ml" 63 2001 2024
+)
+"ocamlbuild/findlib.ml" 65 2053 2079 "ocamlbuild/findlib.ml" 65 2053 2080
+type(
+  (Lexing.lexbuf -> 'a) -> Lexing.lexbuf -> 'a
+)
+ident(
+  ext_ref My_std.( & )
+)
+"ocamlbuild/findlib.ml" 65 2053 2081 "ocamlbuild/findlib.ml" 65 2053 2099
+type(
+  string -> Lexing.lexbuf
+)
+ident(
+  ext_ref Lexing.from_string
+)
+"ocamlbuild/findlib.ml" 65 2053 2100 "ocamlbuild/findlib.ml" 65 2053 2101
+type(
+  (string -> Lexing.lexbuf) -> string -> Lexing.lexbuf
+)
+ident(
+  ext_ref My_std.( & )
+)
+"ocamlbuild/findlib.ml" 65 2053 2102 "ocamlbuild/findlib.ml" 65 2053 2114
+type(
+  string -> string
+)
+ident(
+  ext_ref My_unix.run_and_read
+)
+"ocamlbuild/findlib.ml" 65 2053 2115 "ocamlbuild/findlib.ml" 65 2053 2122
+type(
+  string
+)
+ident(
+  int_ref command "ocamlbuild/findlib.ml" 65 2053 2062 "ocamlbuild/findlib.ml" 65 2053 2069
+)
+"ocamlbuild/findlib.ml" 65 2053 2102 "ocamlbuild/findlib.ml" 65 2053 2122
+call(
+  stack
+)
+type(
+  string
+)
+"ocamlbuild/findlib.ml" 65 2053 2081 "ocamlbuild/findlib.ml" 65 2053 2122
+call(
+  stack
+)
+type(
+  Lexing.lexbuf
+)
+"ocamlbuild/findlib.ml" 65 2053 2073 "ocamlbuild/findlib.ml" 65 2053 2122
+call(
+  tail
+)
+type(
+  'a
+)
+"ocamlbuild/findlib.ml" 65 2053 2057 "ocamlbuild/findlib.ml" 65 2053 2123
+type(
+  string -> 'a
+)
+"ocamlbuild/findlib.ml" 66 2124 2128 "ocamlbuild/findlib.ml" 66 2124 2135
+type(
+  ('b, unit, string, 'a) format4
+)
+ident(
+  int_ref command "ocamlbuild/findlib.ml" 63 2001 2025 "ocamlbuild/findlib.ml" 63 2001 2032
+)
+"ocamlbuild/findlib.ml" 64 2035 2037 "ocamlbuild/findlib.ml" 66 2124 2135
+call(
+  tail
+)
+type(
+  'b
+)
+"ocamlbuild/findlib.ml" 68 2137 2141 "ocamlbuild/findlib.ml" 68 2137 2153
+type(
+  ('a, unit, string, string) format4 -> 'a
+)
+ident(
+  def run_and_read "ocamlbuild/findlib.ml" 71 2204 2204 "ocamlbuild/findlib.ml" 1 0 -1
+)
+"ocamlbuild/findlib.ml" 68 2137 2154 "ocamlbuild/findlib.ml" 68 2137 2161
+type(
+  ('a, unit, string, string) format4
+)
+ident(
+  def command "ocamlbuild/findlib.ml" 69 2164 2166 "ocamlbuild/findlib.ml" 69 2164 2202
+)
+"ocamlbuild/findlib.ml" 69 2164 2166 "ocamlbuild/findlib.ml" 69 2164 2181
+type(
+  (string -> string) -> ('a, unit, string, string) format4 -> 'a
+)
+ident(
+  ext_ref Printf.ksprintf
+)
+"ocamlbuild/findlib.ml" 69 2164 2182 "ocamlbuild/findlib.ml" 69 2164 2194
+type(
+  string -> string
+)
+ident(
+  ext_ref My_unix.run_and_read
+)
+"ocamlbuild/findlib.ml" 69 2164 2195 "ocamlbuild/findlib.ml" 69 2164 2202
+type(
+  ('a, unit, string, string) format4
+)
+ident(
+  int_ref command "ocamlbuild/findlib.ml" 68 2137 2154 "ocamlbuild/findlib.ml" 68 2137 2161
+)
+"ocamlbuild/findlib.ml" 69 2164 2166 "ocamlbuild/findlib.ml" 69 2164 2202
+call(
+  tail
+)
+type(
+  'a
+)
+"ocamlbuild/findlib.ml" 71 2204 2212 "ocamlbuild/findlib.ml" 71 2204 2217
+type(
+  string -> package
+)
+ident(
+  def query "ocamlbuild/findlib.ml" 71 2204 2204 "ocamlbuild/findlib.ml" 1 0 -1
+)
+"ocamlbuild/findlib.ml" 71 2204 2218 "ocamlbuild/findlib.ml" 71 2204 2222
+type(
+  string
+)
+ident(
+  def name "ocamlbuild/findlib.ml" 72 2225 2227 "ocamlbuild/findlib.ml" 114 3545 3591
+)
+"ocamlbuild/findlib.ml" 73 2231 2235 "ocamlbuild/findlib.ml" 73 2231 2247
+type(
+  (string, package) Hashtbl.t -> string -> package
+)
+ident(
+  ext_ref Hashtbl.find
+)
+"ocamlbuild/findlib.ml" 73 2231 2248 "ocamlbuild/findlib.ml" 73 2231 2256
+type(
+  (string, package) Hashtbl.t
+)
+ident(
+  int_ref packages "ocamlbuild/findlib.ml" 61 1967 1971 "ocamlbuild/findlib.ml" 61 1967 1979
+)
+"ocamlbuild/findlib.ml" 73 2231 2257 "ocamlbuild/findlib.ml" 73 2231 2261
+type(
+  string
+)
+ident(
+  int_ref name "ocamlbuild/findlib.ml" 71 2204 2218 "ocamlbuild/findlib.ml" 71 2204 2222
+)
+"ocamlbuild/findlib.ml" 73 2231 2235 "ocamlbuild/findlib.ml" 73 2231 2261
+call(
+  stack
+)
+type(
+  package
+)
+"ocamlbuild/findlib.ml" 74 2262 2269 "ocamlbuild/findlib.ml" 74 2262 2278
+type(
+  exn
+)
+"ocamlbuild/findlib.ml" 76 2290 2300 "ocamlbuild/findlib.ml" 76 2290 2301
+type(
+  string
+)
+ident(
+  def n "ocamlbuild/findlib.ml" 80 2438 2444 "ocamlbuild/findlib.ml" 107 3322 3335
+)
+"ocamlbuild/findlib.ml" 76 2290 2303 "ocamlbuild/findlib.ml" 76 2290 2304
+type(
+  string
+)
+ident(
+  def d "ocamlbuild/findlib.ml" 80 2438 2444 "ocamlbuild/findlib.ml" 107 3322 3335
+)
+"ocamlbuild/findlib.ml" 76 2290 2306 "ocamlbuild/findlib.ml" 76 2290 2307
+type(
+  string
+)
+ident(
+  def v "ocamlbuild/findlib.ml" 80 2438 2444 "ocamlbuild/findlib.ml" 107 3322 3335
+)
+"ocamlbuild/findlib.ml" 76 2290 2309 "ocamlbuild/findlib.ml" 76 2290 2315
+type(
+  string
+)
+ident(
+  def a_byte "ocamlbuild/findlib.ml" 80 2438 2444 "ocamlbuild/findlib.ml" 107 3322 3335
+)
+"ocamlbuild/findlib.ml" 76 2290 2317 "ocamlbuild/findlib.ml" 76 2290 2319
+type(
+  string
+)
+ident(
+  def lo "ocamlbuild/findlib.ml" 80 2438 2444 "ocamlbuild/findlib.ml" 107 3322 3335
+)
+"ocamlbuild/findlib.ml" 76 2290 2321 "ocamlbuild/findlib.ml" 76 2290 2322
+type(
+  string
+)
+ident(
+  def l "ocamlbuild/findlib.ml" 80 2438 2444 "ocamlbuild/findlib.ml" 107 3322 3335
+)
+"ocamlbuild/findlib.ml" 76 2290 2300 "ocamlbuild/findlib.ml" 76 2290 2322
+type(
+  string * string * string * string * string * string
+)
+"ocamlbuild/findlib.ml" 77 2325 2333 "ocamlbuild/findlib.ml" 77 2325 2346
+type(
+  (Lexing.lexbuf -> string * string * string * string * string * string) ->
+  (string -> string -> string * string * string * string * string * string,
+   unit, string, string * string * string * string * string * string)
+  format4 ->
+  string -> string -> string * string * string * string * string * string
+)
+ident(
+  int_ref run_and_parse "ocamlbuild/findlib.ml" 63 2001 2005 "ocamlbuild/findlib.ml" 63 2001 2018
+)
+"ocamlbuild/findlib.ml" 77 2325 2347 "ocamlbuild/findlib.ml" 77 2325 2369
+type(
+  Lexing.lexbuf -> string * string * string * string * string * string
+)
+ident(
+  ext_ref Lexers.ocamlfind_query
+)
+"ocamlbuild/findlib.ml" 78 2370 2380 "ocamlbuild/findlib.ml" 78 2370 2413
+type(
+  (string -> string -> string * string * string * string * string * string,
+   unit, string, string * string * string * string * string * string)
+  format4
+)
+"ocamlbuild/findlib.ml" 78 2370 2414 "ocamlbuild/findlib.ml" 78 2370 2423
+type(
+  string
+)
+ident(
+  int_ref ocamlfind "ocamlbuild/findlib.ml" 48 1734 1738 "ocamlbuild/findlib.ml" 48 1734 1747
+)
+"ocamlbuild/findlib.ml" 78 2370 2424 "ocamlbuild/findlib.ml" 78 2370 2428
+type(
+  string
+)
+ident(
+  int_ref name "ocamlbuild/findlib.ml" 71 2204 2218 "ocamlbuild/findlib.ml" 71 2204 2222
+)
+"ocamlbuild/findlib.ml" 77 2325 2333 "ocamlbuild/findlib.ml" 78 2370 2428
+call(
+  stack
+)
+type(
+  string * string * string * string * string * string
+)
+"ocamlbuild/findlib.ml" 80 2438 2448 "ocamlbuild/findlib.ml" 80 2438 2456
+type(
+  string
+)
+ident(
+  def a_native "ocamlbuild/findlib.ml" 84 2577 2583 "ocamlbuild/findlib.ml" 107 3322 3335
+)
+"ocamlbuild/findlib.ml" 81 2459 2467 "ocamlbuild/findlib.ml" 81 2459 2480
+type(
+  (Lexing.lexbuf -> string) ->
+  (string -> string -> string, unit, string, string) format4 ->
+  string -> string -> string
+)
+ident(
+  int_ref run_and_parse "ocamlbuild/findlib.ml" 63 2001 2005 "ocamlbuild/findlib.ml" 63 2001 2018
+)
+"ocamlbuild/findlib.ml" 81 2459 2481 "ocamlbuild/findlib.ml" 81 2459 2499
+type(
+  Lexing.lexbuf -> string
+)
+ident(
+  ext_ref Lexers.trim_blanks
+)
+"ocamlbuild/findlib.ml" 82 2500 2510 "ocamlbuild/findlib.ml" 82 2500 2552
+type(
+  (string -> string -> string, unit, string, string) format4
+)
+"ocamlbuild/findlib.ml" 82 2500 2553 "ocamlbuild/findlib.ml" 82 2500 2562
+type(
+  string
+)
+ident(
+  int_ref ocamlfind "ocamlbuild/findlib.ml" 48 1734 1738 "ocamlbuild/findlib.ml" 48 1734 1747
+)
+"ocamlbuild/findlib.ml" 82 2500 2563 "ocamlbuild/findlib.ml" 82 2500 2567
+type(
+  string
+)
+ident(
+  int_ref name "ocamlbuild/findlib.ml" 71 2204 2218 "ocamlbuild/findlib.ml" 71 2204 2222
+)
+"ocamlbuild/findlib.ml" 81 2459 2467 "ocamlbuild/findlib.ml" 82 2500 2567
+call(
+  stack
+)
+type(
+  string
+)
+"ocamlbuild/findlib.ml" 84 2577 2587 "ocamlbuild/findlib.ml" 84 2577 2591
+type(
+  string list
+)
+ident(
+  def deps "ocamlbuild/findlib.ml" 87 2692 2698 "ocamlbuild/findlib.ml" 107 3322 3335
+)
+"ocamlbuild/findlib.ml" 85 2594 2602 "ocamlbuild/findlib.ml" 85 2594 2615
+type(
+  (Lexing.lexbuf -> string list) ->
+  (string -> string -> string list, unit, string, string list) format4 ->
+  string -> string -> string list
+)
+ident(
+  int_ref run_and_parse "ocamlbuild/findlib.ml" 63 2001 2005 "ocamlbuild/findlib.ml" 63 2001 2018
+)
+"ocamlbuild/findlib.ml" 85 2594 2616 "ocamlbuild/findlib.ml" 85 2594 2640
+type(
+  Lexing.lexbuf -> string list
+)
+ident(
+  ext_ref Lexers.blank_sep_strings
+)
+"ocamlbuild/findlib.ml" 85 2594 2641 "ocamlbuild/findlib.ml" 85 2594 2667
+type(
+  (string -> string -> string list, unit, string, string list) format4
+)
+"ocamlbuild/findlib.ml" 85 2594 2668 "ocamlbuild/findlib.ml" 85 2594 2677
+type(
+  string
+)
+ident(
+  int_ref ocamlfind "ocamlbuild/findlib.ml" 48 1734 1738 "ocamlbuild/findlib.ml" 48 1734 1747
+)
+"ocamlbuild/findlib.ml" 85 2594 2678 "ocamlbuild/findlib.ml" 85 2594 2682
+type(
+  string
+)
+ident(
+  int_ref name "ocamlbuild/findlib.ml" 71 2204 2218 "ocamlbuild/findlib.ml" 71 2204 2222
+)
+"ocamlbuild/findlib.ml" 85 2594 2602 "ocamlbuild/findlib.ml" 85 2594 2682
+call(
+  stack
+)
+type(
+  string list
+)
+"ocamlbuild/findlib.ml" 87 2692 2702 "ocamlbuild/findlib.ml" 87 2692 2706
+type(
+  string list
+)
+ident(
+  def deps "ocamlbuild/findlib.ml" 88 2738 2744 "ocamlbuild/findlib.ml" 107 3322 3335
+)
+"ocamlbuild/findlib.ml" 87 2692 2709 "ocamlbuild/findlib.ml" 87 2692 2720
+type(
+  (string -> bool) -> string list -> string list
+)
+ident(
+  ext_ref My_std.List.filter
+)
+"ocamlbuild/findlib.ml" 87 2692 2722 "ocamlbuild/findlib.ml" 87 2692 2726
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"ocamlbuild/findlib.ml" 87 2692 2727 "ocamlbuild/findlib.ml" 87 2692 2728
+type(
+  string
+)
+ident(
+  int_ref n "ocamlbuild/findlib.ml" 76 2290 2300 "ocamlbuild/findlib.ml" 76 2290 2301
+)
+"ocamlbuild/findlib.ml" 87 2692 2721 "ocamlbuild/findlib.ml" 87 2692 2729
+call(
+  stack
+)
+type(
+  string -> bool
+)
+"ocamlbuild/findlib.ml" 87 2692 2730 "ocamlbuild/findlib.ml" 87 2692 2734
+type(
+  string list
+)
+ident(
+  int_ref deps "ocamlbuild/findlib.ml" 84 2577 2587 "ocamlbuild/findlib.ml" 84 2577 2591
+)
+"ocamlbuild/findlib.ml" 87 2692 2709 "ocamlbuild/findlib.ml" 87 2692 2734
+call(
+  stack
+)
+type(
+  string list
+)
+"ocamlbuild/findlib.ml" 88 2738 2748 "ocamlbuild/findlib.ml" 88 2738 2752
+type(
+  package list
+)
+ident(
+  def deps "ocamlbuild/findlib.ml" 96 3041 3047 "ocamlbuild/findlib.ml" 107 3322 3335
+)
+"ocamlbuild/findlib.ml" 90 2767 2777 "ocamlbuild/findlib.ml" 90 2767 2785
+type(
+  (string -> package) -> string list -> package list
+)
+ident(
+  ext_ref My_std.List.map
+)
+"ocamlbuild/findlib.ml" 90 2767 2786 "ocamlbuild/findlib.ml" 90 2767 2791
+type(
+  string -> package
+)
+ident(
+  int_ref query "ocamlbuild/findlib.ml" 71 2204 2212 "ocamlbuild/findlib.ml" 71 2204 2217
+)
+"ocamlbuild/findlib.ml" 90 2767 2792 "ocamlbuild/findlib.ml" 90 2767 2796
+type(
+  string list
+)
+ident(
+  int_ref deps "ocamlbuild/findlib.ml" 87 2692 2702 "ocamlbuild/findlib.ml" 87 2692 2706
+)
+"ocamlbuild/findlib.ml" 90 2767 2777 "ocamlbuild/findlib.ml" 90 2767 2796
+call(
+  stack
+)
+type(
+  package list
+)
+"ocamlbuild/findlib.ml" 91 2797 2843 "ocamlbuild/findlib.ml" 91 2797 2851
+type(
+  string
+)
+ident(
+  def dep_name "ocamlbuild/findlib.ml" 94 2976 2986 "ocamlbuild/findlib.ml" 94 2976 3031
+)
+"ocamlbuild/findlib.ml" 91 2797 2824 "ocamlbuild/findlib.ml" 91 2797 2852
+type(
+  error
+)
+"ocamlbuild/findlib.ml" 91 2797 2810 "ocamlbuild/findlib.ml" 91 2797 2852
+type(
+  exn
+)
+"ocamlbuild/findlib.ml" 94 2976 2986 "ocamlbuild/findlib.ml" 94 2976 2991
+type(
+  error -> package list
+)
+ident(
+  int_ref error "ocamlbuild/findlib.ml" 30 1172 1176 "ocamlbuild/findlib.ml" 30 1172 1181
+)
+"ocamlbuild/findlib.ml" 94 2976 3015 "ocamlbuild/findlib.ml" 94 2976 3019
+type(
+  string
+)
+ident(
+  int_ref name "ocamlbuild/findlib.ml" 71 2204 2218 "ocamlbuild/findlib.ml" 71 2204 2222
+)
+"ocamlbuild/findlib.ml" 94 2976 3021 "ocamlbuild/findlib.ml" 94 2976 3029
+type(
+  string
+)
+ident(
+  int_ref dep_name "ocamlbuild/findlib.ml" 91 2797 2843 "ocamlbuild/findlib.ml" 91 2797 2851
+)
+"ocamlbuild/findlib.ml" 94 2976 2992 "ocamlbuild/findlib.ml" 94 2976 3031
+type(
+  error
+)
+"ocamlbuild/findlib.ml" 94 2976 2986 "ocamlbuild/findlib.ml" 94 2976 3031
+call(
+  stack
+)
+type(
+  package list
+)
+"ocamlbuild/findlib.ml" 89 2755 2763 "ocamlbuild/findlib.ml" 94 2976 3031
+type(
+  package list
+)
+"ocamlbuild/findlib.ml" 96 3041 3051 "ocamlbuild/findlib.ml" 96 3041 3058
+type(
+  package
+)
+ident(
+  def package "ocamlbuild/findlib.ml" 106 3284 3290 "ocamlbuild/findlib.ml" 107 3322 3335
+)
+"ocamlbuild/findlib.ml" 97 3063 3078 "ocamlbuild/findlib.ml" 97 3063 3079
+type(
+  string
+)
+ident(
+  int_ref n "ocamlbuild/findlib.ml" 76 2290 2300 "ocamlbuild/findlib.ml" 76 2290 2301
+)
+"ocamlbuild/findlib.ml" 98 3081 3103 "ocamlbuild/findlib.ml" 98 3081 3104
+type(
+  string
+)
+ident(
+  int_ref d "ocamlbuild/findlib.ml" 76 2290 2303 "ocamlbuild/findlib.ml" 76 2290 2304
+)
+"ocamlbuild/findlib.ml" 99 3106 3124 "ocamlbuild/findlib.ml" 99 3106 3125
+type(
+  string
+)
+ident(
+  int_ref v "ocamlbuild/findlib.ml" 76 2290 2306 "ocamlbuild/findlib.ml" 76 2290 2307
+)
+"ocamlbuild/findlib.ml" 100 3127 3151 "ocamlbuild/findlib.ml" 100 3127 3157
+type(
+  string
+)
+ident(
+  int_ref a_byte "ocamlbuild/findlib.ml" 76 2290 2309 "ocamlbuild/findlib.ml" 76 2290 2315
+)
+"ocamlbuild/findlib.ml" 101 3159 3185 "ocamlbuild/findlib.ml" 101 3159 3193
+type(
+  string
+)
+ident(
+  int_ref a_native "ocamlbuild/findlib.ml" 80 2438 2448 "ocamlbuild/findlib.ml" 80 2438 2456
+)
+"ocamlbuild/findlib.ml" 102 3195 3218 "ocamlbuild/findlib.ml" 102 3195 3220
+type(
+  string
+)
+ident(
+  int_ref lo "ocamlbuild/findlib.ml" 76 2290 2317 "ocamlbuild/findlib.ml" 76 2290 2319
+)
+"ocamlbuild/findlib.ml" 103 3222 3241 "ocamlbuild/findlib.ml" 103 3222 3242
+type(
+  string
+)
+ident(
+  int_ref l "ocamlbuild/findlib.ml" 76 2290 2321 "ocamlbuild/findlib.ml" 76 2290 2322
+)
+"ocamlbuild/findlib.ml" 104 3244 3267 "ocamlbuild/findlib.ml" 104 3244 3271
+type(
+  package list
+)
+ident(
+  int_ref deps "ocamlbuild/findlib.ml" 88 2738 2748 "ocamlbuild/findlib.ml" 88 2738 2752
+)
+"ocamlbuild/findlib.ml" 96 3041 3061 "ocamlbuild/findlib.ml" 105 3273 3280
+type(
+  package
+)
+"ocamlbuild/findlib.ml" 106 3284 3290 "ocamlbuild/findlib.ml" 106 3284 3301
+type(
+  (string, package) Hashtbl.t -> string -> package -> unit
+)
+ident(
+  ext_ref Hashtbl.add
+)
+"ocamlbuild/findlib.ml" 106 3284 3302 "ocamlbuild/findlib.ml" 106 3284 3310
+type(
+  (string, package) Hashtbl.t
+)
+ident(
+  int_ref packages "ocamlbuild/findlib.ml" 61 1967 1971 "ocamlbuild/findlib.ml" 61 1967 1979
+)
+"ocamlbuild/findlib.ml" 106 3284 3311 "ocamlbuild/findlib.ml" 106 3284 3312
+type(
+  string
+)
+ident(
+  int_ref n "ocamlbuild/findlib.ml" 76 2290 2300 "ocamlbuild/findlib.ml" 76 2290 2301
+)
+"ocamlbuild/findlib.ml" 106 3284 3313 "ocamlbuild/findlib.ml" 106 3284 3320
+type(
+  package
+)
+ident(
+  int_ref package "ocamlbuild/findlib.ml" 96 3041 3051 "ocamlbuild/findlib.ml" 96 3041 3058
+)
+"ocamlbuild/findlib.ml" 106 3284 3290 "ocamlbuild/findlib.ml" 106 3284 3320
+call(
+  stack
+)
+type(
+  unit
+)
+"ocamlbuild/findlib.ml" 107 3322 3328 "ocamlbuild/findlib.ml" 107 3322 3335
+type(
+  package
+)
+ident(
+  int_ref package "ocamlbuild/findlib.ml" 96 3041 3051 "ocamlbuild/findlib.ml" 96 3041 3058
+)
+"ocamlbuild/findlib.ml" 106 3284 3290 "ocamlbuild/findlib.ml" 107 3322 3335
+type(
+  package
+)
+"ocamlbuild/findlib.ml" 96 3041 3047 "ocamlbuild/findlib.ml" 107 3322 3335
+type(
+  package
+)
+"ocamlbuild/findlib.ml" 88 2738 2744 "ocamlbuild/findlib.ml" 107 3322 3335
+type(
+  package
+)
+"ocamlbuild/findlib.ml" 87 2692 2698 "ocamlbuild/findlib.ml" 107 3322 3335
+type(
+  package
+)
+"ocamlbuild/findlib.ml" 84 2577 2583 "ocamlbuild/findlib.ml" 107 3322 3335
+type(
+  package
+)
+"ocamlbuild/findlib.ml" 80 2438 2444 "ocamlbuild/findlib.ml" 107 3322 3335
+type(
+  package
+)
+"ocamlbuild/findlib.ml" 76 2290 2296 "ocamlbuild/findlib.ml" 107 3322 3335
+type(
+  package
+)
+"ocamlbuild/findlib.ml" 109 3345 3361 "ocamlbuild/findlib.ml" 109 3345 3362
+type(
+  string
+)
+"ocamlbuild/findlib.ml" 109 3345 3353 "ocamlbuild/findlib.ml" 109 3345 3362
+type(
+  exn
+)
+"ocamlbuild/findlib.ml" 112 3478 3488 "ocamlbuild/findlib.ml" 112 3478 3493
+type(
+  error -> package
+)
+ident(
+  int_ref error "ocamlbuild/findlib.ml" 30 1172 1176 "ocamlbuild/findlib.ml" 30 1172 1181
+)
+"ocamlbuild/findlib.ml" 112 3478 3494 "ocamlbuild/findlib.ml" 112 3478 3514
+type(
+  error
+)
+"ocamlbuild/findlib.ml" 112 3478 3488 "ocamlbuild/findlib.ml" 112 3478 3514
+call(
+  tail
+)
+type(
+  package
+)
+"ocamlbuild/findlib.ml" 113 3515 3537 "ocamlbuild/findlib.ml" 113 3515 3538
+type(
+  string
+)
+ident(
+  def s "ocamlbuild/findlib.ml" 114 3545 3555 "ocamlbuild/findlib.ml" 114 3545 3591
+)
+"ocamlbuild/findlib.ml" 113 3515 3539 "ocamlbuild/findlib.ml" 113 3515 3540
+type(
+  Lexing.position
+)
+"ocamlbuild/findlib.ml" 113 3515 3536 "ocamlbuild/findlib.ml" 113 3515 3541
+type(
+  string * Lexing.position
+)
+"ocamlbuild/findlib.ml" 113 3515 3523 "ocamlbuild/findlib.ml" 113 3515 3541
+type(
+  exn
+)
+"ocamlbuild/findlib.ml" 114 3545 3555 "ocamlbuild/findlib.ml" 114 3545 3560
+type(
+  error -> package
+)
+ident(
+  int_ref error "ocamlbuild/findlib.ml" 30 1172 1176 "ocamlbuild/findlib.ml" 30 1172 1181
+)
+"ocamlbuild/findlib.ml" 114 3545 3582 "ocamlbuild/findlib.ml" 114 3545 3586
+type(
+  string
+)
+ident(
+  int_ref name "ocamlbuild/findlib.ml" 71 2204 2218 "ocamlbuild/findlib.ml" 71 2204 2222
+)
+"ocamlbuild/findlib.ml" 114 3545 3588 "ocamlbuild/findlib.ml" 114 3545 3589
+type(
+  string
+)
+ident(
+  int_ref s "ocamlbuild/findlib.ml" 113 3515 3537 "ocamlbuild/findlib.ml" 113 3515 3538
+)
+"ocamlbuild/findlib.ml" 114 3545 3561 "ocamlbuild/findlib.ml" 114 3545 3591
+type(
+  error
+)
+"ocamlbuild/findlib.ml" 114 3545 3555 "ocamlbuild/findlib.ml" 114 3545 3591
+call(
+  tail
+)
+type(
+  package
+)
+"ocamlbuild/findlib.ml" 75 2282 2286 "ocamlbuild/findlib.ml" 114 3545 3591
+type(
+  package
+)
+"ocamlbuild/findlib.ml" 72 2225 2227 "ocamlbuild/findlib.ml" 114 3545 3591
+type(
+  package
+)
+"ocamlbuild/findlib.ml" 116 3593 3597 "ocamlbuild/findlib.ml" 116 3593 3605
+type(
+  string -> string list
+)
+ident(
+  def split_nl "ocamlbuild/findlib.ml" 127 3798 3798 "ocamlbuild/findlib.ml" 1 0 -1
+)
+"ocamlbuild/findlib.ml" 116 3593 3606 "ocamlbuild/findlib.ml" 116 3593 3607
+type(
+  string
+)
+ident(
+  def s "ocamlbuild/findlib.ml" 117 3610 3612 "ocamlbuild/findlib.ml" 125 3774 3796
+)
+"ocamlbuild/findlib.ml" 117 3610 3616 "ocamlbuild/findlib.ml" 117 3610 3617
+type(
+  string list ref
+)
+ident(
+  def x "ocamlbuild/findlib.ml" 118 3630 3632 "ocamlbuild/findlib.ml" 125 3774 3796
+)
+"ocamlbuild/findlib.ml" 117 3610 3620 "ocamlbuild/findlib.ml" 117 3610 3623
+type(
+  string list -> string list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"ocamlbuild/findlib.ml" 117 3610 3624 "ocamlbuild/findlib.ml" 117 3610 3626
+type(
+  string list
+)
+"ocamlbuild/findlib.ml" 117 3610 3620 "ocamlbuild/findlib.ml" 117 3610 3626
+type(
+  string list ref
+)
+"ocamlbuild/findlib.ml" 118 3630 3640 "ocamlbuild/findlib.ml" 118 3630 3642
+type(
+  string -> 'a
+)
+ident(
+  def go "ocamlbuild/findlib.ml" 118 3630 3632 "ocamlbuild/findlib.ml" 125 3774 3796
+)
+"ocamlbuild/findlib.ml" 118 3630 3643 "ocamlbuild/findlib.ml" 118 3630 3644
+type(
+  string
+)
+ident(
+  def s "ocamlbuild/findlib.ml" 119 3647 3651 "ocamlbuild/findlib.ml" 121 3720 3753
+)
+"ocamlbuild/findlib.ml" 119 3647 3655 "ocamlbuild/findlib.ml" 119 3647 3658
+type(
+  int
+)
+ident(
+  def pos "ocamlbuild/findlib.ml" 120 3684 3688 "ocamlbuild/findlib.ml" 121 3720 3753
+)
+"ocamlbuild/findlib.ml" 119 3647 3661 "ocamlbuild/findlib.ml" 119 3647 3673
+type(
+  string -> char -> int
+)
+ident(
+  ext_ref My_std.String.index
+)
+"ocamlbuild/findlib.ml" 119 3647 3674 "ocamlbuild/findlib.ml" 119 3647 3675
+type(
+  string
+)
+ident(
+  int_ref s "ocamlbuild/findlib.ml" 118 3630 3643 "ocamlbuild/findlib.ml" 118 3630 3644
+)
+"ocamlbuild/findlib.ml" 119 3647 3676 "ocamlbuild/findlib.ml" 119 3647 3680
+type(
+  char
+)
+"ocamlbuild/findlib.ml" 119 3647 3661 "ocamlbuild/findlib.ml" 119 3647 3680
+call(
+  stack
+)
+type(
+  int
+)
+"ocamlbuild/findlib.ml" 120 3684 3688 "ocamlbuild/findlib.ml" 120 3684 3689
+type(
+  string list ref
+)
+ident(
+  int_ref x "ocamlbuild/findlib.ml" 117 3610 3616 "ocamlbuild/findlib.ml" 117 3610 3617
+)
+"ocamlbuild/findlib.ml" 120 3684 3690 "ocamlbuild/findlib.ml" 120 3684 3692
+type(
+  string list ref -> string list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"ocamlbuild/findlib.ml" 120 3684 3694 "ocamlbuild/findlib.ml" 120 3684 3707
+type(
+  string -> int -> string
+)
+ident(
+  ext_ref My_std.String.before
+)
+"ocamlbuild/findlib.ml" 120 3684 3708 "ocamlbuild/findlib.ml" 120 3684 3709
+type(
+  string
+)
+ident(
+  int_ref s "ocamlbuild/findlib.ml" 118 3630 3643 "ocamlbuild/findlib.ml" 118 3630 3644
+)
+"ocamlbuild/findlib.ml" 120 3684 3710 "ocamlbuild/findlib.ml" 120 3684 3713
+type(
+  int
+)
+ident(
+  int_ref pos "ocamlbuild/findlib.ml" 119 3647 3655 "ocamlbuild/findlib.ml" 119 3647 3658
+)
+"ocamlbuild/findlib.ml" 120 3684 3693 "ocamlbuild/findlib.ml" 120 3684 3714
+call(
+  stack
+)
+type(
+  string
+)
+"ocamlbuild/findlib.ml" 120 3684 3716 "ocamlbuild/findlib.ml" 120 3684 3717
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"ocamlbuild/findlib.ml" 120 3684 3717 "ocamlbuild/findlib.ml" 120 3684 3718
+type(
+  string list ref
+)
+ident(
+  int_ref x "ocamlbuild/findlib.ml" 117 3610 3616 "ocamlbuild/findlib.ml" 117 3610 3617
+)
+"ocamlbuild/findlib.ml" 120 3684 3716 "ocamlbuild/findlib.ml" 120 3684 3718
+type(
+  string list
+)
+"ocamlbuild/findlib.ml" 120 3684 3693 "ocamlbuild/findlib.ml" 120 3684 3718
+type(
+  string list
+)
+"ocamlbuild/findlib.ml" 120 3684 3688 "ocamlbuild/findlib.ml" 120 3684 3718
+type(
+  unit
+)
+"ocamlbuild/findlib.ml" 121 3720 3724 "ocamlbuild/findlib.ml" 121 3720 3726
+type(
+  string -> 'a
+)
+ident(
+  int_ref go "ocamlbuild/findlib.ml" 118 3630 3640 "ocamlbuild/findlib.ml" 118 3630 3642
+)
+"ocamlbuild/findlib.ml" 121 3720 3728 "ocamlbuild/findlib.ml" 121 3720 3740
+type(
+  string -> int -> string
+)
+ident(
+  ext_ref My_std.String.after
+)
+"ocamlbuild/findlib.ml" 121 3720 3741 "ocamlbuild/findlib.ml" 121 3720 3742
+type(
+  string
+)
+ident(
+  int_ref s "ocamlbuild/findlib.ml" 118 3630 3643 "ocamlbuild/findlib.ml" 118 3630 3644
+)
+"ocamlbuild/findlib.ml" 121 3720 3744 "ocamlbuild/findlib.ml" 121 3720 3747
+type(
+  int
+)
+ident(
+  int_ref pos "ocamlbuild/findlib.ml" 119 3647 3655 "ocamlbuild/findlib.ml" 119 3647 3658
+)
+"ocamlbuild/findlib.ml" 121 3720 3748 "ocamlbuild/findlib.ml" 121 3720 3749
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"ocamlbuild/findlib.ml" 121 3720 3750 "ocamlbuild/findlib.ml" 121 3720 3751
+type(
+  int
+)
+"ocamlbuild/findlib.ml" 121 3720 3743 "ocamlbuild/findlib.ml" 121 3720 3752
+type(
+  int
+)
+"ocamlbuild/findlib.ml" 121 3720 3727 "ocamlbuild/findlib.ml" 121 3720 3753
+call(
+  stack
+)
+type(
+  string
+)
+"ocamlbuild/findlib.ml" 121 3720 3724 "ocamlbuild/findlib.ml" 121 3720 3753
+call(
+  tail
+)
+type(
+  'a
+)
+"ocamlbuild/findlib.ml" 120 3684 3688 "ocamlbuild/findlib.ml" 121 3720 3753
+type(
+  'a
+)
+"ocamlbuild/findlib.ml" 119 3647 3651 "ocamlbuild/findlib.ml" 121 3720 3753
+type(
+  'a
+)
+"ocamlbuild/findlib.ml" 124 3765 3769 "ocamlbuild/findlib.ml" 124 3765 3771
+type(
+  string -> string list
+)
+ident(
+  int_ref go "ocamlbuild/findlib.ml" 118 3630 3640 "ocamlbuild/findlib.ml" 118 3630 3642
+)
+"ocamlbuild/findlib.ml" 124 3765 3772 "ocamlbuild/findlib.ml" 124 3765 3773
+type(
+  string
+)
+ident(
+  int_ref s "ocamlbuild/findlib.ml" 116 3593 3606 "ocamlbuild/findlib.ml" 116 3593 3607
+)
+"ocamlbuild/findlib.ml" 124 3765 3769 "ocamlbuild/findlib.ml" 124 3765 3773
+call(
+  stack
+)
+type(
+  string list
+)
+"ocamlbuild/findlib.ml" 125 3774 3781 "ocamlbuild/findlib.ml" 125 3774 3790
+type(
+  exn
+)
+"ocamlbuild/findlib.ml" 125 3774 3794 "ocamlbuild/findlib.ml" 125 3774 3795
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"ocamlbuild/findlib.ml" 125 3774 3795 "ocamlbuild/findlib.ml" 125 3774 3796
+type(
+  string list ref
+)
+ident(
+  int_ref x "ocamlbuild/findlib.ml" 117 3610 3616 "ocamlbuild/findlib.ml" 117 3610 3617
+)
+"ocamlbuild/findlib.ml" 125 3774 3794 "ocamlbuild/findlib.ml" 125 3774 3796
+type(
+  string list
+)
+"ocamlbuild/findlib.ml" 123 3759 3761 "ocamlbuild/findlib.ml" 125 3774 3796
+type(
+  string list
+)
+"ocamlbuild/findlib.ml" 118 3630 3632 "ocamlbuild/findlib.ml" 125 3774 3796
+type(
+  string list
+)
+"ocamlbuild/findlib.ml" 117 3610 3612 "ocamlbuild/findlib.ml" 125 3774 3796
+type(
+  string list
+)
+"ocamlbuild/findlib.ml" 127 3798 3802 "ocamlbuild/findlib.ml" 127 3798 3814
+type(
+  string -> string
+)
+ident(
+  def before_space "ocamlbuild/findlib.ml" 132 3889 3889 "ocamlbuild/findlib.ml" 1 0 -1
+)
+"ocamlbuild/findlib.ml" 127 3798 3815 "ocamlbuild/findlib.ml" 127 3798 3816
+type(
+  string
+)
+ident(
+  def s "ocamlbuild/findlib.ml" 128 3819 3821 "ocamlbuild/findlib.ml" 130 3866 3887
+)
+"ocamlbuild/findlib.ml" 129 3825 3829 "ocamlbuild/findlib.ml" 129 3825 3842
+type(
+  string -> int -> string
+)
+ident(
+  ext_ref My_std.String.before
+)
+"ocamlbuild/findlib.ml" 129 3825 3843 "ocamlbuild/findlib.ml" 129 3825 3844
+type(
+  string
+)
+ident(
+  int_ref s "ocamlbuild/findlib.ml" 127 3798 3815 "ocamlbuild/findlib.ml" 127 3798 3816
+)
+"ocamlbuild/findlib.ml" 129 3825 3846 "ocamlbuild/findlib.ml" 129 3825 3858
+type(
+  string -> char -> int
+)
+ident(
+  ext_ref My_std.String.index
+)
+"ocamlbuild/findlib.ml" 129 3825 3859 "ocamlbuild/findlib.ml" 129 3825 3860
+type(
+  string
+)
+ident(
+  int_ref s "ocamlbuild/findlib.ml" 127 3798 3815 "ocamlbuild/findlib.ml" 127 3798 3816
+)
+"ocamlbuild/findlib.ml" 129 3825 3861 "ocamlbuild/findlib.ml" 129 3825 3864
+type(
+  char
+)
+"ocamlbuild/findlib.ml" 129 3825 3845 "ocamlbuild/findlib.ml" 129 3825 3865
+call(
+  stack
+)
+type(
+  int
+)
+"ocamlbuild/findlib.ml" 129 3825 3829 "ocamlbuild/findlib.ml" 129 3825 3865
+call(
+  stack
+)
+type(
+  string
+)
+"ocamlbuild/findlib.ml" 130 3866 3873 "ocamlbuild/findlib.ml" 130 3866 3882
+type(
+  exn
+)
+"ocamlbuild/findlib.ml" 130 3866 3886 "ocamlbuild/findlib.ml" 130 3866 3887
+type(
+  string
+)
+ident(
+  int_ref s "ocamlbuild/findlib.ml" 127 3798 3815 "ocamlbuild/findlib.ml" 127 3798 3816
+)
+"ocamlbuild/findlib.ml" 128 3819 3821 "ocamlbuild/findlib.ml" 130 3866 3887
+type(
+  string
+)
+"ocamlbuild/findlib.ml" 132 3889 3893 "ocamlbuild/findlib.ml" 132 3889 3897
+type(
+  unit -> string list
+)
+ident(
+  def list "ocamlbuild/findlib.ml" 139 4220 4220 "ocamlbuild/findlib.ml" 1 0 -1
+)
+"ocamlbuild/findlib.ml" 132 3889 3898 "ocamlbuild/findlib.ml" 132 3889 3900
+type(
+  unit
+)
+"ocamlbuild/findlib.ml" 133 3903 3905 "ocamlbuild/findlib.ml" 133 3903 3913
+type(
+  (string -> string) -> string list -> string list
+)
+ident(
+  ext_ref My_std.List.map
+)
+"ocamlbuild/findlib.ml" 133 3903 3914 "ocamlbuild/findlib.ml" 133 3903 3926
+type(
+  string -> string
+)
+ident(
+  int_ref before_space "ocamlbuild/findlib.ml" 127 3798 3802 "ocamlbuild/findlib.ml" 127 3798 3814
+)
+"ocamlbuild/findlib.ml" 133 3903 3928 "ocamlbuild/findlib.ml" 133 3903 3936
+type(
+  string -> string list
+)
+ident(
+  int_ref split_nl "ocamlbuild/findlib.ml" 116 3593 3597 "ocamlbuild/findlib.ml" 116 3593 3605
+)
+"ocamlbuild/findlib.ml" 133 3903 3937 "ocamlbuild/findlib.ml" 133 3903 3938
+type(
+  (string -> string list) -> string -> string list
+)
+ident(
+  ext_ref My_std.( & )
+)
+"ocamlbuild/findlib.ml" 133 3903 3939 "ocamlbuild/findlib.ml" 133 3903 3951
+type(
+  (string -> string, unit, string, string) format4 -> string -> string
+)
+ident(
+  int_ref run_and_read "ocamlbuild/findlib.ml" 68 2137 2141 "ocamlbuild/findlib.ml" 68 2137 2153
+)
+"ocamlbuild/findlib.ml" 133 3903 3952 "ocamlbuild/findlib.ml" 133 3903 3961
+type(
+  (string -> string, unit, string, string) format4
+)
+"ocamlbuild/findlib.ml" 133 3903 3962 "ocamlbuild/findlib.ml" 133 3903 3971
+type(
+  string
+)
+ident(
+  int_ref ocamlfind "ocamlbuild/findlib.ml" 48 1734 1738 "ocamlbuild/findlib.ml" 48 1734 1747
+)
+"ocamlbuild/findlib.ml" 133 3903 3939 "ocamlbuild/findlib.ml" 133 3903 3971
+call(
+  stack
+)
+type(
+  string
+)
+"ocamlbuild/findlib.ml" 133 3903 3927 "ocamlbuild/findlib.ml" 133 3903 3972
+call(
+  stack
+)
+type(
+  string list
+)
+"ocamlbuild/findlib.ml" 133 3903 3905 "ocamlbuild/findlib.ml" 133 3903 3972
+call(
+  tail
+)
+type(
+  string list
+)
+"ocamlbuild/findlib.ml" 139 4220 4224 "ocamlbuild/findlib.ml" 139 4220 4243
+type(
+  package list -> package list
+)
+ident(
+  def topological_closure "ocamlbuild/findlib.ml" 146 4424 4424 "ocamlbuild/findlib.ml" 1 0 -1
+)
+"ocamlbuild/findlib.ml" 139 4220 4244 "ocamlbuild/findlib.ml" 139 4220 4245
+type(
+  package list
+)
+ident(
+  def l "ocamlbuild/findlib.ml" 140 4248 4250 "ocamlbuild/findlib.ml" 144 4410 4422
+)
+"ocamlbuild/findlib.ml" 140 4248 4254 "ocamlbuild/findlib.ml" 140 4248 4257
+type(
+  'a list -> 'a -> 'a list
+)
+ident(
+  def add "ocamlbuild/findlib.ml" 141 4302 4304 "ocamlbuild/findlib.ml" 144 4410 4422
+)
+"ocamlbuild/findlib.ml" 140 4248 4258 "ocamlbuild/findlib.ml" 140 4248 4259
+type(
+  'a list
+)
+ident(
+  def l "ocamlbuild/findlib.ml" 140 4248 4260 "ocamlbuild/findlib.ml" 140 4248 4298
+)
+"ocamlbuild/findlib.ml" 140 4248 4260 "ocamlbuild/findlib.ml" 140 4248 4261
+type(
+  'a
+)
+ident(
+  def x "ocamlbuild/findlib.ml" 140 4248 4264 "ocamlbuild/findlib.ml" 140 4248 4298
+)
+"ocamlbuild/findlib.ml" 140 4248 4267 "ocamlbuild/findlib.ml" 140 4248 4275
+type(
+  'a -> 'a list -> bool
+)
+ident(
+  ext_ref My_std.List.mem
+)
+"ocamlbuild/findlib.ml" 140 4248 4276 "ocamlbuild/findlib.ml" 140 4248 4277
+type(
+  'a
+)
+ident(
+  int_ref x "ocamlbuild/findlib.ml" 140 4248 4260 "ocamlbuild/findlib.ml" 140 4248 4261
+)
+"ocamlbuild/findlib.ml" 140 4248 4278 "ocamlbuild/findlib.ml" 140 4248 4279
+type(
+  'a list
+)
+ident(
+  int_ref l "ocamlbuild/findlib.ml" 140 4248 4258 "ocamlbuild/findlib.ml" 140 4248 4259
+)
+"ocamlbuild/findlib.ml" 140 4248 4267 "ocamlbuild/findlib.ml" 140 4248 4279
+call(
+  stack
+)
+type(
+  bool
+)
+"ocamlbuild/findlib.ml" 140 4248 4285 "ocamlbuild/findlib.ml" 140 4248 4286
+type(
+  'a list
+)
+ident(
+  int_ref l "ocamlbuild/findlib.ml" 140 4248 4258 "ocamlbuild/findlib.ml" 140 4248 4259
+)
+"ocamlbuild/findlib.ml" 140 4248 4292 "ocamlbuild/findlib.ml" 140 4248 4293
+type(
+  'a
+)
+ident(
+  int_ref x "ocamlbuild/findlib.ml" 140 4248 4260 "ocamlbuild/findlib.ml" 140 4248 4261
+)
+"ocamlbuild/findlib.ml" 140 4248 4297 "ocamlbuild/findlib.ml" 140 4248 4298
+type(
+  'a list
+)
+ident(
+  int_ref l "ocamlbuild/findlib.ml" 140 4248 4258 "ocamlbuild/findlib.ml" 140 4248 4259
+)
+"ocamlbuild/findlib.ml" 140 4248 4292 "ocamlbuild/findlib.ml" 140 4248 4298
+type(
+  'a list
+)
+"ocamlbuild/findlib.ml" 140 4248 4264 "ocamlbuild/findlib.ml" 140 4248 4298
+type(
+  'a list
+)
+"ocamlbuild/findlib.ml" 141 4302 4308 "ocamlbuild/findlib.ml" 141 4302 4309
+type(
+  package list
+)
+ident(
+  def l "ocamlbuild/findlib.ml" 144 4410 4412 "ocamlbuild/findlib.ml" 144 4410 4422
+)
+"ocamlbuild/findlib.ml" 141 4302 4312 "ocamlbuild/findlib.ml" 141 4302 4326
+type(
+  (package list -> package -> package list) ->
+  package list -> package list -> package list
+)
+ident(
+  ext_ref My_std.List.fold_left
+)
+"ocamlbuild/findlib.ml" 141 4302 4337 "ocamlbuild/findlib.ml" 141 4302 4340
+type(
+  package list
+)
+ident(
+  def acc "ocamlbuild/findlib.ml" 141 4302 4341 "ocamlbuild/findlib.ml" 142 4346 4395
+)
+"ocamlbuild/findlib.ml" 141 4302 4341 "ocamlbuild/findlib.ml" 141 4302 4342
+type(
+  package
+)
+ident(
+  def p "ocamlbuild/findlib.ml" 142 4346 4350 "ocamlbuild/findlib.ml" 142 4346 4395
+)
+"ocamlbuild/findlib.ml" 142 4346 4350 "ocamlbuild/findlib.ml" 142 4346 4353
+type(
+  package list -> package -> package list
+)
+ident(
+  int_ref add "ocamlbuild/findlib.ml" 140 4248 4254 "ocamlbuild/findlib.ml" 140 4248 4257
+)
+"ocamlbuild/findlib.ml" 142 4346 4355 "ocamlbuild/findlib.ml" 142 4346 4369
+type(
+  (package list -> package -> package list) ->
+  package list -> package list -> package list
+)
+ident(
+  ext_ref My_std.List.fold_left
+)
+"ocamlbuild/findlib.ml" 142 4346 4370 "ocamlbuild/findlib.ml" 142 4346 4373
+type(
+  package list -> package -> package list
+)
+ident(
+  int_ref add "ocamlbuild/findlib.ml" 140 4248 4254 "ocamlbuild/findlib.ml" 140 4248 4257
+)
+"ocamlbuild/findlib.ml" 142 4346 4374 "ocamlbuild/findlib.ml" 142 4346 4377
+type(
+  package list
+)
+ident(
+  int_ref acc "ocamlbuild/findlib.ml" 141 4302 4337 "ocamlbuild/findlib.ml" 141 4302 4340
+)
+"ocamlbuild/findlib.ml" 142 4346 4378 "ocamlbuild/findlib.ml" 142 4346 4379
+type(
+  package
+)
+ident(
+  int_ref p "ocamlbuild/findlib.ml" 141 4302 4341 "ocamlbuild/findlib.ml" 141 4302 4342
+)
+"ocamlbuild/findlib.ml" 142 4346 4378 "ocamlbuild/findlib.ml" 142 4346 4392
+type(
+  package list
+)
+"ocamlbuild/findlib.ml" 142 4346 4354 "ocamlbuild/findlib.ml" 142 4346 4393
+call(
+  stack
+)
+type(
+  package list
+)
+"ocamlbuild/findlib.ml" 142 4346 4394 "ocamlbuild/findlib.ml" 142 4346 4395
+type(
+  package
+)
+ident(
+  int_ref p "ocamlbuild/findlib.ml" 141 4302 4341 "ocamlbuild/findlib.ml" 141 4302 4342
+)
+"ocamlbuild/findlib.ml" 142 4346 4350 "ocamlbuild/findlib.ml" 142 4346 4395
+call(
+  tail
+)
+type(
+  package list
+)
+"ocamlbuild/findlib.ml" 141 4302 4327 "ocamlbuild/findlib.ml" 143 4396 4401
+type(
+  package list -> package -> package list
+)
+"ocamlbuild/findlib.ml" 143 4396 4402 "ocamlbuild/findlib.ml" 143 4396 4404
+type(
+  package list
+)
+"ocamlbuild/findlib.ml" 143 4396 4405 "ocamlbuild/findlib.ml" 143 4396 4406
+type(
+  package list
+)
+ident(
+  int_ref l "ocamlbuild/findlib.ml" 139 4220 4244 "ocamlbuild/findlib.ml" 139 4220 4245
+)
+"ocamlbuild/findlib.ml" 141 4302 4312 "ocamlbuild/findlib.ml" 143 4396 4406
+call(
+  stack
+)
+type(
+  package list
+)
+"ocamlbuild/findlib.ml" 144 4410 4412 "ocamlbuild/findlib.ml" 144 4410 4420
+type(
+  package list -> package list
+)
+ident(
+  ext_ref My_std.List.rev
+)
+"ocamlbuild/findlib.ml" 144 4410 4421 "ocamlbuild/findlib.ml" 144 4410 4422
+type(
+  package list
+)
+ident(
+  int_ref l "ocamlbuild/findlib.ml" 141 4302 4308 "ocamlbuild/findlib.ml" 141 4302 4309
+)
+"ocamlbuild/findlib.ml" 144 4410 4412 "ocamlbuild/findlib.ml" 144 4410 4422
+call(
+  tail
+)
+type(
+  package list
+)
+"ocamlbuild/findlib.ml" 141 4302 4304 "ocamlbuild/findlib.ml" 144 4410 4422
+type(
+  package list
+)
+"ocamlbuild/findlib.ml" 140 4248 4250 "ocamlbuild/findlib.ml" 144 4410 4422
+type(
+  package list
+)
+"ocamlbuild/findlib.ml" 146 4424 4438 "ocamlbuild/findlib.ml" 146 4424 4454
+call(
+  stack
+)
+"ocamlbuild/findlib.ml" 148 4456 4460 "ocamlbuild/findlib.ml" 148 4456 4468
+type(
+  Command.spec -> Command.spec list -> Command.spec list
+)
+ident(
+  def add_atom "ocamlbuild/findlib.ml" 152 4525 4525 "ocamlbuild/findlib.ml" 1 0 -1
+)
+"ocamlbuild/findlib.ml" 148 4456 4469 "ocamlbuild/findlib.ml" 148 4456 4470
+type(
+  Command.spec
+)
+ident(
+  def a "ocamlbuild/findlib.ml" 148 4456 4471 "ocamlbuild/findlib.ml" 150 4508 4523
+)
+"ocamlbuild/findlib.ml" 148 4456 4471 "ocamlbuild/findlib.ml" 148 4456 4472
+type(
+  Command.spec list
+)
+ident(
+  def l "ocamlbuild/findlib.ml" 148 4456 4475 "ocamlbuild/findlib.ml" 150 4508 4523
+)
+"ocamlbuild/findlib.ml" 148 4456 4481 "ocamlbuild/findlib.ml" 148 4456 4482
+type(
+  Command.spec
+)
+ident(
+  int_ref a "ocamlbuild/findlib.ml" 148 4456 4469 "ocamlbuild/findlib.ml" 148 4456 4470
+)
+"ocamlbuild/findlib.ml" 148 4456 4484 "ocamlbuild/findlib.ml" 148 4456 4485
+type(
+  Command.spec list
+)
+ident(
+  int_ref l "ocamlbuild/findlib.ml" 148 4456 4471 "ocamlbuild/findlib.ml" 148 4456 4472
+)
+"ocamlbuild/findlib.ml" 148 4456 4481 "ocamlbuild/findlib.ml" 148 4456 4485
+type(
+  Command.spec * Command.spec list
+)
+"ocamlbuild/findlib.ml" 149 4491 4497 "ocamlbuild/findlib.ml" 149 4491 4499
+type(
+  string
+)
+"ocamlbuild/findlib.ml" 149 4491 4495 "ocamlbuild/findlib.ml" 149 4491 4499
+type(
+  Command.spec
+)
+"ocamlbuild/findlib.ml" 149 4491 4501 "ocamlbuild/findlib.ml" 149 4491 4502
+type(
+  Command.spec list
+)
+"ocamlbuild/findlib.ml" 149 4491 4495 "ocamlbuild/findlib.ml" 149 4491 4502
+type(
+  Command.spec * Command.spec list
+)
+"ocamlbuild/findlib.ml" 149 4491 4506 "ocamlbuild/findlib.ml" 149 4491 4507
+type(
+  Command.spec list
+)
+ident(
+  int_ref l "ocamlbuild/findlib.ml" 148 4456 4471 "ocamlbuild/findlib.ml" 148 4456 4472
+)
+"ocamlbuild/findlib.ml" 150 4508 4512 "ocamlbuild/findlib.ml" 150 4508 4513
+type(
+  Command.spec * Command.spec list
+)
+"ocamlbuild/findlib.ml" 150 4508 4517 "ocamlbuild/findlib.ml" 150 4508 4518
+type(
+  Command.spec
+)
+ident(
+  int_ref a "ocamlbuild/findlib.ml" 148 4456 4469 "ocamlbuild/findlib.ml" 148 4456 4470
+)
+"ocamlbuild/findlib.ml" 150 4508 4522 "ocamlbuild/findlib.ml" 150 4508 4523
+type(
+  Command.spec list
+)
+ident(
+  int_ref l "ocamlbuild/findlib.ml" 148 4456 4471 "ocamlbuild/findlib.ml" 148 4456 4472
+)
+"ocamlbuild/findlib.ml" 150 4508 4517 "ocamlbuild/findlib.ml" 150 4508 4523
+type(
+  Command.spec list
+)
+"ocamlbuild/findlib.ml" 148 4456 4475 "ocamlbuild/findlib.ml" 150 4508 4523
+type(
+  Command.spec list
+)
+"ocamlbuild/findlib.ml" 152 4525 4529 "ocamlbuild/findlib.ml" 152 4525 4542
+type(
+  package list -> Command.spec
+)
+ident(
+  def compile_flags "ocamlbuild/findlib.ml" 165 4890 4890 "ocamlbuild/findlib.ml" 1 0 -1
+)
+"ocamlbuild/findlib.ml" 152 4525 4543 "ocamlbuild/findlib.ml" 152 4525 4544
+type(
+  package list
+)
+ident(
+  def l "ocamlbuild/findlib.ml" 153 4547 4549 "ocamlbuild/findlib.ml" 164 4869 4889
+)
+"ocamlbuild/findlib.ml" 153 4547 4553 "ocamlbuild/findlib.ml" 153 4547 4557
+type(
+  package list
+)
+ident(
+  def pkgs "ocamlbuild/findlib.ml" 154 4585 4587 "ocamlbuild/findlib.ml" 164 4869 4889
+)
+"ocamlbuild/findlib.ml" 153 4547 4560 "ocamlbuild/findlib.ml" 153 4547 4579
+type(
+  package list -> package list
+)
+ident(
+  int_ref topological_closure "ocamlbuild/findlib.ml" 139 4220 4224 "ocamlbuild/findlib.ml" 139 4220 4243
+)
+"ocamlbuild/findlib.ml" 153 4547 4580 "ocamlbuild/findlib.ml" 153 4547 4581
+type(
+  package list
+)
+ident(
+  int_ref l "ocamlbuild/findlib.ml" 152 4525 4543 "ocamlbuild/findlib.ml" 152 4525 4544
+)
+"ocamlbuild/findlib.ml" 153 4547 4560 "ocamlbuild/findlib.ml" 153 4547 4581
+call(
+  stack
+)
+type(
+  package list
+)
+"ocamlbuild/findlib.ml" 154 4585 4591 "ocamlbuild/findlib.ml" 154 4585 4600
+type(
+  SSet.t
+)
+ident(
+  def locations "ocamlbuild/findlib.ml" 157 4690 4692 "ocamlbuild/findlib.ml" 164 4869 4889
+)
+"ocamlbuild/findlib.ml" 154 4585 4603 "ocamlbuild/findlib.ml" 154 4585 4617
+type(
+  (SSet.t -> package -> SSet.t) -> SSet.t -> package list -> SSet.t
+)
+ident(
+  ext_ref My_std.List.fold_left
+)
+"ocamlbuild/findlib.ml" 154 4585 4628 "ocamlbuild/findlib.ml" 154 4585 4631
+type(
+  SSet.t
+)
+ident(
+  def acc "ocamlbuild/findlib.ml" 154 4585 4632 "ocamlbuild/findlib.ml" 155 4637 4664
+)
+"ocamlbuild/findlib.ml" 154 4585 4632 "ocamlbuild/findlib.ml" 154 4585 4633
+type(
+  package
+)
+ident(
+  def p "ocamlbuild/findlib.ml" 155 4637 4641 "ocamlbuild/findlib.ml" 155 4637 4664
+)
+"ocamlbuild/findlib.ml" 155 4637 4641 "ocamlbuild/findlib.ml" 155 4637 4649
+type(
+  SSet.elt -> SSet.t -> SSet.t
+)
+ident(
+  ext_ref SSet.add
+)
+"ocamlbuild/findlib.ml" 155 4637 4650 "ocamlbuild/findlib.ml" 155 4637 4651
+type(
+  package
+)
+ident(
+  int_ref p "ocamlbuild/findlib.ml" 154 4585 4632 "ocamlbuild/findlib.ml" 154 4585 4633
+)
+"ocamlbuild/findlib.ml" 155 4637 4650 "ocamlbuild/findlib.ml" 155 4637 4660
+type(
+  SSet.elt
+)
+"ocamlbuild/findlib.ml" 155 4637 4661 "ocamlbuild/findlib.ml" 155 4637 4664
+type(
+  SSet.t
+)
+ident(
+  int_ref acc "ocamlbuild/findlib.ml" 154 4585 4628 "ocamlbuild/findlib.ml" 154 4585 4631
+)
+"ocamlbuild/findlib.ml" 155 4637 4641 "ocamlbuild/findlib.ml" 155 4637 4664
+call(
+  tail
+)
+type(
+  SSet.t
+)
+"ocamlbuild/findlib.ml" 154 4585 4618 "ocamlbuild/findlib.ml" 156 4665 4670
+type(
+  SSet.t -> package -> SSet.t
+)
+"ocamlbuild/findlib.ml" 156 4665 4671 "ocamlbuild/findlib.ml" 156 4665 4681
+type(
+  SSet.t
+)
+ident(
+  ext_ref SSet.empty
+)
+"ocamlbuild/findlib.ml" 156 4665 4682 "ocamlbuild/findlib.ml" 156 4665 4686
+type(
+  package list
+)
+ident(
+  int_ref pkgs "ocamlbuild/findlib.ml" 153 4547 4553 "ocamlbuild/findlib.ml" 153 4547 4557
+)
+"ocamlbuild/findlib.ml" 154 4585 4603 "ocamlbuild/findlib.ml" 156 4665 4686
+call(
+  stack
+)
+type(
+  SSet.t
+)
+"ocamlbuild/findlib.ml" 157 4690 4696 "ocamlbuild/findlib.ml" 157 4690 4701
+type(
+  'a list
+)
+ident(
+  def flags "ocamlbuild/findlib.ml" 159 4727 4729 "ocamlbuild/findlib.ml" 164 4869 4889
+)
+"ocamlbuild/findlib.ml" 157 4690 4704 "ocamlbuild/findlib.ml" 157 4690 4706
+type(
+  'a list
+)
+"ocamlbuild/findlib.ml" 159 4727 4733 "ocamlbuild/findlib.ml" 159 4727 4738
+type(
+  Command.spec list
+)
+ident(
+  def flags "ocamlbuild/findlib.ml" 164 4869 4871 "ocamlbuild/findlib.ml" 164 4869 4889
+)
+"ocamlbuild/findlib.ml" 160 4741 4745 "ocamlbuild/findlib.ml" 160 4741 4759
+type(
+  (Command.spec list -> Command.pathname -> Command.spec list) ->
+  Command.spec list -> Command.pathname list -> Command.spec list
+)
+ident(
+  ext_ref My_std.List.fold_left
+)
+"ocamlbuild/findlib.ml" 160 4741 4770 "ocamlbuild/findlib.ml" 160 4741 4773
+type(
+  Command.spec list
+)
+ident(
+  def acc "ocamlbuild/findlib.ml" 160 4741 4774 "ocamlbuild/findlib.ml" 161 4779 4823
+)
+"ocamlbuild/findlib.ml" 160 4741 4774 "ocamlbuild/findlib.ml" 160 4741 4775
+type(
+  Command.pathname
+)
+ident(
+  def l "ocamlbuild/findlib.ml" 161 4779 4785 "ocamlbuild/findlib.ml" 161 4779 4823
+)
+"ocamlbuild/findlib.ml" 161 4779 4785 "ocamlbuild/findlib.ml" 161 4779 4793
+type(
+  Command.spec -> Command.spec list -> Command.spec list
+)
+ident(
+  int_ref add_atom "ocamlbuild/findlib.ml" 148 4456 4460 "ocamlbuild/findlib.ml" 148 4456 4468
+)
+"ocamlbuild/findlib.ml" 161 4779 4797 "ocamlbuild/findlib.ml" 161 4779 4798
+type(
+  Command.pathname
+)
+ident(
+  int_ref l "ocamlbuild/findlib.ml" 160 4741 4774 "ocamlbuild/findlib.ml" 160 4741 4775
+)
+"ocamlbuild/findlib.ml" 161 4779 4794 "ocamlbuild/findlib.ml" 161 4779 4799
+type(
+  Command.spec
+)
+"ocamlbuild/findlib.ml" 161 4779 4801 "ocamlbuild/findlib.ml" 161 4779 4809
+type(
+  Command.spec -> Command.spec list -> Command.spec list
+)
+ident(
+  int_ref add_atom "ocamlbuild/findlib.ml" 148 4456 4460 "ocamlbuild/findlib.ml" 148 4456 4468
+)
+"ocamlbuild/findlib.ml" 161 4779 4813 "ocamlbuild/findlib.ml" 161 4779 4817
+type(
+  string
+)
+"ocamlbuild/findlib.ml" 161 4779 4810 "ocamlbuild/findlib.ml" 161 4779 4818
+type(
+  Command.spec
+)
+"ocamlbuild/findlib.ml" 161 4779 4819 "ocamlbuild/findlib.ml" 161 4779 4822
+type(
+  Command.spec list
+)
+ident(
+  int_ref acc "ocamlbuild/findlib.ml" 160 4741 4770 "ocamlbuild/findlib.ml" 160 4741 4773
+)
+"ocamlbuild/findlib.ml" 161 4779 4800 "ocamlbuild/findlib.ml" 161 4779 4823
+call(
+  stack
+)
+type(
+  Command.spec list
+)
+"ocamlbuild/findlib.ml" 161 4779 4785 "ocamlbuild/findlib.ml" 161 4779 4823
+call(
+  tail
+)
+type(
+  Command.spec list
+)
+"ocamlbuild/findlib.ml" 160 4741 4760 "ocamlbuild/findlib.ml" 162 4824 4831
+type(
+  Command.spec list -> Command.pathname -> Command.spec list
+)
+"ocamlbuild/findlib.ml" 162 4824 4832 "ocamlbuild/findlib.ml" 162 4824 4837
+type(
+  Command.spec list
+)
+ident(
+  int_ref flags "ocamlbuild/findlib.ml" 157 4690 4696 "ocamlbuild/findlib.ml" 157 4690 4701
+)
+"ocamlbuild/findlib.ml" 162 4824 4839 "ocamlbuild/findlib.ml" 162 4824 4852
+type(
+  SSet.t -> Command.pathname list
+)
+ident(
+  ext_ref SSet.elements
+)
+"ocamlbuild/findlib.ml" 162 4824 4853 "ocamlbuild/findlib.ml" 162 4824 4862
+type(
+  SSet.t
+)
+ident(
+  int_ref locations "ocamlbuild/findlib.ml" 154 4585 4591 "ocamlbuild/findlib.ml" 154 4585 4600
+)
+"ocamlbuild/findlib.ml" 162 4824 4838 "ocamlbuild/findlib.ml" 162 4824 4863
+call(
+  stack
+)
+type(
+  Command.pathname list
+)
+"ocamlbuild/findlib.ml" 160 4741 4745 "ocamlbuild/findlib.ml" 162 4824 4863
+call(
+  stack
+)
+type(
+  Command.spec list
+)
+"ocamlbuild/findlib.ml" 164 4869 4874 "ocamlbuild/findlib.ml" 164 4869 4882
+type(
+  Command.spec list -> Command.spec list
+)
+ident(
+  ext_ref My_std.List.rev
+)
+"ocamlbuild/findlib.ml" 164 4869 4883 "ocamlbuild/findlib.ml" 164 4869 4888
+type(
+  Command.spec list
+)
+ident(
+  int_ref flags "ocamlbuild/findlib.ml" 159 4727 4733 "ocamlbuild/findlib.ml" 159 4727 4738
+)
+"ocamlbuild/findlib.ml" 164 4869 4873 "ocamlbuild/findlib.ml" 164 4869 4889
+call(
+  stack
+)
+type(
+  Command.spec list
+)
+"ocamlbuild/findlib.ml" 164 4869 4871 "ocamlbuild/findlib.ml" 164 4869 4889
+type(
+  Command.spec
+)
+"ocamlbuild/findlib.ml" 159 4727 4729 "ocamlbuild/findlib.ml" 164 4869 4889
+type(
+  Command.spec
+)
+"ocamlbuild/findlib.ml" 157 4690 4692 "ocamlbuild/findlib.ml" 164 4869 4889
+type(
+  Command.spec
+)
+"ocamlbuild/findlib.ml" 154 4585 4587 "ocamlbuild/findlib.ml" 164 4869 4889
+type(
+  Command.spec
+)
+"ocamlbuild/findlib.ml" 153 4547 4549 "ocamlbuild/findlib.ml" 164 4869 4889
+type(
+  Command.spec
+)
+"ocamlbuild/findlib.ml" 165 4890 4894 "ocamlbuild/findlib.ml" 165 4890 4912
+type(
+  package list -> Command.spec
+)
+ident(
+  def compile_flags_byte "ocamlbuild/findlib.ml" 166 4929 4929 "ocamlbuild/findlib.ml" 1 0 -1
+)
+"ocamlbuild/findlib.ml" 165 4890 4915 "ocamlbuild/findlib.ml" 165 4890 4928
+type(
+  package list -> Command.spec
+)
+ident(
+  int_ref compile_flags "ocamlbuild/findlib.ml" 152 4525 4529 "ocamlbuild/findlib.ml" 152 4525 4542
+)
+"ocamlbuild/findlib.ml" 166 4929 4933 "ocamlbuild/findlib.ml" 166 4929 4953
+type(
+  package list -> Command.spec
+)
+ident(
+  def compile_flags_native "ocamlbuild/findlib.ml" 168 4971 4971 "ocamlbuild/findlib.ml" 1 0 -1
+)
+"ocamlbuild/findlib.ml" 166 4929 4956 "ocamlbuild/findlib.ml" 166 4929 4969
+type(
+  package list -> Command.spec
+)
+ident(
+  int_ref compile_flags "ocamlbuild/findlib.ml" 152 4525 4529 "ocamlbuild/findlib.ml" 152 4525 4542
+)
+"ocamlbuild/findlib.ml" 168 4971 4975 "ocamlbuild/findlib.ml" 168 4971 4985
+type(
+  (package -> string) -> package list -> Command.spec
+)
+ident(
+  def link_flags "ocamlbuild/findlib.ml" 193 5600 5600 "ocamlbuild/findlib.ml" 1 0 -1
+)
+"ocamlbuild/findlib.ml" 168 4971 4986 "ocamlbuild/findlib.ml" 168 4971 4987
+type(
+  package -> string
+)
+ident(
+  def f "ocamlbuild/findlib.ml" 168 4971 4988 "ocamlbuild/findlib.ml" 192 5579 5599
+)
+"ocamlbuild/findlib.ml" 168 4971 4988 "ocamlbuild/findlib.ml" 168 4971 4989
+type(
+  package list
+)
+ident(
+  def l "ocamlbuild/findlib.ml" 169 4992 4994 "ocamlbuild/findlib.ml" 192 5579 5599
+)
+"ocamlbuild/findlib.ml" 169 4992 4998 "ocamlbuild/findlib.ml" 169 4992 5002
+type(
+  package list
+)
+ident(
+  def pkgs "ocamlbuild/findlib.ml" 170 5030 5032 "ocamlbuild/findlib.ml" 192 5579 5599
+)
+"ocamlbuild/findlib.ml" 169 4992 5005 "ocamlbuild/findlib.ml" 169 4992 5024
+type(
+  package list -> package list
+)
+ident(
+  int_ref topological_closure "ocamlbuild/findlib.ml" 139 4220 4224 "ocamlbuild/findlib.ml" 139 4220 4243
+)
+"ocamlbuild/findlib.ml" 169 4992 5025 "ocamlbuild/findlib.ml" 169 4992 5026
+type(
+  package list
+)
+ident(
+  int_ref l "ocamlbuild/findlib.ml" 168 4971 4988 "ocamlbuild/findlib.ml" 168 4971 4989
+)
+"ocamlbuild/findlib.ml" 169 4992 5005 "ocamlbuild/findlib.ml" 169 4992 5026
+call(
+  stack
+)
+type(
+  package list
+)
+"ocamlbuild/findlib.ml" 170 5030 5036 "ocamlbuild/findlib.ml" 170 5030 5045
+type(
+  SSet.t
+)
+ident(
+  def locations "ocamlbuild/findlib.ml" 173 5135 5137 "ocamlbuild/findlib.ml" 192 5579 5599
+)
+"ocamlbuild/findlib.ml" 170 5030 5048 "ocamlbuild/findlib.ml" 170 5030 5062
+type(
+  (SSet.t -> package -> SSet.t) -> SSet.t -> package list -> SSet.t
+)
+ident(
+  ext_ref My_std.List.fold_left
+)
+"ocamlbuild/findlib.ml" 170 5030 5073 "ocamlbuild/findlib.ml" 170 5030 5076
+type(
+  SSet.t
+)
+ident(
+  def acc "ocamlbuild/findlib.ml" 170 5030 5077 "ocamlbuild/findlib.ml" 171 5082 5109
+)
+"ocamlbuild/findlib.ml" 170 5030 5077 "ocamlbuild/findlib.ml" 170 5030 5078
+type(
+  package
+)
+ident(
+  def p "ocamlbuild/findlib.ml" 171 5082 5086 "ocamlbuild/findlib.ml" 171 5082 5109
+)
+"ocamlbuild/findlib.ml" 171 5082 5086 "ocamlbuild/findlib.ml" 171 5082 5094
+type(
+  SSet.elt -> SSet.t -> SSet.t
+)
+ident(
+  ext_ref SSet.add
+)
+"ocamlbuild/findlib.ml" 171 5082 5095 "ocamlbuild/findlib.ml" 171 5082 5096
+type(
+  package
+)
+ident(
+  int_ref p "ocamlbuild/findlib.ml" 170 5030 5077 "ocamlbuild/findlib.ml" 170 5030 5078
+)
+"ocamlbuild/findlib.ml" 171 5082 5095 "ocamlbuild/findlib.ml" 171 5082 5105
+type(
+  SSet.elt
+)
+"ocamlbuild/findlib.ml" 171 5082 5106 "ocamlbuild/findlib.ml" 171 5082 5109
+type(
+  SSet.t
+)
+ident(
+  int_ref acc "ocamlbuild/findlib.ml" 170 5030 5073 "ocamlbuild/findlib.ml" 170 5030 5076
+)
+"ocamlbuild/findlib.ml" 171 5082 5086 "ocamlbuild/findlib.ml" 171 5082 5109
+call(
+  tail
+)
+type(
+  SSet.t
+)
+"ocamlbuild/findlib.ml" 170 5030 5063 "ocamlbuild/findlib.ml" 172 5110 5115
+type(
+  SSet.t -> package -> SSet.t
+)
+"ocamlbuild/findlib.ml" 172 5110 5116 "ocamlbuild/findlib.ml" 172 5110 5126
+type(
+  SSet.t
+)
+ident(
+  ext_ref SSet.empty
+)
+"ocamlbuild/findlib.ml" 172 5110 5127 "ocamlbuild/findlib.ml" 172 5110 5131
+type(
+  package list
+)
+ident(
+  int_ref pkgs "ocamlbuild/findlib.ml" 169 4992 4998 "ocamlbuild/findlib.ml" 169 4992 5002
+)
+"ocamlbuild/findlib.ml" 170 5030 5048 "ocamlbuild/findlib.ml" 172 5110 5131
+call(
+  stack
+)
+type(
+  SSet.t
+)
+"ocamlbuild/findlib.ml" 173 5135 5141 "ocamlbuild/findlib.ml" 173 5135 5146
+type(
+  'a list
+)
+ident(
+  def flags "ocamlbuild/findlib.ml" 175 5172 5174 "ocamlbuild/findlib.ml" 192 5579 5599
+)
+"ocamlbuild/findlib.ml" 173 5135 5149 "ocamlbuild/findlib.ml" 173 5135 5151
+type(
+  'a list
+)
+"ocamlbuild/findlib.ml" 175 5172 5178 "ocamlbuild/findlib.ml" 175 5172 5183
+type(
+  Command.spec list
+)
+ident(
+  def flags "ocamlbuild/findlib.ml" 181 5343 5345 "ocamlbuild/findlib.ml" 192 5579 5599
+)
+"ocamlbuild/findlib.ml" 176 5186 5190 "ocamlbuild/findlib.ml" 176 5186 5204
+type(
+  (Command.spec list -> Command.pathname -> Command.spec list) ->
+  Command.spec list -> Command.pathname list -> Command.spec list
+)
+ident(
+  ext_ref My_std.List.fold_left
+)
+"ocamlbuild/findlib.ml" 176 5186 5215 "ocamlbuild/findlib.ml" 176 5186 5218
+type(
+  Command.spec list
+)
+ident(
+  def acc "ocamlbuild/findlib.ml" 176 5186 5219 "ocamlbuild/findlib.ml" 177 5224 5268
+)
+"ocamlbuild/findlib.ml" 176 5186 5219 "ocamlbuild/findlib.ml" 176 5186 5220
+type(
+  Command.pathname
+)
+ident(
+  def l "ocamlbuild/findlib.ml" 177 5224 5230 "ocamlbuild/findlib.ml" 177 5224 5268
+)
+"ocamlbuild/findlib.ml" 177 5224 5230 "ocamlbuild/findlib.ml" 177 5224 5238
+type(
+  Command.spec -> Command.spec list -> Command.spec list
+)
+ident(
+  int_ref add_atom "ocamlbuild/findlib.ml" 148 4456 4460 "ocamlbuild/findlib.ml" 148 4456 4468
+)
+"ocamlbuild/findlib.ml" 177 5224 5242 "ocamlbuild/findlib.ml" 177 5224 5243
+type(
+  Command.pathname
+)
+ident(
+  int_ref l "ocamlbuild/findlib.ml" 176 5186 5219 "ocamlbuild/findlib.ml" 176 5186 5220
+)
+"ocamlbuild/findlib.ml" 177 5224 5239 "ocamlbuild/findlib.ml" 177 5224 5244
+type(
+  Command.spec
+)
+"ocamlbuild/findlib.ml" 177 5224 5246 "ocamlbuild/findlib.ml" 177 5224 5254
+type(
+  Command.spec -> Command.spec list -> Command.spec list
+)
+ident(
+  int_ref add_atom "ocamlbuild/findlib.ml" 148 4456 4460 "ocamlbuild/findlib.ml" 148 4456 4468
+)
+"ocamlbuild/findlib.ml" 177 5224 5258 "ocamlbuild/findlib.ml" 177 5224 5262
+type(
+  string
+)
+"ocamlbuild/findlib.ml" 177 5224 5255 "ocamlbuild/findlib.ml" 177 5224 5263
+type(
+  Command.spec
+)
+"ocamlbuild/findlib.ml" 177 5224 5264 "ocamlbuild/findlib.ml" 177 5224 5267
+type(
+  Command.spec list
+)
+ident(
+  int_ref acc "ocamlbuild/findlib.ml" 176 5186 5215 "ocamlbuild/findlib.ml" 176 5186 5218
+)
+"ocamlbuild/findlib.ml" 177 5224 5245 "ocamlbuild/findlib.ml" 177 5224 5268
+call(
+  stack
+)
+type(
+  Command.spec list
+)
+"ocamlbuild/findlib.ml" 177 5224 5230 "ocamlbuild/findlib.ml" 177 5224 5268
+call(
+  tail
+)
+type(
+  Command.spec list
+)
+"ocamlbuild/findlib.ml" 176 5186 5205 "ocamlbuild/findlib.ml" 178 5269 5276
+type(
+  Command.spec list -> Command.pathname -> Command.spec list
+)
+"ocamlbuild/findlib.ml" 178 5269 5277 "ocamlbuild/findlib.ml" 178 5269 5282
+type(
+  Command.spec list
+)
+ident(
+  int_ref flags "ocamlbuild/findlib.ml" 173 5135 5141 "ocamlbuild/findlib.ml" 173 5135 5146
+)
+"ocamlbuild/findlib.ml" 178 5269 5284 "ocamlbuild/findlib.ml" 178 5269 5297
+type(
+  SSet.t -> Command.pathname list
+)
+ident(
+  ext_ref SSet.elements
+)
+"ocamlbuild/findlib.ml" 178 5269 5298 "ocamlbuild/findlib.ml" 178 5269 5307
+type(
+  SSet.t
+)
+ident(
+  int_ref locations "ocamlbuild/findlib.ml" 170 5030 5036 "ocamlbuild/findlib.ml" 170 5030 5045
+)
+"ocamlbuild/findlib.ml" 178 5269 5283 "ocamlbuild/findlib.ml" 178 5269 5308
+call(
+  stack
+)
+type(
+  Command.pathname list
+)
+"ocamlbuild/findlib.ml" 176 5186 5190 "ocamlbuild/findlib.ml" 178 5269 5308
+call(
+  stack
+)
+type(
+  Command.spec list
+)
+"ocamlbuild/findlib.ml" 181 5343 5349 "ocamlbuild/findlib.ml" 181 5343 5354
+type(
+  Command.spec list
+)
+ident(
+  def flags "ocamlbuild/findlib.ml" 187 5474 5476 "ocamlbuild/findlib.ml" 192 5579 5599
+)
+"ocamlbuild/findlib.ml" 182 5357 5361 "ocamlbuild/findlib.ml" 182 5357 5375
+type(
+  (Command.spec list -> package -> Command.spec list) ->
+  Command.spec list -> package list -> Command.spec list
+)
+ident(
+  ext_ref My_std.List.fold_left
+)
+"ocamlbuild/findlib.ml" 182 5357 5386 "ocamlbuild/findlib.ml" 182 5357 5389
+type(
+  Command.spec list
+)
+ident(
+  def acc "ocamlbuild/findlib.ml" 182 5357 5390 "ocamlbuild/findlib.ml" 183 5395 5432
+)
+"ocamlbuild/findlib.ml" 182 5357 5390 "ocamlbuild/findlib.ml" 182 5357 5391
+type(
+  package
+)
+ident(
+  def x "ocamlbuild/findlib.ml" 183 5395 5401 "ocamlbuild/findlib.ml" 183 5395 5432
+)
+"ocamlbuild/findlib.ml" 183 5395 5401 "ocamlbuild/findlib.ml" 183 5395 5409
+type(
+  Command.spec -> Command.spec list -> Command.spec list
+)
+ident(
+  int_ref add_atom "ocamlbuild/findlib.ml" 148 4456 4460 "ocamlbuild/findlib.ml" 148 4456 4468
+)
+"ocamlbuild/findlib.ml" 183 5395 5413 "ocamlbuild/findlib.ml" 183 5395 5414
+type(
+  package
+)
+ident(
+  int_ref x "ocamlbuild/findlib.ml" 182 5357 5390 "ocamlbuild/findlib.ml" 182 5357 5391
+)
+"ocamlbuild/findlib.ml" 183 5395 5413 "ocamlbuild/findlib.ml" 183 5395 5427
+type(
+  string
+)
+"ocamlbuild/findlib.ml" 183 5395 5410 "ocamlbuild/findlib.ml" 183 5395 5428
+type(
+  Command.spec
+)
+"ocamlbuild/findlib.ml" 183 5395 5429 "ocamlbuild/findlib.ml" 183 5395 5432
+type(
+  Command.spec list
+)
+ident(
+  int_ref acc "ocamlbuild/findlib.ml" 182 5357 5386 "ocamlbuild/findlib.ml" 182 5357 5389
+)
+"ocamlbuild/findlib.ml" 183 5395 5401 "ocamlbuild/findlib.ml" 183 5395 5432
+call(
+  tail
+)
+type(
+  Command.spec list
+)
+"ocamlbuild/findlib.ml" 182 5357 5376 "ocamlbuild/findlib.ml" 184 5433 5440
+type(
+  Command.spec list -> package -> Command.spec list
+)
+"ocamlbuild/findlib.ml" 184 5433 5441 "ocamlbuild/findlib.ml" 184 5433 5446
+type(
+  Command.spec list
+)
+ident(
+  int_ref flags "ocamlbuild/findlib.ml" 175 5172 5178 "ocamlbuild/findlib.ml" 175 5172 5183
+)
+"ocamlbuild/findlib.ml" 184 5433 5447 "ocamlbuild/findlib.ml" 184 5433 5451
+type(
+  package list
+)
+ident(
+  int_ref pkgs "ocamlbuild/findlib.ml" 169 4992 4998 "ocamlbuild/findlib.ml" 169 4992 5002
+)
+"ocamlbuild/findlib.ml" 182 5357 5361 "ocamlbuild/findlib.ml" 184 5433 5451
+call(
+  stack
+)
+type(
+  Command.spec list
+)
+"ocamlbuild/findlib.ml" 187 5474 5480 "ocamlbuild/findlib.ml" 187 5474 5485
+type(
+  Command.spec list
+)
+ident(
+  def flags "ocamlbuild/findlib.ml" 192 5579 5581 "ocamlbuild/findlib.ml" 192 5579 5599
+)
+"ocamlbuild/findlib.ml" 188 5488 5492 "ocamlbuild/findlib.ml" 188 5488 5506
+type(
+  (Command.spec list -> package -> Command.spec list) ->
+  Command.spec list -> package list -> Command.spec list
+)
+ident(
+  ext_ref My_std.List.fold_left
+)
+"ocamlbuild/findlib.ml" 188 5488 5517 "ocamlbuild/findlib.ml" 188 5488 5520
+type(
+  Command.spec list
+)
+ident(
+  def acc "ocamlbuild/findlib.ml" 188 5488 5521 "ocamlbuild/findlib.ml" 189 5526 5554
+)
+"ocamlbuild/findlib.ml" 188 5488 5521 "ocamlbuild/findlib.ml" 188 5488 5522
+type(
+  package
+)
+ident(
+  def x "ocamlbuild/findlib.ml" 189 5526 5532 "ocamlbuild/findlib.ml" 189 5526 5554
+)
+"ocamlbuild/findlib.ml" 189 5526 5532 "ocamlbuild/findlib.ml" 189 5526 5540
+type(
+  Command.spec -> Command.spec list -> Command.spec list
+)
+ident(
+  int_ref add_atom "ocamlbuild/findlib.ml" 148 4456 4460 "ocamlbuild/findlib.ml" 148 4456 4468
+)
+"ocamlbuild/findlib.ml" 189 5526 5545 "ocamlbuild/findlib.ml" 189 5526 5546
+type(
+  package -> string
+)
+ident(
+  int_ref f "ocamlbuild/findlib.ml" 168 4971 4986 "ocamlbuild/findlib.ml" 168 4971 4987
+)
+"ocamlbuild/findlib.ml" 189 5526 5547 "ocamlbuild/findlib.ml" 189 5526 5548
+type(
+  package
+)
+ident(
+  int_ref x "ocamlbuild/findlib.ml" 188 5488 5521 "ocamlbuild/findlib.ml" 188 5488 5522
+)
+"ocamlbuild/findlib.ml" 189 5526 5544 "ocamlbuild/findlib.ml" 189 5526 5549
+call(
+  stack
+)
+type(
+  string
+)
+"ocamlbuild/findlib.ml" 189 5526 5541 "ocamlbuild/findlib.ml" 189 5526 5550
+type(
+  Command.spec
+)
+"ocamlbuild/findlib.ml" 189 5526 5551 "ocamlbuild/findlib.ml" 189 5526 5554
+type(
+  Command.spec list
+)
+ident(
+  int_ref acc "ocamlbuild/findlib.ml" 188 5488 5517 "ocamlbuild/findlib.ml" 188 5488 5520
+)
+"ocamlbuild/findlib.ml" 189 5526 5532 "ocamlbuild/findlib.ml" 189 5526 5554
+call(
+  tail
+)
+type(
+  Command.spec list
+)
+"ocamlbuild/findlib.ml" 188 5488 5507 "ocamlbuild/findlib.ml" 190 5555 5562
+type(
+  Command.spec list -> package -> Command.spec list
+)
+"ocamlbuild/findlib.ml" 190 5555 5563 "ocamlbuild/findlib.ml" 190 5555 5568
+type(
+  Command.spec list
+)
+ident(
+  int_ref flags "ocamlbuild/findlib.ml" 181 5343 5349 "ocamlbuild/findlib.ml" 181 5343 5354
+)
+"ocamlbuild/findlib.ml" 190 5555 5569 "ocamlbuild/findlib.ml" 190 5555 5573
+type(
+  package list
+)
+ident(
+  int_ref pkgs "ocamlbuild/findlib.ml" 169 4992 4998 "ocamlbuild/findlib.ml" 169 4992 5002
+)
+"ocamlbuild/findlib.ml" 188 5488 5492 "ocamlbuild/findlib.ml" 190 5555 5573
+call(
+  stack
+)
+type(
+  Command.spec list
+)
+"ocamlbuild/findlib.ml" 192 5579 5584 "ocamlbuild/findlib.ml" 192 5579 5592
+type(
+  Command.spec list -> Command.spec list
+)
+ident(
+  ext_ref My_std.List.rev
+)
+"ocamlbuild/findlib.ml" 192 5579 5593 "ocamlbuild/findlib.ml" 192 5579 5598
+type(
+  Command.spec list
+)
+ident(
+  int_ref flags "ocamlbuild/findlib.ml" 187 5474 5480 "ocamlbuild/findlib.ml" 187 5474 5485
+)
+"ocamlbuild/findlib.ml" 192 5579 5583 "ocamlbuild/findlib.ml" 192 5579 5599
+call(
+  stack
+)
+type(
+  Command.spec list
+)
+"ocamlbuild/findlib.ml" 192 5579 5581 "ocamlbuild/findlib.ml" 192 5579 5599
+type(
+  Command.spec
+)
+"ocamlbuild/findlib.ml" 187 5474 5476 "ocamlbuild/findlib.ml" 192 5579 5599
+type(
+  Command.spec
+)
+"ocamlbuild/findlib.ml" 181 5343 5345 "ocamlbuild/findlib.ml" 192 5579 5599
+type(
+  Command.spec
+)
+"ocamlbuild/findlib.ml" 175 5172 5174 "ocamlbuild/findlib.ml" 192 5579 5599
+type(
+  Command.spec
+)
+"ocamlbuild/findlib.ml" 173 5135 5137 "ocamlbuild/findlib.ml" 192 5579 5599
+type(
+  Command.spec
+)
+"ocamlbuild/findlib.ml" 170 5030 5032 "ocamlbuild/findlib.ml" 192 5579 5599
+type(
+  Command.spec
+)
+"ocamlbuild/findlib.ml" 169 4992 4994 "ocamlbuild/findlib.ml" 192 5579 5599
+type(
+  Command.spec
+)
+"ocamlbuild/findlib.ml" 193 5600 5604 "ocamlbuild/findlib.ml" 193 5600 5619
+type(
+  package list -> Command.spec
+)
+ident(
+  def link_flags_byte "ocamlbuild/findlib.ml" 194 5660 5660 "ocamlbuild/findlib.ml" 1 0 -1
+)
+"ocamlbuild/findlib.ml" 193 5600 5622 "ocamlbuild/findlib.ml" 193 5600 5632
+type(
+  (package -> string) -> package list -> Command.spec
+)
+ident(
+  int_ref link_flags "ocamlbuild/findlib.ml" 168 4971 4975 "ocamlbuild/findlib.ml" 168 4971 4985
+)
+"ocamlbuild/findlib.ml" 193 5600 5638 "ocamlbuild/findlib.ml" 193 5600 5639
+type(
+  package
+)
+ident(
+  def x "ocamlbuild/findlib.ml" 193 5600 5643 "ocamlbuild/findlib.ml" 193 5600 5658
+)
+"ocamlbuild/findlib.ml" 193 5600 5643 "ocamlbuild/findlib.ml" 193 5600 5644
+type(
+  package
+)
+ident(
+  int_ref x "ocamlbuild/findlib.ml" 193 5600 5638 "ocamlbuild/findlib.ml" 193 5600 5639
+)
+"ocamlbuild/findlib.ml" 193 5600 5643 "ocamlbuild/findlib.ml" 193 5600 5658
+type(
+  string
+)
+"ocamlbuild/findlib.ml" 193 5600 5633 "ocamlbuild/findlib.ml" 193 5600 5659
+type(
+  package -> string
+)
+"ocamlbuild/findlib.ml" 193 5600 5622 "ocamlbuild/findlib.ml" 193 5600 5659
+call(
+  stack
+)
+type(
+  package list -> Command.spec
+)
+"ocamlbuild/findlib.ml" 194 5660 5664 "ocamlbuild/findlib.ml" 194 5660 5681
+type(
+  package list -> Command.spec
+)
+ident(
+  def link_flags_native "ocamlbuild/findlib.ml" 194 5660 5723 "ocamlbuild/findlib.ml" 1 0 -1
+)
+"ocamlbuild/findlib.ml" 194 5660 5684 "ocamlbuild/findlib.ml" 194 5660 5694
+type(
+  (package -> string) -> package list -> Command.spec
+)
+ident(
+  int_ref link_flags "ocamlbuild/findlib.ml" 168 4971 4975 "ocamlbuild/findlib.ml" 168 4971 4985
+)
+"ocamlbuild/findlib.ml" 194 5660 5700 "ocamlbuild/findlib.ml" 194 5660 5701
+type(
+  package
+)
+ident(
+  def x "ocamlbuild/findlib.ml" 194 5660 5705 "ocamlbuild/findlib.ml" 194 5660 5722
+)
+"ocamlbuild/findlib.ml" 194 5660 5705 "ocamlbuild/findlib.ml" 194 5660 5706
+type(
+  package
+)
+ident(
+  int_ref x "ocamlbuild/findlib.ml" 194 5660 5700 "ocamlbuild/findlib.ml" 194 5660 5701
+)
+"ocamlbuild/findlib.ml" 194 5660 5705 "ocamlbuild/findlib.ml" 194 5660 5722
+type(
+  string
+)
+"ocamlbuild/findlib.ml" 194 5660 5695 "ocamlbuild/findlib.ml" 194 5660 5723
+type(
+  package -> string
+)
+"ocamlbuild/findlib.ml" 194 5660 5684 "ocamlbuild/findlib.ml" 194 5660 5723
+call(
+  stack
+)
+type(
+  package list -> Command.spec
+)

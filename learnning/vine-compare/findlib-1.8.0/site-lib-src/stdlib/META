@@ -1,0 +1,9 @@
+# Specifications for the standard library:
+# (Only included because of findlib-browser)
+requires = ""
+description = "Standard library"
+version = "[distributed with Ocaml]"
+directory = "^"
+browse_interfaces = " Unit name: Arg Unit name: Array Unit name: ArrayLabels Unit name: Buffer Unit name: Bytes Unit name: BytesLabels Unit name: Callback Unit name: CamlinternalFormat Unit name: CamlinternalFormatBasics Unit name: CamlinternalLazy Unit name: CamlinternalMod Unit name: CamlinternalOO Unit name: Char Unit name: Complex Unit name: Digest Unit name: Filename Unit name: Format Unit name: Gc Unit name: Genlex Unit name: Hashtbl Unit name: Int32 Unit name: Int64 Unit name: Lazy Unit name: Lexing Unit name: List Unit name: ListLabels Unit name: Map Unit name: Marshal Unit name: MoreLabels Unit name: Nativeint Unit name: Obj Unit name: Oo Unit name: Parsing Unit name: Pervasives Unit name: Printexc Unit name: Printf Unit name: Queue Unit name: Random Unit name: Scanf Unit name: Set Unit name: Sort Unit name: Stack Unit name: StdLabels Unit name: Stream Unit name: String Unit name: StringLabels Unit name: Sys Unit name: Weak "
+
+

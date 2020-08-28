@@ -1,0 +1,633 @@
+"ocamlbuild/bool.ml" 19 979 987 "ocamlbuild/bool.ml" 19 979 991
+type(
+  ('a -> bool) -> 'a boolean -> bool
+)
+ident(
+  def eval "ocamlbuild/bool.ml" 19 979 979 "ocamlbuild/bool.ml" 1 0 -1
+)
+"ocamlbuild/bool.ml" 19 979 992 "ocamlbuild/bool.ml" 19 979 993
+type(
+  'a -> bool
+)
+ident(
+  def f "ocamlbuild/bool.ml" 19 979 996 "ocamlbuild/bool.ml" 25 1140 1158
+)
+"ocamlbuild/bool.ml" 20 1005 1013 "ocamlbuild/bool.ml" 20 1005 1014
+type(
+  'a boolean list
+)
+ident(
+  def l "ocamlbuild/bool.ml" 20 1005 1018 "ocamlbuild/bool.ml" 20 1005 1041
+)
+"ocamlbuild/bool.ml" 20 1005 1009 "ocamlbuild/bool.ml" 20 1005 1014
+type(
+  'a boolean
+)
+"ocamlbuild/bool.ml" 20 1005 1018 "ocamlbuild/bool.ml" 20 1005 1030
+type(
+  ('a boolean -> bool) -> 'a boolean list -> bool
+)
+ident(
+  ext_ref List.for_all
+)
+"ocamlbuild/bool.ml" 20 1005 1032 "ocamlbuild/bool.ml" 20 1005 1036
+type(
+  ('a -> bool) -> 'a boolean -> bool
+)
+ident(
+  int_ref eval "ocamlbuild/bool.ml" 19 979 987 "ocamlbuild/bool.ml" 19 979 991
+)
+"ocamlbuild/bool.ml" 20 1005 1037 "ocamlbuild/bool.ml" 20 1005 1038
+type(
+  'a -> bool
+)
+ident(
+  int_ref f "ocamlbuild/bool.ml" 19 979 992 "ocamlbuild/bool.ml" 19 979 993
+)
+"ocamlbuild/bool.ml" 20 1005 1031 "ocamlbuild/bool.ml" 20 1005 1039
+call(
+  stack
+)
+type(
+  'a boolean -> bool
+)
+"ocamlbuild/bool.ml" 20 1005 1040 "ocamlbuild/bool.ml" 20 1005 1041
+type(
+  'a boolean list
+)
+ident(
+  int_ref l "ocamlbuild/bool.ml" 20 1005 1013 "ocamlbuild/bool.ml" 20 1005 1014
+)
+"ocamlbuild/bool.ml" 20 1005 1018 "ocamlbuild/bool.ml" 20 1005 1041
+call(
+  tail
+)
+type(
+  bool
+)
+"ocamlbuild/bool.ml" 21 1042 1049 "ocamlbuild/bool.ml" 21 1042 1050
+type(
+  'a boolean list
+)
+ident(
+  def l "ocamlbuild/bool.ml" 21 1042 1054 "ocamlbuild/bool.ml" 21 1042 1076
+)
+"ocamlbuild/bool.ml" 21 1042 1046 "ocamlbuild/bool.ml" 21 1042 1050
+type(
+  'a boolean
+)
+"ocamlbuild/bool.ml" 21 1042 1054 "ocamlbuild/bool.ml" 21 1042 1065
+type(
+  ('a boolean -> bool) -> 'a boolean list -> bool
+)
+ident(
+  ext_ref List.exists
+)
+"ocamlbuild/bool.ml" 21 1042 1067 "ocamlbuild/bool.ml" 21 1042 1071
+type(
+  ('a -> bool) -> 'a boolean -> bool
+)
+ident(
+  int_ref eval "ocamlbuild/bool.ml" 19 979 987 "ocamlbuild/bool.ml" 19 979 991
+)
+"ocamlbuild/bool.ml" 21 1042 1072 "ocamlbuild/bool.ml" 21 1042 1073
+type(
+  'a -> bool
+)
+ident(
+  int_ref f "ocamlbuild/bool.ml" 19 979 992 "ocamlbuild/bool.ml" 19 979 993
+)
+"ocamlbuild/bool.ml" 21 1042 1066 "ocamlbuild/bool.ml" 21 1042 1074
+call(
+  stack
+)
+type(
+  'a boolean -> bool
+)
+"ocamlbuild/bool.ml" 21 1042 1075 "ocamlbuild/bool.ml" 21 1042 1076
+type(
+  'a boolean list
+)
+ident(
+  int_ref l "ocamlbuild/bool.ml" 21 1042 1049 "ocamlbuild/bool.ml" 21 1042 1050
+)
+"ocamlbuild/bool.ml" 21 1042 1054 "ocamlbuild/bool.ml" 21 1042 1076
+call(
+  tail
+)
+type(
+  bool
+)
+"ocamlbuild/bool.ml" 22 1077 1085 "ocamlbuild/bool.ml" 22 1077 1086
+type(
+  'a boolean
+)
+ident(
+  def x "ocamlbuild/bool.ml" 22 1077 1090 "ocamlbuild/bool.ml" 22 1077 1104
+)
+"ocamlbuild/bool.ml" 22 1077 1081 "ocamlbuild/bool.ml" 22 1077 1086
+type(
+  'a boolean
+)
+"ocamlbuild/bool.ml" 22 1077 1090 "ocamlbuild/bool.ml" 22 1077 1093
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"ocamlbuild/bool.ml" 22 1077 1095 "ocamlbuild/bool.ml" 22 1077 1099
+type(
+  ('a -> bool) -> 'a boolean -> bool
+)
+ident(
+  int_ref eval "ocamlbuild/bool.ml" 19 979 987 "ocamlbuild/bool.ml" 19 979 991
+)
+"ocamlbuild/bool.ml" 22 1077 1100 "ocamlbuild/bool.ml" 22 1077 1101
+type(
+  'a -> bool
+)
+ident(
+  int_ref f "ocamlbuild/bool.ml" 19 979 992 "ocamlbuild/bool.ml" 19 979 993
+)
+"ocamlbuild/bool.ml" 22 1077 1102 "ocamlbuild/bool.ml" 22 1077 1103
+type(
+  'a boolean
+)
+ident(
+  int_ref x "ocamlbuild/bool.ml" 22 1077 1085 "ocamlbuild/bool.ml" 22 1077 1086
+)
+"ocamlbuild/bool.ml" 22 1077 1094 "ocamlbuild/bool.ml" 22 1077 1104
+call(
+  stack
+)
+type(
+  bool
+)
+"ocamlbuild/bool.ml" 22 1077 1090 "ocamlbuild/bool.ml" 22 1077 1104
+type(
+  bool
+)
+"ocamlbuild/bool.ml" 23 1105 1114 "ocamlbuild/bool.ml" 23 1105 1115
+type(
+  'a
+)
+ident(
+  def a "ocamlbuild/bool.ml" 23 1105 1119 "ocamlbuild/bool.ml" 23 1105 1122
+)
+"ocamlbuild/bool.ml" 23 1105 1109 "ocamlbuild/bool.ml" 23 1105 1115
+type(
+  'a boolean
+)
+"ocamlbuild/bool.ml" 23 1105 1119 "ocamlbuild/bool.ml" 23 1105 1120
+type(
+  'a -> bool
+)
+ident(
+  int_ref f "ocamlbuild/bool.ml" 19 979 992 "ocamlbuild/bool.ml" 19 979 993
+)
+"ocamlbuild/bool.ml" 23 1105 1121 "ocamlbuild/bool.ml" 23 1105 1122
+type(
+  'a
+)
+ident(
+  int_ref a "ocamlbuild/bool.ml" 23 1105 1114 "ocamlbuild/bool.ml" 23 1105 1115
+)
+"ocamlbuild/bool.ml" 23 1105 1119 "ocamlbuild/bool.ml" 23 1105 1122
+call(
+  tail
+)
+type(
+  bool
+)
+"ocamlbuild/bool.ml" 24 1123 1127 "ocamlbuild/bool.ml" 24 1123 1131
+type(
+  'a boolean
+)
+"ocamlbuild/bool.ml" 24 1123 1135 "ocamlbuild/bool.ml" 24 1123 1139
+type(
+  bool
+)
+"ocamlbuild/bool.ml" 25 1140 1144 "ocamlbuild/bool.ml" 25 1140 1149
+type(
+  'a boolean
+)
+"ocamlbuild/bool.ml" 25 1140 1153 "ocamlbuild/bool.ml" 25 1140 1158
+type(
+  bool
+)
+"ocamlbuild/bool.ml" 19 979 996 "ocamlbuild/bool.ml" 25 1140 1158
+type(
+  'a boolean -> bool
+)
+"ocamlbuild/bool.ml" 27 1162 1170 "ocamlbuild/bool.ml" 27 1162 1174
+type(
+  ('a -> unit) -> 'a boolean -> unit
+)
+ident(
+  def iter "ocamlbuild/bool.ml" 27 1162 1162 "ocamlbuild/bool.ml" 1 0 -1
+)
+"ocamlbuild/bool.ml" 27 1162 1175 "ocamlbuild/bool.ml" 27 1162 1176
+type(
+  'a -> unit
+)
+ident(
+  def f "ocamlbuild/bool.ml" 27 1162 1179 "ocamlbuild/bool.ml" 31 1269 1289
+)
+"ocamlbuild/bool.ml" 28 1188 1197 "ocamlbuild/bool.ml" 28 1188 1198
+type(
+  'a boolean list
+)
+ident(
+  def l "ocamlbuild/bool.ml" 28 1188 1208 "ocamlbuild/bool.ml" 28 1188 1228
+)
+"ocamlbuild/bool.ml" 28 1188 1193 "ocamlbuild/bool.ml" 28 1188 1198
+type(
+  'a boolean
+)
+"ocamlbuild/bool.ml" 28 1188 1202 "ocamlbuild/bool.ml" 28 1188 1203
+type(
+  'a boolean list
+)
+ident(
+  def l "ocamlbuild/bool.ml" 28 1188 1208 "ocamlbuild/bool.ml" 28 1188 1228
+)
+"ocamlbuild/bool.ml" 28 1188 1199 "ocamlbuild/bool.ml" 28 1188 1203
+type(
+  'a boolean
+)
+"ocamlbuild/bool.ml" 28 1188 1192 "ocamlbuild/bool.ml" 28 1188 1204
+type(
+  'a boolean
+)
+"ocamlbuild/bool.ml" 28 1188 1208 "ocamlbuild/bool.ml" 28 1188 1217
+type(
+  ('a boolean -> unit) -> 'a boolean list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"ocamlbuild/bool.ml" 28 1188 1219 "ocamlbuild/bool.ml" 28 1188 1223
+type(
+  ('a -> unit) -> 'a boolean -> unit
+)
+ident(
+  int_ref iter "ocamlbuild/bool.ml" 27 1162 1170 "ocamlbuild/bool.ml" 27 1162 1174
+)
+"ocamlbuild/bool.ml" 28 1188 1224 "ocamlbuild/bool.ml" 28 1188 1225
+type(
+  'a -> unit
+)
+ident(
+  int_ref f "ocamlbuild/bool.ml" 27 1162 1175 "ocamlbuild/bool.ml" 27 1162 1176
+)
+"ocamlbuild/bool.ml" 28 1188 1218 "ocamlbuild/bool.ml" 28 1188 1226
+call(
+  stack
+)
+type(
+  'a boolean -> unit
+)
+"ocamlbuild/bool.ml" 28 1188 1227 "ocamlbuild/bool.ml" 28 1188 1228
+type(
+  'a boolean list
+)
+ident(
+  int_ref l "ocamlbuild/bool.ml" 28 1188 1197 "ocamlbuild/bool.ml" 28 1188 1198
+)
+"ocamlbuild/bool.ml" 28 1188 1208 "ocamlbuild/bool.ml" 28 1188 1228
+call(
+  tail
+)
+type(
+  unit
+)
+"ocamlbuild/bool.ml" 29 1229 1237 "ocamlbuild/bool.ml" 29 1229 1238
+type(
+  'a boolean
+)
+ident(
+  def x "ocamlbuild/bool.ml" 29 1229 1242 "ocamlbuild/bool.ml" 29 1229 1250
+)
+"ocamlbuild/bool.ml" 29 1229 1233 "ocamlbuild/bool.ml" 29 1229 1238
+type(
+  'a boolean
+)
+"ocamlbuild/bool.ml" 29 1229 1242 "ocamlbuild/bool.ml" 29 1229 1246
+type(
+  ('a -> unit) -> 'a boolean -> unit
+)
+ident(
+  int_ref iter "ocamlbuild/bool.ml" 27 1162 1170 "ocamlbuild/bool.ml" 27 1162 1174
+)
+"ocamlbuild/bool.ml" 29 1229 1247 "ocamlbuild/bool.ml" 29 1229 1248
+type(
+  'a -> unit
+)
+ident(
+  int_ref f "ocamlbuild/bool.ml" 27 1162 1175 "ocamlbuild/bool.ml" 27 1162 1176
+)
+"ocamlbuild/bool.ml" 29 1229 1249 "ocamlbuild/bool.ml" 29 1229 1250
+type(
+  'a boolean
+)
+ident(
+  int_ref x "ocamlbuild/bool.ml" 29 1229 1237 "ocamlbuild/bool.ml" 29 1229 1238
+)
+"ocamlbuild/bool.ml" 29 1229 1242 "ocamlbuild/bool.ml" 29 1229 1250
+call(
+  tail
+)
+type(
+  unit
+)
+"ocamlbuild/bool.ml" 30 1251 1260 "ocamlbuild/bool.ml" 30 1251 1261
+type(
+  'a
+)
+ident(
+  def a "ocamlbuild/bool.ml" 30 1251 1265 "ocamlbuild/bool.ml" 30 1251 1268
+)
+"ocamlbuild/bool.ml" 30 1251 1255 "ocamlbuild/bool.ml" 30 1251 1261
+type(
+  'a boolean
+)
+"ocamlbuild/bool.ml" 30 1251 1265 "ocamlbuild/bool.ml" 30 1251 1266
+type(
+  'a -> unit
+)
+ident(
+  int_ref f "ocamlbuild/bool.ml" 27 1162 1175 "ocamlbuild/bool.ml" 27 1162 1176
+)
+"ocamlbuild/bool.ml" 30 1251 1267 "ocamlbuild/bool.ml" 30 1251 1268
+type(
+  'a
+)
+ident(
+  int_ref a "ocamlbuild/bool.ml" 30 1251 1260 "ocamlbuild/bool.ml" 30 1251 1261
+)
+"ocamlbuild/bool.ml" 30 1251 1265 "ocamlbuild/bool.ml" 30 1251 1268
+call(
+  tail
+)
+type(
+  unit
+)
+"ocamlbuild/bool.ml" 31 1269 1273 "ocamlbuild/bool.ml" 31 1269 1277
+type(
+  'a boolean
+)
+"ocamlbuild/bool.ml" 31 1269 1278 "ocamlbuild/bool.ml" 31 1269 1283
+type(
+  'a boolean
+)
+"ocamlbuild/bool.ml" 31 1269 1273 "ocamlbuild/bool.ml" 31 1269 1283
+type(
+  'a boolean
+)
+"ocamlbuild/bool.ml" 31 1269 1287 "ocamlbuild/bool.ml" 31 1269 1289
+type(
+  unit
+)
+"ocamlbuild/bool.ml" 27 1162 1179 "ocamlbuild/bool.ml" 31 1269 1289
+type(
+  'a boolean -> unit
+)
+"ocamlbuild/bool.ml" 33 1293 1301 "ocamlbuild/bool.ml" 33 1293 1304
+type(
+  ('a -> 'b) -> 'a boolean -> 'b boolean
+)
+ident(
+  def map "ocamlbuild/bool.ml" 33 1293 1293 "ocamlbuild/bool.ml" 1 0 -1
+)
+"ocamlbuild/bool.ml" 33 1293 1305 "ocamlbuild/bool.ml" 33 1293 1306
+type(
+  'a -> 'b
+)
+ident(
+  def f "ocamlbuild/bool.ml" 33 1293 1309 "ocamlbuild/bool.ml" 38 1440 1466
+)
+"ocamlbuild/bool.ml" 34 1318 1326 "ocamlbuild/bool.ml" 34 1318 1327
+type(
+  'a boolean list
+)
+ident(
+  def l "ocamlbuild/bool.ml" 34 1318 1331 "ocamlbuild/bool.ml" 34 1318 1354
+)
+"ocamlbuild/bool.ml" 34 1318 1322 "ocamlbuild/bool.ml" 34 1318 1327
+type(
+  'a boolean
+)
+"ocamlbuild/bool.ml" 34 1318 1335 "ocamlbuild/bool.ml" 34 1318 1343
+type(
+  ('a boolean -> 'b boolean) -> 'a boolean list -> 'b boolean list
+)
+ident(
+  ext_ref List.map
+)
+"ocamlbuild/bool.ml" 34 1318 1345 "ocamlbuild/bool.ml" 34 1318 1348
+type(
+  ('a -> 'b) -> 'a boolean -> 'b boolean
+)
+ident(
+  int_ref map "ocamlbuild/bool.ml" 33 1293 1301 "ocamlbuild/bool.ml" 33 1293 1304
+)
+"ocamlbuild/bool.ml" 34 1318 1349 "ocamlbuild/bool.ml" 34 1318 1350
+type(
+  'a -> 'b
+)
+ident(
+  int_ref f "ocamlbuild/bool.ml" 33 1293 1305 "ocamlbuild/bool.ml" 33 1293 1306
+)
+"ocamlbuild/bool.ml" 34 1318 1344 "ocamlbuild/bool.ml" 34 1318 1351
+call(
+  stack
+)
+type(
+  'a boolean -> 'b boolean
+)
+"ocamlbuild/bool.ml" 34 1318 1352 "ocamlbuild/bool.ml" 34 1318 1353
+type(
+  'a boolean list
+)
+ident(
+  int_ref l "ocamlbuild/bool.ml" 34 1318 1326 "ocamlbuild/bool.ml" 34 1318 1327
+)
+"ocamlbuild/bool.ml" 34 1318 1334 "ocamlbuild/bool.ml" 34 1318 1354
+call(
+  stack
+)
+type(
+  'b boolean list
+)
+"ocamlbuild/bool.ml" 34 1318 1331 "ocamlbuild/bool.ml" 34 1318 1354
+type(
+  'b boolean
+)
+"ocamlbuild/bool.ml" 35 1355 1362 "ocamlbuild/bool.ml" 35 1355 1363
+type(
+  'a boolean list
+)
+ident(
+  def l "ocamlbuild/bool.ml" 35 1355 1367 "ocamlbuild/bool.ml" 35 1355 1389
+)
+"ocamlbuild/bool.ml" 35 1355 1359 "ocamlbuild/bool.ml" 35 1355 1363
+type(
+  'a boolean
+)
+"ocamlbuild/bool.ml" 35 1355 1370 "ocamlbuild/bool.ml" 35 1355 1378
+type(
+  ('a boolean -> 'b boolean) -> 'a boolean list -> 'b boolean list
+)
+ident(
+  ext_ref List.map
+)
+"ocamlbuild/bool.ml" 35 1355 1380 "ocamlbuild/bool.ml" 35 1355 1383
+type(
+  ('a -> 'b) -> 'a boolean -> 'b boolean
+)
+ident(
+  int_ref map "ocamlbuild/bool.ml" 33 1293 1301 "ocamlbuild/bool.ml" 33 1293 1304
+)
+"ocamlbuild/bool.ml" 35 1355 1384 "ocamlbuild/bool.ml" 35 1355 1385
+type(
+  'a -> 'b
+)
+ident(
+  int_ref f "ocamlbuild/bool.ml" 33 1293 1305 "ocamlbuild/bool.ml" 33 1293 1306
+)
+"ocamlbuild/bool.ml" 35 1355 1379 "ocamlbuild/bool.ml" 35 1355 1386
+call(
+  stack
+)
+type(
+  'a boolean -> 'b boolean
+)
+"ocamlbuild/bool.ml" 35 1355 1387 "ocamlbuild/bool.ml" 35 1355 1388
+type(
+  'a boolean list
+)
+ident(
+  int_ref l "ocamlbuild/bool.ml" 35 1355 1362 "ocamlbuild/bool.ml" 35 1355 1363
+)
+"ocamlbuild/bool.ml" 35 1355 1369 "ocamlbuild/bool.ml" 35 1355 1389
+call(
+  stack
+)
+type(
+  'b boolean list
+)
+"ocamlbuild/bool.ml" 35 1355 1367 "ocamlbuild/bool.ml" 35 1355 1389
+type(
+  'b boolean
+)
+"ocamlbuild/bool.ml" 36 1390 1398 "ocamlbuild/bool.ml" 36 1390 1399
+type(
+  'a boolean
+)
+ident(
+  def x "ocamlbuild/bool.ml" 36 1390 1403 "ocamlbuild/bool.ml" 36 1390 1415
+)
+"ocamlbuild/bool.ml" 36 1390 1394 "ocamlbuild/bool.ml" 36 1390 1399
+type(
+  'a boolean
+)
+"ocamlbuild/bool.ml" 36 1390 1407 "ocamlbuild/bool.ml" 36 1390 1410
+type(
+  ('a -> 'b) -> 'a boolean -> 'b boolean
+)
+ident(
+  int_ref map "ocamlbuild/bool.ml" 33 1293 1301 "ocamlbuild/bool.ml" 33 1293 1304
+)
+"ocamlbuild/bool.ml" 36 1390 1411 "ocamlbuild/bool.ml" 36 1390 1412
+type(
+  'a -> 'b
+)
+ident(
+  int_ref f "ocamlbuild/bool.ml" 33 1293 1305 "ocamlbuild/bool.ml" 33 1293 1306
+)
+"ocamlbuild/bool.ml" 36 1390 1413 "ocamlbuild/bool.ml" 36 1390 1414
+type(
+  'a boolean
+)
+ident(
+  int_ref x "ocamlbuild/bool.ml" 36 1390 1398 "ocamlbuild/bool.ml" 36 1390 1399
+)
+"ocamlbuild/bool.ml" 36 1390 1406 "ocamlbuild/bool.ml" 36 1390 1415
+call(
+  stack
+)
+type(
+  'b boolean
+)
+"ocamlbuild/bool.ml" 36 1390 1403 "ocamlbuild/bool.ml" 36 1390 1415
+type(
+  'b boolean
+)
+"ocamlbuild/bool.ml" 37 1416 1425 "ocamlbuild/bool.ml" 37 1416 1426
+type(
+  'a
+)
+ident(
+  def a "ocamlbuild/bool.ml" 37 1416 1430 "ocamlbuild/bool.ml" 37 1416 1439
+)
+"ocamlbuild/bool.ml" 37 1416 1420 "ocamlbuild/bool.ml" 37 1416 1426
+type(
+  'a boolean
+)
+"ocamlbuild/bool.ml" 37 1416 1435 "ocamlbuild/bool.ml" 37 1416 1436
+type(
+  'a -> 'b
+)
+ident(
+  int_ref f "ocamlbuild/bool.ml" 33 1293 1305 "ocamlbuild/bool.ml" 33 1293 1306
+)
+"ocamlbuild/bool.ml" 37 1416 1437 "ocamlbuild/bool.ml" 37 1416 1438
+type(
+  'a
+)
+ident(
+  int_ref a "ocamlbuild/bool.ml" 37 1416 1425 "ocamlbuild/bool.ml" 37 1416 1426
+)
+"ocamlbuild/bool.ml" 37 1416 1434 "ocamlbuild/bool.ml" 37 1416 1439
+call(
+  stack
+)
+type(
+  'b
+)
+"ocamlbuild/bool.ml" 37 1416 1430 "ocamlbuild/bool.ml" 37 1416 1439
+type(
+  'b boolean
+)
+"ocamlbuild/bool.ml" 38 1440 1445 "ocamlbuild/bool.ml" 38 1440 1449
+type(
+  'a boolean
+)
+"ocamlbuild/bool.ml" 38 1440 1450 "ocamlbuild/bool.ml" 38 1440 1455
+type(
+  'a boolean
+)
+"ocamlbuild/bool.ml" 38 1440 1444 "ocamlbuild/bool.ml" 38 1440 1456
+type(
+  'a boolean
+)
+"ocamlbuild/bool.ml" 38 1440 1460 "ocamlbuild/bool.ml" 38 1440 1461
+ident(
+  def b "ocamlbuild/bool.ml" 38 1440 1465 "ocamlbuild/bool.ml" 38 1440 1466
+)
+"ocamlbuild/bool.ml" 38 1440 1444 "ocamlbuild/bool.ml" 38 1440 1461
+type(
+  'a boolean
+)
+"ocamlbuild/bool.ml" 38 1440 1465 "ocamlbuild/bool.ml" 38 1440 1466
+type(
+  'b boolean
+)
+ident(
+  int_ref b "ocamlbuild/bool.ml" 38 1440 1444 "ocamlbuild/bool.ml" 38 1440 1461
+)
+"ocamlbuild/bool.ml" 33 1293 1309 "ocamlbuild/bool.ml" 38 1440 1466
+type(
+  'a boolean -> 'b boolean
+)

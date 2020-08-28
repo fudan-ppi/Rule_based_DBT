@@ -1,0 +1,1062 @@
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 2 34 38 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 2 34 44
+type(
+  string
+)
+ident(
+  def prefix "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 3 62 62 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 2 34 47 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 2 34 59
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 3 62 66 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 3 62 72
+type(
+  string
+)
+ident(
+  def bindir "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 4 91 91 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 3 62 75 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 3 62 81
+type(
+  string
+)
+ident(
+  int_ref prefix "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 2 34 38 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 2 34 44
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 3 62 81 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 3 62 82
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 3 62 82 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 3 62 88
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 3 62 75 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 3 62 88
+call(
+  stack
+)
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 4 91 95 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 4 91 101
+type(
+  string
+)
+ident(
+  def libdir "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 5 126 126 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 4 91 104 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 4 91 110
+type(
+  string
+)
+ident(
+  int_ref prefix "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 2 34 38 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 2 34 44
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 4 91 110 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 4 91 111
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 4 91 111 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 4 91 123
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 4 91 104 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 4 91 123
+call(
+  stack
+)
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 5 126 130 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 5 126 140
+type(
+  string
+)
+ident(
+  def stublibdir "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 6 164 164 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 5 126 143 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 5 126 149
+type(
+  string
+)
+ident(
+  int_ref libdir "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 4 91 95 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 4 91 101
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 5 126 149 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 5 126 150
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 5 126 150 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 5 126 161
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 5 126 143 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 5 126 161
+call(
+  stack
+)
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 6 164 168 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 6 164 174
+type(
+  string
+)
+ident(
+  def mandir "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 7 193 193 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 6 164 177 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 6 164 183
+type(
+  string
+)
+ident(
+  int_ref prefix "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 2 34 38 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 2 34 44
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 6 164 183 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 6 164 184
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 6 164 184 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 6 164 190
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 6 164 177 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 6 164 190
+call(
+  stack
+)
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 7 193 197 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 7 193 203
+type(
+  string
+)
+ident(
+  def manext "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 8 212 212 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 7 193 206 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 7 193 209
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 8 212 216 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 8 212 222
+type(
+  string
+)
+ident(
+  def ranlib "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 9 236 236 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 8 212 225 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 8 212 233
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 9 236 240 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 9 236 249
+type(
+  string
+)
+ident(
+  def ranlibcmd "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 10 263 263 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 9 236 252 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 9 236 260
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 10 263 267 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 10 263 272
+type(
+  string
+)
+ident(
+  def arcmd "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 11 282 282 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 10 263 275 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 10 263 279
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 11 282 286 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 11 282 302
+type(
+  bool
+)
+ident(
+  def sharpbangscripts "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 12 312 312 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 11 282 305 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 11 282 309
+type(
+  bool
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 12 312 316 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 12 312 324
+type(
+  string
+)
+ident(
+  def bng_arch "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 13 336 336 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 12 312 327 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 12 312 333
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 13 336 340 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 13 336 353
+type(
+  string
+)
+ident(
+  def bng_asm_level "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 14 362 362 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 13 336 356 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 13 336 359
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 14 362 366 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 14 362 378
+type(
+  string
+)
+ident(
+  def pthread_link "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 15 402 402 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 14 362 381 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 14 362 399
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 15 402 406 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 15 402 418
+type(
+  string
+)
+ident(
+  def x11_includes "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 16 427 427 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 15 402 421 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 15 402 424
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 16 427 431 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 16 427 439
+type(
+  string
+)
+ident(
+  def x11_link "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 17 454 454 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 16 427 442 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 16 427 451
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 17 454 458 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 17 454 465
+type(
+  string
+)
+ident(
+  def tk_defs "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 18 529 529 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 17 454 468 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 17 454 513
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 17 454 513 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 17 454 514
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 17 454 514 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 17 454 526
+type(
+  string
+)
+ident(
+  int_ref x11_includes "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 15 402 406 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 15 402 418
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 17 454 468 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 17 454 526
+call(
+  stack
+)
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 18 529 533 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 18 529 540
+type(
+  string
+)
+ident(
+  def tk_link "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 19 581 581 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 18 529 543 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 18 529 569
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 18 529 569 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 18 529 570
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 18 529 570 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 18 529 578
+type(
+  string
+)
+ident(
+  int_ref x11_link "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 16 427 431 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 16 427 439
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 18 529 543 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 18 529 578
+call(
+  stack
+)
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 19 581 585 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 19 581 596
+type(
+  string
+)
+ident(
+  def libbfd_link "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 20 604 604 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 19 581 599 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 19 581 601
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 20 604 608 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 20 604 614
+type(
+  string
+)
+ident(
+  def bytecc "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 21 625 625 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 20 604 617 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 20 604 622
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 21 625 629 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 21 625 643
+type(
+  string
+)
+ident(
+  def bytecccompopts "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 22 707 707 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 21 625 646 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 21 625 704
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 22 707 711 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 22 707 725
+type(
+  string
+)
+ident(
+  def bytecclinkopts "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 23 740 740 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 22 707 728 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 22 707 737
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 23 740 744 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 23 740 754
+type(
+  string
+)
+ident(
+  def bytecclibs "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 24 791 791 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 23 740 757 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 23 740 788
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 24 791 795 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 24 791 806
+type(
+  string
+)
+ident(
+  def byteccrpath "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 25 825 825 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 24 791 809 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 24 791 822
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 25 825 829 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 25 825 832
+type(
+  string
+)
+ident(
+  def exe "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 26 840 840 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 25 825 835 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 25 825 837
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 26 840 844 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 26 840 869
+type(
+  bool
+)
+ident(
+  def supports_shared_libraries "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 27 879 879 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 26 840 872 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 26 840 876
+type(
+  bool
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 27 879 883 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 27 879 899
+type(
+  string
+)
+ident(
+  def sharedcccompopts "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 28 912 912 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 27 879 902 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 27 879 909
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 28 912 916 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 28 912 932
+type(
+  string
+)
+ident(
+  def mksharedlibrpath "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 29 951 951 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 28 912 935 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 28 912 948
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 29 951 955 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 29 951 969
+type(
+  string
+)
+ident(
+  def natdynlinkopts "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 31 1004 1004 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 29 951 972 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 29 951 980
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 31 1004 1008 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 31 1004 1014
+type(
+  string -> string
+)
+ident(
+  def syslib "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 35 1082 1082 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 31 1004 1015 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 31 1004 1016
+type(
+  string
+)
+ident(
+  def x "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 31 1004 1019 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 31 1004 1025
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 31 1004 1019 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 31 1004 1023
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 31 1004 1023 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 31 1004 1024
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 31 1004 1024 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 31 1004 1025
+type(
+  string
+)
+ident(
+  int_ref x "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 31 1004 1015 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 31 1004 1016
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 31 1004 1019 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 31 1004 1025
+call(
+  tail
+)
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 35 1082 1086 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 35 1082 1091
+type(
+  string -> string -> string -> string
+)
+ident(
+  def mklib "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 36 1173 1173 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 35 1082 1092 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 35 1082 1095
+type(
+  string
+)
+ident(
+  def out "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 35 1082 1096 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 35 1082 1170
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 35 1082 1096 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 35 1082 1101
+type(
+  string
+)
+ident(
+  def files "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 35 1082 1102 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 35 1082 1170
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 35 1082 1102 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 35 1082 1106
+type(
+  string
+)
+ident(
+  def opts "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 35 1082 1109 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 35 1082 1170
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 35 1082 1109 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 35 1082 1123
+type(
+  (string -> string -> string -> string -> string, unit, string) format ->
+  string -> string -> string -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 35 1082 1124 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 35 1082 1151
+type(
+  (string -> string -> string -> string -> string, unit, string) format
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 35 1082 1152 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 35 1082 1155
+type(
+  string
+)
+ident(
+  int_ref out "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 35 1082 1092 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 35 1082 1095
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 35 1082 1156 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 35 1082 1160
+type(
+  string
+)
+ident(
+  int_ref opts "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 35 1082 1102 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 35 1082 1106
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 35 1082 1161 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 35 1082 1166
+type(
+  string
+)
+ident(
+  int_ref files "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 35 1082 1096 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 35 1082 1101
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 35 1082 1167 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 35 1082 1170
+type(
+  string
+)
+ident(
+  int_ref out "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 35 1082 1092 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 35 1082 1095
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 35 1082 1109 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 35 1082 1170
+call(
+  tail
+)
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 36 1173 1177 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 36 1173 1181
+type(
+  string
+)
+ident(
+  def arch "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 37 1193 1193 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 36 1173 1184 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 36 1173 1190
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 37 1193 1197 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 37 1193 1202
+type(
+  string
+)
+ident(
+  def model "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 38 1217 1217 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 37 1193 1205 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 37 1193 1214
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 38 1217 1221 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 38 1217 1227
+type(
+  string
+)
+ident(
+  def system "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 39 1244 1244 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 38 1217 1230 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 38 1217 1241
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 39 1244 1248 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 39 1244 1256
+type(
+  string
+)
+ident(
+  def nativecc "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 40 1267 1267 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 39 1244 1259 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 39 1244 1264
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 40 1267 1271 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 40 1267 1287
+type(
+  string
+)
+ident(
+  def nativecccompopts "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 41 1336 1336 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 40 1267 1290 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 40 1267 1333
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 41 1336 1340 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 41 1336 1356
+type(
+  string
+)
+ident(
+  def nativeccprofopts "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 42 1405 1405 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 41 1336 1359 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 41 1336 1402
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 42 1405 1409 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 42 1405 1425
+type(
+  string
+)
+ident(
+  def nativecclinkopts "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 43 1433 1433 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 42 1405 1428 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 42 1405 1430
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 43 1433 1437 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 43 1433 1450
+type(
+  string
+)
+ident(
+  def nativeccrpath "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 44 1469 1469 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 43 1433 1453 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 43 1433 1466
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 44 1469 1473 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 44 1469 1485
+type(
+  string
+)
+ident(
+  def nativecclibs "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 45 1503 1503 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 44 1469 1488 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 44 1469 1500
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 45 1503 1507 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 45 1503 1510
+type(
+  string
+)
+ident(
+  def asm "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 46 1520 1520 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 45 1503 1513 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 45 1503 1517
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 46 1520 1524 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 46 1520 1528
+type(
+  string
+)
+ident(
+  def aspp "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 47 1542 1542 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 46 1520 1531 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 46 1520 1539
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 47 1542 1546 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 47 1542 1559
+type(
+  string
+)
+ident(
+  def asppprofflags "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 48 1578 1578 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 47 1542 1562 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 47 1542 1575
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 48 1578 1582 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 48 1578 1591
+type(
+  string
+)
+ident(
+  def profiling "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 49 1603 1603 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 48 1578 1594 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 48 1578 1600
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 49 1603 1607 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 49 1603 1618
+type(
+  string
+)
+ident(
+  def dynlinkopts "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 50 1631 1631 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 49 1603 1621 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 49 1603 1628
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 50 1631 1635 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 50 1631 1649
+type(
+  string
+)
+ident(
+  def otherlibraries "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 51 1718 1718 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 50 1631 1652 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 50 1631 1715
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 51 1718 1722 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 51 1718 1730
+type(
+  string
+)
+ident(
+  def debugger "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 52 1751 1751 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 51 1718 1733 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 51 1718 1748
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 52 1751 1755 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 52 1751 1765
+type(
+  string
+)
+ident(
+  def cc_profile "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 53 1776 1776 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 52 1751 1768 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 52 1751 1773
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 53 1776 1780 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 53 1776 1797
+type(
+  bool
+)
+ident(
+  def systhread_support "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 54 1807 1807 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 53 1776 1800 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 53 1776 1804
+type(
+  bool
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 54 1807 1811 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 54 1807 1820
+type(
+  string
+)
+ident(
+  def partialld "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 55 1833 1833 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 54 1807 1823 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 54 1807 1830
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 55 1833 1837 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 55 1833 1843
+type(
+  string
+)
+ident(
+  def packld "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 56 1887 1887 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 55 1833 1846 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 55 1833 1855
+type(
+  string
+)
+ident(
+  int_ref partialld "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 54 1807 1811 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 54 1807 1820
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 55 1833 1855 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 55 1833 1856
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 55 1833 1856 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 55 1833 1859
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 55 1833 1859 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 55 1833 1860
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 55 1833 1860 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 55 1833 1876
+type(
+  string
+)
+ident(
+  int_ref nativecclinkopts "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 42 1405 1409 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 42 1405 1425
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 55 1833 1876 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 55 1833 1877
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 55 1833 1877 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 55 1833 1884
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 55 1833 1860 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 55 1833 1884
+call(
+  stack
+)
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 55 1833 1856 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 55 1833 1884
+call(
+  stack
+)
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 55 1833 1846 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 55 1833 1884
+call(
+  stack
+)
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 56 1887 1891 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 56 1887 1904
+type(
+  string
+)
+ident(
+  def dllcccompopts "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 58 1913 1913 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 56 1887 1907 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 56 1887 1909
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 58 1913 1917 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 58 1913 1918
+type(
+  string
+)
+ident(
+  def o "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 59 1927 1927 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 58 1913 1921 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 58 1913 1924
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 59 1927 1931 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 59 1927 1932
+type(
+  string
+)
+ident(
+  def a "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 60 1941 1941 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 59 1927 1935 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 59 1927 1938
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 60 1941 1945 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 60 1941 1947
+type(
+  string
+)
+ident(
+  def so "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 61 1957 1957 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 60 1941 1950 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 60 1941 1954
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 61 1957 1961 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 61 1957 1968
+type(
+  string
+)
+ident(
+  def ext_obj "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 62 1978 1978 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 61 1957 1971 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 61 1957 1975
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 62 1978 1982 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 62 1978 1989
+type(
+  string
+)
+ident(
+  def ext_asm "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 63 1999 1999 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 62 1978 1992 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 62 1978 1996
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 63 1999 2003 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 63 1999 2010
+type(
+  string
+)
+ident(
+  def ext_lib "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 64 2020 2020 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 63 1999 2013 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 63 1999 2017
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 64 2020 2024 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 64 2020 2031
+type(
+  string
+)
+ident(
+  def ext_dll "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 65 2042 2042 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 64 2020 2034 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 64 2020 2039
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 65 2042 2046 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 65 2042 2055
+type(
+  string
+)
+ident(
+  def extralibs "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 66 2063 2063 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 65 2042 2058 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 65 2042 2060
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 66 2063 2067 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 66 2063 2076
+type(
+  string
+)
+ident(
+  def ccomptype "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 67 2086 2086 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 66 2063 2079 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 66 2063 2083
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 67 2086 2090 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 67 2086 2099
+type(
+  string
+)
+ident(
+  def toolchain "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 68 2109 2109 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 67 2086 2102 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 67 2086 2106
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 68 2109 2113 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 68 2109 2123
+type(
+  bool
+)
+ident(
+  def natdynlink "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 69 2133 2133 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 68 2109 2126 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 68 2109 2130
+type(
+  bool
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 69 2133 2137 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 69 2133 2141
+type(
+  string
+)
+ident(
+  def cmxs "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 70 2153 2153 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 69 2133 2144 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 69 2133 2150
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 70 2153 2157 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 70 2153 2162
+type(
+  string
+)
+ident(
+  def mkexe "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 71 2174 2174 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 70 2153 2165 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 70 2153 2171
+type(
+  string
+)
+ident(
+  int_ref bytecc "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 20 604 608 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 20 604 614
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 71 2174 2178 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 71 2174 2192
+type(
+  string
+)
+ident(
+  def mkexedebugflag "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 72 2202 2202 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 71 2174 2195 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 71 2174 2199
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 72 2202 2206 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 72 2202 2211
+type(
+  string
+)
+ident(
+  def mkdll "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 73 2230 2230 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 72 2202 2214 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 72 2202 2227
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 73 2230 2234 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 73 2230 2243
+type(
+  string
+)
+ident(
+  def mkmaindll "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 74 2262 2262 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 73 2230 2246 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 73 2230 2259
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 74 2262 2266 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 74 2262 2274
+type(
+  string
+)
+ident(
+  def runtimed "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 75 2292 2292 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 74 2262 2277 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 74 2262 2289
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 75 2292 2296 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 75 2292 2302
+type(
+  string
+)
+ident(
+  def camlp4 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 76 2316 2316 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 75 2292 2305 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 75 2292 2313
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 76 2316 2320 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 76 2316 2337
+type(
+  bool
+)
+ident(
+  def asm_cfi_supported "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 77 2347 2347 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 76 2316 2340 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 76 2316 2344
+type(
+  bool
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 77 2347 2351 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 77 2347 2370
+type(
+  bool
+)
+ident(
+  def with_frame_pointers "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 77 2347 2378 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 77 2347 2373 "ocamlbuild/ocamlbuild_Myocamlbuild_config.ml" 77 2347 2378
+type(
+  bool
+)

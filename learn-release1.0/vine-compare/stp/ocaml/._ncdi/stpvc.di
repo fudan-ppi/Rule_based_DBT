@@ -1,1 +1,0 @@
-stpvc.cmi : libstp.cmi

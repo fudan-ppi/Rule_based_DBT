@@ -1,0 +1,10 @@
+/usr/local/lib/cmake/STP/STPConfig.cmake
+/usr/local/lib/cmake/STP/STPTargets.cmake
+/usr/local/lib/cmake/STP/STPTargets-relwithdebinfo.cmake
+/usr/local/lib/libstp.a
+/usr/local/lib/libstp.so
+/usr/local/include/stp/c_interface.h
+/usr/local/bin/stp
+/usr/lib/python2.7/dist-packages/stp/stp.py
+/usr/lib/python2.7/dist-packages/stp/__init__.py
+/usr/lib/python2.7/dist-packages/stp/library_path.py

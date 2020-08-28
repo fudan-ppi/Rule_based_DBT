@@ -1,0 +1,14 @@
+# Specification for the "num" library:
+requires = "num.core"
+requires(toploop) = "num.core,num-top"
+version = "[distributed with Ocaml]"
+description = "Arbitrary-precision rational arithmetic"
+package "core" (
+  directory = "^"
+  version = "[internal]"
+  browse_interfaces = " Unit name: Arith_flags Unit name: Arith_status Unit name: Big_int Unit name: Int_misc Unit name: Nat Unit name: Num Unit name: Ratio "
+  archive(byte) = "nums.cma"
+  archive(native) = "nums.cmxa"
+  plugin(byte) = "nums.cma"
+  plugin(native) = "nums.cmxs"
+)

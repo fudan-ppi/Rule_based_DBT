@@ -1,2 +1,0 @@
-#!/bin/sh
-exec /usr/local/lib/ocaml/labltk/labltktop -I /usr/local/lib/ocaml/labltk "$@"
