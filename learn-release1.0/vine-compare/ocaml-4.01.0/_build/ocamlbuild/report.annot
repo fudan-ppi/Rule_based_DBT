@@ -1,0 +1,789 @@
+"ocamlbuild/report.ml" 22 911 915 "ocamlbuild/report.ml" 22 911 927
+type(
+  Glob.globber
+)
+ident(
+  def sources_glob "ocamlbuild/report.ml" 24 982 982 "ocamlbuild/report.ml" 1 0 -1
+)
+"ocamlbuild/report.ml" 22 911 930 "ocamlbuild/report.ml" 22 911 940
+type(
+  ?dir:string -> string -> Glob.globber
+)
+ident(
+  ext_ref Glob.parse
+)
+"ocamlbuild/report.ml" 22 911 941 "ocamlbuild/report.ml" 22 911 978
+type(
+  string
+)
+"ocamlbuild/report.ml" 22 911 930 "ocamlbuild/report.ml" 22 911 978
+call(
+  stack
+)
+type(
+  Glob.globber
+)
+"ocamlbuild/report.ml" 24 982 990 "ocamlbuild/report.ml" 24 982 997
+type(
+  Format.formatter -> Solver.backtrace -> bool
+)
+ident(
+  def analyze "ocamlbuild/report.ml" 24 982 982 "ocamlbuild/report.ml" 1 0 -1
+)
+"ocamlbuild/report.ml" 24 982 998 "ocamlbuild/report.ml" 24 982 999
+type(
+  Format.formatter
+)
+ident(
+  def f "ocamlbuild/report.ml" 24 982 1000 "ocamlbuild/report.ml" 46 1879 1912
+)
+"ocamlbuild/report.ml" 24 982 1000 "ocamlbuild/report.ml" 24 982 1002
+type(
+  Solver.backtrace
+)
+ident(
+  def bt "ocamlbuild/report.ml" 25 1005 1007 "ocamlbuild/report.ml" 46 1879 1912
+)
+"ocamlbuild/report.ml" 25 1005 1013 "ocamlbuild/report.ml" 25 1005 1015
+type(
+  Solver.backtrace
+)
+ident(
+  int_ref bt "ocamlbuild/report.ml" 24 982 1000 "ocamlbuild/report.ml" 24 982 1002
+)
+"ocamlbuild/report.ml" 26 1021 1030 "ocamlbuild/report.ml" 26 1021 1031
+type(
+  Pathname.t
+)
+ident(
+  def r "ocamlbuild/report.ml" 27 1035 1041 "ocamlbuild/report.ml" 33 1431 1442
+)
+"ocamlbuild/report.ml" 26 1021 1025 "ocamlbuild/report.ml" 26 1021 1031
+type(
+  Solver.backtrace
+)
+"ocamlbuild/report.ml" 27 1035 1041 "ocamlbuild/report.ml" 27 1035 1048
+type(
+  Format.formatter ->
+  ((Format.formatter -> Pathname.t -> unit) -> Pathname.t -> unit,
+   Format.formatter, unit)
+  format -> (Format.formatter -> Pathname.t -> unit) -> Pathname.t -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"ocamlbuild/report.ml" 27 1035 1049 "ocamlbuild/report.ml" 27 1035 1050
+type(
+  Format.formatter
+)
+ident(
+  int_ref f "ocamlbuild/report.ml" 24 982 998 "ocamlbuild/report.ml" 24 982 999
+)
+"ocamlbuild/report.ml" 27 1035 1051 "ocamlbuild/report.ml" 31 1360 1398
+type(
+  ((Format.formatter -> Pathname.t -> unit) -> Pathname.t -> unit,
+   Format.formatter, unit)
+  format
+)
+"ocamlbuild/report.ml" 32 1399 1413 "ocamlbuild/report.ml" 32 1399 1427
+type(
+  Format.formatter -> Pathname.t -> unit
+)
+ident(
+  ext_ref Resource.print
+)
+"ocamlbuild/report.ml" 32 1399 1428 "ocamlbuild/report.ml" 32 1399 1429
+type(
+  Pathname.t
+)
+ident(
+  int_ref r "ocamlbuild/report.ml" 26 1021 1030 "ocamlbuild/report.ml" 26 1021 1031
+)
+"ocamlbuild/report.ml" 27 1035 1041 "ocamlbuild/report.ml" 32 1399 1429
+call(
+  stack
+)
+type(
+  unit
+)
+"ocamlbuild/report.ml" 33 1431 1437 "ocamlbuild/report.ml" 33 1431 1442
+type(
+  bool
+)
+"ocamlbuild/report.ml" 27 1035 1041 "ocamlbuild/report.ml" 33 1431 1442
+type(
+  bool
+)
+"ocamlbuild/report.ml" 34 1443 1453 "ocamlbuild/report.ml" 34 1443 1454
+type(
+  Pathname.t
+)
+ident(
+  def r "ocamlbuild/report.ml" 35 1463 1469 "ocamlbuild/report.ml" 44 1813 1833
+)
+"ocamlbuild/report.ml" 34 1443 1456 "ocamlbuild/report.ml" 34 1443 1458
+type(
+  Solver.backtrace
+)
+ident(
+  def bt "ocamlbuild/report.ml" 35 1463 1469 "ocamlbuild/report.ml" 44 1813 1833
+)
+"ocamlbuild/report.ml" 34 1443 1447 "ocamlbuild/report.ml" 34 1443 1459
+type(
+  Solver.backtrace
+)
+"ocamlbuild/report.ml" 35 1463 1472 "ocamlbuild/report.ml" 35 1463 1481
+type(
+  Glob.globber -> Pathname.t -> bool
+)
+ident(
+  ext_ref Glob.eval
+)
+"ocamlbuild/report.ml" 35 1463 1482 "ocamlbuild/report.ml" 35 1463 1494
+type(
+  Glob.globber
+)
+ident(
+  int_ref sources_glob "ocamlbuild/report.ml" 22 911 915 "ocamlbuild/report.ml" 22 911 927
+)
+"ocamlbuild/report.ml" 35 1463 1495 "ocamlbuild/report.ml" 35 1463 1496
+type(
+  Pathname.t
+)
+ident(
+  int_ref r "ocamlbuild/report.ml" 34 1443 1453 "ocamlbuild/report.ml" 34 1443 1454
+)
+"ocamlbuild/report.ml" 35 1463 1472 "ocamlbuild/report.ml" 35 1463 1496
+call(
+  stack
+)
+type(
+  bool
+)
+"ocamlbuild/report.ml" 37 1516 1526 "ocamlbuild/report.ml" 37 1516 1533
+type(
+  Format.formatter ->
+  ((Format.formatter -> Pathname.t -> unit) -> Pathname.t -> unit,
+   Format.formatter, unit)
+  format -> (Format.formatter -> Pathname.t -> unit) -> Pathname.t -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"ocamlbuild/report.ml" 37 1516 1534 "ocamlbuild/report.ml" 37 1516 1535
+type(
+  Format.formatter
+)
+ident(
+  int_ref f "ocamlbuild/report.ml" 24 982 998 "ocamlbuild/report.ml" 24 982 999
+)
+"ocamlbuild/report.ml" 37 1516 1536 "ocamlbuild/report.ml" 39 1696 1737
+type(
+  ((Format.formatter -> Pathname.t -> unit) -> Pathname.t -> unit,
+   Format.formatter, unit)
+  format
+)
+"ocamlbuild/report.ml" 40 1738 1756 "ocamlbuild/report.ml" 40 1738 1770
+type(
+  Format.formatter -> Pathname.t -> unit
+)
+ident(
+  ext_ref Resource.print
+)
+"ocamlbuild/report.ml" 40 1738 1771 "ocamlbuild/report.ml" 40 1738 1772
+type(
+  Pathname.t
+)
+ident(
+  int_ref r "ocamlbuild/report.ml" 34 1443 1453 "ocamlbuild/report.ml" 34 1443 1454
+)
+"ocamlbuild/report.ml" 37 1516 1526 "ocamlbuild/report.ml" 40 1738 1772
+call(
+  stack
+)
+type(
+  unit
+)
+"ocamlbuild/report.ml" 41 1774 1784 "ocamlbuild/report.ml" 41 1774 1789
+type(
+  bool
+)
+"ocamlbuild/report.ml" 36 1502 1510 "ocamlbuild/report.ml" 42 1790 1801
+type(
+  bool
+)
+"ocamlbuild/report.ml" 44 1813 1821 "ocamlbuild/report.ml" 44 1813 1828
+type(
+  Format.formatter -> Solver.backtrace -> bool
+)
+ident(
+  int_ref analyze "ocamlbuild/report.ml" 24 982 990 "ocamlbuild/report.ml" 24 982 997
+)
+"ocamlbuild/report.ml" 44 1813 1829 "ocamlbuild/report.ml" 44 1813 1830
+type(
+  Format.formatter
+)
+ident(
+  int_ref f "ocamlbuild/report.ml" 24 982 998 "ocamlbuild/report.ml" 24 982 999
+)
+"ocamlbuild/report.ml" 44 1813 1831 "ocamlbuild/report.ml" 44 1813 1833
+type(
+  Solver.backtrace
+)
+ident(
+  int_ref bt "ocamlbuild/report.ml" 34 1443 1456 "ocamlbuild/report.ml" 34 1443 1458
+)
+"ocamlbuild/report.ml" 44 1813 1821 "ocamlbuild/report.ml" 44 1813 1833
+call(
+  tail
+)
+type(
+  bool
+)
+"ocamlbuild/report.ml" 35 1463 1469 "ocamlbuild/report.ml" 44 1813 1833
+type(
+  bool
+)
+"ocamlbuild/report.ml" 45 1834 1845 "ocamlbuild/report.ml" 45 1834 1847
+type(
+  Solver.backtrace list
+)
+ident(
+  def bl "ocamlbuild/report.ml" 45 1834 1851 "ocamlbuild/report.ml" 45 1834 1878
+)
+"ocamlbuild/report.ml" 45 1834 1838 "ocamlbuild/report.ml" 45 1834 1847
+type(
+  Solver.backtrace
+)
+"ocamlbuild/report.ml" 45 1834 1851 "ocamlbuild/report.ml" 45 1834 1863
+type(
+  (Solver.backtrace -> bool) -> Solver.backtrace list -> bool
+)
+ident(
+  ext_ref My_std.List.for_all
+)
+"ocamlbuild/report.ml" 45 1834 1865 "ocamlbuild/report.ml" 45 1834 1872
+type(
+  Format.formatter -> Solver.backtrace -> bool
+)
+ident(
+  int_ref analyze "ocamlbuild/report.ml" 24 982 990 "ocamlbuild/report.ml" 24 982 997
+)
+"ocamlbuild/report.ml" 45 1834 1873 "ocamlbuild/report.ml" 45 1834 1874
+type(
+  Format.formatter
+)
+ident(
+  int_ref f "ocamlbuild/report.ml" 24 982 998 "ocamlbuild/report.ml" 24 982 999
+)
+"ocamlbuild/report.ml" 45 1834 1864 "ocamlbuild/report.ml" 45 1834 1875
+call(
+  stack
+)
+type(
+  Solver.backtrace -> bool
+)
+"ocamlbuild/report.ml" 45 1834 1876 "ocamlbuild/report.ml" 45 1834 1878
+type(
+  Solver.backtrace list
+)
+ident(
+  int_ref bl "ocamlbuild/report.ml" 45 1834 1845 "ocamlbuild/report.ml" 45 1834 1847
+)
+"ocamlbuild/report.ml" 45 1834 1851 "ocamlbuild/report.ml" 45 1834 1878
+call(
+  tail
+)
+type(
+  bool
+)
+"ocamlbuild/report.ml" 46 1879 1890 "ocamlbuild/report.ml" 46 1879 1891
+type(
+  string
+)
+"ocamlbuild/report.ml" 46 1879 1893 "ocamlbuild/report.ml" 46 1879 1895
+type(
+  Solver.backtrace
+)
+ident(
+  def bt "ocamlbuild/report.ml" 46 1879 1900 "ocamlbuild/report.ml" 46 1879 1912
+)
+"ocamlbuild/report.ml" 46 1879 1883 "ocamlbuild/report.ml" 46 1879 1896
+type(
+  Solver.backtrace
+)
+"ocamlbuild/report.ml" 46 1879 1900 "ocamlbuild/report.ml" 46 1879 1907
+type(
+  Format.formatter -> Solver.backtrace -> bool
+)
+ident(
+  int_ref analyze "ocamlbuild/report.ml" 24 982 990 "ocamlbuild/report.ml" 24 982 997
+)
+"ocamlbuild/report.ml" 46 1879 1908 "ocamlbuild/report.ml" 46 1879 1909
+type(
+  Format.formatter
+)
+ident(
+  int_ref f "ocamlbuild/report.ml" 24 982 998 "ocamlbuild/report.ml" 24 982 999
+)
+"ocamlbuild/report.ml" 46 1879 1910 "ocamlbuild/report.ml" 46 1879 1912
+type(
+  Solver.backtrace
+)
+ident(
+  int_ref bt "ocamlbuild/report.ml" 46 1879 1893 "ocamlbuild/report.ml" 46 1879 1895
+)
+"ocamlbuild/report.ml" 46 1879 1900 "ocamlbuild/report.ml" 46 1879 1912
+call(
+  tail
+)
+type(
+  bool
+)
+"ocamlbuild/report.ml" 25 1005 1007 "ocamlbuild/report.ml" 46 1879 1912
+type(
+  bool
+)
+"ocamlbuild/report.ml" 48 1914 1922 "ocamlbuild/report.ml" 48 1914 1937
+type(
+  Format.formatter -> Solver.backtrace -> unit
+)
+ident(
+  def print_backtrace "ocamlbuild/report.ml" 48 1914 1914 "ocamlbuild/report.ml" 1 0 -1
+)
+"ocamlbuild/report.ml" 48 1914 1938 "ocamlbuild/report.ml" 48 1914 1939
+type(
+  Format.formatter
+)
+ident(
+  def f "ocamlbuild/report.ml" 49 1942 1944 "ocamlbuild/report.ml" 60 2455 2475
+)
+"ocamlbuild/report.ml" 50 1953 1965 "ocamlbuild/report.ml" 50 1953 1969
+type(
+  string
+)
+ident(
+  def name "ocamlbuild/report.ml" 51 1985 1991 "ocamlbuild/report.ml" 51 1985 2077
+)
+"ocamlbuild/report.ml" 50 1953 1971 "ocamlbuild/report.ml" 50 1953 1980
+type(
+  Solver.backtrace
+)
+ident(
+  def backtrace "ocamlbuild/report.ml" 51 1985 1991 "ocamlbuild/report.ml" 51 1985 2077
+)
+"ocamlbuild/report.ml" 50 1953 1957 "ocamlbuild/report.ml" 50 1953 1981
+type(
+  Solver.backtrace
+)
+"ocamlbuild/report.ml" 51 1985 1991 "ocamlbuild/report.ml" 51 1985 1998
+type(
+  Format.formatter ->
+  (string ->
+   (Format.formatter -> Solver.backtrace -> unit) -> Solver.backtrace -> unit,
+   Format.formatter, unit)
+  format ->
+  string ->
+  (Format.formatter -> Solver.backtrace -> unit) -> Solver.backtrace -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"ocamlbuild/report.ml" 51 1985 1999 "ocamlbuild/report.ml" 51 1985 2000
+type(
+  Format.formatter
+)
+ident(
+  int_ref f "ocamlbuild/report.ml" 48 1914 1938 "ocamlbuild/report.ml" 48 1914 1939
+)
+"ocamlbuild/report.ml" 51 1985 2001 "ocamlbuild/report.ml" 51 1985 2046
+type(
+  (string ->
+   (Format.formatter -> Solver.backtrace -> unit) -> Solver.backtrace -> unit,
+   Format.formatter, unit)
+  format
+)
+"ocamlbuild/report.ml" 51 1985 2047 "ocamlbuild/report.ml" 51 1985 2051
+type(
+  string
+)
+ident(
+  int_ref name "ocamlbuild/report.ml" 50 1953 1965 "ocamlbuild/report.ml" 50 1953 1969
+)
+"ocamlbuild/report.ml" 51 1985 2052 "ocamlbuild/report.ml" 51 1985 2067
+type(
+  Format.formatter -> Solver.backtrace -> unit
+)
+ident(
+  int_ref print_backtrace "ocamlbuild/report.ml" 48 1914 1922 "ocamlbuild/report.ml" 48 1914 1937
+)
+"ocamlbuild/report.ml" 51 1985 2068 "ocamlbuild/report.ml" 51 1985 2077
+type(
+  Solver.backtrace
+)
+ident(
+  int_ref backtrace "ocamlbuild/report.ml" 50 1953 1971 "ocamlbuild/report.ml" 50 1953 1980
+)
+"ocamlbuild/report.ml" 51 1985 1991 "ocamlbuild/report.ml" 51 1985 2077
+call(
+  tail
+)
+type(
+  unit
+)
+"ocamlbuild/report.ml" 52 2078 2087 "ocamlbuild/report.ml" 52 2078 2088
+type(
+  Pathname.t
+)
+ident(
+  def r "ocamlbuild/report.ml" 53 2092 2098 "ocamlbuild/report.ml" 53 2092 2150
+)
+"ocamlbuild/report.ml" 52 2078 2082 "ocamlbuild/report.ml" 52 2078 2088
+type(
+  Solver.backtrace
+)
+"ocamlbuild/report.ml" 53 2092 2098 "ocamlbuild/report.ml" 53 2092 2105
+type(
+  Format.formatter ->
+  ((Format.formatter -> Pathname.t -> unit) -> Pathname.t -> unit,
+   Format.formatter, unit)
+  format -> (Format.formatter -> Pathname.t -> unit) -> Pathname.t -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"ocamlbuild/report.ml" 53 2092 2106 "ocamlbuild/report.ml" 53 2092 2107
+type(
+  Format.formatter
+)
+ident(
+  int_ref f "ocamlbuild/report.ml" 48 1914 1938 "ocamlbuild/report.ml" 48 1914 1939
+)
+"ocamlbuild/report.ml" 53 2092 2108 "ocamlbuild/report.ml" 53 2092 2133
+type(
+  ((Format.formatter -> Pathname.t -> unit) -> Pathname.t -> unit,
+   Format.formatter, unit)
+  format
+)
+"ocamlbuild/report.ml" 53 2092 2134 "ocamlbuild/report.ml" 53 2092 2148
+type(
+  Format.formatter -> Pathname.t -> unit
+)
+ident(
+  ext_ref Resource.print
+)
+"ocamlbuild/report.ml" 53 2092 2149 "ocamlbuild/report.ml" 53 2092 2150
+type(
+  Pathname.t
+)
+ident(
+  int_ref r "ocamlbuild/report.ml" 52 2078 2087 "ocamlbuild/report.ml" 52 2078 2088
+)
+"ocamlbuild/report.ml" 53 2092 2098 "ocamlbuild/report.ml" 53 2092 2150
+call(
+  tail
+)
+type(
+  unit
+)
+"ocamlbuild/report.ml" 54 2151 2162 "ocamlbuild/report.ml" 54 2151 2163
+type(
+  Pathname.t
+)
+ident(
+  def r "ocamlbuild/report.ml" 55 2179 2185 "ocamlbuild/report.ml" 55 2179 2267
+)
+"ocamlbuild/report.ml" 54 2151 2165 "ocamlbuild/report.ml" 54 2151 2174
+type(
+  Solver.backtrace
+)
+ident(
+  def backtrace "ocamlbuild/report.ml" 55 2179 2185 "ocamlbuild/report.ml" 55 2179 2267
+)
+"ocamlbuild/report.ml" 54 2151 2155 "ocamlbuild/report.ml" 54 2151 2175
+type(
+  Solver.backtrace
+)
+"ocamlbuild/report.ml" 55 2179 2185 "ocamlbuild/report.ml" 55 2179 2192
+type(
+  Format.formatter ->
+  ((Format.formatter -> Pathname.t -> unit) ->
+   Pathname.t ->
+   (Format.formatter -> Solver.backtrace -> unit) -> Solver.backtrace -> unit,
+   Format.formatter, unit)
+  format ->
+  (Format.formatter -> Pathname.t -> unit) ->
+  Pathname.t ->
+  (Format.formatter -> Solver.backtrace -> unit) -> Solver.backtrace -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"ocamlbuild/report.ml" 55 2179 2193 "ocamlbuild/report.ml" 55 2179 2194
+type(
+  Format.formatter
+)
+ident(
+  int_ref f "ocamlbuild/report.ml" 48 1914 1938 "ocamlbuild/report.ml" 48 1914 1939
+)
+"ocamlbuild/report.ml" 55 2179 2195 "ocamlbuild/report.ml" 55 2179 2224
+type(
+  ((Format.formatter -> Pathname.t -> unit) ->
+   Pathname.t ->
+   (Format.formatter -> Solver.backtrace -> unit) -> Solver.backtrace -> unit,
+   Format.formatter, unit)
+  format
+)
+"ocamlbuild/report.ml" 55 2179 2225 "ocamlbuild/report.ml" 55 2179 2239
+type(
+  Format.formatter -> Pathname.t -> unit
+)
+ident(
+  ext_ref Resource.print
+)
+"ocamlbuild/report.ml" 55 2179 2240 "ocamlbuild/report.ml" 55 2179 2241
+type(
+  Pathname.t
+)
+ident(
+  int_ref r "ocamlbuild/report.ml" 54 2151 2162 "ocamlbuild/report.ml" 54 2151 2163
+)
+"ocamlbuild/report.ml" 55 2179 2242 "ocamlbuild/report.ml" 55 2179 2257
+type(
+  Format.formatter -> Solver.backtrace -> unit
+)
+ident(
+  int_ref print_backtrace "ocamlbuild/report.ml" 48 1914 1922 "ocamlbuild/report.ml" 48 1914 1937
+)
+"ocamlbuild/report.ml" 55 2179 2258 "ocamlbuild/report.ml" 55 2179 2267
+type(
+  Solver.backtrace
+)
+ident(
+  int_ref backtrace "ocamlbuild/report.ml" 54 2151 2165 "ocamlbuild/report.ml" 54 2151 2174
+)
+"ocamlbuild/report.ml" 55 2179 2185 "ocamlbuild/report.ml" 55 2179 2267
+call(
+  tail
+)
+type(
+  unit
+)
+"ocamlbuild/report.ml" 56 2268 2280 "ocamlbuild/report.ml" 56 2268 2289
+type(
+  Solver.backtrace
+)
+ident(
+  def backtrace "ocamlbuild/report.ml" 56 2268 2294 "ocamlbuild/report.ml" 56 2268 2321
+)
+"ocamlbuild/report.ml" 56 2268 2279 "ocamlbuild/report.ml" 56 2268 2290
+type(
+  Solver.backtrace list
+)
+"ocamlbuild/report.ml" 56 2268 2272 "ocamlbuild/report.ml" 56 2268 2290
+type(
+  Solver.backtrace
+)
+"ocamlbuild/report.ml" 56 2268 2294 "ocamlbuild/report.ml" 56 2268 2309
+type(
+  Format.formatter -> Solver.backtrace -> unit
+)
+ident(
+  int_ref print_backtrace "ocamlbuild/report.ml" 48 1914 1922 "ocamlbuild/report.ml" 48 1914 1937
+)
+"ocamlbuild/report.ml" 56 2268 2310 "ocamlbuild/report.ml" 56 2268 2311
+type(
+  Format.formatter
+)
+ident(
+  int_ref f "ocamlbuild/report.ml" 48 1914 1938 "ocamlbuild/report.ml" 48 1914 1939
+)
+"ocamlbuild/report.ml" 56 2268 2312 "ocamlbuild/report.ml" 56 2268 2321
+type(
+  Solver.backtrace
+)
+ident(
+  int_ref backtrace "ocamlbuild/report.ml" 56 2268 2280 "ocamlbuild/report.ml" 56 2268 2289
+)
+"ocamlbuild/report.ml" 56 2268 2294 "ocamlbuild/report.ml" 56 2268 2321
+call(
+  tail
+)
+type(
+  unit
+)
+"ocamlbuild/report.ml" 57 2322 2333 "ocamlbuild/report.ml" 57 2322 2343
+type(
+  Solver.backtrace list
+)
+ident(
+  def backtraces "ocamlbuild/report.ml" 58 2347 2353 "ocamlbuild/report.ml" 60 2455 2475
+)
+"ocamlbuild/report.ml" 57 2322 2326 "ocamlbuild/report.ml" 57 2322 2343
+type(
+  Solver.backtrace
+)
+"ocamlbuild/report.ml" 58 2347 2353 "ocamlbuild/report.ml" 58 2347 2360
+type(
+  Format.formatter -> (unit, Format.formatter, unit) format -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"ocamlbuild/report.ml" 58 2347 2361 "ocamlbuild/report.ml" 58 2347 2362
+type(
+  Format.formatter
+)
+ident(
+  int_ref f "ocamlbuild/report.ml" 48 1914 1938 "ocamlbuild/report.ml" 48 1914 1939
+)
+"ocamlbuild/report.ml" 58 2347 2363 "ocamlbuild/report.ml" 58 2347 2405
+type(
+  (unit, Format.formatter, unit) format
+)
+"ocamlbuild/report.ml" 58 2347 2353 "ocamlbuild/report.ml" 58 2347 2405
+call(
+  stack
+)
+type(
+  unit
+)
+"ocamlbuild/report.ml" 59 2407 2413 "ocamlbuild/report.ml" 59 2407 2422
+type(
+  (Solver.backtrace -> unit) -> Solver.backtrace list -> unit
+)
+ident(
+  ext_ref My_std.List.iter
+)
+"ocamlbuild/report.ml" 59 2407 2424 "ocamlbuild/report.ml" 59 2407 2439
+type(
+  Format.formatter -> Solver.backtrace -> unit
+)
+ident(
+  int_ref print_backtrace "ocamlbuild/report.ml" 48 1914 1922 "ocamlbuild/report.ml" 48 1914 1937
+)
+"ocamlbuild/report.ml" 59 2407 2440 "ocamlbuild/report.ml" 59 2407 2441
+type(
+  Format.formatter
+)
+ident(
+  int_ref f "ocamlbuild/report.ml" 48 1914 1938 "ocamlbuild/report.ml" 48 1914 1939
+)
+"ocamlbuild/report.ml" 59 2407 2423 "ocamlbuild/report.ml" 59 2407 2442
+call(
+  stack
+)
+type(
+  Solver.backtrace -> unit
+)
+"ocamlbuild/report.ml" 59 2407 2443 "ocamlbuild/report.ml" 59 2407 2453
+type(
+  Solver.backtrace list
+)
+ident(
+  int_ref backtraces "ocamlbuild/report.ml" 57 2322 2333 "ocamlbuild/report.ml" 57 2322 2343
+)
+"ocamlbuild/report.ml" 59 2407 2413 "ocamlbuild/report.ml" 59 2407 2453
+call(
+  stack
+)
+type(
+  unit
+)
+"ocamlbuild/report.ml" 60 2455 2461 "ocamlbuild/report.ml" 60 2455 2468
+type(
+  Format.formatter -> (unit, Format.formatter, unit) format -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"ocamlbuild/report.ml" 60 2455 2469 "ocamlbuild/report.ml" 60 2455 2470
+type(
+  Format.formatter
+)
+ident(
+  int_ref f "ocamlbuild/report.ml" 48 1914 1938 "ocamlbuild/report.ml" 48 1914 1939
+)
+"ocamlbuild/report.ml" 60 2455 2471 "ocamlbuild/report.ml" 60 2455 2475
+type(
+  (unit, Format.formatter, unit) format
+)
+"ocamlbuild/report.ml" 60 2455 2461 "ocamlbuild/report.ml" 60 2455 2475
+call(
+  tail
+)
+type(
+  unit
+)
+"ocamlbuild/report.ml" 59 2407 2413 "ocamlbuild/report.ml" 60 2455 2475
+type(
+  unit
+)
+"ocamlbuild/report.ml" 58 2347 2353 "ocamlbuild/report.ml" 60 2455 2475
+type(
+  unit
+)
+"ocamlbuild/report.ml" 49 1942 1944 "ocamlbuild/report.ml" 60 2455 2475
+type(
+  Solver.backtrace -> unit
+)
+"ocamlbuild/report.ml" 62 2477 2481 "ocamlbuild/report.ml" 62 2477 2504
+type(
+  Format.formatter -> Solver.backtrace -> unit
+)
+ident(
+  def print_backtrace_analyze "ocamlbuild/report.ml" 62 2477 2533 "ocamlbuild/report.ml" 1 0 -1
+)
+"ocamlbuild/report.ml" 62 2477 2505 "ocamlbuild/report.ml" 62 2477 2506
+type(
+  Format.formatter
+)
+ident(
+  def f "ocamlbuild/report.ml" 62 2477 2507 "ocamlbuild/report.ml" 62 2477 2533
+)
+"ocamlbuild/report.ml" 62 2477 2507 "ocamlbuild/report.ml" 62 2477 2509
+type(
+  Solver.backtrace
+)
+ident(
+  def bt "ocamlbuild/report.ml" 62 2477 2512 "ocamlbuild/report.ml" 62 2477 2533
+)
+"ocamlbuild/report.ml" 62 2477 2512 "ocamlbuild/report.ml" 62 2477 2518
+type(
+  bool -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"ocamlbuild/report.ml" 62 2477 2520 "ocamlbuild/report.ml" 62 2477 2527
+type(
+  Format.formatter -> Solver.backtrace -> bool
+)
+ident(
+  int_ref analyze "ocamlbuild/report.ml" 24 982 990 "ocamlbuild/report.ml" 24 982 997
+)
+"ocamlbuild/report.ml" 62 2477 2528 "ocamlbuild/report.ml" 62 2477 2529
+type(
+  Format.formatter
+)
+ident(
+  int_ref f "ocamlbuild/report.ml" 62 2477 2505 "ocamlbuild/report.ml" 62 2477 2506
+)
+"ocamlbuild/report.ml" 62 2477 2530 "ocamlbuild/report.ml" 62 2477 2532
+type(
+  Solver.backtrace
+)
+ident(
+  int_ref bt "ocamlbuild/report.ml" 62 2477 2507 "ocamlbuild/report.ml" 62 2477 2509
+)
+"ocamlbuild/report.ml" 62 2477 2519 "ocamlbuild/report.ml" 62 2477 2533
+call(
+  stack
+)
+type(
+  bool
+)
+"ocamlbuild/report.ml" 62 2477 2512 "ocamlbuild/report.ml" 62 2477 2533
+type(
+  unit
+)

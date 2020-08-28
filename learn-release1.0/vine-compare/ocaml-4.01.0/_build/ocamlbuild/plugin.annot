@@ -1,0 +1,3081 @@
+"ocamlbuild/plugin.ml" 26 973 977 "ocamlbuild/plugin.ml" 26 973 983
+type(
+  string
+)
+ident(
+  def plugin "ocamlbuild/plugin.ml" 27 1016 1016 "ocamlbuild/plugin.ml" 1 0 -1
+)
+"ocamlbuild/plugin.ml" 26 973 1001 "ocamlbuild/plugin.ml" 26 973 1015
+type(
+  string
+)
+"ocamlbuild/plugin.ml" 27 1016 1020 "ocamlbuild/plugin.ml" 27 1016 1031
+type(
+  string
+)
+ident(
+  def plugin_file "ocamlbuild/plugin.ml" 28 1057 1057 "ocamlbuild/plugin.ml" 1 0 -1
+)
+"ocamlbuild/plugin.ml" 27 1016 1044 "ocamlbuild/plugin.ml" 27 1016 1050
+type(
+  string
+)
+ident(
+  int_ref plugin "ocamlbuild/plugin.ml" 26 973 977 "ocamlbuild/plugin.ml" 26 973 983
+)
+"ocamlbuild/plugin.ml" 27 1016 1050 "ocamlbuild/plugin.ml" 27 1016 1051
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"ocamlbuild/plugin.ml" 27 1016 1051 "ocamlbuild/plugin.ml" 27 1016 1056
+type(
+  string
+)
+"ocamlbuild/plugin.ml" 27 1016 1044 "ocamlbuild/plugin.ml" 27 1016 1056
+call(
+  stack
+)
+type(
+  string
+)
+"ocamlbuild/plugin.ml" 28 1057 1061 "ocamlbuild/plugin.ml" 28 1057 1079
+type(
+  string
+)
+ident(
+  def plugin_config_file "ocamlbuild/plugin.ml" 29 1105 1105 "ocamlbuild/plugin.ml" 1 0 -1
+)
+"ocamlbuild/plugin.ml" 28 1057 1085 "ocamlbuild/plugin.ml" 28 1057 1091
+type(
+  string
+)
+ident(
+  int_ref plugin "ocamlbuild/plugin.ml" 26 973 977 "ocamlbuild/plugin.ml" 26 973 983
+)
+"ocamlbuild/plugin.ml" 28 1057 1091 "ocamlbuild/plugin.ml" 28 1057 1092
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"ocamlbuild/plugin.ml" 28 1057 1092 "ocamlbuild/plugin.ml" 28 1057 1104
+type(
+  string
+)
+"ocamlbuild/plugin.ml" 28 1057 1085 "ocamlbuild/plugin.ml" 28 1057 1104
+call(
+  stack
+)
+type(
+  string
+)
+"ocamlbuild/plugin.ml" 29 1105 1109 "ocamlbuild/plugin.ml" 29 1105 1137
+type(
+  string
+)
+ident(
+  def plugin_config_file_interface "ocamlbuild/plugin.ml" 30 1161 1161 "ocamlbuild/plugin.ml" 1 0 -1
+)
+"ocamlbuild/plugin.ml" 29 1105 1140 "ocamlbuild/plugin.ml" 29 1105 1146
+type(
+  string
+)
+ident(
+  int_ref plugin "ocamlbuild/plugin.ml" 26 973 977 "ocamlbuild/plugin.ml" 26 973 983
+)
+"ocamlbuild/plugin.ml" 29 1105 1146 "ocamlbuild/plugin.ml" 29 1105 1147
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"ocamlbuild/plugin.ml" 29 1105 1147 "ocamlbuild/plugin.ml" 29 1105 1160
+type(
+  string
+)
+"ocamlbuild/plugin.ml" 29 1105 1140 "ocamlbuild/plugin.ml" 29 1105 1160
+call(
+  stack
+)
+type(
+  string
+)
+"ocamlbuild/plugin.ml" 30 1161 1165 "ocamlbuild/plugin.ml" 30 1161 1181
+type(
+  unit -> bool
+)
+ident(
+  def we_need_a_plugin "ocamlbuild/plugin.ml" 31 1239 1239 "ocamlbuild/plugin.ml" 1 0 -1
+)
+"ocamlbuild/plugin.ml" 30 1161 1182 "ocamlbuild/plugin.ml" 30 1161 1184
+type(
+  unit
+)
+"ocamlbuild/plugin.ml" 30 1161 1192 "ocamlbuild/plugin.ml" 30 1161 1193
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"ocamlbuild/plugin.ml" 30 1161 1193 "ocamlbuild/plugin.ml" 30 1161 1207
+type(
+  bool ref
+)
+ident(
+  ext_ref Options.plugin
+)
+"ocamlbuild/plugin.ml" 30 1161 1192 "ocamlbuild/plugin.ml" 30 1161 1207
+type(
+  bool
+)
+"ocamlbuild/plugin.ml" 30 1161 1208 "ocamlbuild/plugin.ml" 30 1161 1210
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"ocamlbuild/plugin.ml" 30 1161 1211 "ocamlbuild/plugin.ml" 30 1161 1226
+type(
+  string -> bool
+)
+ident(
+  ext_ref My_std.sys_file_exists
+)
+"ocamlbuild/plugin.ml" 30 1161 1227 "ocamlbuild/plugin.ml" 30 1161 1238
+type(
+  string
+)
+ident(
+  int_ref plugin_file "ocamlbuild/plugin.ml" 27 1016 1020 "ocamlbuild/plugin.ml" 27 1016 1031
+)
+"ocamlbuild/plugin.ml" 30 1161 1211 "ocamlbuild/plugin.ml" 30 1161 1238
+call(
+  tail
+)
+type(
+  bool
+)
+"ocamlbuild/plugin.ml" 30 1161 1192 "ocamlbuild/plugin.ml" 30 1161 1238
+type(
+  bool
+)
+"ocamlbuild/plugin.ml" 31 1239 1243 "ocamlbuild/plugin.ml" 31 1239 1259
+type(
+  unit -> bool
+)
+ident(
+  def we_have_a_plugin "ocamlbuild/plugin.ml" 32 1331 1331 "ocamlbuild/plugin.ml" 1 0 -1
+)
+"ocamlbuild/plugin.ml" 31 1239 1260 "ocamlbuild/plugin.ml" 31 1239 1262
+type(
+  unit
+)
+"ocamlbuild/plugin.ml" 31 1239 1270 "ocamlbuild/plugin.ml" 31 1239 1285
+type(
+  string -> bool
+)
+ident(
+  ext_ref My_std.sys_file_exists
+)
+"ocamlbuild/plugin.ml" 31 1239 1288 "ocamlbuild/plugin.ml" 31 1239 1289
+type(
+  Pathname.t ref -> Pathname.t
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"ocamlbuild/plugin.ml" 31 1239 1289 "ocamlbuild/plugin.ml" 31 1239 1306
+type(
+  Pathname.t ref
+)
+ident(
+  ext_ref Options.build_dir
+)
+"ocamlbuild/plugin.ml" 31 1239 1288 "ocamlbuild/plugin.ml" 31 1239 1306
+type(
+  Pathname.t
+)
+"ocamlbuild/plugin.ml" 31 1239 1306 "ocamlbuild/plugin.ml" 31 1239 1307
+type(
+  Pathname.t -> Pathname.t -> Pathname.t
+)
+ident(
+  ext_ref Pathname.Operators.( / )
+)
+"ocamlbuild/plugin.ml" 31 1239 1307 "ocamlbuild/plugin.ml" 31 1239 1313
+type(
+  Pathname.t
+)
+ident(
+  int_ref plugin "ocamlbuild/plugin.ml" 26 973 977 "ocamlbuild/plugin.ml" 26 973 983
+)
+"ocamlbuild/plugin.ml" 31 1239 1287 "ocamlbuild/plugin.ml" 31 1239 1314
+call(
+  stack
+)
+type(
+  Pathname.t
+)
+"ocamlbuild/plugin.ml" 31 1239 1314 "ocamlbuild/plugin.ml" 31 1239 1315
+type(
+  Pathname.t -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"ocamlbuild/plugin.ml" 31 1239 1316 "ocamlbuild/plugin.ml" 31 1239 1317
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"ocamlbuild/plugin.ml" 31 1239 1317 "ocamlbuild/plugin.ml" 31 1239 1328
+type(
+  string ref
+)
+ident(
+  ext_ref Options.exe
+)
+"ocamlbuild/plugin.ml" 31 1239 1315 "ocamlbuild/plugin.ml" 31 1239 1329
+type(
+  string
+)
+"ocamlbuild/plugin.ml" 31 1239 1286 "ocamlbuild/plugin.ml" 31 1239 1330
+call(
+  stack
+)
+type(
+  string
+)
+"ocamlbuild/plugin.ml" 31 1239 1270 "ocamlbuild/plugin.ml" 31 1239 1330
+call(
+  tail
+)
+type(
+  bool
+)
+"ocamlbuild/plugin.ml" 32 1331 1335 "ocamlbuild/plugin.ml" 32 1331 1356
+type(
+  unit -> bool
+)
+ident(
+  def we_have_a_config_file "ocamlbuild/plugin.ml" 33 1397 1397 "ocamlbuild/plugin.ml" 1 0 -1
+)
+"ocamlbuild/plugin.ml" 32 1331 1357 "ocamlbuild/plugin.ml" 32 1331 1359
+type(
+  unit
+)
+"ocamlbuild/plugin.ml" 32 1331 1362 "ocamlbuild/plugin.ml" 32 1331 1377
+type(
+  string -> bool
+)
+ident(
+  ext_ref My_std.sys_file_exists
+)
+"ocamlbuild/plugin.ml" 32 1331 1378 "ocamlbuild/plugin.ml" 32 1331 1396
+type(
+  string
+)
+ident(
+  int_ref plugin_config_file "ocamlbuild/plugin.ml" 28 1057 1061 "ocamlbuild/plugin.ml" 28 1057 1079
+)
+"ocamlbuild/plugin.ml" 32 1331 1362 "ocamlbuild/plugin.ml" 32 1331 1396
+call(
+  tail
+)
+type(
+  bool
+)
+"ocamlbuild/plugin.ml" 33 1397 1401 "ocamlbuild/plugin.ml" 33 1397 1432
+type(
+  unit -> bool
+)
+ident(
+  def we_have_a_config_file_interface "ocamlbuild/plugin.ml" 35 1484 1484 "ocamlbuild/plugin.ml" 1 0 -1
+)
+"ocamlbuild/plugin.ml" 33 1397 1433 "ocamlbuild/plugin.ml" 33 1397 1435
+type(
+  unit
+)
+"ocamlbuild/plugin.ml" 33 1397 1438 "ocamlbuild/plugin.ml" 33 1397 1453
+type(
+  string -> bool
+)
+ident(
+  ext_ref My_std.sys_file_exists
+)
+"ocamlbuild/plugin.ml" 33 1397 1454 "ocamlbuild/plugin.ml" 33 1397 1482
+type(
+  string
+)
+ident(
+  int_ref plugin_config_file_interface "ocamlbuild/plugin.ml" 29 1105 1109 "ocamlbuild/plugin.ml" 29 1105 1137
+)
+"ocamlbuild/plugin.ml" 33 1397 1438 "ocamlbuild/plugin.ml" 33 1397 1482
+call(
+  tail
+)
+type(
+  bool
+)
+"ocamlbuild/plugin.ml" 37 1518 1526 "ocamlbuild/plugin.ml" 37 1518 1542
+type(
+  bool
+)
+ident(
+  def we_need_a_plugin "ocamlbuild/plugin.ml" 38 1565 1569 "ocamlbuild/plugin.ml" 253 11050 11055
+)
+"ocamlbuild/plugin.ml" 37 1518 1545 "ocamlbuild/plugin.ml" 37 1518 1561
+type(
+  unit -> bool
+)
+ident(
+  int_ref we_need_a_plugin "ocamlbuild/plugin.ml" 30 1161 1165 "ocamlbuild/plugin.ml" 30 1161 1181
+)
+"ocamlbuild/plugin.ml" 37 1518 1562 "ocamlbuild/plugin.ml" 37 1518 1564
+type(
+  unit
+)
+"ocamlbuild/plugin.ml" 37 1518 1545 "ocamlbuild/plugin.ml" 37 1518 1564
+call(
+  stack
+)
+type(
+  bool
+)
+"ocamlbuild/plugin.ml" 38 1565 1573 "ocamlbuild/plugin.ml" 38 1565 1589
+type(
+  bool
+)
+ident(
+  def we_have_a_plugin "ocamlbuild/plugin.ml" 39 1612 1616 "ocamlbuild/plugin.ml" 253 11050 11055
+)
+"ocamlbuild/plugin.ml" 38 1565 1592 "ocamlbuild/plugin.ml" 38 1565 1608
+type(
+  unit -> bool
+)
+ident(
+  int_ref we_have_a_plugin "ocamlbuild/plugin.ml" 31 1239 1243 "ocamlbuild/plugin.ml" 31 1239 1259
+)
+"ocamlbuild/plugin.ml" 38 1565 1609 "ocamlbuild/plugin.ml" 38 1565 1611
+type(
+  unit
+)
+"ocamlbuild/plugin.ml" 38 1565 1592 "ocamlbuild/plugin.ml" 38 1565 1611
+call(
+  stack
+)
+type(
+  bool
+)
+"ocamlbuild/plugin.ml" 39 1612 1620 "ocamlbuild/plugin.ml" 39 1612 1641
+type(
+  bool
+)
+ident(
+  def we_have_a_config_file "ocamlbuild/plugin.ml" 40 1669 1673 "ocamlbuild/plugin.ml" 253 11050 11055
+)
+"ocamlbuild/plugin.ml" 39 1612 1644 "ocamlbuild/plugin.ml" 39 1612 1665
+type(
+  unit -> bool
+)
+ident(
+  int_ref we_have_a_config_file "ocamlbuild/plugin.ml" 32 1331 1335 "ocamlbuild/plugin.ml" 32 1331 1356
+)
+"ocamlbuild/plugin.ml" 39 1612 1666 "ocamlbuild/plugin.ml" 39 1612 1668
+type(
+  unit
+)
+"ocamlbuild/plugin.ml" 39 1612 1644 "ocamlbuild/plugin.ml" 39 1612 1668
+call(
+  stack
+)
+type(
+  bool
+)
+"ocamlbuild/plugin.ml" 40 1669 1677 "ocamlbuild/plugin.ml" 40 1669 1708
+type(
+  bool
+)
+ident(
+  def we_have_a_config_file_interface "ocamlbuild/plugin.ml" 41 1746 1750 "ocamlbuild/plugin.ml" 253 11050 11055
+)
+"ocamlbuild/plugin.ml" 40 1669 1711 "ocamlbuild/plugin.ml" 40 1669 1742
+type(
+  unit -> bool
+)
+ident(
+  int_ref we_have_a_config_file_interface "ocamlbuild/plugin.ml" 33 1397 1401 "ocamlbuild/plugin.ml" 33 1397 1432
+)
+"ocamlbuild/plugin.ml" 40 1669 1743 "ocamlbuild/plugin.ml" 40 1669 1745
+type(
+  unit
+)
+"ocamlbuild/plugin.ml" 40 1669 1711 "ocamlbuild/plugin.ml" 40 1669 1745
+call(
+  stack
+)
+type(
+  bool
+)
+"ocamlbuild/plugin.ml" 41 1746 1754 "ocamlbuild/plugin.ml" 41 1746 1772
+type(
+  Pathname.t -> bool
+)
+ident(
+  def up_to_date_or_copy "ocamlbuild/plugin.ml" 52 2017 2021 "ocamlbuild/plugin.ml" 253 11050 11055
+)
+"ocamlbuild/plugin.ml" 41 1746 1773 "ocamlbuild/plugin.ml" 41 1746 1775
+type(
+  Pathname.t
+)
+ident(
+  def fn "ocamlbuild/plugin.ml" 42 1778 1784 "ocamlbuild/plugin.ml" 50 2004 2015
+)
+"ocamlbuild/plugin.ml" 42 1778 1788 "ocamlbuild/plugin.ml" 42 1778 1791
+type(
+  Pathname.t
+)
+ident(
+  def fn' "ocamlbuild/plugin.ml" 43 1819 1825 "ocamlbuild/plugin.ml" 50 2004 2015
+)
+"ocamlbuild/plugin.ml" 42 1778 1794 "ocamlbuild/plugin.ml" 42 1778 1795
+type(
+  Pathname.t ref -> Pathname.t
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"ocamlbuild/plugin.ml" 42 1778 1795 "ocamlbuild/plugin.ml" 42 1778 1812
+type(
+  Pathname.t ref
+)
+ident(
+  ext_ref Options.build_dir
+)
+"ocamlbuild/plugin.ml" 42 1778 1794 "ocamlbuild/plugin.ml" 42 1778 1812
+type(
+  Pathname.t
+)
+"ocamlbuild/plugin.ml" 42 1778 1812 "ocamlbuild/plugin.ml" 42 1778 1813
+type(
+  Pathname.t -> Pathname.t -> Pathname.t
+)
+ident(
+  ext_ref Pathname.Operators.( / )
+)
+"ocamlbuild/plugin.ml" 42 1778 1813 "ocamlbuild/plugin.ml" 42 1778 1815
+type(
+  Pathname.t
+)
+ident(
+  int_ref fn "ocamlbuild/plugin.ml" 41 1746 1773 "ocamlbuild/plugin.ml" 41 1746 1775
+)
+"ocamlbuild/plugin.ml" 42 1778 1794 "ocamlbuild/plugin.ml" 42 1778 1815
+call(
+  stack
+)
+type(
+  Pathname.t
+)
+"ocamlbuild/plugin.ml" 43 1819 1825 "ocamlbuild/plugin.ml" 43 1819 1840
+type(
+  Pathname.t -> bool
+)
+ident(
+  ext_ref Pathname.exists
+)
+"ocamlbuild/plugin.ml" 43 1819 1841 "ocamlbuild/plugin.ml" 43 1819 1843
+type(
+  Pathname.t
+)
+ident(
+  int_ref fn "ocamlbuild/plugin.ml" 41 1746 1773 "ocamlbuild/plugin.ml" 41 1746 1775
+)
+"ocamlbuild/plugin.ml" 43 1819 1825 "ocamlbuild/plugin.ml" 43 1819 1843
+call(
+  stack
+)
+type(
+  bool
+)
+"ocamlbuild/plugin.ml" 43 1819 1844 "ocamlbuild/plugin.ml" 43 1819 1846
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"ocamlbuild/plugin.ml" 45 1861 1871 "ocamlbuild/plugin.ml" 45 1861 1886
+type(
+  Pathname.t -> bool
+)
+ident(
+  ext_ref Pathname.exists
+)
+"ocamlbuild/plugin.ml" 45 1861 1887 "ocamlbuild/plugin.ml" 45 1861 1890
+type(
+  Pathname.t
+)
+ident(
+  int_ref fn' "ocamlbuild/plugin.ml" 42 1778 1788 "ocamlbuild/plugin.ml" 42 1778 1791
+)
+"ocamlbuild/plugin.ml" 45 1861 1871 "ocamlbuild/plugin.ml" 45 1861 1890
+call(
+  stack
+)
+type(
+  bool
+)
+"ocamlbuild/plugin.ml" 45 1861 1891 "ocamlbuild/plugin.ml" 45 1861 1893
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"ocamlbuild/plugin.ml" 45 1861 1894 "ocamlbuild/plugin.ml" 45 1861 1916
+type(
+  Pathname.t -> Pathname.t -> bool
+)
+ident(
+  ext_ref Pathname.same_contents
+)
+"ocamlbuild/plugin.ml" 45 1861 1917 "ocamlbuild/plugin.ml" 45 1861 1919
+type(
+  Pathname.t
+)
+ident(
+  int_ref fn "ocamlbuild/plugin.ml" 41 1746 1773 "ocamlbuild/plugin.ml" 41 1746 1775
+)
+"ocamlbuild/plugin.ml" 45 1861 1920 "ocamlbuild/plugin.ml" 45 1861 1923
+type(
+  Pathname.t
+)
+ident(
+  int_ref fn' "ocamlbuild/plugin.ml" 42 1778 1788 "ocamlbuild/plugin.ml" 42 1778 1791
+)
+"ocamlbuild/plugin.ml" 45 1861 1894 "ocamlbuild/plugin.ml" 45 1861 1923
+call(
+  stack
+)
+type(
+  bool
+)
+"ocamlbuild/plugin.ml" 45 1861 1871 "ocamlbuild/plugin.ml" 45 1861 1923
+type(
+  bool
+)
+"ocamlbuild/plugin.ml" 45 1861 1924 "ocamlbuild/plugin.ml" 45 1861 1926
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( || )
+)
+"ocamlbuild/plugin.ml" 47 1943 1955 "ocamlbuild/plugin.ml" 47 1943 1963
+type(
+  Pathname.t -> Pathname.t -> unit
+)
+ident(
+  ext_ref Shell.cp
+)
+"ocamlbuild/plugin.ml" 47 1943 1964 "ocamlbuild/plugin.ml" 47 1943 1966
+type(
+  Pathname.t
+)
+ident(
+  int_ref fn "ocamlbuild/plugin.ml" 41 1746 1773 "ocamlbuild/plugin.ml" 41 1746 1775
+)
+"ocamlbuild/plugin.ml" 47 1943 1967 "ocamlbuild/plugin.ml" 47 1943 1970
+type(
+  Pathname.t
+)
+ident(
+  int_ref fn' "ocamlbuild/plugin.ml" 42 1778 1788 "ocamlbuild/plugin.ml" 42 1778 1791
+)
+"ocamlbuild/plugin.ml" 47 1943 1955 "ocamlbuild/plugin.ml" 47 1943 1970
+call(
+  stack
+)
+type(
+  unit
+)
+"ocamlbuild/plugin.ml" 48 1972 1984 "ocamlbuild/plugin.ml" 48 1972 1989
+type(
+  bool
+)
+"ocamlbuild/plugin.ml" 46 1927 1937 "ocamlbuild/plugin.ml" 49 1990 2003
+type(
+  bool
+)
+"ocamlbuild/plugin.ml" 44 1847 1855 "ocamlbuild/plugin.ml" 50 2004 2015
+type(
+  bool
+)
+"ocamlbuild/plugin.ml" 43 1819 1825 "ocamlbuild/plugin.ml" 50 2004 2015
+type(
+  bool
+)
+"ocamlbuild/plugin.ml" 42 1778 1784 "ocamlbuild/plugin.ml" 50 2004 2015
+type(
+  bool
+)
+"ocamlbuild/plugin.ml" 52 2017 2025 "ocamlbuild/plugin.ml" 52 2017 2049
+type(
+  unit -> unit
+)
+ident(
+  def rebuild_plugin_if_needed "ocamlbuild/plugin.ml" 237 10357 10361 "ocamlbuild/plugin.ml" 253 11050 11055
+)
+"ocamlbuild/plugin.ml" 52 2017 2050 "ocamlbuild/plugin.ml" 52 2017 2052
+type(
+  unit
+)
+"ocamlbuild/plugin.ml" 53 2055 2065 "ocamlbuild/plugin.ml" 53 2055 2066
+type(
+  bool
+)
+ident(
+  def a "ocamlbuild/plugin.ml" 54 2103 2109 "ocamlbuild/plugin.ml" 235 10346 10355
+)
+"ocamlbuild/plugin.ml" 53 2055 2069 "ocamlbuild/plugin.ml" 53 2055 2087
+type(
+  Pathname.t -> bool
+)
+ident(
+  int_ref up_to_date_or_copy "ocamlbuild/plugin.ml" 41 1746 1754 "ocamlbuild/plugin.ml" 41 1746 1772
+)
+"ocamlbuild/plugin.ml" 53 2055 2088 "ocamlbuild/plugin.ml" 53 2055 2099
+type(
+  Pathname.t
+)
+ident(
+  int_ref plugin_file "ocamlbuild/plugin.ml" 27 1016 1020 "ocamlbuild/plugin.ml" 27 1016 1031
+)
+"ocamlbuild/plugin.ml" 53 2055 2069 "ocamlbuild/plugin.ml" 53 2055 2099
+call(
+  stack
+)
+type(
+  bool
+)
+"ocamlbuild/plugin.ml" 54 2103 2113 "ocamlbuild/plugin.ml" 54 2103 2114
+type(
+  bool
+)
+ident(
+  def b "ocamlbuild/plugin.ml" 55 2189 2195 "ocamlbuild/plugin.ml" 235 10346 10355
+)
+"ocamlbuild/plugin.ml" 54 2103 2118 "ocamlbuild/plugin.ml" 54 2103 2121
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"ocamlbuild/plugin.ml" 54 2103 2122 "ocamlbuild/plugin.ml" 54 2103 2143
+type(
+  bool
+)
+ident(
+  int_ref we_have_a_config_file "ocamlbuild/plugin.ml" 39 1612 1620 "ocamlbuild/plugin.ml" 39 1612 1641
+)
+"ocamlbuild/plugin.ml" 54 2103 2117 "ocamlbuild/plugin.ml" 54 2103 2144
+type(
+  bool
+)
+"ocamlbuild/plugin.ml" 54 2103 2145 "ocamlbuild/plugin.ml" 54 2103 2147
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( || )
+)
+"ocamlbuild/plugin.ml" 54 2103 2148 "ocamlbuild/plugin.ml" 54 2103 2166
+type(
+  Pathname.t -> bool
+)
+ident(
+  int_ref up_to_date_or_copy "ocamlbuild/plugin.ml" 41 1746 1754 "ocamlbuild/plugin.ml" 41 1746 1772
+)
+"ocamlbuild/plugin.ml" 54 2103 2167 "ocamlbuild/plugin.ml" 54 2103 2185
+type(
+  Pathname.t
+)
+ident(
+  int_ref plugin_config_file "ocamlbuild/plugin.ml" 28 1057 1061 "ocamlbuild/plugin.ml" 28 1057 1079
+)
+"ocamlbuild/plugin.ml" 54 2103 2148 "ocamlbuild/plugin.ml" 54 2103 2185
+call(
+  stack
+)
+type(
+  bool
+)
+"ocamlbuild/plugin.ml" 54 2103 2117 "ocamlbuild/plugin.ml" 54 2103 2185
+type(
+  bool
+)
+"ocamlbuild/plugin.ml" 55 2189 2199 "ocamlbuild/plugin.ml" 55 2189 2200
+type(
+  bool
+)
+ident(
+  def c "ocamlbuild/plugin.ml" 56 2295 2301 "ocamlbuild/plugin.ml" 235 10346 10355
+)
+"ocamlbuild/plugin.ml" 55 2189 2204 "ocamlbuild/plugin.ml" 55 2189 2207
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"ocamlbuild/plugin.ml" 55 2189 2208 "ocamlbuild/plugin.ml" 55 2189 2239
+type(
+  bool
+)
+ident(
+  int_ref we_have_a_config_file_interface "ocamlbuild/plugin.ml" 40 1669 1677 "ocamlbuild/plugin.ml" 40 1669 1708
+)
+"ocamlbuild/plugin.ml" 55 2189 2203 "ocamlbuild/plugin.ml" 55 2189 2240
+type(
+  bool
+)
+"ocamlbuild/plugin.ml" 55 2189 2241 "ocamlbuild/plugin.ml" 55 2189 2243
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( || )
+)
+"ocamlbuild/plugin.ml" 55 2189 2244 "ocamlbuild/plugin.ml" 55 2189 2262
+type(
+  Pathname.t -> bool
+)
+ident(
+  int_ref up_to_date_or_copy "ocamlbuild/plugin.ml" 41 1746 1754 "ocamlbuild/plugin.ml" 41 1746 1772
+)
+"ocamlbuild/plugin.ml" 55 2189 2263 "ocamlbuild/plugin.ml" 55 2189 2291
+type(
+  Pathname.t
+)
+ident(
+  int_ref plugin_config_file_interface "ocamlbuild/plugin.ml" 29 1105 1109 "ocamlbuild/plugin.ml" 29 1105 1137
+)
+"ocamlbuild/plugin.ml" 55 2189 2244 "ocamlbuild/plugin.ml" 55 2189 2291
+call(
+  stack
+)
+type(
+  bool
+)
+"ocamlbuild/plugin.ml" 55 2189 2203 "ocamlbuild/plugin.ml" 55 2189 2291
+type(
+  bool
+)
+"ocamlbuild/plugin.ml" 56 2295 2304 "ocamlbuild/plugin.ml" 56 2295 2305
+type(
+  bool
+)
+ident(
+  int_ref a "ocamlbuild/plugin.ml" 53 2055 2065 "ocamlbuild/plugin.ml" 53 2055 2066
+)
+"ocamlbuild/plugin.ml" 56 2295 2306 "ocamlbuild/plugin.ml" 56 2295 2308
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"ocamlbuild/plugin.ml" 56 2295 2309 "ocamlbuild/plugin.ml" 56 2295 2310
+type(
+  bool
+)
+ident(
+  int_ref b "ocamlbuild/plugin.ml" 54 2103 2113 "ocamlbuild/plugin.ml" 54 2103 2114
+)
+"ocamlbuild/plugin.ml" 56 2295 2311 "ocamlbuild/plugin.ml" 56 2295 2313
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"ocamlbuild/plugin.ml" 56 2295 2314 "ocamlbuild/plugin.ml" 56 2295 2315
+type(
+  bool
+)
+ident(
+  int_ref c "ocamlbuild/plugin.ml" 55 2189 2199 "ocamlbuild/plugin.ml" 55 2189 2200
+)
+"ocamlbuild/plugin.ml" 56 2295 2316 "ocamlbuild/plugin.ml" 56 2295 2318
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"ocamlbuild/plugin.ml" 56 2295 2319 "ocamlbuild/plugin.ml" 56 2295 2335
+type(
+  bool
+)
+ident(
+  int_ref we_have_a_plugin "ocamlbuild/plugin.ml" 38 1565 1573 "ocamlbuild/plugin.ml" 38 1565 1589
+)
+"ocamlbuild/plugin.ml" 56 2295 2314 "ocamlbuild/plugin.ml" 56 2295 2335
+type(
+  bool
+)
+"ocamlbuild/plugin.ml" 56 2295 2309 "ocamlbuild/plugin.ml" 56 2295 2335
+type(
+  bool
+)
+"ocamlbuild/plugin.ml" 56 2295 2304 "ocamlbuild/plugin.ml" 56 2295 2335
+type(
+  bool
+)
+"ocamlbuild/plugin.ml" 57 2341 2349 "ocamlbuild/plugin.ml" 57 2341 2351
+type(
+  unit
+)
+"ocamlbuild/plugin.ml" 60 2470 2481 "ocamlbuild/plugin.ml" 60 2470 2482
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"ocamlbuild/plugin.ml" 60 2470 2482 "ocamlbuild/plugin.ml" 60 2470 2503
+type(
+  bool ref
+)
+ident(
+  ext_ref Options.native_plugin
+)
+"ocamlbuild/plugin.ml" 60 2470 2481 "ocamlbuild/plugin.ml" 60 2470 2503
+type(
+  bool
+)
+"ocamlbuild/plugin.ml" 61 2504 2516 "ocamlbuild/plugin.ml" 61 2504 2518
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"ocamlbuild/plugin.ml" 61 2504 2519 "ocamlbuild/plugin.ml" 61 2504 2522
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"ocamlbuild/plugin.ml" 61 2504 2524 "ocamlbuild/plugin.ml" 61 2504 2539
+type(
+  Pathname.t -> bool
+)
+ident(
+  ext_ref My_std.sys_file_exists
+)
+"ocamlbuild/plugin.ml" 61 2504 2542 "ocamlbuild/plugin.ml" 61 2504 2543
+type(
+  Pathname.t ref -> Pathname.t
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"ocamlbuild/plugin.ml" 61 2504 2543 "ocamlbuild/plugin.ml" 61 2504 2566
+type(
+  Pathname.t ref
+)
+ident(
+  ext_ref Ocamlbuild_where.libdir
+)
+"ocamlbuild/plugin.ml" 61 2504 2541 "ocamlbuild/plugin.ml" 61 2504 2567
+type(
+  Pathname.t
+)
+"ocamlbuild/plugin.ml" 61 2504 2567 "ocamlbuild/plugin.ml" 61 2504 2568
+type(
+  Pathname.t -> Pathname.t -> Pathname.t
+)
+ident(
+  ext_ref Pathname.Operators.( / )
+)
+"ocamlbuild/plugin.ml" 61 2504 2568 "ocamlbuild/plugin.ml" 61 2504 2588
+type(
+  Pathname.t
+)
+"ocamlbuild/plugin.ml" 61 2504 2540 "ocamlbuild/plugin.ml" 61 2504 2589
+call(
+  stack
+)
+type(
+  Pathname.t
+)
+"ocamlbuild/plugin.ml" 61 2504 2523 "ocamlbuild/plugin.ml" 61 2504 2590
+call(
+  stack
+)
+type(
+  bool
+)
+"ocamlbuild/plugin.ml" 61 2504 2519 "ocamlbuild/plugin.ml" 61 2504 2590
+type(
+  bool
+)
+"ocamlbuild/plugin.ml" 60 2470 2481 "ocamlbuild/plugin.ml" 61 2504 2590
+type(
+  bool
+)
+"ocamlbuild/plugin.ml" 63 2612 2624 "ocamlbuild/plugin.ml" 63 2612 2645
+type(
+  bool ref
+)
+ident(
+  ext_ref Options.native_plugin
+)
+"ocamlbuild/plugin.ml" 63 2612 2646 "ocamlbuild/plugin.ml" 63 2612 2648
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"ocamlbuild/plugin.ml" 63 2612 2649 "ocamlbuild/plugin.ml" 63 2612 2654
+type(
+  bool
+)
+"ocamlbuild/plugin.ml" 63 2612 2624 "ocamlbuild/plugin.ml" 63 2612 2654
+type(
+  unit
+)
+"ocamlbuild/plugin.ml" 64 2656 2668 "ocamlbuild/plugin.ml" 64 2656 2675
+type(
+  (unit, Format.formatter, unit) format -> unit
+)
+ident(
+  ext_ref Log.eprintf
+)
+"ocamlbuild/plugin.ml" 64 2656 2676 "ocamlbuild/plugin.ml" 64 2656 2727
+type(
+  (unit, Format.formatter, unit) format
+)
+"ocamlbuild/plugin.ml" 64 2656 2668 "ocamlbuild/plugin.ml" 64 2656 2727
+call(
+  stack
+)
+type(
+  unit
+)
+"ocamlbuild/plugin.ml" 62 2596 2606 "ocamlbuild/plugin.ml" 65 2728 2741
+type(
+  unit
+)
+"ocamlbuild/plugin.ml" 60 2470 2478 "ocamlbuild/plugin.ml" 65 2728 2741
+type(
+  unit
+)
+"ocamlbuild/plugin.ml" 66 2743 2755 "ocamlbuild/plugin.ml" 66 2743 2768
+type(
+  Command.spec
+)
+ident(
+  def plugin_config "ocamlbuild/plugin.ml" 73 2992 3000 "ocamlbuild/plugin.ml" 234 10333 10345
+)
+"ocamlbuild/plugin.ml" 67 2771 2784 "ocamlbuild/plugin.ml" 67 2771 2805
+type(
+  bool
+)
+ident(
+  int_ref we_have_a_config_file "ocamlbuild/plugin.ml" 39 1612 1620 "ocamlbuild/plugin.ml" 39 1612 1641
+)
+"ocamlbuild/plugin.ml" 68 2811 2826 "ocamlbuild/plugin.ml" 68 2811 2857
+type(
+  bool
+)
+ident(
+  int_ref we_have_a_config_file_interface "ocamlbuild/plugin.ml" 40 1669 1677 "ocamlbuild/plugin.ml" 40 1669 1708
+)
+"ocamlbuild/plugin.ml" 69 2863 2881 "ocamlbuild/plugin.ml" 69 2863 2909
+type(
+  Command.pathname
+)
+ident(
+  int_ref plugin_config_file_interface "ocamlbuild/plugin.ml" 29 1105 1109 "ocamlbuild/plugin.ml" 29 1105 1137
+)
+"ocamlbuild/plugin.ml" 69 2863 2879 "ocamlbuild/plugin.ml" 69 2863 2909
+type(
+  Command.spec
+)
+"ocamlbuild/plugin.ml" 69 2863 2913 "ocamlbuild/plugin.ml" 69 2863 2931
+type(
+  Command.pathname
+)
+ident(
+  int_ref plugin_config_file "ocamlbuild/plugin.ml" 28 1057 1061 "ocamlbuild/plugin.ml" 28 1057 1079
+)
+"ocamlbuild/plugin.ml" 69 2863 2911 "ocamlbuild/plugin.ml" 69 2863 2931
+type(
+  Command.spec
+)
+"ocamlbuild/plugin.ml" 69 2863 2878 "ocamlbuild/plugin.ml" 69 2863 2932
+type(
+  Command.spec list
+)
+"ocamlbuild/plugin.ml" 69 2863 2877 "ocamlbuild/plugin.ml" 69 2863 2932
+type(
+  Command.spec
+)
+"ocamlbuild/plugin.ml" 70 2933 2952 "ocamlbuild/plugin.ml" 70 2933 2970
+type(
+  Command.pathname
+)
+ident(
+  int_ref plugin_config_file "ocamlbuild/plugin.ml" 28 1057 1061 "ocamlbuild/plugin.ml" 28 1057 1079
+)
+"ocamlbuild/plugin.ml" 70 2933 2950 "ocamlbuild/plugin.ml" 70 2933 2970
+type(
+  Command.spec
+)
+"ocamlbuild/plugin.ml" 68 2811 2823 "ocamlbuild/plugin.ml" 70 2933 2970
+type(
+  Command.spec
+)
+"ocamlbuild/plugin.ml" 71 2971 2986 "ocamlbuild/plugin.ml" 71 2971 2987
+type(
+  Command.spec
+)
+"ocamlbuild/plugin.ml" 67 2771 2781 "ocamlbuild/plugin.ml" 71 2971 2987
+type(
+  Command.spec
+)
+"ocamlbuild/plugin.ml" 73 2992 3004 "ocamlbuild/plugin.ml" 73 2992 3007
+type(
+  string
+)
+ident(
+  def cma "ocamlbuild/plugin.ml" 81 3215 3223 "ocamlbuild/plugin.ml" 234 10333 10345
+)
+"ocamlbuild/plugin.ml" 73 2992 3009 "ocamlbuild/plugin.ml" 73 2992 3012
+type(
+  string
+)
+ident(
+  def cmo "ocamlbuild/plugin.ml" 81 3215 3223 "ocamlbuild/plugin.ml" 234 10333 10345
+)
+"ocamlbuild/plugin.ml" 73 2992 3014 "ocamlbuild/plugin.ml" 73 2992 3022
+type(
+  Options.command_spec
+)
+ident(
+  def compiler "ocamlbuild/plugin.ml" 81 3215 3223 "ocamlbuild/plugin.ml" 234 10333 10345
+)
+"ocamlbuild/plugin.ml" 73 2992 3024 "ocamlbuild/plugin.ml" 73 2992 3038
+type(
+  string
+)
+ident(
+  def byte_or_native "ocamlbuild/plugin.ml" 81 3215 3223 "ocamlbuild/plugin.ml" 234 10333 10345
+)
+"ocamlbuild/plugin.ml" 73 2992 3004 "ocamlbuild/plugin.ml" 73 2992 3038
+type(
+  string * string * Options.command_spec * string
+)
+"ocamlbuild/plugin.ml" 74 3041 3054 "ocamlbuild/plugin.ml" 74 3041 3055
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"ocamlbuild/plugin.ml" 74 3041 3055 "ocamlbuild/plugin.ml" 74 3041 3076
+type(
+  bool ref
+)
+ident(
+  ext_ref Options.native_plugin
+)
+"ocamlbuild/plugin.ml" 74 3041 3054 "ocamlbuild/plugin.ml" 74 3041 3076
+type(
+  bool
+)
+"ocamlbuild/plugin.ml" 75 3082 3094 "ocamlbuild/plugin.ml" 75 3082 3100
+type(
+  string
+)
+"ocamlbuild/plugin.ml" 75 3082 3102 "ocamlbuild/plugin.ml" 75 3082 3107
+type(
+  string
+)
+"ocamlbuild/plugin.ml" 75 3082 3109 "ocamlbuild/plugin.ml" 75 3082 3110
+type(
+  Options.command_spec ref -> Options.command_spec
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"ocamlbuild/plugin.ml" 75 3082 3110 "ocamlbuild/plugin.ml" 75 3082 3126
+type(
+  Options.command_spec ref
+)
+ident(
+  ext_ref Options.ocamlopt
+)
+"ocamlbuild/plugin.ml" 75 3082 3109 "ocamlbuild/plugin.ml" 75 3082 3126
+type(
+  Options.command_spec
+)
+"ocamlbuild/plugin.ml" 75 3082 3128 "ocamlbuild/plugin.ml" 75 3082 3136
+type(
+  string
+)
+"ocamlbuild/plugin.ml" 75 3082 3094 "ocamlbuild/plugin.ml" 75 3082 3136
+type(
+  string * string * Options.command_spec * string
+)
+"ocamlbuild/plugin.ml" 77 3152 3164 "ocamlbuild/plugin.ml" 77 3152 3169
+type(
+  string
+)
+"ocamlbuild/plugin.ml" 77 3152 3171 "ocamlbuild/plugin.ml" 77 3152 3176
+type(
+  string
+)
+"ocamlbuild/plugin.ml" 77 3152 3178 "ocamlbuild/plugin.ml" 77 3152 3179
+type(
+  Options.command_spec ref -> Options.command_spec
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"ocamlbuild/plugin.ml" 77 3152 3179 "ocamlbuild/plugin.ml" 77 3152 3193
+type(
+  Options.command_spec ref
+)
+ident(
+  ext_ref Options.ocamlc
+)
+"ocamlbuild/plugin.ml" 77 3152 3178 "ocamlbuild/plugin.ml" 77 3152 3193
+type(
+  Options.command_spec
+)
+"ocamlbuild/plugin.ml" 77 3152 3195 "ocamlbuild/plugin.ml" 77 3152 3201
+type(
+  string
+)
+"ocamlbuild/plugin.ml" 77 3152 3164 "ocamlbuild/plugin.ml" 77 3152 3201
+type(
+  string * string * Options.command_spec * string
+)
+"ocamlbuild/plugin.ml" 74 3041 3051 "ocamlbuild/plugin.ml" 77 3152 3201
+type(
+  string * string * Options.command_spec * string
+)
+"ocamlbuild/plugin.ml" 81 3215 3228 "ocamlbuild/plugin.ml" 81 3215 3237
+type(
+  Command.spec
+)
+ident(
+  def unix_spec "ocamlbuild/plugin.ml" 195 8537 8545 "ocamlbuild/plugin.ml" 234 10333 10345
+)
+"ocamlbuild/plugin.ml" 81 3215 3239 "ocamlbuild/plugin.ml" 81 3215 3258
+type(
+  Command.spec
+)
+ident(
+  def ocamlbuild_lib_spec "ocamlbuild/plugin.ml" 195 8537 8545 "ocamlbuild/plugin.ml" 234 10333 10345
+)
+"ocamlbuild/plugin.ml" 81 3215 3260 "ocamlbuild/plugin.ml" 81 3215 3282
+type(
+  Command.spec
+)
+ident(
+  def ocamlbuild_module_spec "ocamlbuild/plugin.ml" 195 8537 8545 "ocamlbuild/plugin.ml" 234 10333 10345
+)
+"ocamlbuild/plugin.ml" 81 3215 3227 "ocamlbuild/plugin.ml" 81 3215 3283
+type(
+  Command.spec * Command.spec * Command.spec
+)
+"ocamlbuild/plugin.ml" 83 3287 3301 "ocamlbuild/plugin.ml" 83 3287 3315
+type(
+  bool
+)
+ident(
+  def use_light_mode "ocamlbuild/plugin.ml" 85 3385 3395 "ocamlbuild/plugin.ml" 192 8454 8524
+)
+"ocamlbuild/plugin.ml" 84 3318 3330 "ocamlbuild/plugin.ml" 84 3318 3333
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"ocamlbuild/plugin.ml" 84 3318 3334 "ocamlbuild/plugin.ml" 84 3318 3335
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"ocamlbuild/plugin.ml" 84 3318 3335 "ocamlbuild/plugin.ml" 84 3318 3356
+type(
+  bool ref
+)
+ident(
+  ext_ref Options.native_plugin
+)
+"ocamlbuild/plugin.ml" 84 3318 3334 "ocamlbuild/plugin.ml" 84 3318 3356
+type(
+  bool
+)
+"ocamlbuild/plugin.ml" 84 3318 3330 "ocamlbuild/plugin.ml" 84 3318 3356
+type(
+  bool
+)
+"ocamlbuild/plugin.ml" 84 3318 3357 "ocamlbuild/plugin.ml" 84 3318 3359
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"ocamlbuild/plugin.ml" 84 3318 3360 "ocamlbuild/plugin.ml" 84 3318 3362
+type(
+  bool Lazy.t -> bool
+)
+ident(
+  ext_ref My_std.( !* )
+)
+"ocamlbuild/plugin.ml" 84 3318 3362 "ocamlbuild/plugin.ml" 84 3318 3381
+type(
+  bool Lazy.t
+)
+ident(
+  ext_ref My_unix.is_degraded
+)
+"ocamlbuild/plugin.ml" 84 3318 3360 "ocamlbuild/plugin.ml" 84 3318 3381
+call(
+  stack
+)
+type(
+  bool
+)
+"ocamlbuild/plugin.ml" 84 3318 3330 "ocamlbuild/plugin.ml" 84 3318 3381
+type(
+  bool
+)
+"ocamlbuild/plugin.ml" 85 3385 3399 "ocamlbuild/plugin.ml" 85 3385 3417
+type(
+  bool
+)
+ident(
+  def use_ocamlfind_pkgs "ocamlbuild/plugin.ml" 162 7294 7304 "ocamlbuild/plugin.ml" 192 8454 8524
+)
+"ocamlbuild/plugin.ml" 86 3420 3432 "ocamlbuild/plugin.ml" 86 3420 3433
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"ocamlbuild/plugin.ml" 86 3420 3433 "ocamlbuild/plugin.ml" 86 3420 3454
+type(
+  bool ref
+)
+ident(
+  ext_ref Options.use_ocamlfind
+)
+"ocamlbuild/plugin.ml" 86 3420 3432 "ocamlbuild/plugin.ml" 86 3420 3454
+type(
+  bool
+)
+"ocamlbuild/plugin.ml" 86 3420 3455 "ocamlbuild/plugin.ml" 86 3420 3457
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"ocamlbuild/plugin.ml" 86 3420 3458 "ocamlbuild/plugin.ml" 86 3420 3459
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"ocamlbuild/plugin.ml" 86 3420 3459 "ocamlbuild/plugin.ml" 86 3420 3478
+type(
+  string list ref
+)
+ident(
+  ext_ref Options.plugin_tags
+)
+"ocamlbuild/plugin.ml" 86 3420 3458 "ocamlbuild/plugin.ml" 86 3420 3478
+type(
+  string list
+)
+"ocamlbuild/plugin.ml" 86 3420 3479 "ocamlbuild/plugin.ml" 86 3420 3481
+type(
+  string list -> string list -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"ocamlbuild/plugin.ml" 86 3420 3482 "ocamlbuild/plugin.ml" 86 3420 3484
+type(
+  string list
+)
+"ocamlbuild/plugin.ml" 86 3420 3458 "ocamlbuild/plugin.ml" 86 3420 3484
+type(
+  bool
+)
+"ocamlbuild/plugin.ml" 86 3420 3432 "ocamlbuild/plugin.ml" 86 3420 3484
+type(
+  bool
+)
+"ocamlbuild/plugin.ml" 162 7294 7308 "ocamlbuild/plugin.ml" 162 7294 7316
+type(
+  [> `Lib of string | `Nothing | `Package of string ]
+)
+ident(
+  def unix_lib "ocamlbuild/plugin.ml" 167 7456 7466 "ocamlbuild/plugin.ml" 192 8454 8524
+)
+"ocamlbuild/plugin.ml" 163 7319 7334 "ocamlbuild/plugin.ml" 163 7319 7352
+type(
+  bool
+)
+ident(
+  int_ref use_ocamlfind_pkgs "ocamlbuild/plugin.ml" 85 3385 3399 "ocamlbuild/plugin.ml" 85 3385 3417
+)
+"ocamlbuild/plugin.ml" 163 7319 7367 "ocamlbuild/plugin.ml" 163 7319 7373
+type(
+  string
+)
+"ocamlbuild/plugin.ml" 163 7319 7358 "ocamlbuild/plugin.ml" 163 7319 7373
+type(
+  [> `Lib of string | `Nothing | `Package of string ] as 'a
+)
+"ocamlbuild/plugin.ml" 164 7374 7394 "ocamlbuild/plugin.ml" 164 7374 7408
+type(
+  bool
+)
+ident(
+  int_ref use_light_mode "ocamlbuild/plugin.ml" 83 3287 3301 "ocamlbuild/plugin.ml" 83 3287 3315
+)
+"ocamlbuild/plugin.ml" 164 7374 7414 "ocamlbuild/plugin.ml" 164 7374 7422
+type(
+  'a
+)
+"ocamlbuild/plugin.ml" 165 7423 7445 "ocamlbuild/plugin.ml" 165 7423 7451
+type(
+  string
+)
+"ocamlbuild/plugin.ml" 165 7423 7440 "ocamlbuild/plugin.ml" 165 7423 7451
+type(
+  'a
+)
+"ocamlbuild/plugin.ml" 164 7374 7391 "ocamlbuild/plugin.ml" 165 7423 7451
+type(
+  'a
+)
+"ocamlbuild/plugin.ml" 163 7319 7331 "ocamlbuild/plugin.ml" 165 7423 7451
+type(
+  'a
+)
+"ocamlbuild/plugin.ml" 167 7456 7470 "ocamlbuild/plugin.ml" 167 7456 7484
+type(
+  [> `Local_lib of string | `Package of string ]
+)
+ident(
+  def ocamlbuild_lib "ocamlbuild/plugin.ml" 172 7668 7678 "ocamlbuild/plugin.ml" 192 8454 8524
+)
+"ocamlbuild/plugin.ml" 168 7487 7502 "ocamlbuild/plugin.ml" 168 7487 7520
+type(
+  bool
+)
+ident(
+  int_ref use_ocamlfind_pkgs "ocamlbuild/plugin.ml" 85 3385 3399 "ocamlbuild/plugin.ml" 85 3385 3417
+)
+"ocamlbuild/plugin.ml" 168 7487 7535 "ocamlbuild/plugin.ml" 168 7487 7547
+type(
+  string
+)
+"ocamlbuild/plugin.ml" 168 7487 7526 "ocamlbuild/plugin.ml" 168 7487 7547
+type(
+  [> `Local_lib of string | `Package of string ] as 'b
+)
+"ocamlbuild/plugin.ml" 169 7548 7568 "ocamlbuild/plugin.ml" 169 7548 7582
+type(
+  bool
+)
+ident(
+  int_ref use_light_mode "ocamlbuild/plugin.ml" 83 3287 3301 "ocamlbuild/plugin.ml" 83 3287 3315
+)
+"ocamlbuild/plugin.ml" 169 7548 7599 "ocamlbuild/plugin.ml" 169 7548 7619
+type(
+  string
+)
+"ocamlbuild/plugin.ml" 169 7548 7588 "ocamlbuild/plugin.ml" 169 7548 7619
+type(
+  'b
+)
+"ocamlbuild/plugin.ml" 170 7620 7648 "ocamlbuild/plugin.ml" 170 7620 7663
+type(
+  string
+)
+"ocamlbuild/plugin.ml" 170 7620 7637 "ocamlbuild/plugin.ml" 170 7620 7663
+type(
+  'b
+)
+"ocamlbuild/plugin.ml" 169 7548 7565 "ocamlbuild/plugin.ml" 170 7620 7663
+type(
+  'b
+)
+"ocamlbuild/plugin.ml" 168 7487 7499 "ocamlbuild/plugin.ml" 170 7620 7663
+type(
+  'b
+)
+"ocamlbuild/plugin.ml" 172 7668 7682 "ocamlbuild/plugin.ml" 172 7668 7699
+type(
+  [> `Local_mod of string ]
+)
+ident(
+  def ocamlbuild_module "ocamlbuild/plugin.ml" 176 7811 7821 "ocamlbuild/plugin.ml" 192 8454 8524
+)
+"ocamlbuild/plugin.ml" 173 7702 7717 "ocamlbuild/plugin.ml" 173 7702 7731
+type(
+  bool
+)
+ident(
+  int_ref use_light_mode "ocamlbuild/plugin.ml" 83 3287 3301 "ocamlbuild/plugin.ml" 83 3287 3315
+)
+"ocamlbuild/plugin.ml" 173 7702 7748 "ocamlbuild/plugin.ml" 173 7702 7765
+type(
+  string
+)
+"ocamlbuild/plugin.ml" 173 7702 7737 "ocamlbuild/plugin.ml" 173 7702 7765
+type(
+  [> `Local_mod of string ] as 'c
+)
+"ocamlbuild/plugin.ml" 174 7766 7794 "ocamlbuild/plugin.ml" 174 7766 7806
+type(
+  string
+)
+"ocamlbuild/plugin.ml" 174 7766 7783 "ocamlbuild/plugin.ml" 174 7766 7806
+type(
+  'c
+)
+"ocamlbuild/plugin.ml" 173 7702 7714 "ocamlbuild/plugin.ml" 174 7766 7806
+type(
+  'c
+)
+"ocamlbuild/plugin.ml" 176 7811 7825 "ocamlbuild/plugin.ml" 176 7811 7828
+type(
+  string
+)
+ident(
+  def dir "ocamlbuild/plugin.ml" 177 7859 7869 "ocamlbuild/plugin.ml" 192 8454 8524
+)
+"ocamlbuild/plugin.ml" 176 7811 7831 "ocamlbuild/plugin.ml" 176 7811 7832
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"ocamlbuild/plugin.ml" 176 7811 7832 "ocamlbuild/plugin.ml" 176 7811 7855
+type(
+  string ref
+)
+ident(
+  ext_ref Ocamlbuild_where.libdir
+)
+"ocamlbuild/plugin.ml" 176 7811 7831 "ocamlbuild/plugin.ml" 176 7811 7855
+type(
+  string
+)
+"ocamlbuild/plugin.ml" 177 7859 7873 "ocamlbuild/plugin.ml" 177 7859 7876
+type(
+  Pathname.t
+)
+ident(
+  def dir "ocamlbuild/plugin.ml" 179 7942 7952 "ocamlbuild/plugin.ml" 192 8454 8524
+)
+"ocamlbuild/plugin.ml" 177 7859 7882 "ocamlbuild/plugin.ml" 177 7859 7902
+type(
+  Pathname.t -> bool
+)
+ident(
+  ext_ref Pathname.is_implicit
+)
+"ocamlbuild/plugin.ml" 177 7859 7903 "ocamlbuild/plugin.ml" 177 7859 7906
+type(
+  Pathname.t
+)
+ident(
+  int_ref dir "ocamlbuild/plugin.ml" 176 7811 7825 "ocamlbuild/plugin.ml" 176 7811 7828
+)
+"ocamlbuild/plugin.ml" 177 7859 7882 "ocamlbuild/plugin.ml" 177 7859 7906
+call(
+  stack
+)
+type(
+  bool
+)
+"ocamlbuild/plugin.ml" 177 7859 7912 "ocamlbuild/plugin.ml" 177 7859 7924
+type(
+  Pathname.t
+)
+ident(
+  ext_ref Pathname.pwd
+)
+"ocamlbuild/plugin.ml" 177 7859 7924 "ocamlbuild/plugin.ml" 177 7859 7925
+type(
+  Pathname.t -> Pathname.t -> Pathname.t
+)
+ident(
+  ext_ref Pathname.Operators.( / )
+)
+"ocamlbuild/plugin.ml" 177 7859 7925 "ocamlbuild/plugin.ml" 177 7859 7928
+type(
+  Pathname.t
+)
+ident(
+  int_ref dir "ocamlbuild/plugin.ml" 176 7811 7825 "ocamlbuild/plugin.ml" 176 7811 7828
+)
+"ocamlbuild/plugin.ml" 177 7859 7912 "ocamlbuild/plugin.ml" 177 7859 7928
+call(
+  stack
+)
+type(
+  Pathname.t
+)
+"ocamlbuild/plugin.ml" 177 7859 7934 "ocamlbuild/plugin.ml" 177 7859 7937
+type(
+  Pathname.t
+)
+ident(
+  int_ref dir "ocamlbuild/plugin.ml" 176 7811 7825 "ocamlbuild/plugin.ml" 176 7811 7828
+)
+"ocamlbuild/plugin.ml" 177 7859 7879 "ocamlbuild/plugin.ml" 177 7859 7937
+type(
+  Pathname.t
+)
+"ocamlbuild/plugin.ml" 179 7942 7956 "ocamlbuild/plugin.ml" 179 7942 7962
+type(
+  Pathname.t -> Pathname.t
+)
+ident(
+  def in_dir "ocamlbuild/plugin.ml" 185 8160 8170 "ocamlbuild/plugin.ml" 192 8454 8524
+)
+"ocamlbuild/plugin.ml" 179 7942 7963 "ocamlbuild/plugin.ml" 179 7942 7967
+type(
+  Pathname.t
+)
+ident(
+  def file "ocamlbuild/plugin.ml" 180 7970 7982 "ocamlbuild/plugin.ml" 183 8139 8155
+)
+"ocamlbuild/plugin.ml" 180 7970 7986 "ocamlbuild/plugin.ml" 180 7970 7990
+type(
+  Pathname.t
+)
+ident(
+  def path "ocamlbuild/plugin.ml" 181 8005 8017 "ocamlbuild/plugin.ml" 183 8139 8155
+)
+"ocamlbuild/plugin.ml" 180 7970 7993 "ocamlbuild/plugin.ml" 180 7970 7996
+type(
+  Pathname.t
+)
+ident(
+  int_ref dir "ocamlbuild/plugin.ml" 177 7859 7873 "ocamlbuild/plugin.ml" 177 7859 7876
+)
+"ocamlbuild/plugin.ml" 180 7970 7996 "ocamlbuild/plugin.ml" 180 7970 7997
+type(
+  Pathname.t -> Pathname.t -> Pathname.t
+)
+ident(
+  ext_ref Pathname.Operators.( / )
+)
+"ocamlbuild/plugin.ml" 180 7970 7997 "ocamlbuild/plugin.ml" 180 7970 8001
+type(
+  Pathname.t
+)
+ident(
+  int_ref file "ocamlbuild/plugin.ml" 179 7942 7963 "ocamlbuild/plugin.ml" 179 7942 7967
+)
+"ocamlbuild/plugin.ml" 180 7970 7993 "ocamlbuild/plugin.ml" 180 7970 8001
+call(
+  stack
+)
+type(
+  Pathname.t
+)
+"ocamlbuild/plugin.ml" 181 8005 8020 "ocamlbuild/plugin.ml" 181 8005 8023
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"ocamlbuild/plugin.ml" 181 8005 8025 "ocamlbuild/plugin.ml" 181 8005 8040
+type(
+  Pathname.t -> bool
+)
+ident(
+  ext_ref My_std.sys_file_exists
+)
+"ocamlbuild/plugin.ml" 181 8005 8041 "ocamlbuild/plugin.ml" 181 8005 8045
+type(
+  Pathname.t
+)
+ident(
+  int_ref path "ocamlbuild/plugin.ml" 180 7970 7986 "ocamlbuild/plugin.ml" 180 7970 7990
+)
+"ocamlbuild/plugin.ml" 181 8005 8024 "ocamlbuild/plugin.ml" 181 8005 8046
+call(
+  stack
+)
+type(
+  bool
+)
+"ocamlbuild/plugin.ml" 181 8005 8020 "ocamlbuild/plugin.ml" 181 8005 8046
+type(
+  bool
+)
+"ocamlbuild/plugin.ml" 181 8005 8052 "ocamlbuild/plugin.ml" 181 8005 8060
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"ocamlbuild/plugin.ml" 182 8061 8076 "ocamlbuild/plugin.ml" 182 8061 8083
+type(
+  (Pathname.t -> string, unit, string) format -> Pathname.t -> string
+)
+ident(
+  ext_ref Format.sprintf
+)
+"ocamlbuild/plugin.ml" 182 8061 8084 "ocamlbuild/plugin.ml" 182 8061 8131
+type(
+  (Pathname.t -> string, unit, string) format
+)
+"ocamlbuild/plugin.ml" 182 8061 8132 "ocamlbuild/plugin.ml" 182 8061 8136
+type(
+  Pathname.t
+)
+ident(
+  int_ref file "ocamlbuild/plugin.ml" 179 7942 7963 "ocamlbuild/plugin.ml" 179 7942 7967
+)
+"ocamlbuild/plugin.ml" 182 8061 8075 "ocamlbuild/plugin.ml" 182 8061 8137
+call(
+  stack
+)
+type(
+  string
+)
+"ocamlbuild/plugin.ml" 181 8005 8052 "ocamlbuild/plugin.ml" 182 8061 8137
+call(
+  stack
+)
+type(
+  unit
+)
+"ocamlbuild/plugin.ml" 181 8005 8017 "ocamlbuild/plugin.ml" 182 8061 8137
+type(
+  unit
+)
+"ocamlbuild/plugin.ml" 183 8139 8151 "ocamlbuild/plugin.ml" 183 8139 8155
+type(
+  Pathname.t
+)
+ident(
+  int_ref path "ocamlbuild/plugin.ml" 180 7970 7986 "ocamlbuild/plugin.ml" 180 7970 7990
+)
+"ocamlbuild/plugin.ml" 181 8005 8017 "ocamlbuild/plugin.ml" 183 8139 8155
+type(
+  Pathname.t
+)
+"ocamlbuild/plugin.ml" 180 7970 7982 "ocamlbuild/plugin.ml" 183 8139 8155
+type(
+  Pathname.t
+)
+"ocamlbuild/plugin.ml" 185 8160 8174 "ocamlbuild/plugin.ml" 185 8160 8178
+type(
+  [< `Lib of Pathname.t
+   | `Local_lib of Pathname.t
+   | `Local_mod of Pathname.t
+   | `Nothing
+   | `Package of string ] ->
+  Command.spec
+)
+ident(
+  def spec "ocamlbuild/plugin.ml" 192 8454 8464 "ocamlbuild/plugin.ml" 192 8454 8524
+)
+"ocamlbuild/plugin.ml" 186 8190 8204 "ocamlbuild/plugin.ml" 186 8190 8212
+type(
+  [< `Lib of Pathname.t
+   | `Local_lib of Pathname.t
+   | `Local_mod of Pathname.t
+   | `Nothing
+   | `Package of string ]
+  as 'd
+)
+"ocamlbuild/plugin.ml" 186 8190 8216 "ocamlbuild/plugin.ml" 186 8190 8217
+type(
+  Command.spec
+)
+"ocamlbuild/plugin.ml" 187 8218 8241 "ocamlbuild/plugin.ml" 187 8218 8244
+type(
+  string
+)
+ident(
+  def pkg "ocamlbuild/plugin.ml" 187 8218 8248 "ocamlbuild/plugin.ml" 187 8218 8270
+)
+"ocamlbuild/plugin.ml" 187 8218 8232 "ocamlbuild/plugin.ml" 187 8218 8244
+type(
+  'd
+)
+"ocamlbuild/plugin.ml" 187 8218 8252 "ocamlbuild/plugin.ml" 187 8218 8262
+type(
+  string
+)
+"ocamlbuild/plugin.ml" 187 8218 8250 "ocamlbuild/plugin.ml" 187 8218 8262
+type(
+  Command.spec
+)
+"ocamlbuild/plugin.ml" 187 8218 8266 "ocamlbuild/plugin.ml" 187 8218 8269
+type(
+  string
+)
+ident(
+  int_ref pkg "ocamlbuild/plugin.ml" 187 8218 8241 "ocamlbuild/plugin.ml" 187 8218 8244
+)
+"ocamlbuild/plugin.ml" 187 8218 8264 "ocamlbuild/plugin.ml" 187 8218 8269
+type(
+  Command.spec
+)
+"ocamlbuild/plugin.ml" 187 8218 8249 "ocamlbuild/plugin.ml" 187 8218 8270
+type(
+  Command.spec list
+)
+"ocamlbuild/plugin.ml" 187 8218 8248 "ocamlbuild/plugin.ml" 187 8218 8270
+type(
+  Command.spec
+)
+"ocamlbuild/plugin.ml" 188 8271 8290 "ocamlbuild/plugin.ml" 188 8271 8293
+type(
+  Pathname.t
+)
+ident(
+  def lib "ocamlbuild/plugin.ml" 188 8271 8297 "ocamlbuild/plugin.ml" 188 8271 8312
+)
+"ocamlbuild/plugin.ml" 188 8271 8285 "ocamlbuild/plugin.ml" 188 8271 8293
+type(
+  'd
+)
+"ocamlbuild/plugin.ml" 188 8271 8300 "ocamlbuild/plugin.ml" 188 8271 8303
+type(
+  Pathname.t
+)
+ident(
+  int_ref lib "ocamlbuild/plugin.ml" 188 8271 8290 "ocamlbuild/plugin.ml" 188 8271 8293
+)
+"ocamlbuild/plugin.ml" 188 8271 8304 "ocamlbuild/plugin.ml" 188 8271 8307
+type(
+  Pathname.t -> string -> Pathname.t
+)
+ident(
+  ext_ref Pathname.Operators.( -.- )
+)
+"ocamlbuild/plugin.ml" 188 8271 8308 "ocamlbuild/plugin.ml" 188 8271 8311
+type(
+  string
+)
+ident(
+  int_ref cma "ocamlbuild/plugin.ml" 73 2992 3004 "ocamlbuild/plugin.ml" 73 2992 3007
+)
+"ocamlbuild/plugin.ml" 188 8271 8299 "ocamlbuild/plugin.ml" 188 8271 8312
+call(
+  stack
+)
+type(
+  Pathname.t
+)
+"ocamlbuild/plugin.ml" 188 8271 8297 "ocamlbuild/plugin.ml" 188 8271 8312
+type(
+  Command.spec
+)
+"ocamlbuild/plugin.ml" 189 8313 8338 "ocamlbuild/plugin.ml" 189 8313 8342
+type(
+  Pathname.t
+)
+ident(
+  def llib "ocamlbuild/plugin.ml" 189 8313 8346 "ocamlbuild/plugin.ml" 189 8313 8390
+)
+"ocamlbuild/plugin.ml" 189 8313 8327 "ocamlbuild/plugin.ml" 189 8313 8342
+type(
+  'd
+)
+"ocamlbuild/plugin.ml" 189 8313 8351 "ocamlbuild/plugin.ml" 189 8313 8355
+type(
+  string
+)
+"ocamlbuild/plugin.ml" 189 8313 8349 "ocamlbuild/plugin.ml" 189 8313 8355
+type(
+  Command.spec
+)
+"ocamlbuild/plugin.ml" 189 8313 8359 "ocamlbuild/plugin.ml" 189 8313 8362
+type(
+  Pathname.t
+)
+ident(
+  int_ref dir "ocamlbuild/plugin.ml" 177 7859 7873 "ocamlbuild/plugin.ml" 177 7859 7876
+)
+"ocamlbuild/plugin.ml" 189 8313 8357 "ocamlbuild/plugin.ml" 189 8313 8362
+type(
+  Command.spec
+)
+"ocamlbuild/plugin.ml" 189 8313 8367 "ocamlbuild/plugin.ml" 189 8313 8373
+type(
+  Pathname.t -> Pathname.t
+)
+ident(
+  int_ref in_dir "ocamlbuild/plugin.ml" 179 7942 7956 "ocamlbuild/plugin.ml" 179 7942 7962
+)
+"ocamlbuild/plugin.ml" 189 8313 8375 "ocamlbuild/plugin.ml" 189 8313 8379
+type(
+  Pathname.t
+)
+ident(
+  int_ref llib "ocamlbuild/plugin.ml" 189 8313 8338 "ocamlbuild/plugin.ml" 189 8313 8342
+)
+"ocamlbuild/plugin.ml" 189 8313 8380 "ocamlbuild/plugin.ml" 189 8313 8383
+type(
+  Pathname.t -> string -> Pathname.t
+)
+ident(
+  ext_ref Pathname.Operators.( -.- )
+)
+"ocamlbuild/plugin.ml" 189 8313 8384 "ocamlbuild/plugin.ml" 189 8313 8387
+type(
+  string
+)
+ident(
+  int_ref cma "ocamlbuild/plugin.ml" 73 2992 3004 "ocamlbuild/plugin.ml" 73 2992 3007
+)
+"ocamlbuild/plugin.ml" 189 8313 8374 "ocamlbuild/plugin.ml" 189 8313 8388
+call(
+  stack
+)
+type(
+  Pathname.t
+)
+"ocamlbuild/plugin.ml" 189 8313 8366 "ocamlbuild/plugin.ml" 189 8313 8389
+call(
+  stack
+)
+type(
+  Pathname.t
+)
+"ocamlbuild/plugin.ml" 189 8313 8364 "ocamlbuild/plugin.ml" 189 8313 8389
+type(
+  Command.spec
+)
+"ocamlbuild/plugin.ml" 189 8313 8348 "ocamlbuild/plugin.ml" 189 8313 8390
+type(
+  Command.spec list
+)
+"ocamlbuild/plugin.ml" 189 8313 8346 "ocamlbuild/plugin.ml" 189 8313 8390
+type(
+  Command.spec
+)
+"ocamlbuild/plugin.ml" 190 8391 8416 "ocamlbuild/plugin.ml" 190 8391 8420
+type(
+  Pathname.t
+)
+ident(
+  def lmod "ocamlbuild/plugin.ml" 190 8391 8424 "ocamlbuild/plugin.ml" 190 8391 8449
+)
+"ocamlbuild/plugin.ml" 190 8391 8405 "ocamlbuild/plugin.ml" 190 8391 8420
+type(
+  'd
+)
+"ocamlbuild/plugin.ml" 190 8391 8427 "ocamlbuild/plugin.ml" 190 8391 8433
+type(
+  Pathname.t -> Pathname.t
+)
+ident(
+  int_ref in_dir "ocamlbuild/plugin.ml" 179 7942 7956 "ocamlbuild/plugin.ml" 179 7942 7962
+)
+"ocamlbuild/plugin.ml" 190 8391 8435 "ocamlbuild/plugin.ml" 190 8391 8439
+type(
+  Pathname.t
+)
+ident(
+  int_ref lmod "ocamlbuild/plugin.ml" 190 8391 8416 "ocamlbuild/plugin.ml" 190 8391 8420
+)
+"ocamlbuild/plugin.ml" 190 8391 8440 "ocamlbuild/plugin.ml" 190 8391 8443
+type(
+  Pathname.t -> string -> Pathname.t
+)
+ident(
+  ext_ref Pathname.Operators.( -.- )
+)
+"ocamlbuild/plugin.ml" 190 8391 8444 "ocamlbuild/plugin.ml" 190 8391 8447
+type(
+  string
+)
+ident(
+  int_ref cmo "ocamlbuild/plugin.ml" 73 2992 3009 "ocamlbuild/plugin.ml" 73 2992 3012
+)
+"ocamlbuild/plugin.ml" 190 8391 8434 "ocamlbuild/plugin.ml" 190 8391 8448
+call(
+  stack
+)
+type(
+  Pathname.t
+)
+"ocamlbuild/plugin.ml" 190 8391 8426 "ocamlbuild/plugin.ml" 190 8391 8449
+call(
+  stack
+)
+type(
+  Pathname.t
+)
+"ocamlbuild/plugin.ml" 190 8391 8424 "ocamlbuild/plugin.ml" 190 8391 8449
+type(
+  Command.spec
+)
+"ocamlbuild/plugin.ml" 185 8160 8181 "ocamlbuild/plugin.ml" 190 8391 8449
+type(
+  'd -> Command.spec
+)
+"ocamlbuild/plugin.ml" 192 8454 8465 "ocamlbuild/plugin.ml" 192 8454 8469
+type(
+  _[< `Lib of Pathname.t
+    | `Local_lib of Pathname.t
+    | `Local_mod of Pathname.t
+    | `Nothing
+    | `Package of string
+    > `Lib `Nothing `Package ] ->
+  Command.spec
+)
+ident(
+  int_ref spec "ocamlbuild/plugin.ml" 185 8160 8174 "ocamlbuild/plugin.ml" 185 8160 8178
+)
+"ocamlbuild/plugin.ml" 192 8454 8470 "ocamlbuild/plugin.ml" 192 8454 8478
+type(
+  _[< `Lib of Pathname.t
+    | `Local_lib of Pathname.t
+    | `Local_mod of Pathname.t
+    | `Nothing
+    | `Package of string
+    > `Lib `Nothing `Package ]
+  as 'e
+)
+ident(
+  int_ref unix_lib "ocamlbuild/plugin.ml" 162 7294 7308 "ocamlbuild/plugin.ml" 162 7294 7316
+)
+"ocamlbuild/plugin.ml" 192 8454 8465 "ocamlbuild/plugin.ml" 192 8454 8478
+call(
+  stack
+)
+type(
+  Command.spec
+)
+"ocamlbuild/plugin.ml" 192 8454 8480 "ocamlbuild/plugin.ml" 192 8454 8484
+type(
+  _[< `Lib of Pathname.t
+    | `Local_lib of Pathname.t
+    | `Local_mod of Pathname.t
+    | `Nothing
+    | `Package of string
+    > `Local_lib `Package ] ->
+  Command.spec
+)
+ident(
+  int_ref spec "ocamlbuild/plugin.ml" 185 8160 8174 "ocamlbuild/plugin.ml" 185 8160 8178
+)
+"ocamlbuild/plugin.ml" 192 8454 8485 "ocamlbuild/plugin.ml" 192 8454 8499
+type(
+  _[< `Lib of Pathname.t
+    | `Local_lib of Pathname.t
+    | `Local_mod of Pathname.t
+    | `Nothing
+    | `Package of string
+    > `Local_lib `Package ]
+  as 'f
+)
+ident(
+  int_ref ocamlbuild_lib "ocamlbuild/plugin.ml" 167 7456 7470 "ocamlbuild/plugin.ml" 167 7456 7484
+)
+"ocamlbuild/plugin.ml" 192 8454 8480 "ocamlbuild/plugin.ml" 192 8454 8499
+call(
+  stack
+)
+type(
+  Command.spec
+)
+"ocamlbuild/plugin.ml" 192 8454 8501 "ocamlbuild/plugin.ml" 192 8454 8505
+type(
+  _[< `Lib of Pathname.t
+    | `Local_lib of Pathname.t
+    | `Local_mod of Pathname.t
+    | `Nothing
+    | `Package of string
+    > `Local_mod ] ->
+  Command.spec
+)
+ident(
+  int_ref spec "ocamlbuild/plugin.ml" 185 8160 8174 "ocamlbuild/plugin.ml" 185 8160 8178
+)
+"ocamlbuild/plugin.ml" 192 8454 8506 "ocamlbuild/plugin.ml" 192 8454 8523
+type(
+  _[< `Lib of Pathname.t
+    | `Local_lib of Pathname.t
+    | `Local_mod of Pathname.t
+    | `Nothing
+    | `Package of string
+    > `Local_mod ]
+  as 'g
+)
+ident(
+  int_ref ocamlbuild_module "ocamlbuild/plugin.ml" 172 7668 7682 "ocamlbuild/plugin.ml" 172 7668 7699
+)
+"ocamlbuild/plugin.ml" 192 8454 8501 "ocamlbuild/plugin.ml" 192 8454 8523
+call(
+  stack
+)
+type(
+  Command.spec
+)
+"ocamlbuild/plugin.ml" 192 8454 8464 "ocamlbuild/plugin.ml" 192 8454 8524
+type(
+  Command.spec * Command.spec * Command.spec
+)
+"ocamlbuild/plugin.ml" 185 8160 8170 "ocamlbuild/plugin.ml" 192 8454 8524
+type(
+  Command.spec * Command.spec * Command.spec
+)
+"ocamlbuild/plugin.ml" 179 7942 7952 "ocamlbuild/plugin.ml" 192 8454 8524
+type(
+  Command.spec * Command.spec * Command.spec
+)
+"ocamlbuild/plugin.ml" 177 7859 7869 "ocamlbuild/plugin.ml" 192 8454 8524
+type(
+  Command.spec * Command.spec * Command.spec
+)
+"ocamlbuild/plugin.ml" 176 7811 7821 "ocamlbuild/plugin.ml" 192 8454 8524
+type(
+  Command.spec * Command.spec * Command.spec
+)
+"ocamlbuild/plugin.ml" 172 7668 7678 "ocamlbuild/plugin.ml" 192 8454 8524
+type(
+  Command.spec * Command.spec * Command.spec
+)
+"ocamlbuild/plugin.ml" 167 7456 7466 "ocamlbuild/plugin.ml" 192 8454 8524
+type(
+  Command.spec * Command.spec * Command.spec
+)
+"ocamlbuild/plugin.ml" 162 7294 7304 "ocamlbuild/plugin.ml" 192 8454 8524
+type(
+  Command.spec * Command.spec * Command.spec
+)
+"ocamlbuild/plugin.ml" 85 3385 3395 "ocamlbuild/plugin.ml" 192 8454 8524
+type(
+  Command.spec * Command.spec * Command.spec
+)
+"ocamlbuild/plugin.ml" 83 3287 3297 "ocamlbuild/plugin.ml" 192 8454 8524
+type(
+  Command.spec * Command.spec * Command.spec
+)
+"ocamlbuild/plugin.ml" 195 8537 8549 "ocamlbuild/plugin.ml" 195 8537 8560
+type(
+  Tags.t
+)
+ident(
+  def plugin_tags "ocamlbuild/plugin.ml" 205 9006 9014 "ocamlbuild/plugin.ml" 234 10333 10345
+)
+"ocamlbuild/plugin.ml" 196 8563 8573 "ocamlbuild/plugin.ml" 196 8563 8585
+type(
+  string list -> Tags.t
+)
+ident(
+  ext_ref Tags.of_list
+)
+"ocamlbuild/plugin.ml" 196 8563 8586 "ocamlbuild/plugin.ml" 196 8563 8587
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"ocamlbuild/plugin.ml" 196 8563 8587 "ocamlbuild/plugin.ml" 196 8563 8606
+type(
+  string list ref
+)
+ident(
+  ext_ref Options.plugin_tags
+)
+"ocamlbuild/plugin.ml" 196 8563 8586 "ocamlbuild/plugin.ml" 196 8563 8606
+type(
+  string list
+)
+"ocamlbuild/plugin.ml" 196 8563 8573 "ocamlbuild/plugin.ml" 196 8563 8606
+call(
+  stack
+)
+type(
+  Tags.t
+)
+"ocamlbuild/plugin.ml" 197 8607 8617 "ocamlbuild/plugin.ml" 197 8607 8619
+type(
+  Tags.t -> Tags.elt -> Tags.t
+)
+ident(
+  ext_ref Tags.Operators.( ++ )
+)
+"ocamlbuild/plugin.ml" 197 8607 8620 "ocamlbuild/plugin.ml" 197 8607 8627
+type(
+  Tags.elt
+)
+"ocamlbuild/plugin.ml" 196 8563 8573 "ocamlbuild/plugin.ml" 197 8607 8627
+call(
+  stack
+)
+type(
+  Tags.t
+)
+"ocamlbuild/plugin.ml" 197 8607 8628 "ocamlbuild/plugin.ml" 197 8607 8630
+type(
+  Tags.t -> Tags.elt -> Tags.t
+)
+ident(
+  ext_ref Tags.Operators.( ++ )
+)
+"ocamlbuild/plugin.ml" 197 8607 8631 "ocamlbuild/plugin.ml" 197 8607 8640
+type(
+  Tags.elt
+)
+"ocamlbuild/plugin.ml" 196 8563 8573 "ocamlbuild/plugin.ml" 197 8607 8640
+call(
+  stack
+)
+type(
+  Tags.t
+)
+"ocamlbuild/plugin.ml" 197 8607 8641 "ocamlbuild/plugin.ml" 197 8607 8643
+type(
+  Tags.t -> Tags.elt -> Tags.t
+)
+ident(
+  ext_ref Tags.Operators.( ++ )
+)
+"ocamlbuild/plugin.ml" 197 8607 8644 "ocamlbuild/plugin.ml" 197 8607 8650
+type(
+  Tags.elt
+)
+"ocamlbuild/plugin.ml" 196 8563 8573 "ocamlbuild/plugin.ml" 197 8607 8650
+call(
+  stack
+)
+type(
+  Tags.t
+)
+"ocamlbuild/plugin.ml" 197 8607 8651 "ocamlbuild/plugin.ml" 197 8607 8653
+type(
+  Tags.t -> Tags.elt -> Tags.t
+)
+ident(
+  ext_ref Tags.Operators.( ++ )
+)
+"ocamlbuild/plugin.ml" 197 8607 8654 "ocamlbuild/plugin.ml" 197 8607 8668
+type(
+  Tags.elt
+)
+ident(
+  int_ref byte_or_native "ocamlbuild/plugin.ml" 73 2992 3024 "ocamlbuild/plugin.ml" 73 2992 3038
+)
+"ocamlbuild/plugin.ml" 196 8563 8573 "ocamlbuild/plugin.ml" 197 8607 8668
+call(
+  stack
+)
+type(
+  Tags.t
+)
+"ocamlbuild/plugin.ml" 205 9006 9014 "ocamlbuild/plugin.ml" 205 9006 9037
+type(
+  ?quiet:bool -> Tags.t -> unit
+)
+ident(
+  ext_ref Param_tags.partial_init
+)
+"ocamlbuild/plugin.ml" 205 9006 9038 "ocamlbuild/plugin.ml" 205 9006 9049
+type(
+  Tags.t
+)
+ident(
+  int_ref plugin_tags "ocamlbuild/plugin.ml" 195 8537 8549 "ocamlbuild/plugin.ml" 195 8537 8560
+)
+"ocamlbuild/plugin.ml" 205 9006 9014 "ocamlbuild/plugin.ml" 205 9006 9049
+call(
+  stack
+)
+type(
+  unit
+)
+"ocamlbuild/plugin.ml" 207 9052 9064 "ocamlbuild/plugin.ml" 207 9052 9067
+type(
+  Command.t
+)
+ident(
+  def cmd "ocamlbuild/plugin.ml" 228 10127 10135 "ocamlbuild/plugin.ml" 234 10333 10345
+)
+"ocamlbuild/plugin.ml" 221 9873 9889 "ocamlbuild/plugin.ml" 221 9873 9897
+type(
+  Options.command_spec
+)
+ident(
+  int_ref compiler "ocamlbuild/plugin.ml" 73 2992 3014 "ocamlbuild/plugin.ml" 73 2992 3022
+)
+"ocamlbuild/plugin.ml" 222 9899 9915 "ocamlbuild/plugin.ml" 222 9899 9924
+type(
+  Options.command_spec
+)
+ident(
+  int_ref unix_spec "ocamlbuild/plugin.ml" 81 3215 3228 "ocamlbuild/plugin.ml" 81 3215 3237
+)
+"ocamlbuild/plugin.ml" 222 9899 9926 "ocamlbuild/plugin.ml" 222 9899 9945
+type(
+  Options.command_spec
+)
+ident(
+  int_ref ocamlbuild_lib_spec "ocamlbuild/plugin.ml" 81 3215 3239 "ocamlbuild/plugin.ml" 81 3215 3258
+)
+"ocamlbuild/plugin.ml" 223 9947 9965 "ocamlbuild/plugin.ml" 223 9947 9976
+type(
+  Command.tags
+)
+ident(
+  int_ref plugin_tags "ocamlbuild/plugin.ml" 195 8537 8549 "ocamlbuild/plugin.ml" 195 8537 8560
+)
+"ocamlbuild/plugin.ml" 223 9947 9963 "ocamlbuild/plugin.ml" 223 9947 9976
+type(
+  Options.command_spec
+)
+"ocamlbuild/plugin.ml" 224 9978 9994 "ocamlbuild/plugin.ml" 224 9978 10007
+type(
+  Options.command_spec
+)
+ident(
+  int_ref plugin_config "ocamlbuild/plugin.ml" 66 2743 2755 "ocamlbuild/plugin.ml" 66 2743 2768
+)
+"ocamlbuild/plugin.ml" 224 9978 10011 "ocamlbuild/plugin.ml" 224 9978 10022
+type(
+  Command.pathname
+)
+ident(
+  int_ref plugin_file "ocamlbuild/plugin.ml" 27 1016 1020 "ocamlbuild/plugin.ml" 27 1016 1031
+)
+"ocamlbuild/plugin.ml" 224 9978 10009 "ocamlbuild/plugin.ml" 224 9978 10022
+type(
+  Options.command_spec
+)
+"ocamlbuild/plugin.ml" 225 10024 10040 "ocamlbuild/plugin.ml" 225 10024 10062
+type(
+  Options.command_spec
+)
+ident(
+  int_ref ocamlbuild_module_spec "ocamlbuild/plugin.ml" 81 3215 3260 "ocamlbuild/plugin.ml" 81 3215 3282
+)
+"ocamlbuild/plugin.ml" 226 10064 10081 "ocamlbuild/plugin.ml" 226 10064 10085
+type(
+  string
+)
+"ocamlbuild/plugin.ml" 226 10064 10080 "ocamlbuild/plugin.ml" 226 10064 10085
+type(
+  Options.command_spec
+)
+"ocamlbuild/plugin.ml" 226 10064 10091 "ocamlbuild/plugin.ml" 226 10064 10097
+type(
+  string
+)
+ident(
+  int_ref plugin "ocamlbuild/plugin.ml" 26 973 977 "ocamlbuild/plugin.ml" 26 973 983
+)
+"ocamlbuild/plugin.ml" 226 10064 10097 "ocamlbuild/plugin.ml" 226 10064 10098
+type(
+  string -> string -> Command.pathname
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"ocamlbuild/plugin.ml" 226 10064 10099 "ocamlbuild/plugin.ml" 226 10064 10100
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"ocamlbuild/plugin.ml" 226 10064 10100 "ocamlbuild/plugin.ml" 226 10064 10111
+type(
+  string ref
+)
+ident(
+  ext_ref Options.exe
+)
+"ocamlbuild/plugin.ml" 226 10064 10098 "ocamlbuild/plugin.ml" 226 10064 10112
+type(
+  string
+)
+"ocamlbuild/plugin.ml" 226 10064 10090 "ocamlbuild/plugin.ml" 226 10064 10113
+call(
+  stack
+)
+type(
+  Command.pathname
+)
+"ocamlbuild/plugin.ml" 226 10064 10087 "ocamlbuild/plugin.ml" 226 10064 10113
+type(
+  Options.command_spec
+)
+"ocamlbuild/plugin.ml" 221 9873 9888 "ocamlbuild/plugin.ml" 226 10064 10114
+type(
+  Options.command_spec list
+)
+"ocamlbuild/plugin.ml" 221 9873 9886 "ocamlbuild/plugin.ml" 226 10064 10115
+type(
+  Command.spec
+)
+"ocamlbuild/plugin.ml" 221 9873 9883 "ocamlbuild/plugin.ml" 226 10064 10115
+type(
+  Command.t
+)
+"ocamlbuild/plugin.ml" 228 10127 10135 "ocamlbuild/plugin.ml" 228 10127 10146
+type(
+  string -> unit
+)
+ident(
+  ext_ref Shell.chdir
+)
+"ocamlbuild/plugin.ml" 228 10127 10147 "ocamlbuild/plugin.ml" 228 10127 10148
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"ocamlbuild/plugin.ml" 228 10127 10148 "ocamlbuild/plugin.ml" 228 10127 10165
+type(
+  string ref
+)
+ident(
+  ext_ref Options.build_dir
+)
+"ocamlbuild/plugin.ml" 228 10127 10147 "ocamlbuild/plugin.ml" 228 10127 10165
+type(
+  string
+)
+"ocamlbuild/plugin.ml" 228 10127 10135 "ocamlbuild/plugin.ml" 228 10127 10165
+call(
+  stack
+)
+type(
+  unit
+)
+"ocamlbuild/plugin.ml" 229 10167 10175 "ocamlbuild/plugin.ml" 229 10167 10185
+type(
+  string -> unit
+)
+ident(
+  ext_ref Shell.rm_f
+)
+"ocamlbuild/plugin.ml" 229 10167 10187 "ocamlbuild/plugin.ml" 229 10167 10193
+type(
+  string
+)
+ident(
+  int_ref plugin "ocamlbuild/plugin.ml" 26 973 977 "ocamlbuild/plugin.ml" 26 973 983
+)
+"ocamlbuild/plugin.ml" 229 10167 10193 "ocamlbuild/plugin.ml" 229 10167 10194
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"ocamlbuild/plugin.ml" 229 10167 10195 "ocamlbuild/plugin.ml" 229 10167 10196
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"ocamlbuild/plugin.ml" 229 10167 10196 "ocamlbuild/plugin.ml" 229 10167 10207
+type(
+  string ref
+)
+ident(
+  ext_ref Options.exe
+)
+"ocamlbuild/plugin.ml" 229 10167 10194 "ocamlbuild/plugin.ml" 229 10167 10208
+type(
+  string
+)
+"ocamlbuild/plugin.ml" 229 10167 10186 "ocamlbuild/plugin.ml" 229 10167 10209
+call(
+  stack
+)
+type(
+  string
+)
+"ocamlbuild/plugin.ml" 229 10167 10175 "ocamlbuild/plugin.ml" 229 10167 10209
+call(
+  stack
+)
+type(
+  unit
+)
+"ocamlbuild/plugin.ml" 230 10211 10219 "ocamlbuild/plugin.ml" 230 10211 10234
+type(
+  ?quiet:bool -> ?pretend:bool -> Command.t -> unit
+)
+ident(
+  ext_ref Command.execute
+)
+"ocamlbuild/plugin.ml" 230 10211 10235 "ocamlbuild/plugin.ml" 230 10211 10238
+type(
+  Command.t
+)
+ident(
+  int_ref cmd "ocamlbuild/plugin.ml" 207 9052 9064 "ocamlbuild/plugin.ml" 207 9052 9067
+)
+"ocamlbuild/plugin.ml" 230 10211 10219 "ocamlbuild/plugin.ml" 230 10211 10238
+call(
+  stack
+)
+type(
+  unit
+)
+"ocamlbuild/plugin.ml" 231 10240 10251 "ocamlbuild/plugin.ml" 231 10240 10252
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"ocamlbuild/plugin.ml" 231 10240 10252 "ocamlbuild/plugin.ml" 231 10240 10271
+type(
+  bool ref
+)
+ident(
+  ext_ref Options.just_plugin
+)
+"ocamlbuild/plugin.ml" 231 10240 10251 "ocamlbuild/plugin.ml" 231 10240 10271
+type(
+  bool
+)
+"ocamlbuild/plugin.ml" 232 10283 10293 "ocamlbuild/plugin.ml" 232 10283 10303
+type(
+  ?how:[ `Error | `Quiet | `Success ] -> unit -> unit
+)
+ident(
+  ext_ref Log.finish
+)
+"ocamlbuild/plugin.ml" 232 10283 10304 "ocamlbuild/plugin.ml" 232 10283 10306
+type(
+  unit
+)
+"ocamlbuild/plugin.ml" 232 10283 10293 "ocamlbuild/plugin.ml" 232 10283 10306
+call(
+  stack
+)
+type(
+  unit
+)
+"ocamlbuild/plugin.ml" 233 10308 10318 "ocamlbuild/plugin.ml" 233 10308 10323
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"ocamlbuild/plugin.ml" 233 10308 10324 "ocamlbuild/plugin.ml" 233 10308 10331
+type(
+  exn
+)
+"ocamlbuild/plugin.ml" 233 10308 10318 "ocamlbuild/plugin.ml" 233 10308 10332
+type(
+  unit
+)
+"ocamlbuild/plugin.ml" 231 10240 10277 "ocamlbuild/plugin.ml" 234 10333 10344
+type(
+  unit
+)
+"ocamlbuild/plugin.ml" 231 10240 10248 "ocamlbuild/plugin.ml" 234 10333 10345
+type(
+  unit
+)
+"ocamlbuild/plugin.ml" 230 10211 10219 "ocamlbuild/plugin.ml" 234 10333 10345
+type(
+  unit
+)
+"ocamlbuild/plugin.ml" 229 10167 10175 "ocamlbuild/plugin.ml" 234 10333 10345
+type(
+  unit
+)
+"ocamlbuild/plugin.ml" 228 10127 10135 "ocamlbuild/plugin.ml" 234 10333 10345
+type(
+  unit
+)
+"ocamlbuild/plugin.ml" 207 9052 9060 "ocamlbuild/plugin.ml" 234 10333 10345
+type(
+  unit
+)
+"ocamlbuild/plugin.ml" 205 9006 9014 "ocamlbuild/plugin.ml" 234 10333 10345
+type(
+  unit
+)
+"ocamlbuild/plugin.ml" 195 8537 8545 "ocamlbuild/plugin.ml" 234 10333 10345
+type(
+  unit
+)
+"ocamlbuild/plugin.ml" 81 3215 3223 "ocamlbuild/plugin.ml" 234 10333 10345
+type(
+  unit
+)
+"ocamlbuild/plugin.ml" 73 2992 3000 "ocamlbuild/plugin.ml" 234 10333 10345
+type(
+  unit
+)
+"ocamlbuild/plugin.ml" 66 2743 2751 "ocamlbuild/plugin.ml" 234 10333 10345
+type(
+  unit
+)
+"ocamlbuild/plugin.ml" 59 2453 2464 "ocamlbuild/plugin.ml" 235 10346 10355
+type(
+  unit
+)
+"ocamlbuild/plugin.ml" 56 2295 2301 "ocamlbuild/plugin.ml" 235 10346 10355
+type(
+  unit
+)
+"ocamlbuild/plugin.ml" 55 2189 2195 "ocamlbuild/plugin.ml" 235 10346 10355
+type(
+  unit
+)
+"ocamlbuild/plugin.ml" 54 2103 2109 "ocamlbuild/plugin.ml" 235 10346 10355
+type(
+  unit
+)
+"ocamlbuild/plugin.ml" 53 2055 2061 "ocamlbuild/plugin.ml" 235 10346 10355
+type(
+  unit
+)
+"ocamlbuild/plugin.ml" 237 10357 10365 "ocamlbuild/plugin.ml" 237 10357 10389
+type(
+  unit -> unit
+)
+ident(
+  def execute_plugin_if_needed "ocamlbuild/plugin.ml" 252 11039 11049 "ocamlbuild/plugin.ml" 253 11050 11055
+)
+"ocamlbuild/plugin.ml" 237 10357 10390 "ocamlbuild/plugin.ml" 237 10357 10392
+type(
+  unit
+)
+"ocamlbuild/plugin.ml" 238 10395 10404 "ocamlbuild/plugin.ml" 238 10395 10420
+type(
+  bool
+)
+ident(
+  int_ref we_need_a_plugin "ocamlbuild/plugin.ml" 37 1518 1526 "ocamlbuild/plugin.ml" 37 1518 1542
+)
+"ocamlbuild/plugin.ml" 240 10440 10450 "ocamlbuild/plugin.ml" 240 10440 10474
+type(
+  unit -> unit
+)
+ident(
+  int_ref rebuild_plugin_if_needed "ocamlbuild/plugin.ml" 52 2017 2025 "ocamlbuild/plugin.ml" 52 2017 2049
+)
+"ocamlbuild/plugin.ml" 240 10440 10475 "ocamlbuild/plugin.ml" 240 10440 10477
+type(
+  unit
+)
+"ocamlbuild/plugin.ml" 240 10440 10450 "ocamlbuild/plugin.ml" 240 10440 10477
+call(
+  stack
+)
+type(
+  unit
+)
+"ocamlbuild/plugin.ml" 241 10479 10489 "ocamlbuild/plugin.ml" 241 10479 10500
+type(
+  Pathname.t -> unit
+)
+ident(
+  ext_ref Shell.chdir
+)
+"ocamlbuild/plugin.ml" 241 10479 10501 "ocamlbuild/plugin.ml" 241 10479 10513
+type(
+  Pathname.t
+)
+ident(
+  ext_ref Pathname.pwd
+)
+"ocamlbuild/plugin.ml" 241 10479 10489 "ocamlbuild/plugin.ml" 241 10479 10513
+call(
+  stack
+)
+type(
+  unit
+)
+"ocamlbuild/plugin.ml" 242 10515 10529 "ocamlbuild/plugin.ml" 242 10515 10535
+type(
+  Options.command_spec
+)
+ident(
+  def runner "ocamlbuild/plugin.ml" 243 10597 10607 "ocamlbuild/plugin.ml" 249 10970 11015
+)
+"ocamlbuild/plugin.ml" 242 10515 10541 "ocamlbuild/plugin.ml" 242 10515 10542
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"ocamlbuild/plugin.ml" 242 10515 10542 "ocamlbuild/plugin.ml" 242 10515 10563
+type(
+  bool ref
+)
+ident(
+  ext_ref Options.native_plugin
+)
+"ocamlbuild/plugin.ml" 242 10515 10541 "ocamlbuild/plugin.ml" 242 10515 10563
+type(
+  bool
+)
+"ocamlbuild/plugin.ml" 242 10515 10569 "ocamlbuild/plugin.ml" 242 10515 10570
+type(
+  Options.command_spec
+)
+"ocamlbuild/plugin.ml" 242 10515 10576 "ocamlbuild/plugin.ml" 242 10515 10577
+type(
+  Options.command_spec ref -> Options.command_spec
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"ocamlbuild/plugin.ml" 242 10515 10577 "ocamlbuild/plugin.ml" 242 10515 10593
+type(
+  Options.command_spec ref
+)
+ident(
+  ext_ref Options.ocamlrun
+)
+"ocamlbuild/plugin.ml" 242 10515 10576 "ocamlbuild/plugin.ml" 242 10515 10593
+type(
+  Options.command_spec
+)
+"ocamlbuild/plugin.ml" 242 10515 10538 "ocamlbuild/plugin.ml" 242 10515 10593
+type(
+  Options.command_spec
+)
+"ocamlbuild/plugin.ml" 243 10597 10611 "ocamlbuild/plugin.ml" 243 10597 10615
+type(
+  string list
+)
+ident(
+  def argv "ocamlbuild/plugin.ml" 244 10654 10664 "ocamlbuild/plugin.ml" 249 10970 11015
+)
+"ocamlbuild/plugin.ml" 243 10597 10618 "ocamlbuild/plugin.ml" 243 10597 10625
+type(
+  string list -> string list
+)
+ident(
+  ext_ref My_std.List.tl
+)
+"ocamlbuild/plugin.ml" 243 10597 10627 "ocamlbuild/plugin.ml" 243 10597 10640
+type(
+  string array -> string list
+)
+ident(
+  ext_ref Array.to_list
+)
+"ocamlbuild/plugin.ml" 243 10597 10641 "ocamlbuild/plugin.ml" 243 10597 10649
+type(
+  string array
+)
+ident(
+  ext_ref Sys.argv
+)
+"ocamlbuild/plugin.ml" 243 10597 10626 "ocamlbuild/plugin.ml" 243 10597 10650
+call(
+  stack
+)
+type(
+  string list
+)
+"ocamlbuild/plugin.ml" 243 10597 10618 "ocamlbuild/plugin.ml" 243 10597 10650
+call(
+  stack
+)
+type(
+  string list
+)
+"ocamlbuild/plugin.ml" 244 10654 10668 "ocamlbuild/plugin.ml" 244 10654 10679
+type(
+  string list
+)
+ident(
+  def passed_argv "ocamlbuild/plugin.ml" 245 10735 10745 "ocamlbuild/plugin.ml" 249 10970 11015
+)
+"ocamlbuild/plugin.ml" 244 10654 10682 "ocamlbuild/plugin.ml" 244 10654 10693
+type(
+  (string -> bool) -> string list -> string list
+)
+ident(
+  ext_ref My_std.List.filter
+)
+"ocamlbuild/plugin.ml" 244 10654 10699 "ocamlbuild/plugin.ml" 244 10654 10700
+type(
+  string
+)
+ident(
+  def s "ocamlbuild/plugin.ml" 244 10654 10704 "ocamlbuild/plugin.ml" 244 10654 10725
+)
+"ocamlbuild/plugin.ml" 244 10654 10704 "ocamlbuild/plugin.ml" 244 10654 10705
+type(
+  string
+)
+ident(
+  int_ref s "ocamlbuild/plugin.ml" 244 10654 10699 "ocamlbuild/plugin.ml" 244 10654 10700
+)
+"ocamlbuild/plugin.ml" 244 10654 10706 "ocamlbuild/plugin.ml" 244 10654 10708
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"ocamlbuild/plugin.ml" 244 10654 10709 "ocamlbuild/plugin.ml" 244 10654 10725
+type(
+  string
+)
+"ocamlbuild/plugin.ml" 244 10654 10704 "ocamlbuild/plugin.ml" 244 10654 10725
+type(
+  bool
+)
+"ocamlbuild/plugin.ml" 244 10654 10694 "ocamlbuild/plugin.ml" 244 10654 10726
+type(
+  string -> bool
+)
+"ocamlbuild/plugin.ml" 244 10654 10727 "ocamlbuild/plugin.ml" 244 10654 10731
+type(
+  string list
+)
+ident(
+  int_ref argv "ocamlbuild/plugin.ml" 243 10597 10611 "ocamlbuild/plugin.ml" 243 10597 10615
+)
+"ocamlbuild/plugin.ml" 244 10654 10682 "ocamlbuild/plugin.ml" 244 10654 10731
+call(
+  stack
+)
+type(
+  string list
+)
+"ocamlbuild/plugin.ml" 245 10735 10749 "ocamlbuild/plugin.ml" 245 10735 10753
+type(
+  Command.spec
+)
+ident(
+  def spec "ocamlbuild/plugin.ml" 247 10873 10883 "ocamlbuild/plugin.ml" 249 10970 11015
+)
+"ocamlbuild/plugin.ml" 245 10735 10758 "ocamlbuild/plugin.ml" 245 10735 10764
+type(
+  Options.command_spec
+)
+ident(
+  int_ref runner "ocamlbuild/plugin.ml" 242 10515 10529 "ocamlbuild/plugin.ml" 242 10515 10535
+)
+"ocamlbuild/plugin.ml" 245 10735 10768 "ocamlbuild/plugin.ml" 245 10735 10769
+type(
+  Pathname.t ref -> Pathname.t
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"ocamlbuild/plugin.ml" 245 10735 10769 "ocamlbuild/plugin.ml" 245 10735 10786
+type(
+  Pathname.t ref
+)
+ident(
+  ext_ref Options.build_dir
+)
+"ocamlbuild/plugin.ml" 245 10735 10768 "ocamlbuild/plugin.ml" 245 10735 10786
+type(
+  Pathname.t
+)
+"ocamlbuild/plugin.ml" 245 10735 10786 "ocamlbuild/plugin.ml" 245 10735 10787
+type(
+  Pathname.t -> Pathname.t -> Pathname.t
+)
+ident(
+  ext_ref Pathname.Operators.( / )
+)
+"ocamlbuild/plugin.ml" 245 10735 10787 "ocamlbuild/plugin.ml" 245 10735 10793
+type(
+  Pathname.t
+)
+ident(
+  int_ref plugin "ocamlbuild/plugin.ml" 26 973 977 "ocamlbuild/plugin.ml" 26 973 983
+)
+"ocamlbuild/plugin.ml" 245 10735 10768 "ocamlbuild/plugin.ml" 245 10735 10793
+call(
+  stack
+)
+type(
+  Pathname.t
+)
+"ocamlbuild/plugin.ml" 245 10735 10793 "ocamlbuild/plugin.ml" 245 10735 10794
+type(
+  Pathname.t -> string -> Command.pathname
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"ocamlbuild/plugin.ml" 245 10735 10795 "ocamlbuild/plugin.ml" 245 10735 10796
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"ocamlbuild/plugin.ml" 245 10735 10796 "ocamlbuild/plugin.ml" 245 10735 10807
+type(
+  string ref
+)
+ident(
+  ext_ref Options.exe
+)
+"ocamlbuild/plugin.ml" 245 10735 10794 "ocamlbuild/plugin.ml" 245 10735 10808
+type(
+  string
+)
+"ocamlbuild/plugin.ml" 245 10735 10767 "ocamlbuild/plugin.ml" 245 10735 10809
+call(
+  stack
+)
+type(
+  Command.pathname
+)
+"ocamlbuild/plugin.ml" 245 10735 10766 "ocamlbuild/plugin.ml" 245 10735 10809
+type(
+  Options.command_spec
+)
+"ocamlbuild/plugin.ml" 246 10811 10835 "ocamlbuild/plugin.ml" 246 10811 10847
+type(
+  string
+)
+"ocamlbuild/plugin.ml" 246 10811 10834 "ocamlbuild/plugin.ml" 246 10811 10847
+type(
+  Options.command_spec
+)
+"ocamlbuild/plugin.ml" 246 10811 10849 "ocamlbuild/plugin.ml" 246 10811 10856
+type(
+  string list -> Options.command_spec
+)
+ident(
+  ext_ref Command.atomize
+)
+"ocamlbuild/plugin.ml" 246 10811 10857 "ocamlbuild/plugin.ml" 246 10811 10868
+type(
+  string list
+)
+ident(
+  int_ref passed_argv "ocamlbuild/plugin.ml" 244 10654 10668 "ocamlbuild/plugin.ml" 244 10654 10679
+)
+"ocamlbuild/plugin.ml" 246 10811 10849 "ocamlbuild/plugin.ml" 246 10811 10868
+call(
+  stack
+)
+type(
+  Options.command_spec
+)
+"ocamlbuild/plugin.ml" 245 10735 10757 "ocamlbuild/plugin.ml" 246 10811 10869
+type(
+  Options.command_spec list
+)
+"ocamlbuild/plugin.ml" 245 10735 10756 "ocamlbuild/plugin.ml" 246 10811 10869
+type(
+  Command.spec
+)
+"ocamlbuild/plugin.ml" 247 10873 10883 "ocamlbuild/plugin.ml" 247 10873 10893
+type(
+  ?how:[ `Error | `Quiet | `Success ] -> unit -> unit
+)
+ident(
+  ext_ref Log.finish
+)
+"ocamlbuild/plugin.ml" 247 10873 10894 "ocamlbuild/plugin.ml" 247 10873 10896
+type(
+  unit
+)
+"ocamlbuild/plugin.ml" 247 10873 10883 "ocamlbuild/plugin.ml" 247 10873 10896
+call(
+  stack
+)
+type(
+  unit
+)
+"ocamlbuild/plugin.ml" 248 10898 10912 "ocamlbuild/plugin.ml" 248 10898 10914
+type(
+  int
+)
+ident(
+  def rc "ocamlbuild/plugin.ml" 249 10970 10980 "ocamlbuild/plugin.ml" 249 10970 11015
+)
+"ocamlbuild/plugin.ml" 248 10898 10917 "ocamlbuild/plugin.ml" 248 10898 10928
+type(
+  string -> int
+)
+ident(
+  ext_ref My_std.sys_command
+)
+"ocamlbuild/plugin.ml" 248 10898 10930 "ocamlbuild/plugin.ml" 248 10898 10960
+type(
+  Command.spec -> string
+)
+ident(
+  ext_ref Command.string_of_command_spec
+)
+"ocamlbuild/plugin.ml" 248 10898 10961 "ocamlbuild/plugin.ml" 248 10898 10965
+type(
+  Command.spec
+)
+ident(
+  int_ref spec "ocamlbuild/plugin.ml" 245 10735 10749 "ocamlbuild/plugin.ml" 245 10735 10753
+)
+"ocamlbuild/plugin.ml" 248 10898 10929 "ocamlbuild/plugin.ml" 248 10898 10966
+call(
+  stack
+)
+type(
+  string
+)
+"ocamlbuild/plugin.ml" 248 10898 10917 "ocamlbuild/plugin.ml" 248 10898 10966
+call(
+  stack
+)
+type(
+  int
+)
+"ocamlbuild/plugin.ml" 249 10970 10980 "ocamlbuild/plugin.ml" 249 10970 10985
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"ocamlbuild/plugin.ml" 249 10970 11011 "ocamlbuild/plugin.ml" 249 10970 11013
+type(
+  int
+)
+ident(
+  int_ref rc "ocamlbuild/plugin.ml" 248 10898 10912 "ocamlbuild/plugin.ml" 248 10898 10914
+)
+"ocamlbuild/plugin.ml" 249 10970 10986 "ocamlbuild/plugin.ml" 249 10970 11014
+type(
+  exn
+)
+"ocamlbuild/plugin.ml" 249 10970 10980 "ocamlbuild/plugin.ml" 249 10970 11015
+type(
+  unit
+)
+"ocamlbuild/plugin.ml" 248 10898 10908 "ocamlbuild/plugin.ml" 249 10970 11015
+type(
+  unit
+)
+"ocamlbuild/plugin.ml" 247 10873 10883 "ocamlbuild/plugin.ml" 249 10970 11015
+type(
+  unit
+)
+"ocamlbuild/plugin.ml" 245 10735 10745 "ocamlbuild/plugin.ml" 249 10970 11015
+type(
+  unit
+)
+"ocamlbuild/plugin.ml" 244 10654 10664 "ocamlbuild/plugin.ml" 249 10970 11015
+type(
+  unit
+)
+"ocamlbuild/plugin.ml" 243 10597 10607 "ocamlbuild/plugin.ml" 249 10970 11015
+type(
+  unit
+)
+"ocamlbuild/plugin.ml" 242 10515 10525 "ocamlbuild/plugin.ml" 249 10970 11015
+type(
+  unit
+)
+"ocamlbuild/plugin.ml" 241 10479 10489 "ocamlbuild/plugin.ml" 249 10970 11015
+type(
+  unit
+)
+"ocamlbuild/plugin.ml" 239 10426 10434 "ocamlbuild/plugin.ml" 250 11016 11027
+type(
+  unit
+)
+"ocamlbuild/plugin.ml" 252 11039 11047 "ocamlbuild/plugin.ml" 252 11039 11049
+type(
+  unit
+)
+"ocamlbuild/plugin.ml" 238 10395 10401 "ocamlbuild/plugin.ml" 252 11039 11049
+type(
+  unit
+)
+"ocamlbuild/plugin.ml" 256 11060 11064 "ocamlbuild/plugin.ml" 256 11060 11088
+type(
+  unit -> unit
+)
+ident(
+  def execute_plugin_if_needed "ocamlbuild/plugin.ml" 258 11131 11162 "ocamlbuild/plugin.ml" 1 0 -1
+)
+"ocamlbuild/plugin.ml" 256 11060 11089 "ocamlbuild/plugin.ml" 256 11060 11091
+type(
+  unit
+)
+"ocamlbuild/plugin.ml" 257 11094 11111 "ocamlbuild/plugin.ml" 257 11094 11127
+call(
+  stack
+)
+"ocamlbuild/plugin.ml" 258 11131 11133 "ocamlbuild/plugin.ml" 258 11131 11159
+type(
+  unit -> unit
+)
+ident(
+  int_ref P.execute_plugin_if_needed "ocamlbuild/plugin.ml" 237 10357 10365 "ocamlbuild/plugin.ml" 237 10357 10389
+)
+"ocamlbuild/plugin.ml" 258 11131 11160 "ocamlbuild/plugin.ml" 258 11131 11162
+type(
+  unit
+)
+"ocamlbuild/plugin.ml" 258 11131 11133 "ocamlbuild/plugin.ml" 258 11131 11162
+call(
+  tail
+)
+type(
+  unit
+)
+"ocamlbuild/plugin.ml" 257 11094 11096 "ocamlbuild/plugin.ml" 258 11131 11162
+type(
+  unit
+)

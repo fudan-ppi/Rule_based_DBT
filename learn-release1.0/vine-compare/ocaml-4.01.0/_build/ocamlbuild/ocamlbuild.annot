@@ -1,0 +1,40 @@
+"ocamlbuild/ocamlbuild.ml" 15 857 857 "ocamlbuild/ocamlbuild.ml" 15 857 885
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Ocamlbuild_unix_plugin.setup
+)
+"ocamlbuild/ocamlbuild.ml" 15 857 886 "ocamlbuild/ocamlbuild.ml" 15 857 888
+type(
+  unit
+)
+"ocamlbuild/ocamlbuild.ml" 15 857 857 "ocamlbuild/ocamlbuild.ml" 15 857 888
+call(
+  stack
+)
+type(
+  unit
+)
+"ocamlbuild/ocamlbuild.ml" 16 890 890 "ocamlbuild/ocamlbuild.ml" 16 890 915
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Ocamlbuild_pack.Main.main
+)
+"ocamlbuild/ocamlbuild.ml" 16 890 916 "ocamlbuild/ocamlbuild.ml" 16 890 918
+type(
+  unit
+)
+"ocamlbuild/ocamlbuild.ml" 16 890 890 "ocamlbuild/ocamlbuild.ml" 16 890 918
+call(
+  stack
+)
+type(
+  unit
+)
+"ocamlbuild/ocamlbuild.ml" 15 857 857 "ocamlbuild/ocamlbuild.ml" 16 890 918
+type(
+  unit
+)

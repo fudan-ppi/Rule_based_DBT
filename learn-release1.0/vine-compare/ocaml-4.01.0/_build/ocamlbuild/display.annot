@@ -1,0 +1,5582 @@
+"ocamlbuild/display.ml" 20 896 900 "ocamlbuild/display.ml" 20 896 902
+type(
+  out_channel -> ('a, out_channel, unit) format -> 'a
+)
+ident(
+  def fp "ocamlbuild/display.ml" 23 936 936 "ocamlbuild/display.ml" 1 0 -1
+)
+"ocamlbuild/display.ml" 20 896 905 "ocamlbuild/display.ml" 20 896 919
+type(
+  out_channel -> ('a, out_channel, unit) format -> 'a
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"ocamlbuild/display.ml" 25 959 967 "ocamlbuild/display.ml" 25 959 969
+type(
+  out_channel -> int -> unit
+)
+ident(
+  def up "ocamlbuild/display.ml" 26 998 1002 "ocamlbuild/display.ml" 35 1276 1281
+)
+"ocamlbuild/display.ml" 25 959 970 "ocamlbuild/display.ml" 25 959 972
+type(
+  out_channel
+)
+ident(
+  def oc "ocamlbuild/display.ml" 25 959 973 "ocamlbuild/display.ml" 25 959 995
+)
+"ocamlbuild/display.ml" 25 959 973 "ocamlbuild/display.ml" 25 959 974
+type(
+  int
+)
+ident(
+  def n "ocamlbuild/display.ml" 25 959 977 "ocamlbuild/display.ml" 25 959 995
+)
+"ocamlbuild/display.ml" 25 959 977 "ocamlbuild/display.ml" 25 959 979
+type(
+  out_channel -> (int -> unit, out_channel, unit) format -> int -> unit
+)
+ident(
+  int_ref fp "ocamlbuild/display.ml" 20 896 900 "ocamlbuild/display.ml" 20 896 902
+)
+"ocamlbuild/display.ml" 25 959 980 "ocamlbuild/display.ml" 25 959 982
+type(
+  out_channel
+)
+ident(
+  int_ref oc "ocamlbuild/display.ml" 25 959 970 "ocamlbuild/display.ml" 25 959 972
+)
+"ocamlbuild/display.ml" 25 959 983 "ocamlbuild/display.ml" 25 959 993
+type(
+  (int -> unit, out_channel, unit) format
+)
+"ocamlbuild/display.ml" 25 959 994 "ocamlbuild/display.ml" 25 959 995
+type(
+  int
+)
+ident(
+  int_ref n "ocamlbuild/display.ml" 25 959 973 "ocamlbuild/display.ml" 25 959 974
+)
+"ocamlbuild/display.ml" 25 959 977 "ocamlbuild/display.ml" 25 959 995
+call(
+  tail
+)
+type(
+  unit
+)
+"ocamlbuild/display.ml" 26 998 1006 "ocamlbuild/display.ml" 26 998 1018
+type(
+  out_channel -> unit -> unit
+)
+ident(
+  def clear_to_eol "ocamlbuild/display.ml" 27 1044 1048 "ocamlbuild/display.ml" 35 1276 1281
+)
+"ocamlbuild/display.ml" 26 998 1019 "ocamlbuild/display.ml" 26 998 1021
+type(
+  out_channel
+)
+ident(
+  def oc "ocamlbuild/display.ml" 26 998 1022 "ocamlbuild/display.ml" 26 998 1041
+)
+"ocamlbuild/display.ml" 26 998 1022 "ocamlbuild/display.ml" 26 998 1024
+type(
+  unit
+)
+"ocamlbuild/display.ml" 26 998 1027 "ocamlbuild/display.ml" 26 998 1029
+type(
+  out_channel -> (unit, out_channel, unit) format -> unit
+)
+ident(
+  int_ref fp "ocamlbuild/display.ml" 20 896 900 "ocamlbuild/display.ml" 20 896 902
+)
+"ocamlbuild/display.ml" 26 998 1030 "ocamlbuild/display.ml" 26 998 1032
+type(
+  out_channel
+)
+ident(
+  int_ref oc "ocamlbuild/display.ml" 26 998 1019 "ocamlbuild/display.ml" 26 998 1021
+)
+"ocamlbuild/display.ml" 26 998 1033 "ocamlbuild/display.ml" 26 998 1041
+type(
+  (unit, out_channel, unit) format
+)
+"ocamlbuild/display.ml" 26 998 1027 "ocamlbuild/display.ml" 26 998 1041
+call(
+  tail
+)
+type(
+  unit
+)
+"ocamlbuild/display.ml" 27 1044 1052 "ocamlbuild/display.ml" 27 1044 1055
+type(
+  out_channel -> unit -> unit
+)
+ident(
+  def bol "ocamlbuild/display.ml" 28 1077 1081 "ocamlbuild/display.ml" 35 1276 1281
+)
+"ocamlbuild/display.ml" 27 1044 1056 "ocamlbuild/display.ml" 27 1044 1058
+type(
+  out_channel
+)
+ident(
+  def oc "ocamlbuild/display.ml" 27 1044 1059 "ocamlbuild/display.ml" 27 1044 1074
+)
+"ocamlbuild/display.ml" 27 1044 1059 "ocamlbuild/display.ml" 27 1044 1061
+type(
+  unit
+)
+"ocamlbuild/display.ml" 27 1044 1064 "ocamlbuild/display.ml" 27 1044 1066
+type(
+  out_channel -> (unit, out_channel, unit) format -> unit
+)
+ident(
+  int_ref fp "ocamlbuild/display.ml" 20 896 900 "ocamlbuild/display.ml" 20 896 902
+)
+"ocamlbuild/display.ml" 27 1044 1067 "ocamlbuild/display.ml" 27 1044 1069
+type(
+  out_channel
+)
+ident(
+  int_ref oc "ocamlbuild/display.ml" 27 1044 1056 "ocamlbuild/display.ml" 27 1044 1058
+)
+"ocamlbuild/display.ml" 27 1044 1070 "ocamlbuild/display.ml" 27 1044 1074
+type(
+  (unit, out_channel, unit) format
+)
+"ocamlbuild/display.ml" 27 1044 1064 "ocamlbuild/display.ml" 27 1044 1074
+call(
+  tail
+)
+type(
+  unit
+)
+"ocamlbuild/display.ml" 28 1077 1085 "ocamlbuild/display.ml" 28 1077 1096
+type(
+  unit -> int
+)
+ident(
+  def get_columns "ocamlbuild/display.ml" 34 1262 1275 "ocamlbuild/display.ml" 35 1276 1281
+)
+"ocamlbuild/display.ml" 28 1077 1097 "ocamlbuild/display.ml" 28 1077 1099
+type(
+  unit
+)
+"ocamlbuild/display.ml" 29 1102 1111 "ocamlbuild/display.ml" 29 1102 1122
+type(
+  string
+)
+ident(
+  ext_ref Sys.os_type
+)
+"ocamlbuild/display.ml" 29 1102 1123 "ocamlbuild/display.ml" 29 1102 1124
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"ocamlbuild/display.ml" 29 1102 1125 "ocamlbuild/display.ml" 29 1102 1131
+type(
+  string
+)
+"ocamlbuild/display.ml" 29 1102 1111 "ocamlbuild/display.ml" 29 1102 1131
+type(
+  bool
+)
+"ocamlbuild/display.ml" 31 1149 1159 "ocamlbuild/display.ml" 31 1149 1172
+type(
+  string -> int
+)
+ident(
+  ext_ref Pervasives.int_of_string
+)
+"ocamlbuild/display.ml" 31 1149 1174 "ocamlbuild/display.ml" 31 1149 1186
+type(
+  string -> string
+)
+ident(
+  ext_ref My_std.String.chomp
+)
+"ocamlbuild/display.ml" 31 1149 1188 "ocamlbuild/display.ml" 31 1149 1208
+type(
+  string -> string
+)
+ident(
+  ext_ref My_unix.run_and_read
+)
+"ocamlbuild/display.ml" 31 1149 1209 "ocamlbuild/display.ml" 31 1149 1220
+type(
+  string
+)
+"ocamlbuild/display.ml" 31 1149 1187 "ocamlbuild/display.ml" 31 1149 1221
+call(
+  stack
+)
+type(
+  string
+)
+"ocamlbuild/display.ml" 31 1149 1173 "ocamlbuild/display.ml" 31 1149 1222
+call(
+  stack
+)
+type(
+  string
+)
+"ocamlbuild/display.ml" 31 1149 1159 "ocamlbuild/display.ml" 31 1149 1222
+type(
+  int
+)
+"ocamlbuild/display.ml" 33 1236 1254 "ocamlbuild/display.ml" 33 1236 1255
+type(
+  string
+)
+"ocamlbuild/display.ml" 33 1236 1246 "ocamlbuild/display.ml" 33 1236 1255
+type(
+  exn
+)
+"ocamlbuild/display.ml" 33 1236 1259 "ocamlbuild/display.ml" 33 1236 1261
+type(
+  int
+)
+"ocamlbuild/display.ml" 30 1137 1145 "ocamlbuild/display.ml" 33 1236 1261
+type(
+  int
+)
+"ocamlbuild/display.ml" 34 1262 1273 "ocamlbuild/display.ml" 34 1262 1275
+type(
+  int
+)
+"ocamlbuild/display.ml" 29 1102 1108 "ocamlbuild/display.ml" 34 1262 1275
+type(
+  int
+)
+"ocamlbuild/display.ml" 76 3246 3250 "ocamlbuild/display.ml" 76 3246 3273
+type(
+  float
+)
+ident(
+  def default_update_interval "ocamlbuild/display.ml" 77 3283 3283 "ocamlbuild/display.ml" 1 0 -1
+)
+"ocamlbuild/display.ml" 76 3246 3276 "ocamlbuild/display.ml" 76 3246 3280
+type(
+  float
+)
+"ocamlbuild/display.ml" 77 3283 3287 "ocamlbuild/display.ml" 77 3283 3314
+type(
+  (string * char) list
+)
+ident(
+  def default_tagline_description "ocamlbuild/display.ml" 89 3511 3511 "ocamlbuild/display.ml" 1 0 -1
+)
+"ocamlbuild/display.ml" 78 3319 3321 "ocamlbuild/display.ml" 78 3319 3328
+type(
+  string
+)
+"ocamlbuild/display.ml" 78 3319 3334 "ocamlbuild/display.ml" 78 3319 3337
+type(
+  char
+)
+"ocamlbuild/display.ml" 78 3319 3321 "ocamlbuild/display.ml" 78 3319 3337
+type(
+  string * char
+)
+"ocamlbuild/display.ml" 79 3339 3341 "ocamlbuild/display.ml" 79 3339 3349
+type(
+  string
+)
+"ocamlbuild/display.ml" 79 3339 3354 "ocamlbuild/display.ml" 79 3339 3357
+type(
+  char
+)
+"ocamlbuild/display.ml" 79 3339 3341 "ocamlbuild/display.ml" 79 3339 3357
+type(
+  string * char
+)
+"ocamlbuild/display.ml" 80 3359 3361 "ocamlbuild/display.ml" 80 3359 3367
+type(
+  string
+)
+"ocamlbuild/display.ml" 80 3359 3374 "ocamlbuild/display.ml" 80 3359 3377
+type(
+  char
+)
+"ocamlbuild/display.ml" 80 3359 3361 "ocamlbuild/display.ml" 80 3359 3377
+type(
+  string * char
+)
+"ocamlbuild/display.ml" 81 3379 3381 "ocamlbuild/display.ml" 81 3379 3390
+type(
+  string
+)
+"ocamlbuild/display.ml" 81 3379 3394 "ocamlbuild/display.ml" 81 3379 3397
+type(
+  char
+)
+"ocamlbuild/display.ml" 81 3379 3381 "ocamlbuild/display.ml" 81 3379 3397
+type(
+  string * char
+)
+"ocamlbuild/display.ml" 82 3399 3401 "ocamlbuild/display.ml" 82 3399 3405
+type(
+  string
+)
+"ocamlbuild/display.ml" 82 3399 3414 "ocamlbuild/display.ml" 82 3399 3417
+type(
+  char
+)
+"ocamlbuild/display.ml" 82 3399 3401 "ocamlbuild/display.ml" 82 3399 3417
+type(
+  string * char
+)
+"ocamlbuild/display.ml" 83 3419 3421 "ocamlbuild/display.ml" 83 3419 3428
+type(
+  string
+)
+"ocamlbuild/display.ml" 83 3419 3434 "ocamlbuild/display.ml" 83 3419 3437
+type(
+  char
+)
+"ocamlbuild/display.ml" 83 3419 3421 "ocamlbuild/display.ml" 83 3419 3437
+type(
+  string * char
+)
+"ocamlbuild/display.ml" 84 3439 3441 "ocamlbuild/display.ml" 84 3439 3449
+type(
+  string
+)
+"ocamlbuild/display.ml" 84 3439 3454 "ocamlbuild/display.ml" 84 3439 3457
+type(
+  char
+)
+"ocamlbuild/display.ml" 84 3439 3441 "ocamlbuild/display.ml" 84 3439 3457
+type(
+  string * char
+)
+"ocamlbuild/display.ml" 85 3459 3461 "ocamlbuild/display.ml" 85 3459 3467
+type(
+  string
+)
+"ocamlbuild/display.ml" 85 3459 3474 "ocamlbuild/display.ml" 85 3459 3477
+type(
+  char
+)
+"ocamlbuild/display.ml" 85 3459 3461 "ocamlbuild/display.ml" 85 3459 3477
+type(
+  string * char
+)
+"ocamlbuild/display.ml" 77 3283 3317 "ocamlbuild/display.ml" 86 3479 3480
+type(
+  (string * char) list
+)
+"ocamlbuild/display.ml" 89 3511 3515 "ocamlbuild/display.ml" 89 3511 3530
+type(
+  int
+)
+ident(
+  def countdown_chars "ocamlbuild/display.ml" 90 3537 3537 "ocamlbuild/display.ml" 1 0 -1
+)
+"ocamlbuild/display.ml" 89 3511 3533 "ocamlbuild/display.ml" 89 3511 3534
+type(
+  int
+)
+"ocamlbuild/display.ml" 90 3537 3541 "ocamlbuild/display.ml" 90 3537 3551
+type(
+  int
+)
+ident(
+  def jobs_chars "ocamlbuild/display.ml" 91 3558 3558 "ocamlbuild/display.ml" 1 0 -1
+)
+"ocamlbuild/display.ml" 90 3537 3554 "ocamlbuild/display.ml" 90 3537 3555
+type(
+  int
+)
+"ocamlbuild/display.ml" 91 3558 3562 "ocamlbuild/display.ml" 91 3558 3579
+type(
+  int
+)
+ident(
+  def jobs_cached_chars "ocamlbuild/display.ml" 92 3586 3586 "ocamlbuild/display.ml" 1 0 -1
+)
+"ocamlbuild/display.ml" 91 3558 3582 "ocamlbuild/display.ml" 91 3558 3583
+type(
+  int
+)
+"ocamlbuild/display.ml" 92 3586 3590 "ocamlbuild/display.ml" 92 3586 3594
+type(
+  string
+)
+ident(
+  def dots "ocamlbuild/display.ml" 93 3605 3605 "ocamlbuild/display.ml" 1 0 -1
+)
+"ocamlbuild/display.ml" 92 3586 3597 "ocamlbuild/display.ml" 92 3586 3602
+type(
+  string
+)
+"ocamlbuild/display.ml" 93 3605 3609 "ocamlbuild/display.ml" 93 3605 3621
+type(
+  string
+)
+ident(
+  def start_target "ocamlbuild/display.ml" 94 3637 3637 "ocamlbuild/display.ml" 1 0 -1
+)
+"ocamlbuild/display.ml" 93 3605 3624 "ocamlbuild/display.ml" 93 3605 3634
+type(
+  string
+)
+"ocamlbuild/display.ml" 94 3637 3641 "ocamlbuild/display.ml" 94 3637 3654
+type(
+  string
+)
+ident(
+  def finish_target "ocamlbuild/display.ml" 95 3670 3670 "ocamlbuild/display.ml" 1 0 -1
+)
+"ocamlbuild/display.ml" 94 3637 3657 "ocamlbuild/display.ml" 94 3637 3667
+type(
+  string
+)
+"ocamlbuild/display.ml" 95 3670 3674 "ocamlbuild/display.ml" 95 3670 3686
+type(
+  int
+)
+ident(
+  def ticker_chars "ocamlbuild/display.ml" 96 3693 3693 "ocamlbuild/display.ml" 1 0 -1
+)
+"ocamlbuild/display.ml" 95 3670 3689 "ocamlbuild/display.ml" 95 3670 3690
+type(
+  int
+)
+"ocamlbuild/display.ml" 96 3693 3697 "ocamlbuild/display.ml" 96 3693 3710
+type(
+  float
+)
+ident(
+  def ticker_period "ocamlbuild/display.ml" 97 3720 3720 "ocamlbuild/display.ml" 1 0 -1
+)
+"ocamlbuild/display.ml" 96 3693 3713 "ocamlbuild/display.ml" 96 3693 3717
+type(
+  float
+)
+"ocamlbuild/display.ml" 97 3720 3724 "ocamlbuild/display.ml" 97 3720 3740
+type(
+  string array
+)
+ident(
+  def ticker_animation "ocamlbuild/display.ml" 103 3780 3780 "ocamlbuild/display.ml" 1 0 -1
+)
+"ocamlbuild/display.ml" 98 3746 3748 "ocamlbuild/display.ml" 98 3746 3752
+type(
+  string
+)
+"ocamlbuild/display.ml" 99 3754 3756 "ocamlbuild/display.ml" 99 3754 3759
+type(
+  string
+)
+"ocamlbuild/display.ml" 100 3761 3763 "ocamlbuild/display.ml" 100 3761 3766
+type(
+  string
+)
+"ocamlbuild/display.ml" 101 3768 3770 "ocamlbuild/display.ml" 101 3768 3773
+type(
+  string
+)
+"ocamlbuild/display.ml" 97 3720 3743 "ocamlbuild/display.ml" 102 3775 3777
+type(
+  string array
+)
+"ocamlbuild/display.ml" 103 3780 3784 "ocamlbuild/display.ml" 103 3780 3790
+type(
+  string
+)
+ident(
+  def cached "ocamlbuild/display.ml" 104 3799 3799 "ocamlbuild/display.ml" 1 0 -1
+)
+"ocamlbuild/display.ml" 103 3780 3793 "ocamlbuild/display.ml" 103 3780 3796
+type(
+  string
+)
+"ocamlbuild/display.ml" 104 3799 3803 "ocamlbuild/display.ml" 104 3799 3811
+type(
+  string
+)
+ident(
+  def uncached "ocamlbuild/display.ml" 105 3820 3820 "ocamlbuild/display.ml" 1 0 -1
+)
+"ocamlbuild/display.ml" 104 3799 3814 "ocamlbuild/display.ml" 104 3799 3817
+type(
+  string
+)
+"ocamlbuild/display.ml" 105 3820 3824 "ocamlbuild/display.ml" 105 3820 3835
+type(
+  int
+)
+ident(
+  def cache_chars "ocamlbuild/display.ml" 108 3873 3873 "ocamlbuild/display.ml" 1 0 -1
+)
+"ocamlbuild/display.ml" 105 3820 3838 "ocamlbuild/display.ml" 105 3820 3839
+type(
+  int
+)
+"ocamlbuild/display.ml" 108 3873 3877 "ocamlbuild/display.ml" 108 3873 3891
+type(
+  'a list -> string
+)
+ident(
+  def create_tagline "ocamlbuild/display.ml" 111 3973 3973 "ocamlbuild/display.ml" 1 0 -1
+)
+"ocamlbuild/display.ml" 108 3873 3892 "ocamlbuild/display.ml" 108 3873 3903
+type(
+  'a list
+)
+ident(
+  def description "ocamlbuild/display.ml" 108 3873 3906 "ocamlbuild/display.ml" 108 3873 3947
+)
+"ocamlbuild/display.ml" 108 3873 3906 "ocamlbuild/display.ml" 108 3873 3917
+type(
+  int -> char -> string
+)
+ident(
+  ext_ref My_std.String.make
+)
+"ocamlbuild/display.ml" 108 3873 3919 "ocamlbuild/display.ml" 108 3873 3930
+type(
+  'a list -> int
+)
+ident(
+  ext_ref My_std.List.length
+)
+"ocamlbuild/display.ml" 108 3873 3931 "ocamlbuild/display.ml" 108 3873 3942
+type(
+  'a list
+)
+ident(
+  int_ref description "ocamlbuild/display.ml" 108 3873 3892 "ocamlbuild/display.ml" 108 3873 3903
+)
+"ocamlbuild/display.ml" 108 3873 3918 "ocamlbuild/display.ml" 108 3873 3943
+call(
+  stack
+)
+type(
+  int
+)
+"ocamlbuild/display.ml" 108 3873 3944 "ocamlbuild/display.ml" 108 3873 3947
+type(
+  char
+)
+"ocamlbuild/display.ml" 108 3873 3906 "ocamlbuild/display.ml" 108 3873 3947
+call(
+  tail
+)
+type(
+  string
+)
+"ocamlbuild/display.ml" 111 3973 3977 "ocamlbuild/display.ml" 111 3973 3983
+type(
+  ?channel:out_channel ->
+  ?mode:[ `Classic | `Sophisticated ] ->
+  ?columns:int ->
+  ?description:tagline_description ->
+  ?log_file:string -> ?log_level:int -> unit -> display
+)
+ident(
+  def create "ocamlbuild/display.ml" 165 5784 5784 "ocamlbuild/display.ml" 1 0 -1
+)
+"ocamlbuild/display.ml" 112 3984 3988 "ocamlbuild/display.ml" 112 3984 3995
+type(
+  out_channel
+)
+"ocamlbuild/display.ml" 112 3984 3996 "ocamlbuild/display.ml" 112 3984 4002
+type(
+  out_channel
+)
+ident(
+  ext_ref Pervasives.stdout
+)
+type(
+  out_channel
+)
+ident(
+  int_ref *sth* "ocamlbuild/display.ml" 112 3984 3996 "ocamlbuild/display.ml" 112 3984 4002
+)
+type(
+  out_channel option
+)
+type(
+  out_channel option
+)
+type(
+  out_channel
+)
+"ocamlbuild/display.ml" 113 4004 4008 "ocamlbuild/display.ml" 113 4004 4012
+type(
+  [ `Classic | `Sophisticated ]
+)
+"ocamlbuild/display.ml" 113 4004 4041 "ocamlbuild/display.ml" 113 4004 4055
+type(
+  [ `Classic | `Sophisticated ]
+)
+type(
+  [ `Classic | `Sophisticated ]
+)
+ident(
+  int_ref *sth* "ocamlbuild/display.ml" 113 4004 4041 "ocamlbuild/display.ml" 113 4004 4055
+)
+type(
+  [ `Classic | `Sophisticated ] option
+)
+type(
+  [ `Classic | `Sophisticated ] option
+)
+type(
+  [ `Classic | `Sophisticated ]
+)
+"ocamlbuild/display.ml" 114 4057 4069 "ocamlbuild/display.ml" 114 4057 4077
+type(
+  int
+)
+"ocamlbuild/display.ml" 114 4057 4078 "ocamlbuild/display.ml" 114 4057 4080
+type(
+  int
+)
+type(
+  int
+)
+ident(
+  int_ref *sth* "ocamlbuild/display.ml" 114 4057 4078 "ocamlbuild/display.ml" 114 4057 4080
+)
+type(
+  int option
+)
+type(
+  int option
+)
+type(
+  int
+)
+"ocamlbuild/display.ml" 115 4082 4086 "ocamlbuild/display.ml" 115 4082 4097
+type(
+  tagline_description
+)
+"ocamlbuild/display.ml" 115 4082 4100 "ocamlbuild/display.ml" 115 4082 4127
+type(
+  tagline_description
+)
+ident(
+  int_ref default_tagline_description "ocamlbuild/display.ml" 77 3283 3287 "ocamlbuild/display.ml" 77 3283 3314
+)
+type(
+  tagline_description
+)
+ident(
+  int_ref *sth* "ocamlbuild/display.ml" 115 4082 4100 "ocamlbuild/display.ml" 115 4082 4127
+)
+type(
+  tagline_description option
+)
+type(
+  tagline_description option
+)
+type(
+  tagline_description
+)
+"ocamlbuild/display.ml" 116 4129 4132 "ocamlbuild/display.ml" 116 4129 4140
+type(
+  string option
+)
+ident(
+  def log_file "ocamlbuild/display.ml" 117 4141 4143 "ocamlbuild/display.ml" 161 5724 5753
+)
+"ocamlbuild/display.ml" 117 4141 4145 "ocamlbuild/display.ml" 117 4141 4154
+type(
+  int
+)
+"ocamlbuild/display.ml" 117 4141 4155 "ocamlbuild/display.ml" 117 4141 4156
+type(
+  int
+)
+type(
+  int
+)
+ident(
+  int_ref *sth* "ocamlbuild/display.ml" 117 4141 4155 "ocamlbuild/display.ml" 117 4141 4156
+)
+type(
+  int option
+)
+type(
+  int option
+)
+type(
+  int
+)
+"ocamlbuild/display.ml" 118 4158 4160 "ocamlbuild/display.ml" 118 4158 4162
+type(
+  unit
+)
+"ocamlbuild/display.ml" 120 4167 4173 "ocamlbuild/display.ml" 120 4167 4184
+type(
+  (Format.formatter * out_channel) option
+)
+ident(
+  def log_channel "ocamlbuild/display.ml" 130 4469 4471 "ocamlbuild/display.ml" 161 5724 5753
+)
+"ocamlbuild/display.ml" 121 4187 4197 "ocamlbuild/display.ml" 121 4187 4205
+type(
+  string option
+)
+ident(
+  int_ref log_file "ocamlbuild/display.ml" 116 4129 4132 "ocamlbuild/display.ml" 116 4129 4140
+)
+"ocamlbuild/display.ml" 122 4211 4217 "ocamlbuild/display.ml" 122 4211 4221
+type(
+  string option
+)
+"ocamlbuild/display.ml" 122 4211 4225 "ocamlbuild/display.ml" 122 4211 4229
+type(
+  (Format.formatter * out_channel) option
+)
+"ocamlbuild/display.ml" 123 4230 4241 "ocamlbuild/display.ml" 123 4230 4243
+type(
+  string
+)
+ident(
+  def fn "ocamlbuild/display.ml" 124 4247 4255 "ocamlbuild/display.ml" 127 4442 4462
+)
+"ocamlbuild/display.ml" 123 4230 4236 "ocamlbuild/display.ml" 123 4230 4243
+type(
+  string option
+)
+"ocamlbuild/display.ml" 124 4247 4259 "ocamlbuild/display.ml" 124 4247 4261
+type(
+  out_channel
+)
+ident(
+  def oc "ocamlbuild/display.ml" 125 4338 4346 "ocamlbuild/display.ml" 127 4442 4462
+)
+"ocamlbuild/display.ml" 124 4247 4264 "ocamlbuild/display.ml" 124 4247 4276
+type(
+  open_flag list -> int -> string -> out_channel
+)
+ident(
+  ext_ref Pervasives.open_out_gen
+)
+"ocamlbuild/display.ml" 124 4247 4278 "ocamlbuild/display.ml" 124 4247 4287
+type(
+  open_flag
+)
+"ocamlbuild/display.ml" 124 4247 4289 "ocamlbuild/display.ml" 124 4247 4300
+type(
+  open_flag
+)
+"ocamlbuild/display.ml" 124 4247 4302 "ocamlbuild/display.ml" 124 4247 4312
+type(
+  open_flag
+)
+"ocamlbuild/display.ml" 124 4247 4314 "ocamlbuild/display.ml" 124 4247 4324
+type(
+  open_flag
+)
+"ocamlbuild/display.ml" 124 4247 4277 "ocamlbuild/display.ml" 124 4247 4325
+type(
+  open_flag list
+)
+"ocamlbuild/display.ml" 124 4247 4326 "ocamlbuild/display.ml" 124 4247 4331
+type(
+  int
+)
+"ocamlbuild/display.ml" 124 4247 4332 "ocamlbuild/display.ml" 124 4247 4334
+type(
+  string
+)
+ident(
+  int_ref fn "ocamlbuild/display.ml" 123 4230 4241 "ocamlbuild/display.ml" 123 4230 4243
+)
+"ocamlbuild/display.ml" 124 4247 4264 "ocamlbuild/display.ml" 124 4247 4334
+call(
+  stack
+)
+type(
+  out_channel
+)
+"ocamlbuild/display.ml" 125 4338 4350 "ocamlbuild/display.ml" 125 4338 4351
+type(
+  Format.formatter
+)
+ident(
+  def f "ocamlbuild/display.ml" 126 4392 4400 "ocamlbuild/display.ml" 127 4442 4462
+)
+"ocamlbuild/display.ml" 125 4338 4354 "ocamlbuild/display.ml" 125 4338 4385
+type(
+  out_channel -> Format.formatter
+)
+ident(
+  ext_ref Format.formatter_of_out_channel
+)
+"ocamlbuild/display.ml" 125 4338 4386 "ocamlbuild/display.ml" 125 4338 4388
+type(
+  out_channel
+)
+ident(
+  int_ref oc "ocamlbuild/display.ml" 124 4247 4259 "ocamlbuild/display.ml" 124 4247 4261
+)
+"ocamlbuild/display.ml" 125 4338 4354 "ocamlbuild/display.ml" 125 4338 4388
+call(
+  stack
+)
+type(
+  Format.formatter
+)
+"ocamlbuild/display.ml" 126 4392 4400 "ocamlbuild/display.ml" 126 4392 4414
+type(
+  Format.formatter -> (unit, Format.formatter, unit) format -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"ocamlbuild/display.ml" 126 4392 4415 "ocamlbuild/display.ml" 126 4392 4416
+type(
+  Format.formatter
+)
+ident(
+  int_ref f "ocamlbuild/display.ml" 125 4338 4350 "ocamlbuild/display.ml" 125 4338 4351
+)
+"ocamlbuild/display.ml" 126 4392 4417 "ocamlbuild/display.ml" 126 4392 4440
+type(
+  (unit, Format.formatter, unit) format
+)
+"ocamlbuild/display.ml" 126 4392 4400 "ocamlbuild/display.ml" 126 4392 4440
+call(
+  stack
+)
+type(
+  unit
+)
+"ocamlbuild/display.ml" 127 4442 4456 "ocamlbuild/display.ml" 127 4442 4457
+type(
+  Format.formatter
+)
+ident(
+  int_ref f "ocamlbuild/display.ml" 125 4338 4350 "ocamlbuild/display.ml" 125 4338 4351
+)
+"ocamlbuild/display.ml" 127 4442 4459 "ocamlbuild/display.ml" 127 4442 4461
+type(
+  out_channel
+)
+ident(
+  int_ref oc "ocamlbuild/display.ml" 124 4247 4259 "ocamlbuild/display.ml" 124 4247 4261
+)
+"ocamlbuild/display.ml" 127 4442 4455 "ocamlbuild/display.ml" 127 4442 4462
+type(
+  Format.formatter * out_channel
+)
+"ocamlbuild/display.ml" 127 4442 4450 "ocamlbuild/display.ml" 127 4442 4462
+type(
+  (Format.formatter * out_channel) option
+)
+"ocamlbuild/display.ml" 126 4392 4400 "ocamlbuild/display.ml" 127 4442 4462
+type(
+  (Format.formatter * out_channel) option
+)
+"ocamlbuild/display.ml" 125 4338 4346 "ocamlbuild/display.ml" 127 4442 4462
+type(
+  (Format.formatter * out_channel) option
+)
+"ocamlbuild/display.ml" 124 4247 4255 "ocamlbuild/display.ml" 127 4442 4462
+type(
+  (Format.formatter * out_channel) option
+)
+"ocamlbuild/display.ml" 121 4187 4191 "ocamlbuild/display.ml" 127 4442 4462
+type(
+  (Format.formatter * out_channel) option
+)
+"ocamlbuild/display.ml" 130 4469 4475 "ocamlbuild/display.ml" 130 4469 4487
+type(
+  display_line
+)
+ident(
+  def display_line "ocamlbuild/display.ml" 156 5526 5528 "ocamlbuild/display.ml" 161 5724 5753
+)
+"ocamlbuild/display.ml" 131 4490 4500 "ocamlbuild/display.ml" 131 4490 4504
+type(
+  [ `Classic | `Sophisticated ]
+)
+ident(
+  int_ref mode "ocamlbuild/display.ml" 113 4004 4008 "ocamlbuild/display.ml" 113 4004 4012
+)
+"ocamlbuild/display.ml" 132 4510 4516 "ocamlbuild/display.ml" 132 4510 4524
+type(
+  [ `Classic | `Sophisticated ]
+)
+"ocamlbuild/display.ml" 132 4510 4528 "ocamlbuild/display.ml" 132 4510 4535
+type(
+  display_line
+)
+"ocamlbuild/display.ml" 133 4536 4542 "ocamlbuild/display.ml" 133 4536 4556
+type(
+  [ `Classic | `Sophisticated ]
+)
+"ocamlbuild/display.ml" 135 4604 4614 "ocamlbuild/display.ml" 135 4604 4615
+type(
+  int
+)
+ident(
+  def n "ocamlbuild/display.ml" 136 4641 4647 "ocamlbuild/display.ml" 154 5476 5520
+)
+"ocamlbuild/display.ml" 135 4604 4618 "ocamlbuild/display.ml" 135 4604 4634
+type(
+  unit -> int
+)
+ident(
+  int_ref ANSI.get_columns "ocamlbuild/display.ml" 28 1077 1085 "ocamlbuild/display.ml" 28 1077 1096
+)
+"ocamlbuild/display.ml" 135 4604 4635 "ocamlbuild/display.ml" 135 4604 4637
+type(
+  unit
+)
+"ocamlbuild/display.ml" 135 4604 4618 "ocamlbuild/display.ml" 135 4604 4637
+call(
+  stack
+)
+type(
+  int
+)
+"ocamlbuild/display.ml" 136 4641 4651 "ocamlbuild/display.ml" 136 4641 4660
+type(
+  int
+)
+ident(
+  def tag_chars "ocamlbuild/display.ml" 137 4690 4696 "ocamlbuild/display.ml" 154 5476 5520
+)
+"ocamlbuild/display.ml" 136 4641 4663 "ocamlbuild/display.ml" 136 4641 4674
+type(
+  tagline_description -> int
+)
+ident(
+  ext_ref My_std.List.length
+)
+"ocamlbuild/display.ml" 136 4641 4675 "ocamlbuild/display.ml" 136 4641 4686
+type(
+  tagline_description
+)
+ident(
+  int_ref description "ocamlbuild/display.ml" 115 4082 4086 "ocamlbuild/display.ml" 115 4082 4097
+)
+"ocamlbuild/display.ml" 136 4641 4663 "ocamlbuild/display.ml" 136 4641 4686
+call(
+  stack
+)
+type(
+  int
+)
+"ocamlbuild/display.ml" 138 4710 4741 "ocamlbuild/display.ml" 138 4710 4747
+type(
+  out_channel
+)
+ident(
+  ext_ref Pervasives.stdout
+)
+"ocamlbuild/display.ml" 139 4749 4780 "ocamlbuild/display.ml" 139 4749 4792
+type(
+  unit -> float
+)
+ident(
+  ext_ref My_unix.gettimeofday
+)
+"ocamlbuild/display.ml" 139 4749 4793 "ocamlbuild/display.ml" 139 4749 4795
+type(
+  unit
+)
+"ocamlbuild/display.ml" 139 4749 4780 "ocamlbuild/display.ml" 139 4749 4795
+call(
+  stack
+)
+type(
+  float
+)
+"ocamlbuild/display.ml" 140 4797 4828 "ocamlbuild/display.ml" 140 4797 4831
+type(
+  float
+)
+"ocamlbuild/display.ml" 141 4833 4864 "ocamlbuild/display.ml" 141 4833 4876
+type(
+  string
+)
+ident(
+  int_ref start_target "ocamlbuild/display.ml" 93 3605 3609 "ocamlbuild/display.ml" 93 3605 3621
+)
+"ocamlbuild/display.ml" 142 4878 4909 "ocamlbuild/display.ml" 142 4878 4919
+type(
+  Tags.t
+)
+ident(
+  ext_ref Tags.empty
+)
+"ocamlbuild/display.ml" 143 4921 4952 "ocamlbuild/display.ml" 143 4921 4957
+type(
+  bool
+)
+"ocamlbuild/display.ml" 144 4959 4990 "ocamlbuild/display.ml" 144 4959 4995
+type(
+  bool
+)
+"ocamlbuild/display.ml" 145 4997 5028 "ocamlbuild/display.ml" 145 4997 5051
+type(
+  float
+)
+ident(
+  int_ref default_update_interval "ocamlbuild/display.ml" 76 3246 3250 "ocamlbuild/display.ml" 76 3246 3273
+)
+"ocamlbuild/display.ml" 146 5053 5084 "ocamlbuild/display.ml" 146 5053 5085
+type(
+  int
+)
+ident(
+  int_ref n "ocamlbuild/display.ml" 135 4604 4614 "ocamlbuild/display.ml" 135 4604 4615
+)
+"ocamlbuild/display.ml" 147 5087 5118 "ocamlbuild/display.ml" 147 5087 5119
+type(
+  int
+)
+"ocamlbuild/display.ml" 148 5121 5152 "ocamlbuild/display.ml" 148 5121 5153
+type(
+  int
+)
+"ocamlbuild/display.ml" 149 5155 5186 "ocamlbuild/display.ml" 149 5155 5200
+type(
+  tagline_description -> string
+)
+ident(
+  int_ref create_tagline "ocamlbuild/display.ml" 108 3873 3877 "ocamlbuild/display.ml" 108 3873 3891
+)
+"ocamlbuild/display.ml" 149 5155 5201 "ocamlbuild/display.ml" 149 5155 5212
+type(
+  tagline_description
+)
+ident(
+  int_ref description "ocamlbuild/display.ml" 115 4082 4086 "ocamlbuild/display.ml" 115 4082 4097
+)
+"ocamlbuild/display.ml" 149 5155 5186 "ocamlbuild/display.ml" 149 5155 5212
+call(
+  stack
+)
+type(
+  string
+)
+"ocamlbuild/display.ml" 150 5214 5245 "ocamlbuild/display.ml" 150 5214 5255
+type(
+  Tags.t
+)
+ident(
+  ext_ref Tags.empty
+)
+"ocamlbuild/display.ml" 151 5257 5288 "ocamlbuild/display.ml" 151 5257 5289
+type(
+  int
+)
+ident(
+  int_ref n "ocamlbuild/display.ml" 135 4604 4614 "ocamlbuild/display.ml" 135 4604 4615
+)
+"ocamlbuild/display.ml" 151 5257 5290 "ocamlbuild/display.ml" 151 5257 5291
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"ocamlbuild/display.ml" 152 5292 5326 "ocamlbuild/display.ml" 152 5292 5341
+type(
+  int
+)
+ident(
+  int_ref countdown_chars "ocamlbuild/display.ml" 89 3511 3515 "ocamlbuild/display.ml" 89 3511 3530
+)
+"ocamlbuild/display.ml" 152 5292 5342 "ocamlbuild/display.ml" 152 5292 5343
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"ocamlbuild/display.ml" 152 5292 5344 "ocamlbuild/display.ml" 152 5292 5345
+type(
+  int
+)
+"ocamlbuild/display.ml" 152 5292 5326 "ocamlbuild/display.ml" 152 5292 5345
+type(
+  int
+)
+"ocamlbuild/display.ml" 152 5292 5346 "ocamlbuild/display.ml" 152 5292 5347
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"ocamlbuild/display.ml" 152 5292 5348 "ocamlbuild/display.ml" 152 5292 5358
+type(
+  int
+)
+ident(
+  int_ref jobs_chars "ocamlbuild/display.ml" 90 3537 3541 "ocamlbuild/display.ml" 90 3537 3551
+)
+"ocamlbuild/display.ml" 152 5292 5326 "ocamlbuild/display.ml" 152 5292 5358
+type(
+  int
+)
+"ocamlbuild/display.ml" 152 5292 5359 "ocamlbuild/display.ml" 152 5292 5360
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"ocamlbuild/display.ml" 152 5292 5361 "ocamlbuild/display.ml" 152 5292 5362
+type(
+  int
+)
+"ocamlbuild/display.ml" 152 5292 5326 "ocamlbuild/display.ml" 152 5292 5362
+type(
+  int
+)
+"ocamlbuild/display.ml" 152 5292 5363 "ocamlbuild/display.ml" 152 5292 5364
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"ocamlbuild/display.ml" 152 5292 5365 "ocamlbuild/display.ml" 152 5292 5382
+type(
+  int
+)
+ident(
+  int_ref jobs_cached_chars "ocamlbuild/display.ml" 91 3558 3562 "ocamlbuild/display.ml" 91 3558 3579
+)
+"ocamlbuild/display.ml" 152 5292 5326 "ocamlbuild/display.ml" 152 5292 5382
+type(
+  int
+)
+"ocamlbuild/display.ml" 152 5292 5383 "ocamlbuild/display.ml" 152 5292 5384
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"ocamlbuild/display.ml" 152 5292 5385 "ocamlbuild/display.ml" 152 5292 5386
+type(
+  int
+)
+"ocamlbuild/display.ml" 152 5292 5326 "ocamlbuild/display.ml" 152 5292 5386
+type(
+  int
+)
+"ocamlbuild/display.ml" 152 5292 5387 "ocamlbuild/display.ml" 152 5292 5388
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"ocamlbuild/display.ml" 153 5389 5423 "ocamlbuild/display.ml" 153 5389 5434
+type(
+  int
+)
+ident(
+  int_ref cache_chars "ocamlbuild/display.ml" 105 3820 3824 "ocamlbuild/display.ml" 105 3820 3835
+)
+"ocamlbuild/display.ml" 152 5292 5326 "ocamlbuild/display.ml" 153 5389 5434
+type(
+  int
+)
+"ocamlbuild/display.ml" 153 5389 5435 "ocamlbuild/display.ml" 153 5389 5436
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"ocamlbuild/display.ml" 153 5389 5437 "ocamlbuild/display.ml" 153 5389 5438
+type(
+  int
+)
+"ocamlbuild/display.ml" 152 5292 5326 "ocamlbuild/display.ml" 153 5389 5438
+type(
+  int
+)
+"ocamlbuild/display.ml" 153 5389 5439 "ocamlbuild/display.ml" 153 5389 5440
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"ocamlbuild/display.ml" 153 5389 5441 "ocamlbuild/display.ml" 153 5389 5450
+type(
+  int
+)
+ident(
+  int_ref tag_chars "ocamlbuild/display.ml" 136 4641 4651 "ocamlbuild/display.ml" 136 4641 4660
+)
+"ocamlbuild/display.ml" 152 5292 5326 "ocamlbuild/display.ml" 153 5389 5450
+type(
+  int
+)
+"ocamlbuild/display.ml" 153 5389 5451 "ocamlbuild/display.ml" 153 5389 5452
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"ocamlbuild/display.ml" 153 5389 5453 "ocamlbuild/display.ml" 153 5389 5454
+type(
+  int
+)
+"ocamlbuild/display.ml" 152 5292 5326 "ocamlbuild/display.ml" 153 5389 5454
+type(
+  int
+)
+"ocamlbuild/display.ml" 153 5389 5455 "ocamlbuild/display.ml" 153 5389 5456
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"ocamlbuild/display.ml" 153 5389 5457 "ocamlbuild/display.ml" 153 5389 5469
+type(
+  int
+)
+ident(
+  int_ref ticker_chars "ocamlbuild/display.ml" 95 3670 3674 "ocamlbuild/display.ml" 95 3670 3686
+)
+"ocamlbuild/display.ml" 152 5292 5326 "ocamlbuild/display.ml" 153 5389 5469
+type(
+  int
+)
+"ocamlbuild/display.ml" 153 5389 5470 "ocamlbuild/display.ml" 153 5389 5471
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"ocamlbuild/display.ml" 153 5389 5472 "ocamlbuild/display.ml" 153 5389 5473
+type(
+  int
+)
+"ocamlbuild/display.ml" 152 5292 5325 "ocamlbuild/display.ml" 153 5389 5474
+type(
+  int
+)
+"ocamlbuild/display.ml" 151 5257 5288 "ocamlbuild/display.ml" 153 5389 5474
+type(
+  int
+)
+"ocamlbuild/display.ml" 154 5476 5507 "ocamlbuild/display.ml" 154 5476 5518
+type(
+  tagline_description
+)
+ident(
+  int_ref description "ocamlbuild/display.ml" 115 4082 4086 "ocamlbuild/display.ml" 115 4082 4097
+)
+"ocamlbuild/display.ml" 138 4710 4718 "ocamlbuild/display.ml" 154 5476 5520
+type(
+  sophisticated_display
+)
+"ocamlbuild/display.ml" 137 4690 4696 "ocamlbuild/display.ml" 154 5476 5520
+type(
+  display_line
+)
+"ocamlbuild/display.ml" 136 4641 4647 "ocamlbuild/display.ml" 154 5476 5520
+type(
+  display_line
+)
+"ocamlbuild/display.ml" 135 4604 4610 "ocamlbuild/display.ml" 154 5476 5520
+type(
+  display_line
+)
+"ocamlbuild/display.ml" 131 4490 4494 "ocamlbuild/display.ml" 154 5476 5520
+type(
+  display_line
+)
+"ocamlbuild/display.ml" 156 5526 5548 "ocamlbuild/display.ml" 156 5526 5557
+type(
+  int
+)
+ident(
+  int_ref log_level "ocamlbuild/display.ml" 117 4141 4145 "ocamlbuild/display.ml" 117 4141 4154
+)
+"ocamlbuild/display.ml" 157 5559 5581 "ocamlbuild/display.ml" 157 5559 5592
+type(
+  (Format.formatter * out_channel) option
+)
+ident(
+  int_ref log_channel "ocamlbuild/display.ml" 120 4167 4173 "ocamlbuild/display.ml" 120 4167 4184
+)
+"ocamlbuild/display.ml" 158 5594 5616 "ocamlbuild/display.ml" 158 5594 5623
+type(
+  out_channel
+)
+ident(
+  int_ref channel "ocamlbuild/display.ml" 112 3984 3988 "ocamlbuild/display.ml" 112 3984 3995
+)
+"ocamlbuild/display.ml" 159 5625 5647 "ocamlbuild/display.ml" 159 5625 5678
+type(
+  out_channel -> Format.formatter
+)
+ident(
+  ext_ref Format.formatter_of_out_channel
+)
+"ocamlbuild/display.ml" 159 5625 5679 "ocamlbuild/display.ml" 159 5625 5686
+type(
+  out_channel
+)
+ident(
+  int_ref channel "ocamlbuild/display.ml" 112 3984 3988 "ocamlbuild/display.ml" 112 3984 3995
+)
+"ocamlbuild/display.ml" 159 5625 5647 "ocamlbuild/display.ml" 159 5625 5686
+call(
+  stack
+)
+type(
+  Format.formatter
+)
+"ocamlbuild/display.ml" 160 5688 5710 "ocamlbuild/display.ml" 160 5688 5722
+type(
+  display_line
+)
+ident(
+  int_ref display_line "ocamlbuild/display.ml" 130 4469 4475 "ocamlbuild/display.ml" 130 4469 4487
+)
+"ocamlbuild/display.ml" 161 5724 5746 "ocamlbuild/display.ml" 161 5724 5751
+type(
+  bool
+)
+"ocamlbuild/display.ml" 156 5526 5528 "ocamlbuild/display.ml" 161 5724 5753
+type(
+  display
+)
+"ocamlbuild/display.ml" 130 4469 4471 "ocamlbuild/display.ml" 161 5724 5753
+type(
+  display
+)
+"ocamlbuild/display.ml" 120 4167 4169 "ocamlbuild/display.ml" 161 5724 5753
+type(
+  display
+)
+"ocamlbuild/display.ml" 165 5784 5788 "ocamlbuild/display.ml" 165 5784 5798
+type(
+  out_channel -> float -> unit
+)
+ident(
+  def print_time "ocamlbuild/display.ml" 174 5982 5982 "ocamlbuild/display.ml" 1 0 -1
+)
+"ocamlbuild/display.ml" 165 5784 5799 "ocamlbuild/display.ml" 165 5784 5801
+type(
+  out_channel
+)
+ident(
+  def oc "ocamlbuild/display.ml" 165 5784 5802 "ocamlbuild/display.ml" 170 5907 5937
+)
+"ocamlbuild/display.ml" 165 5784 5802 "ocamlbuild/display.ml" 165 5784 5803
+type(
+  float
+)
+ident(
+  def t "ocamlbuild/display.ml" 166 5806 5808 "ocamlbuild/display.ml" 170 5907 5937
+)
+"ocamlbuild/display.ml" 166 5806 5812 "ocamlbuild/display.ml" 166 5806 5813
+type(
+  int
+)
+ident(
+  def t "ocamlbuild/display.ml" 167 5834 5836 "ocamlbuild/display.ml" 170 5907 5937
+)
+"ocamlbuild/display.ml" 166 5806 5816 "ocamlbuild/display.ml" 166 5806 5828
+type(
+  float -> int
+)
+ident(
+  ext_ref Pervasives.int_of_float
+)
+"ocamlbuild/display.ml" 166 5806 5829 "ocamlbuild/display.ml" 166 5806 5830
+type(
+  float
+)
+ident(
+  int_ref t "ocamlbuild/display.ml" 165 5784 5802 "ocamlbuild/display.ml" 165 5784 5803
+)
+"ocamlbuild/display.ml" 166 5806 5816 "ocamlbuild/display.ml" 166 5806 5830
+type(
+  int
+)
+"ocamlbuild/display.ml" 167 5834 5840 "ocamlbuild/display.ml" 167 5834 5841
+type(
+  int
+)
+ident(
+  def s "ocamlbuild/display.ml" 168 5856 5858 "ocamlbuild/display.ml" 170 5907 5937
+)
+"ocamlbuild/display.ml" 167 5834 5844 "ocamlbuild/display.ml" 167 5834 5845
+type(
+  int
+)
+ident(
+  int_ref t "ocamlbuild/display.ml" 166 5806 5812 "ocamlbuild/display.ml" 166 5806 5813
+)
+"ocamlbuild/display.ml" 167 5834 5846 "ocamlbuild/display.ml" 167 5834 5849
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( mod )
+)
+"ocamlbuild/display.ml" 167 5834 5850 "ocamlbuild/display.ml" 167 5834 5852
+type(
+  int
+)
+"ocamlbuild/display.ml" 167 5834 5844 "ocamlbuild/display.ml" 167 5834 5852
+type(
+  int
+)
+"ocamlbuild/display.ml" 168 5856 5862 "ocamlbuild/display.ml" 168 5856 5863
+type(
+  int
+)
+ident(
+  def m "ocamlbuild/display.ml" 169 5885 5887 "ocamlbuild/display.ml" 170 5907 5937
+)
+"ocamlbuild/display.ml" 168 5856 5867 "ocamlbuild/display.ml" 168 5856 5868
+type(
+  int
+)
+ident(
+  int_ref t "ocamlbuild/display.ml" 166 5806 5812 "ocamlbuild/display.ml" 166 5806 5813
+)
+"ocamlbuild/display.ml" 168 5856 5869 "ocamlbuild/display.ml" 168 5856 5870
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( / )
+)
+"ocamlbuild/display.ml" 168 5856 5871 "ocamlbuild/display.ml" 168 5856 5873
+type(
+  int
+)
+"ocamlbuild/display.ml" 168 5856 5866 "ocamlbuild/display.ml" 168 5856 5874
+type(
+  int
+)
+"ocamlbuild/display.ml" 168 5856 5875 "ocamlbuild/display.ml" 168 5856 5878
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( mod )
+)
+"ocamlbuild/display.ml" 168 5856 5879 "ocamlbuild/display.ml" 168 5856 5881
+type(
+  int
+)
+"ocamlbuild/display.ml" 168 5856 5866 "ocamlbuild/display.ml" 168 5856 5881
+type(
+  int
+)
+"ocamlbuild/display.ml" 169 5885 5891 "ocamlbuild/display.ml" 169 5885 5892
+type(
+  int
+)
+ident(
+  def h "ocamlbuild/display.ml" 170 5907 5909 "ocamlbuild/display.ml" 170 5907 5937
+)
+"ocamlbuild/display.ml" 169 5885 5895 "ocamlbuild/display.ml" 169 5885 5896
+type(
+  int
+)
+ident(
+  int_ref t "ocamlbuild/display.ml" 166 5806 5812 "ocamlbuild/display.ml" 166 5806 5813
+)
+"ocamlbuild/display.ml" 169 5885 5897 "ocamlbuild/display.ml" 169 5885 5898
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( / )
+)
+"ocamlbuild/display.ml" 169 5885 5899 "ocamlbuild/display.ml" 169 5885 5903
+type(
+  int
+)
+"ocamlbuild/display.ml" 169 5885 5895 "ocamlbuild/display.ml" 169 5885 5903
+type(
+  int
+)
+"ocamlbuild/display.ml" 170 5907 5909 "ocamlbuild/display.ml" 170 5907 5911
+type(
+  out_channel ->
+  (int -> int -> int -> unit, out_channel, unit) format ->
+  int -> int -> int -> unit
+)
+ident(
+  int_ref fp "ocamlbuild/display.ml" 20 896 900 "ocamlbuild/display.ml" 20 896 902
+)
+"ocamlbuild/display.ml" 170 5907 5912 "ocamlbuild/display.ml" 170 5907 5914
+type(
+  out_channel
+)
+ident(
+  int_ref oc "ocamlbuild/display.ml" 165 5784 5799 "ocamlbuild/display.ml" 165 5784 5801
+)
+"ocamlbuild/display.ml" 170 5907 5915 "ocamlbuild/display.ml" 170 5907 5931
+type(
+  (int -> int -> int -> unit, out_channel, unit) format
+)
+"ocamlbuild/display.ml" 170 5907 5932 "ocamlbuild/display.ml" 170 5907 5933
+type(
+  int
+)
+ident(
+  int_ref h "ocamlbuild/display.ml" 169 5885 5891 "ocamlbuild/display.ml" 169 5885 5892
+)
+"ocamlbuild/display.ml" 170 5907 5934 "ocamlbuild/display.ml" 170 5907 5935
+type(
+  int
+)
+ident(
+  int_ref m "ocamlbuild/display.ml" 168 5856 5862 "ocamlbuild/display.ml" 168 5856 5863
+)
+"ocamlbuild/display.ml" 170 5907 5936 "ocamlbuild/display.ml" 170 5907 5937
+type(
+  int
+)
+ident(
+  int_ref s "ocamlbuild/display.ml" 167 5834 5840 "ocamlbuild/display.ml" 167 5834 5841
+)
+"ocamlbuild/display.ml" 170 5907 5909 "ocamlbuild/display.ml" 170 5907 5937
+call(
+  tail
+)
+type(
+  unit
+)
+"ocamlbuild/display.ml" 169 5885 5887 "ocamlbuild/display.ml" 170 5907 5937
+type(
+  unit
+)
+"ocamlbuild/display.ml" 168 5856 5858 "ocamlbuild/display.ml" 170 5907 5937
+type(
+  unit
+)
+"ocamlbuild/display.ml" 167 5834 5836 "ocamlbuild/display.ml" 170 5907 5937
+type(
+  unit
+)
+"ocamlbuild/display.ml" 166 5806 5808 "ocamlbuild/display.ml" 170 5907 5937
+type(
+  unit
+)
+"ocamlbuild/display.ml" 174 5982 5986 "ocamlbuild/display.ml" 174 5982 6010
+type(
+  int -> out_channel -> string -> unit
+)
+ident(
+  def print_shortened_pathname "ocamlbuild/display.ml" 205 6903 6903 "ocamlbuild/display.ml" 1 0 -1
+)
+"ocamlbuild/display.ml" 174 5982 6011 "ocamlbuild/display.ml" 174 5982 6017
+type(
+  int
+)
+ident(
+  def length "ocamlbuild/display.ml" 174 5982 6018 "ocamlbuild/display.ml" 188 6316 6323
+)
+"ocamlbuild/display.ml" 174 5982 6018 "ocamlbuild/display.ml" 174 5982 6020
+type(
+  out_channel
+)
+ident(
+  def oc "ocamlbuild/display.ml" 174 5982 6021 "ocamlbuild/display.ml" 188 6316 6323
+)
+"ocamlbuild/display.ml" 174 5982 6021 "ocamlbuild/display.ml" 174 5982 6022
+type(
+  string
+)
+ident(
+  def u "ocamlbuild/display.ml" 175 6025 6027 "ocamlbuild/display.ml" 188 6316 6323
+)
+"ocamlbuild/display.ml" 175 6025 6034 "ocamlbuild/display.ml" 175 6025 6040
+type(
+  int
+)
+ident(
+  int_ref length "ocamlbuild/display.ml" 174 5982 6011 "ocamlbuild/display.ml" 174 5982 6017
+)
+"ocamlbuild/display.ml" 175 6025 6041 "ocamlbuild/display.ml" 175 6025 6043
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"ocamlbuild/display.ml" 175 6025 6044 "ocamlbuild/display.ml" 175 6025 6045
+type(
+  int
+)
+"ocamlbuild/display.ml" 175 6025 6033 "ocamlbuild/display.ml" 175 6025 6046
+type(
+  bool
+)
+"ocamlbuild/display.ml" 175 6025 6027 "ocamlbuild/display.ml" 175 6025 6046
+type(
+  unit
+)
+"ocamlbuild/display.ml" 176 6048 6054 "ocamlbuild/display.ml" 176 6048 6055
+type(
+  int
+)
+ident(
+  def m "ocamlbuild/display.ml" 177 6077 6079 "ocamlbuild/display.ml" 188 6316 6323
+)
+"ocamlbuild/display.ml" 176 6048 6058 "ocamlbuild/display.ml" 176 6048 6071
+type(
+  string -> int
+)
+ident(
+  ext_ref My_std.String.length
+)
+"ocamlbuild/display.ml" 176 6048 6072 "ocamlbuild/display.ml" 176 6048 6073
+type(
+  string
+)
+ident(
+  int_ref u "ocamlbuild/display.ml" 174 5982 6021 "ocamlbuild/display.ml" 174 5982 6022
+)
+"ocamlbuild/display.ml" 176 6048 6058 "ocamlbuild/display.ml" 176 6048 6073
+type(
+  int
+)
+"ocamlbuild/display.ml" 177 6077 6082 "ocamlbuild/display.ml" 177 6077 6083
+type(
+  int
+)
+ident(
+  int_ref m "ocamlbuild/display.ml" 176 6048 6054 "ocamlbuild/display.ml" 176 6048 6055
+)
+"ocamlbuild/display.ml" 177 6077 6084 "ocamlbuild/display.ml" 177 6077 6086
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <= )
+)
+"ocamlbuild/display.ml" 177 6077 6087 "ocamlbuild/display.ml" 177 6077 6093
+type(
+  int
+)
+ident(
+  int_ref length "ocamlbuild/display.ml" 174 5982 6011 "ocamlbuild/display.ml" 174 5982 6017
+)
+"ocamlbuild/display.ml" 177 6077 6082 "ocamlbuild/display.ml" 177 6077 6093
+type(
+  bool
+)
+"ocamlbuild/display.ml" 179 6109 6115 "ocamlbuild/display.ml" 179 6109 6128
+type(
+  out_channel -> string -> unit
+)
+ident(
+  ext_ref Pervasives.output_string
+)
+"ocamlbuild/display.ml" 179 6109 6129 "ocamlbuild/display.ml" 179 6109 6131
+type(
+  out_channel
+)
+ident(
+  int_ref oc "ocamlbuild/display.ml" 174 5982 6018 "ocamlbuild/display.ml" 174 5982 6020
+)
+"ocamlbuild/display.ml" 179 6109 6132 "ocamlbuild/display.ml" 179 6109 6133
+type(
+  string
+)
+ident(
+  int_ref u "ocamlbuild/display.ml" 174 5982 6021 "ocamlbuild/display.ml" 174 5982 6022
+)
+"ocamlbuild/display.ml" 179 6109 6115 "ocamlbuild/display.ml" 179 6109 6133
+call(
+  stack
+)
+type(
+  unit
+)
+"ocamlbuild/display.ml" 180 6135 6141 "ocamlbuild/display.ml" 180 6135 6143
+type(
+  out_channel ->
+  (int -> string -> unit, out_channel, unit) format -> int -> string -> unit
+)
+ident(
+  int_ref fp "ocamlbuild/display.ml" 20 896 900 "ocamlbuild/display.ml" 20 896 902
+)
+"ocamlbuild/display.ml" 180 6135 6144 "ocamlbuild/display.ml" 180 6135 6146
+type(
+  out_channel
+)
+ident(
+  int_ref oc "ocamlbuild/display.ml" 174 5982 6018 "ocamlbuild/display.ml" 174 5982 6020
+)
+"ocamlbuild/display.ml" 180 6135 6147 "ocamlbuild/display.ml" 180 6135 6152
+type(
+  (int -> string -> unit, out_channel, unit) format
+)
+"ocamlbuild/display.ml" 180 6135 6154 "ocamlbuild/display.ml" 180 6135 6160
+type(
+  int
+)
+ident(
+  int_ref length "ocamlbuild/display.ml" 174 5982 6011 "ocamlbuild/display.ml" 174 5982 6017
+)
+"ocamlbuild/display.ml" 180 6135 6161 "ocamlbuild/display.ml" 180 6135 6162
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"ocamlbuild/display.ml" 180 6135 6163 "ocamlbuild/display.ml" 180 6135 6164
+type(
+  int
+)
+ident(
+  int_ref m "ocamlbuild/display.ml" 176 6048 6054 "ocamlbuild/display.ml" 176 6048 6055
+)
+"ocamlbuild/display.ml" 180 6135 6153 "ocamlbuild/display.ml" 180 6135 6165
+type(
+  int
+)
+"ocamlbuild/display.ml" 180 6135 6166 "ocamlbuild/display.ml" 180 6135 6168
+type(
+  string
+)
+"ocamlbuild/display.ml" 180 6135 6141 "ocamlbuild/display.ml" 180 6135 6168
+call(
+  tail
+)
+type(
+  unit
+)
+"ocamlbuild/display.ml" 178 6099 6103 "ocamlbuild/display.ml" 181 6169 6176
+type(
+  unit
+)
+"ocamlbuild/display.ml" 184 6194 6204 "ocamlbuild/display.ml" 184 6194 6205
+type(
+  int
+)
+ident(
+  def n "ocamlbuild/display.ml" 185 6230 6236 "ocamlbuild/display.ml" 187 6287 6315
+)
+"ocamlbuild/display.ml" 184 6194 6208 "ocamlbuild/display.ml" 184 6194 6221
+type(
+  string -> int
+)
+ident(
+  ext_ref My_std.String.length
+)
+"ocamlbuild/display.ml" 184 6194 6222 "ocamlbuild/display.ml" 184 6194 6226
+type(
+  string
+)
+ident(
+  int_ref dots "ocamlbuild/display.ml" 92 3586 3590 "ocamlbuild/display.ml" 92 3586 3594
+)
+"ocamlbuild/display.ml" 184 6194 6208 "ocamlbuild/display.ml" 184 6194 6226
+type(
+  int
+)
+"ocamlbuild/display.ml" 185 6230 6240 "ocamlbuild/display.ml" 185 6230 6241
+type(
+  int
+)
+ident(
+  def k "ocamlbuild/display.ml" 186 6258 6264 "ocamlbuild/display.ml" 187 6287 6315
+)
+"ocamlbuild/display.ml" 185 6230 6244 "ocamlbuild/display.ml" 185 6230 6250
+type(
+  int
+)
+ident(
+  int_ref length "ocamlbuild/display.ml" 174 5982 6011 "ocamlbuild/display.ml" 174 5982 6017
+)
+"ocamlbuild/display.ml" 185 6230 6251 "ocamlbuild/display.ml" 185 6230 6252
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"ocamlbuild/display.ml" 185 6230 6253 "ocamlbuild/display.ml" 185 6230 6254
+type(
+  int
+)
+ident(
+  int_ref n "ocamlbuild/display.ml" 184 6194 6204 "ocamlbuild/display.ml" 184 6194 6205
+)
+"ocamlbuild/display.ml" 185 6230 6244 "ocamlbuild/display.ml" 185 6230 6254
+type(
+  int
+)
+"ocamlbuild/display.ml" 186 6258 6264 "ocamlbuild/display.ml" 186 6258 6277
+type(
+  out_channel -> string -> unit
+)
+ident(
+  ext_ref Pervasives.output_string
+)
+"ocamlbuild/display.ml" 186 6258 6278 "ocamlbuild/display.ml" 186 6258 6280
+type(
+  out_channel
+)
+ident(
+  int_ref oc "ocamlbuild/display.ml" 174 5982 6018 "ocamlbuild/display.ml" 174 5982 6020
+)
+"ocamlbuild/display.ml" 186 6258 6281 "ocamlbuild/display.ml" 186 6258 6285
+type(
+  string
+)
+ident(
+  int_ref dots "ocamlbuild/display.ml" 92 3586 3590 "ocamlbuild/display.ml" 92 3586 3594
+)
+"ocamlbuild/display.ml" 186 6258 6264 "ocamlbuild/display.ml" 186 6258 6285
+call(
+  stack
+)
+type(
+  unit
+)
+"ocamlbuild/display.ml" 187 6287 6293 "ocamlbuild/display.ml" 187 6287 6299
+type(
+  out_channel -> string -> int -> int -> unit
+)
+ident(
+  ext_ref Pervasives.output
+)
+"ocamlbuild/display.ml" 187 6287 6300 "ocamlbuild/display.ml" 187 6287 6302
+type(
+  out_channel
+)
+ident(
+  int_ref oc "ocamlbuild/display.ml" 174 5982 6018 "ocamlbuild/display.ml" 174 5982 6020
+)
+"ocamlbuild/display.ml" 187 6287 6303 "ocamlbuild/display.ml" 187 6287 6304
+type(
+  string
+)
+ident(
+  int_ref u "ocamlbuild/display.ml" 174 5982 6021 "ocamlbuild/display.ml" 174 5982 6022
+)
+"ocamlbuild/display.ml" 187 6287 6306 "ocamlbuild/display.ml" 187 6287 6307
+type(
+  int
+)
+ident(
+  int_ref m "ocamlbuild/display.ml" 176 6048 6054 "ocamlbuild/display.ml" 176 6048 6055
+)
+"ocamlbuild/display.ml" 187 6287 6308 "ocamlbuild/display.ml" 187 6287 6309
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"ocamlbuild/display.ml" 187 6287 6310 "ocamlbuild/display.ml" 187 6287 6311
+type(
+  int
+)
+ident(
+  int_ref k "ocamlbuild/display.ml" 185 6230 6240 "ocamlbuild/display.ml" 185 6230 6241
+)
+"ocamlbuild/display.ml" 187 6287 6305 "ocamlbuild/display.ml" 187 6287 6312
+type(
+  int
+)
+"ocamlbuild/display.ml" 187 6287 6313 "ocamlbuild/display.ml" 187 6287 6314
+type(
+  int
+)
+ident(
+  int_ref k "ocamlbuild/display.ml" 185 6230 6240 "ocamlbuild/display.ml" 185 6230 6241
+)
+"ocamlbuild/display.ml" 187 6287 6293 "ocamlbuild/display.ml" 187 6287 6315
+call(
+  tail
+)
+type(
+  unit
+)
+"ocamlbuild/display.ml" 186 6258 6264 "ocamlbuild/display.ml" 187 6287 6315
+type(
+  unit
+)
+"ocamlbuild/display.ml" 185 6230 6236 "ocamlbuild/display.ml" 187 6287 6315
+type(
+  unit
+)
+"ocamlbuild/display.ml" 183 6184 6188 "ocamlbuild/display.ml" 188 6316 6323
+type(
+  unit
+)
+"ocamlbuild/display.ml" 177 6077 6079 "ocamlbuild/display.ml" 188 6316 6323
+type(
+  unit
+)
+"ocamlbuild/display.ml" 176 6048 6050 "ocamlbuild/display.ml" 188 6316 6323
+type(
+  unit
+)
+"ocamlbuild/display.ml" 175 6025 6027 "ocamlbuild/display.ml" 188 6316 6323
+type(
+  unit
+)
+"ocamlbuild/display.ml" 205 6903 6907 "ocamlbuild/display.ml" 205 6903 6927
+type(
+  sophisticated_display -> unit
+)
+ident(
+  def redraw_sophisticated "ocamlbuild/display.ml" 225 7546 7546 "ocamlbuild/display.ml" 1 0 -1
+)
+"ocamlbuild/display.ml" 205 6903 6928 "ocamlbuild/display.ml" 205 6903 6930
+type(
+  sophisticated_display
+)
+ident(
+  def ds "ocamlbuild/display.ml" 206 6933 6935 "ocamlbuild/display.ml" 221 7484 7519
+)
+"ocamlbuild/display.ml" 206 6933 6939 "ocamlbuild/display.ml" 206 6933 6940
+type(
+  float
+)
+ident(
+  def t "ocamlbuild/display.ml" 207 6962 6964 "ocamlbuild/display.ml" 221 7484 7519
+)
+"ocamlbuild/display.ml" 206 6933 6943 "ocamlbuild/display.ml" 206 6933 6955
+type(
+  unit -> float
+)
+ident(
+  ext_ref My_unix.gettimeofday
+)
+"ocamlbuild/display.ml" 206 6933 6956 "ocamlbuild/display.ml" 206 6933 6958
+type(
+  unit
+)
+"ocamlbuild/display.ml" 206 6933 6943 "ocamlbuild/display.ml" 206 6933 6958
+call(
+  stack
+)
+type(
+  float
+)
+"ocamlbuild/display.ml" 207 6962 6968 "ocamlbuild/display.ml" 207 6962 6970
+type(
+  out_channel
+)
+ident(
+  def oc "ocamlbuild/display.ml" 208 6990 6992 "ocamlbuild/display.ml" 221 7484 7519
+)
+"ocamlbuild/display.ml" 207 6962 6973 "ocamlbuild/display.ml" 207 6962 6975
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "ocamlbuild/display.ml" 205 6903 6928 "ocamlbuild/display.ml" 205 6903 6930
+)
+"ocamlbuild/display.ml" 207 6962 6973 "ocamlbuild/display.ml" 207 6962 6986
+type(
+  out_channel
+)
+"ocamlbuild/display.ml" 208 6990 6996 "ocamlbuild/display.ml" 208 6990 6998
+type(
+  float
+)
+ident(
+  def dt "ocamlbuild/display.ml" 209 7026 7028 "ocamlbuild/display.ml" 221 7484 7519
+)
+"ocamlbuild/display.ml" 208 6990 7001 "ocamlbuild/display.ml" 208 6990 7002
+type(
+  float
+)
+ident(
+  int_ref t "ocamlbuild/display.ml" 206 6933 6939 "ocamlbuild/display.ml" 206 6933 6940
+)
+"ocamlbuild/display.ml" 208 6990 7003 "ocamlbuild/display.ml" 208 6990 7005
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( -. )
+)
+"ocamlbuild/display.ml" 208 6990 7006 "ocamlbuild/display.ml" 208 6990 7008
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "ocamlbuild/display.ml" 205 6903 6928 "ocamlbuild/display.ml" 205 6903 6930
+)
+"ocamlbuild/display.ml" 208 6990 7006 "ocamlbuild/display.ml" 208 6990 7022
+type(
+  float
+)
+"ocamlbuild/display.ml" 208 6990 7001 "ocamlbuild/display.ml" 208 6990 7022
+type(
+  float
+)
+"ocamlbuild/display.ml" 209 7026 7028 "ocamlbuild/display.ml" 209 7026 7030
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "ocamlbuild/display.ml" 205 6903 6928 "ocamlbuild/display.ml" 205 6903 6930
+)
+"ocamlbuild/display.ml" 209 7026 7049 "ocamlbuild/display.ml" 209 7026 7050
+type(
+  float
+)
+ident(
+  int_ref t "ocamlbuild/display.ml" 206 6933 6939 "ocamlbuild/display.ml" 206 6933 6940
+)
+"ocamlbuild/display.ml" 209 7026 7028 "ocamlbuild/display.ml" 209 7026 7050
+type(
+  unit
+)
+"ocamlbuild/display.ml" 210 7052 7054 "ocamlbuild/display.ml" 210 7052 7056
+type(
+  out_channel ->
+  ((out_channel -> unit -> unit) -> unit -> unit, out_channel, unit) format ->
+  (out_channel -> unit -> unit) -> unit -> unit
+)
+ident(
+  int_ref fp "ocamlbuild/display.ml" 20 896 900 "ocamlbuild/display.ml" 20 896 902
+)
+"ocamlbuild/display.ml" 210 7052 7057 "ocamlbuild/display.ml" 210 7052 7059
+type(
+  out_channel
+)
+ident(
+  int_ref oc "ocamlbuild/display.ml" 207 6962 6968 "ocamlbuild/display.ml" 207 6962 6970
+)
+"ocamlbuild/display.ml" 210 7052 7060 "ocamlbuild/display.ml" 210 7052 7064
+type(
+  ((out_channel -> unit -> unit) -> unit -> unit, out_channel, unit) format
+)
+"ocamlbuild/display.ml" 210 7052 7065 "ocamlbuild/display.ml" 210 7052 7073
+type(
+  out_channel -> unit -> unit
+)
+ident(
+  int_ref ANSI.bol "ocamlbuild/display.ml" 27 1044 1052 "ocamlbuild/display.ml" 27 1044 1055
+)
+"ocamlbuild/display.ml" 210 7052 7074 "ocamlbuild/display.ml" 210 7052 7076
+type(
+  unit
+)
+"ocamlbuild/display.ml" 210 7052 7054 "ocamlbuild/display.ml" 210 7052 7076
+call(
+  stack
+)
+type(
+  unit
+)
+"ocamlbuild/display.ml" 211 7078 7084 "ocamlbuild/display.ml" 211 7078 7096
+type(
+  int
+)
+ident(
+  def ticker_phase "ocamlbuild/display.ml" 212 7188 7190 "ocamlbuild/display.ml" 221 7484 7519
+)
+"ocamlbuild/display.ml" 211 7078 7100 "ocamlbuild/display.ml" 211 7078 7103
+type(
+  int -> int
+)
+ident(
+  ext_ref Pervasives.abs
+)
+"ocamlbuild/display.ml" 211 7078 7105 "ocamlbuild/display.ml" 211 7078 7117
+type(
+  float -> int
+)
+ident(
+  ext_ref Pervasives.int_of_float
+)
+"ocamlbuild/display.ml" 211 7078 7119 "ocamlbuild/display.ml" 211 7078 7123
+type(
+  float -> float
+)
+ident(
+  ext_ref Pervasives.ceil
+)
+"ocamlbuild/display.ml" 211 7078 7125 "ocamlbuild/display.ml" 211 7078 7127
+type(
+  float
+)
+ident(
+  int_ref dt "ocamlbuild/display.ml" 208 6990 6996 "ocamlbuild/display.ml" 208 6990 6998
+)
+"ocamlbuild/display.ml" 211 7078 7128 "ocamlbuild/display.ml" 211 7078 7130
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( /. )
+)
+"ocamlbuild/display.ml" 211 7078 7131 "ocamlbuild/display.ml" 211 7078 7144
+type(
+  float
+)
+ident(
+  int_ref ticker_period "ocamlbuild/display.ml" 96 3693 3697 "ocamlbuild/display.ml" 96 3693 3710
+)
+"ocamlbuild/display.ml" 211 7078 7124 "ocamlbuild/display.ml" 211 7078 7145
+type(
+  float
+)
+"ocamlbuild/display.ml" 211 7078 7118 "ocamlbuild/display.ml" 211 7078 7146
+type(
+  float
+)
+"ocamlbuild/display.ml" 211 7078 7104 "ocamlbuild/display.ml" 211 7078 7147
+type(
+  int
+)
+"ocamlbuild/display.ml" 211 7078 7099 "ocamlbuild/display.ml" 211 7078 7148
+call(
+  stack
+)
+type(
+  int
+)
+"ocamlbuild/display.ml" 211 7078 7149 "ocamlbuild/display.ml" 211 7078 7152
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( mod )
+)
+"ocamlbuild/display.ml" 211 7078 7154 "ocamlbuild/display.ml" 211 7078 7166
+type(
+  string array -> int
+)
+ident(
+  ext_ref Array.length
+)
+"ocamlbuild/display.ml" 211 7078 7167 "ocamlbuild/display.ml" 211 7078 7183
+type(
+  string array
+)
+ident(
+  int_ref ticker_animation "ocamlbuild/display.ml" 97 3720 3724 "ocamlbuild/display.ml" 97 3720 3740
+)
+"ocamlbuild/display.ml" 211 7078 7153 "ocamlbuild/display.ml" 211 7078 7184
+type(
+  int
+)
+"ocamlbuild/display.ml" 211 7078 7099 "ocamlbuild/display.ml" 211 7078 7184
+type(
+  int
+)
+"ocamlbuild/display.ml" 212 7188 7194 "ocamlbuild/display.ml" 212 7188 7200
+type(
+  string
+)
+ident(
+  def ticker "ocamlbuild/display.ml" 213 7238 7240 "ocamlbuild/display.ml" 221 7484 7519
+)
+"ocamlbuild/display.ml" 212 7188 7203 "ocamlbuild/display.ml" 212 7188 7219
+type(
+  string array
+)
+ident(
+  int_ref ticker_animation "ocamlbuild/display.ml" 97 3720 3724 "ocamlbuild/display.ml" 97 3720 3740
+)
+"ocamlbuild/display.ml" 212 7188 7221 "ocamlbuild/display.ml" 212 7188 7233
+type(
+  int
+)
+ident(
+  int_ref ticker_phase "ocamlbuild/display.ml" 211 7078 7084 "ocamlbuild/display.ml" 211 7078 7096
+)
+"ocamlbuild/display.ml" 212 7188 7203 "ocamlbuild/display.ml" 212 7188 7234
+type(
+  string
+)
+"ocamlbuild/display.ml" 213 7238 7240 "ocamlbuild/display.ml" 213 7238 7242
+type(
+  out_channel ->
+  ((out_channel -> float -> unit) ->
+   float ->
+   int ->
+   int ->
+   (out_channel -> string -> unit) ->
+   string -> string -> string -> string -> unit, out_channel, unit)
+  format ->
+  (out_channel -> float -> unit) ->
+  float ->
+  int ->
+  int ->
+  (out_channel -> string -> unit) ->
+  string -> string -> string -> string -> unit
+)
+ident(
+  int_ref fp "ocamlbuild/display.ml" 20 896 900 "ocamlbuild/display.ml" 20 896 902
+)
+"ocamlbuild/display.ml" 213 7238 7243 "ocamlbuild/display.ml" 213 7238 7245
+type(
+  out_channel
+)
+ident(
+  int_ref oc "ocamlbuild/display.ml" 207 6962 6968 "ocamlbuild/display.ml" 207 6962 6970
+)
+"ocamlbuild/display.ml" 213 7238 7246 "ocamlbuild/display.ml" 213 7238 7274
+type(
+  ((out_channel -> float -> unit) ->
+   float ->
+   int ->
+   int ->
+   (out_channel -> string -> unit) ->
+   string -> string -> string -> string -> unit, out_channel, unit)
+  format
+)
+"ocamlbuild/display.ml" 214 7275 7279 "ocamlbuild/display.ml" 214 7275 7289
+type(
+  out_channel -> float -> unit
+)
+ident(
+  int_ref print_time "ocamlbuild/display.ml" 165 5784 5788 "ocamlbuild/display.ml" 165 5784 5798
+)
+"ocamlbuild/display.ml" 214 7275 7290 "ocamlbuild/display.ml" 214 7275 7292
+type(
+  float
+)
+ident(
+  int_ref dt "ocamlbuild/display.ml" 208 6990 6996 "ocamlbuild/display.ml" 208 6990 6998
+)
+"ocamlbuild/display.ml" 215 7293 7297 "ocamlbuild/display.ml" 215 7293 7299
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "ocamlbuild/display.ml" 205 6903 6928 "ocamlbuild/display.ml" 205 6903 6930
+)
+"ocamlbuild/display.ml" 215 7293 7297 "ocamlbuild/display.ml" 215 7293 7307
+type(
+  int
+)
+"ocamlbuild/display.ml" 216 7308 7312 "ocamlbuild/display.ml" 216 7308 7314
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "ocamlbuild/display.ml" 205 6903 6928 "ocamlbuild/display.ml" 205 6903 6930
+)
+"ocamlbuild/display.ml" 216 7308 7312 "ocamlbuild/display.ml" 216 7308 7329
+type(
+  int
+)
+"ocamlbuild/display.ml" 217 7330 7335 "ocamlbuild/display.ml" 217 7330 7359
+type(
+  int -> out_channel -> string -> unit
+)
+ident(
+  int_ref print_shortened_pathname "ocamlbuild/display.ml" 174 5982 5986 "ocamlbuild/display.ml" 174 5982 6010
+)
+"ocamlbuild/display.ml" 217 7330 7360 "ocamlbuild/display.ml" 217 7330 7362
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "ocamlbuild/display.ml" 205 6903 6928 "ocamlbuild/display.ml" 205 6903 6930
+)
+"ocamlbuild/display.ml" 217 7330 7360 "ocamlbuild/display.ml" 217 7330 7381
+type(
+  int
+)
+"ocamlbuild/display.ml" 217 7330 7334 "ocamlbuild/display.ml" 217 7330 7382
+call(
+  stack
+)
+type(
+  out_channel -> string -> unit
+)
+"ocamlbuild/display.ml" 217 7330 7383 "ocamlbuild/display.ml" 217 7330 7385
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "ocamlbuild/display.ml" 205 6903 6928 "ocamlbuild/display.ml" 205 6903 6930
+)
+"ocamlbuild/display.ml" 217 7330 7383 "ocamlbuild/display.ml" 217 7330 7400
+type(
+  string
+)
+"ocamlbuild/display.ml" 218 7401 7409 "ocamlbuild/display.ml" 218 7401 7411
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "ocamlbuild/display.ml" 205 6903 6928 "ocamlbuild/display.ml" 205 6903 6930
+)
+"ocamlbuild/display.ml" 218 7401 7409 "ocamlbuild/display.ml" 218 7401 7426
+type(
+  bool
+)
+"ocamlbuild/display.ml" 218 7401 7432 "ocamlbuild/display.ml" 218 7401 7438
+type(
+  string
+)
+ident(
+  int_ref cached "ocamlbuild/display.ml" 103 3780 3784 "ocamlbuild/display.ml" 103 3780 3790
+)
+"ocamlbuild/display.ml" 218 7401 7444 "ocamlbuild/display.ml" 218 7401 7452
+type(
+  string
+)
+ident(
+  int_ref uncached "ocamlbuild/display.ml" 104 3799 3803 "ocamlbuild/display.ml" 104 3799 3811
+)
+"ocamlbuild/display.ml" 218 7401 7405 "ocamlbuild/display.ml" 218 7401 7453
+type(
+  string
+)
+"ocamlbuild/display.ml" 219 7454 7458 "ocamlbuild/display.ml" 219 7454 7460
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "ocamlbuild/display.ml" 205 6903 6928 "ocamlbuild/display.ml" 205 6903 6930
+)
+"ocamlbuild/display.ml" 219 7454 7458 "ocamlbuild/display.ml" 219 7454 7471
+type(
+  string
+)
+"ocamlbuild/display.ml" 220 7472 7476 "ocamlbuild/display.ml" 220 7472 7482
+type(
+  string
+)
+ident(
+  int_ref ticker "ocamlbuild/display.ml" 212 7188 7194 "ocamlbuild/display.ml" 212 7188 7200
+)
+"ocamlbuild/display.ml" 213 7238 7240 "ocamlbuild/display.ml" 220 7472 7482
+call(
+  stack
+)
+type(
+  unit
+)
+"ocamlbuild/display.ml" 221 7484 7486 "ocamlbuild/display.ml" 221 7484 7488
+type(
+  out_channel ->
+  ((out_channel -> unit -> unit) -> unit -> unit, out_channel, unit) format ->
+  (out_channel -> unit -> unit) -> unit -> unit
+)
+ident(
+  int_ref fp "ocamlbuild/display.ml" 20 896 900 "ocamlbuild/display.ml" 20 896 902
+)
+"ocamlbuild/display.ml" 221 7484 7489 "ocamlbuild/display.ml" 221 7484 7491
+type(
+  out_channel
+)
+ident(
+  int_ref oc "ocamlbuild/display.ml" 207 6962 6968 "ocamlbuild/display.ml" 207 6962 6970
+)
+"ocamlbuild/display.ml" 221 7484 7492 "ocamlbuild/display.ml" 221 7484 7498
+type(
+  ((out_channel -> unit -> unit) -> unit -> unit, out_channel, unit) format
+)
+"ocamlbuild/display.ml" 221 7484 7499 "ocamlbuild/display.ml" 221 7484 7516
+type(
+  out_channel -> unit -> unit
+)
+ident(
+  int_ref ANSI.clear_to_eol "ocamlbuild/display.ml" 26 998 1006 "ocamlbuild/display.ml" 26 998 1018
+)
+"ocamlbuild/display.ml" 221 7484 7517 "ocamlbuild/display.ml" 221 7484 7519
+type(
+  unit
+)
+"ocamlbuild/display.ml" 221 7484 7486 "ocamlbuild/display.ml" 221 7484 7519
+call(
+  tail
+)
+type(
+  unit
+)
+"ocamlbuild/display.ml" 213 7238 7240 "ocamlbuild/display.ml" 221 7484 7519
+type(
+  unit
+)
+"ocamlbuild/display.ml" 212 7188 7190 "ocamlbuild/display.ml" 221 7484 7519
+type(
+  unit
+)
+"ocamlbuild/display.ml" 211 7078 7080 "ocamlbuild/display.ml" 221 7484 7519
+type(
+  unit
+)
+"ocamlbuild/display.ml" 210 7052 7054 "ocamlbuild/display.ml" 221 7484 7519
+type(
+  unit
+)
+"ocamlbuild/display.ml" 209 7026 7028 "ocamlbuild/display.ml" 221 7484 7519
+type(
+  unit
+)
+"ocamlbuild/display.ml" 208 6990 6992 "ocamlbuild/display.ml" 221 7484 7519
+type(
+  unit
+)
+"ocamlbuild/display.ml" 207 6962 6964 "ocamlbuild/display.ml" 221 7484 7519
+type(
+  unit
+)
+"ocamlbuild/display.ml" 206 6933 6935 "ocamlbuild/display.ml" 221 7484 7519
+type(
+  unit
+)
+"ocamlbuild/display.ml" 225 7546 7550 "ocamlbuild/display.ml" 225 7546 7556
+type(
+  display_line -> unit
+)
+ident(
+  def redraw "ocamlbuild/display.ml" 231 7674 7674 "ocamlbuild/display.ml" 1 0 -1
+)
+"ocamlbuild/display.ml" 226 7568 7572 "ocamlbuild/display.ml" 226 7568 7579
+type(
+  display_line
+)
+"ocamlbuild/display.ml" 226 7568 7583 "ocamlbuild/display.ml" 226 7568 7585
+type(
+  unit
+)
+"ocamlbuild/display.ml" 227 7586 7604 "ocamlbuild/display.ml" 227 7586 7606
+type(
+  sophisticated_display
+)
+ident(
+  def ds "ocamlbuild/display.ml" 227 7586 7610 "ocamlbuild/display.ml" 227 7586 7633
+)
+"ocamlbuild/display.ml" 227 7586 7590 "ocamlbuild/display.ml" 227 7586 7606
+type(
+  display_line
+)
+"ocamlbuild/display.ml" 227 7586 7610 "ocamlbuild/display.ml" 227 7586 7630
+type(
+  sophisticated_display -> unit
+)
+ident(
+  int_ref redraw_sophisticated "ocamlbuild/display.ml" 205 6903 6907 "ocamlbuild/display.ml" 205 6903 6927
+)
+"ocamlbuild/display.ml" 227 7586 7631 "ocamlbuild/display.ml" 227 7586 7633
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "ocamlbuild/display.ml" 227 7586 7604 "ocamlbuild/display.ml" 227 7586 7606
+)
+"ocamlbuild/display.ml" 227 7586 7610 "ocamlbuild/display.ml" 227 7586 7633
+call(
+  tail
+)
+type(
+  unit
+)
+"ocamlbuild/display.ml" 225 7546 7559 "ocamlbuild/display.ml" 227 7586 7633
+type(
+  display_line -> unit
+)
+"ocamlbuild/display.ml" 231 7674 7678 "ocamlbuild/display.ml" 231 7674 7698
+type(
+  ?how:[< `Error | `Quiet | `Success > `Error `Success ] ->
+  sophisticated_display -> unit
+)
+ident(
+  def finish_sophisticated "ocamlbuild/display.ml" 253 8292 8292 "ocamlbuild/display.ml" 1 0 -1
+)
+"ocamlbuild/display.ml" 231 7674 7701 "ocamlbuild/display.ml" 231 7674 7704
+type(
+  [< `Error | `Quiet | `Success > `Error `Success ] as 'a
+)
+"ocamlbuild/display.ml" 231 7674 7705 "ocamlbuild/display.ml" 231 7674 7713
+type(
+  'a
+)
+type(
+  'a
+)
+ident(
+  int_ref *sth* "ocamlbuild/display.ml" 231 7674 7705 "ocamlbuild/display.ml" 231 7674 7713
+)
+type(
+  'a option
+)
+type(
+  'a option
+)
+type(
+  'a
+)
+"ocamlbuild/display.ml" 231 7674 7715 "ocamlbuild/display.ml" 231 7674 7717
+type(
+  sophisticated_display
+)
+ident(
+  def ds "ocamlbuild/display.ml" 232 7720 7722 "ocamlbuild/display.ml" 249 8198 8250
+)
+"ocamlbuild/display.ml" 232 7720 7726 "ocamlbuild/display.ml" 232 7720 7727
+type(
+  float
+)
+ident(
+  def t "ocamlbuild/display.ml" 233 7749 7751 "ocamlbuild/display.ml" 249 8198 8250
+)
+"ocamlbuild/display.ml" 232 7720 7730 "ocamlbuild/display.ml" 232 7720 7742
+type(
+  unit -> float
+)
+ident(
+  ext_ref My_unix.gettimeofday
+)
+"ocamlbuild/display.ml" 232 7720 7743 "ocamlbuild/display.ml" 232 7720 7745
+type(
+  unit
+)
+"ocamlbuild/display.ml" 232 7720 7730 "ocamlbuild/display.ml" 232 7720 7745
+call(
+  stack
+)
+type(
+  float
+)
+"ocamlbuild/display.ml" 233 7749 7755 "ocamlbuild/display.ml" 233 7749 7757
+type(
+  out_channel
+)
+ident(
+  def oc "ocamlbuild/display.ml" 234 7777 7779 "ocamlbuild/display.ml" 249 8198 8250
+)
+"ocamlbuild/display.ml" 233 7749 7760 "ocamlbuild/display.ml" 233 7749 7762
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "ocamlbuild/display.ml" 231 7674 7715 "ocamlbuild/display.ml" 231 7674 7717
+)
+"ocamlbuild/display.ml" 233 7749 7760 "ocamlbuild/display.ml" 233 7749 7773
+type(
+  out_channel
+)
+"ocamlbuild/display.ml" 234 7777 7783 "ocamlbuild/display.ml" 234 7777 7785
+type(
+  float
+)
+ident(
+  def dt "ocamlbuild/display.ml" 235 7813 7815 "ocamlbuild/display.ml" 249 8198 8250
+)
+"ocamlbuild/display.ml" 234 7777 7788 "ocamlbuild/display.ml" 234 7777 7789
+type(
+  float
+)
+ident(
+  int_ref t "ocamlbuild/display.ml" 232 7720 7726 "ocamlbuild/display.ml" 232 7720 7727
+)
+"ocamlbuild/display.ml" 234 7777 7790 "ocamlbuild/display.ml" 234 7777 7792
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( -. )
+)
+"ocamlbuild/display.ml" 234 7777 7793 "ocamlbuild/display.ml" 234 7777 7795
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "ocamlbuild/display.ml" 231 7674 7715 "ocamlbuild/display.ml" 231 7674 7717
+)
+"ocamlbuild/display.ml" 234 7777 7793 "ocamlbuild/display.ml" 234 7777 7809
+type(
+  float
+)
+"ocamlbuild/display.ml" 234 7777 7788 "ocamlbuild/display.ml" 234 7777 7809
+type(
+  float
+)
+"ocamlbuild/display.ml" 235 7813 7821 "ocamlbuild/display.ml" 235 7813 7824
+type(
+  'a
+)
+ident(
+  int_ref how "ocamlbuild/display.ml" 231 7674 7701 "ocamlbuild/display.ml" 231 7674 7704
+)
+"ocamlbuild/display.ml" 236 7830 7834 "ocamlbuild/display.ml" 236 7830 7842
+type(
+  'a
+)
+"ocamlbuild/display.ml" 236 7830 7843 "ocamlbuild/display.ml" 236 7830 7849
+type(
+  'a
+)
+"ocamlbuild/display.ml" 236 7830 7834 "ocamlbuild/display.ml" 236 7830 7849
+type(
+  'a
+)
+"ocamlbuild/display.ml" 237 7853 7857 "ocamlbuild/display.ml" 237 7853 7859
+type(
+  out_channel ->
+  ((out_channel -> unit -> unit) -> unit -> unit, out_channel, unit) format ->
+  (out_channel -> unit -> unit) -> unit -> unit
+)
+ident(
+  int_ref fp "ocamlbuild/display.ml" 20 896 900 "ocamlbuild/display.ml" 20 896 902
+)
+"ocamlbuild/display.ml" 237 7853 7860 "ocamlbuild/display.ml" 237 7853 7862
+type(
+  out_channel
+)
+ident(
+  int_ref oc "ocamlbuild/display.ml" 233 7749 7755 "ocamlbuild/display.ml" 233 7749 7757
+)
+"ocamlbuild/display.ml" 237 7853 7863 "ocamlbuild/display.ml" 237 7853 7867
+type(
+  ((out_channel -> unit -> unit) -> unit -> unit, out_channel, unit) format
+)
+"ocamlbuild/display.ml" 237 7853 7868 "ocamlbuild/display.ml" 237 7853 7876
+type(
+  out_channel -> unit -> unit
+)
+ident(
+  int_ref ANSI.bol "ocamlbuild/display.ml" 27 1044 1052 "ocamlbuild/display.ml" 27 1044 1055
+)
+"ocamlbuild/display.ml" 237 7853 7877 "ocamlbuild/display.ml" 237 7853 7879
+type(
+  unit
+)
+"ocamlbuild/display.ml" 237 7853 7857 "ocamlbuild/display.ml" 237 7853 7879
+call(
+  stack
+)
+type(
+  unit
+)
+"ocamlbuild/display.ml" 238 7881 7885 "ocamlbuild/display.ml" 238 7881 7887
+type(
+  out_channel ->
+  (string ->
+   int -> string -> int -> (out_channel -> float -> unit) -> float -> unit,
+   out_channel, unit)
+  format ->
+  string ->
+  int -> string -> int -> (out_channel -> float -> unit) -> float -> unit
+)
+ident(
+  int_ref fp "ocamlbuild/display.ml" 20 896 900 "ocamlbuild/display.ml" 20 896 902
+)
+"ocamlbuild/display.ml" 238 7881 7888 "ocamlbuild/display.ml" 238 7881 7890
+type(
+  out_channel
+)
+ident(
+  int_ref oc "ocamlbuild/display.ml" 233 7749 7755 "ocamlbuild/display.ml" 233 7749 7757
+)
+"ocamlbuild/display.ml" 238 7881 7891 "ocamlbuild/display.ml" 238 7881 7926
+type(
+  (string ->
+   int -> string -> int -> (out_channel -> float -> unit) -> float -> unit,
+   out_channel, unit)
+  format
+)
+"ocamlbuild/display.ml" 239 7927 7937 "ocamlbuild/display.ml" 239 7927 7940
+type(
+  'a
+)
+ident(
+  int_ref how "ocamlbuild/display.ml" 231 7674 7701 "ocamlbuild/display.ml" 231 7674 7704
+)
+"ocamlbuild/display.ml" 239 7927 7941 "ocamlbuild/display.ml" 239 7927 7942
+type(
+  'a -> 'a -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"ocamlbuild/display.ml" 239 7927 7943 "ocamlbuild/display.ml" 239 7927 7949
+type(
+  'a
+)
+"ocamlbuild/display.ml" 239 7927 7937 "ocamlbuild/display.ml" 239 7927 7949
+type(
+  bool
+)
+"ocamlbuild/display.ml" 240 7955 7963 "ocamlbuild/display.ml" 240 7955 8004
+type(
+  string
+)
+"ocamlbuild/display.ml" 242 8017 8026 "ocamlbuild/display.ml" 242 8017 8037
+type(
+  string
+)
+"ocamlbuild/display.ml" 239 7927 7933 "ocamlbuild/display.ml" 242 8017 8038
+type(
+  string
+)
+"ocamlbuild/display.ml" 243 8039 8045 "ocamlbuild/display.ml" 243 8039 8047
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "ocamlbuild/display.ml" 231 7674 7715 "ocamlbuild/display.ml" 231 7674 7717
+)
+"ocamlbuild/display.ml" 243 8039 8045 "ocamlbuild/display.ml" 243 8039 8055
+type(
+  int
+)
+"ocamlbuild/display.ml" 244 8056 8066 "ocamlbuild/display.ml" 244 8056 8068
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "ocamlbuild/display.ml" 231 7674 7715 "ocamlbuild/display.ml" 231 7674 7717
+)
+"ocamlbuild/display.ml" 244 8056 8066 "ocamlbuild/display.ml" 244 8056 8076
+type(
+  int
+)
+"ocamlbuild/display.ml" 244 8056 8077 "ocamlbuild/display.ml" 244 8056 8078
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"ocamlbuild/display.ml" 244 8056 8079 "ocamlbuild/display.ml" 244 8056 8080
+type(
+  int
+)
+"ocamlbuild/display.ml" 244 8056 8066 "ocamlbuild/display.ml" 244 8056 8080
+type(
+  bool
+)
+"ocamlbuild/display.ml" 244 8056 8086 "ocamlbuild/display.ml" 244 8056 8088
+type(
+  string
+)
+"ocamlbuild/display.ml" 244 8056 8094 "ocamlbuild/display.ml" 244 8056 8097
+type(
+  string
+)
+"ocamlbuild/display.ml" 244 8056 8062 "ocamlbuild/display.ml" 244 8056 8098
+type(
+  string
+)
+"ocamlbuild/display.ml" 245 8099 8105 "ocamlbuild/display.ml" 245 8099 8107
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "ocamlbuild/display.ml" 231 7674 7715 "ocamlbuild/display.ml" 231 7674 7717
+)
+"ocamlbuild/display.ml" 245 8099 8105 "ocamlbuild/display.ml" 245 8099 8122
+type(
+  int
+)
+"ocamlbuild/display.ml" 246 8123 8129 "ocamlbuild/display.ml" 246 8123 8139
+type(
+  out_channel -> float -> unit
+)
+ident(
+  int_ref print_time "ocamlbuild/display.ml" 165 5784 5788 "ocamlbuild/display.ml" 165 5784 5798
+)
+"ocamlbuild/display.ml" 246 8123 8140 "ocamlbuild/display.ml" 246 8123 8142
+type(
+  float
+)
+ident(
+  int_ref dt "ocamlbuild/display.ml" 234 7777 7783 "ocamlbuild/display.ml" 234 7777 7785
+)
+"ocamlbuild/display.ml" 238 7881 7885 "ocamlbuild/display.ml" 246 8123 8142
+call(
+  stack
+)
+type(
+  unit
+)
+"ocamlbuild/display.ml" 247 8144 8148 "ocamlbuild/display.ml" 247 8144 8150
+type(
+  out_channel ->
+  ((out_channel -> unit -> unit) -> unit -> unit, out_channel, unit) format ->
+  (out_channel -> unit -> unit) -> unit -> unit
+)
+ident(
+  int_ref fp "ocamlbuild/display.ml" 20 896 900 "ocamlbuild/display.ml" 20 896 902
+)
+"ocamlbuild/display.ml" 247 8144 8151 "ocamlbuild/display.ml" 247 8144 8153
+type(
+  out_channel
+)
+ident(
+  int_ref oc "ocamlbuild/display.ml" 233 7749 7755 "ocamlbuild/display.ml" 233 7749 7757
+)
+"ocamlbuild/display.ml" 247 8144 8154 "ocamlbuild/display.ml" 247 8144 8162
+type(
+  ((out_channel -> unit -> unit) -> unit -> unit, out_channel, unit) format
+)
+"ocamlbuild/display.ml" 247 8144 8163 "ocamlbuild/display.ml" 247 8144 8180
+type(
+  out_channel -> unit -> unit
+)
+ident(
+  int_ref ANSI.clear_to_eol "ocamlbuild/display.ml" 26 998 1006 "ocamlbuild/display.ml" 26 998 1018
+)
+"ocamlbuild/display.ml" 247 8144 8181 "ocamlbuild/display.ml" 247 8144 8183
+type(
+  unit
+)
+"ocamlbuild/display.ml" 247 8144 8148 "ocamlbuild/display.ml" 247 8144 8183
+call(
+  tail
+)
+type(
+  unit
+)
+"ocamlbuild/display.ml" 238 7881 7885 "ocamlbuild/display.ml" 247 8144 8183
+type(
+  unit
+)
+"ocamlbuild/display.ml" 237 7853 7857 "ocamlbuild/display.ml" 247 8144 8183
+type(
+  unit
+)
+"ocamlbuild/display.ml" 248 8184 8188 "ocamlbuild/display.ml" 248 8184 8194
+type(
+  'a
+)
+"ocamlbuild/display.ml" 249 8198 8202 "ocamlbuild/display.ml" 249 8198 8204
+type(
+  out_channel ->
+  ((out_channel -> unit -> unit) ->
+   unit -> (out_channel -> unit -> unit) -> unit -> unit, out_channel, 
+   unit)
+  format ->
+  (out_channel -> unit -> unit) ->
+  unit -> (out_channel -> unit -> unit) -> unit -> unit
+)
+ident(
+  int_ref fp "ocamlbuild/display.ml" 20 896 900 "ocamlbuild/display.ml" 20 896 902
+)
+"ocamlbuild/display.ml" 249 8198 8205 "ocamlbuild/display.ml" 249 8198 8207
+type(
+  out_channel
+)
+ident(
+  int_ref oc "ocamlbuild/display.ml" 233 7749 7755 "ocamlbuild/display.ml" 233 7749 7757
+)
+"ocamlbuild/display.ml" 249 8198 8208 "ocamlbuild/display.ml" 249 8198 8216
+type(
+  ((out_channel -> unit -> unit) ->
+   unit -> (out_channel -> unit -> unit) -> unit -> unit, out_channel, 
+   unit)
+  format
+)
+"ocamlbuild/display.ml" 249 8198 8217 "ocamlbuild/display.ml" 249 8198 8225
+type(
+  out_channel -> unit -> unit
+)
+ident(
+  int_ref ANSI.bol "ocamlbuild/display.ml" 27 1044 1052 "ocamlbuild/display.ml" 27 1044 1055
+)
+"ocamlbuild/display.ml" 249 8198 8226 "ocamlbuild/display.ml" 249 8198 8228
+type(
+  unit
+)
+"ocamlbuild/display.ml" 249 8198 8229 "ocamlbuild/display.ml" 249 8198 8246
+type(
+  out_channel -> unit -> unit
+)
+ident(
+  int_ref ANSI.clear_to_eol "ocamlbuild/display.ml" 26 998 1006 "ocamlbuild/display.ml" 26 998 1018
+)
+"ocamlbuild/display.ml" 249 8198 8247 "ocamlbuild/display.ml" 249 8198 8249
+type(
+  unit
+)
+"ocamlbuild/display.ml" 249 8198 8202 "ocamlbuild/display.ml" 249 8198 8250
+call(
+  tail
+)
+type(
+  unit
+)
+"ocamlbuild/display.ml" 235 7813 7815 "ocamlbuild/display.ml" 249 8198 8250
+type(
+  unit
+)
+"ocamlbuild/display.ml" 234 7777 7779 "ocamlbuild/display.ml" 249 8198 8250
+type(
+  unit
+)
+"ocamlbuild/display.ml" 233 7749 7751 "ocamlbuild/display.ml" 249 8198 8250
+type(
+  unit
+)
+"ocamlbuild/display.ml" 232 7720 7722 "ocamlbuild/display.ml" 249 8198 8250
+type(
+  unit
+)
+"ocamlbuild/display.ml" 253 8292 8296 "ocamlbuild/display.ml" 253 8292 8317
+type(
+  sophisticated_display -> (out_channel -> 'a) -> 'a
+)
+ident(
+  def sophisticated_display "ocamlbuild/display.ml" 259 8432 8432 "ocamlbuild/display.ml" 1 0 -1
+)
+"ocamlbuild/display.ml" 253 8292 8318 "ocamlbuild/display.ml" 253 8292 8320
+type(
+  sophisticated_display
+)
+ident(
+  def ds "ocamlbuild/display.ml" 253 8292 8321 "ocamlbuild/display.ml" 255 8387 8404
+)
+"ocamlbuild/display.ml" 253 8292 8321 "ocamlbuild/display.ml" 253 8292 8322
+type(
+  out_channel -> 'a
+)
+ident(
+  def f "ocamlbuild/display.ml" 254 8325 8327 "ocamlbuild/display.ml" 255 8387 8404
+)
+"ocamlbuild/display.ml" 254 8325 8327 "ocamlbuild/display.ml" 254 8325 8329
+type(
+  out_channel ->
+  ((out_channel -> unit -> unit) ->
+   unit -> (out_channel -> unit -> unit) -> unit -> unit, out_channel, 
+   unit)
+  format ->
+  (out_channel -> unit -> unit) ->
+  unit -> (out_channel -> unit -> unit) -> unit -> unit
+)
+ident(
+  int_ref fp "ocamlbuild/display.ml" 20 896 900 "ocamlbuild/display.ml" 20 896 902
+)
+"ocamlbuild/display.ml" 254 8325 8330 "ocamlbuild/display.ml" 254 8325 8332
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "ocamlbuild/display.ml" 253 8292 8318 "ocamlbuild/display.ml" 253 8292 8320
+)
+"ocamlbuild/display.ml" 254 8325 8330 "ocamlbuild/display.ml" 254 8325 8343
+type(
+  out_channel
+)
+"ocamlbuild/display.ml" 254 8325 8344 "ocamlbuild/display.ml" 254 8325 8352
+type(
+  ((out_channel -> unit -> unit) ->
+   unit -> (out_channel -> unit -> unit) -> unit -> unit, out_channel, 
+   unit)
+  format
+)
+"ocamlbuild/display.ml" 254 8325 8353 "ocamlbuild/display.ml" 254 8325 8361
+type(
+  out_channel -> unit -> unit
+)
+ident(
+  int_ref ANSI.bol "ocamlbuild/display.ml" 27 1044 1052 "ocamlbuild/display.ml" 27 1044 1055
+)
+"ocamlbuild/display.ml" 254 8325 8362 "ocamlbuild/display.ml" 254 8325 8364
+type(
+  unit
+)
+"ocamlbuild/display.ml" 254 8325 8365 "ocamlbuild/display.ml" 254 8325 8382
+type(
+  out_channel -> unit -> unit
+)
+ident(
+  int_ref ANSI.clear_to_eol "ocamlbuild/display.ml" 26 998 1006 "ocamlbuild/display.ml" 26 998 1018
+)
+"ocamlbuild/display.ml" 254 8325 8383 "ocamlbuild/display.ml" 254 8325 8385
+type(
+  unit
+)
+"ocamlbuild/display.ml" 254 8325 8327 "ocamlbuild/display.ml" 254 8325 8385
+call(
+  stack
+)
+type(
+  unit
+)
+"ocamlbuild/display.ml" 255 8387 8389 "ocamlbuild/display.ml" 255 8387 8390
+type(
+  out_channel -> 'a
+)
+ident(
+  int_ref f "ocamlbuild/display.ml" 253 8292 8321 "ocamlbuild/display.ml" 253 8292 8322
+)
+"ocamlbuild/display.ml" 255 8387 8391 "ocamlbuild/display.ml" 255 8387 8393
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "ocamlbuild/display.ml" 253 8292 8318 "ocamlbuild/display.ml" 253 8292 8320
+)
+"ocamlbuild/display.ml" 255 8387 8391 "ocamlbuild/display.ml" 255 8387 8404
+type(
+  out_channel
+)
+"ocamlbuild/display.ml" 255 8387 8389 "ocamlbuild/display.ml" 255 8387 8404
+call(
+  tail
+)
+type(
+  'a
+)
+"ocamlbuild/display.ml" 254 8325 8327 "ocamlbuild/display.ml" 255 8387 8404
+type(
+  'a
+)
+"ocamlbuild/display.ml" 259 8432 8436 "ocamlbuild/display.ml" 259 8432 8443
+type(
+  'a option -> ('a -> unit) -> unit
+)
+ident(
+  def call_if "ocamlbuild/display.ml" 266 8545 8545 "ocamlbuild/display.ml" 1 0 -1
+)
+"ocamlbuild/display.ml" 259 8432 8444 "ocamlbuild/display.ml" 259 8432 8455
+type(
+  'a option
+)
+ident(
+  def log_channel "ocamlbuild/display.ml" 259 8432 8456 "ocamlbuild/display.ml" 262 8500 8517
+)
+"ocamlbuild/display.ml" 259 8432 8456 "ocamlbuild/display.ml" 259 8432 8457
+type(
+  'a -> unit
+)
+ident(
+  def f "ocamlbuild/display.ml" 260 8460 8462 "ocamlbuild/display.ml" 262 8500 8517
+)
+"ocamlbuild/display.ml" 260 8460 8468 "ocamlbuild/display.ml" 260 8460 8479
+type(
+  'a option
+)
+ident(
+  int_ref log_channel "ocamlbuild/display.ml" 259 8432 8444 "ocamlbuild/display.ml" 259 8432 8455
+)
+"ocamlbuild/display.ml" 261 8485 8489 "ocamlbuild/display.ml" 261 8485 8493
+type(
+  'a option
+)
+"ocamlbuild/display.ml" 261 8485 8497 "ocamlbuild/display.ml" 261 8485 8499
+type(
+  unit
+)
+"ocamlbuild/display.ml" 262 8500 8509 "ocamlbuild/display.ml" 262 8500 8510
+type(
+  'a
+)
+ident(
+  def x "ocamlbuild/display.ml" 262 8500 8514 "ocamlbuild/display.ml" 262 8500 8517
+)
+"ocamlbuild/display.ml" 262 8500 8504 "ocamlbuild/display.ml" 262 8500 8510
+type(
+  'a option
+)
+"ocamlbuild/display.ml" 262 8500 8514 "ocamlbuild/display.ml" 262 8500 8515
+type(
+  'a -> unit
+)
+ident(
+  int_ref f "ocamlbuild/display.ml" 259 8432 8456 "ocamlbuild/display.ml" 259 8432 8457
+)
+"ocamlbuild/display.ml" 262 8500 8516 "ocamlbuild/display.ml" 262 8500 8517
+type(
+  'a
+)
+ident(
+  int_ref x "ocamlbuild/display.ml" 262 8500 8509 "ocamlbuild/display.ml" 262 8500 8510
+)
+"ocamlbuild/display.ml" 262 8500 8514 "ocamlbuild/display.ml" 262 8500 8517
+call(
+  tail
+)
+type(
+  unit
+)
+"ocamlbuild/display.ml" 260 8460 8462 "ocamlbuild/display.ml" 262 8500 8517
+type(
+  unit
+)
+"ocamlbuild/display.ml" 266 8545 8549 "ocamlbuild/display.ml" 266 8545 8556
+type(
+  display -> (out_channel -> unit) -> unit
+)
+ident(
+  def display "ocamlbuild/display.ml" 274 8755 8755 "ocamlbuild/display.ml" 1 0 -1
+)
+"ocamlbuild/display.ml" 266 8545 8557 "ocamlbuild/display.ml" 266 8545 8559
+type(
+  display
+)
+ident(
+  def di "ocamlbuild/display.ml" 266 8545 8560 "ocamlbuild/display.ml" 270 8678 8728
+)
+"ocamlbuild/display.ml" 266 8545 8560 "ocamlbuild/display.ml" 266 8545 8561
+type(
+  out_channel -> unit
+)
+ident(
+  def f "ocamlbuild/display.ml" 267 8564 8566 "ocamlbuild/display.ml" 270 8678 8728
+)
+"ocamlbuild/display.ml" 267 8564 8566 "ocamlbuild/display.ml" 267 8564 8573
+type(
+  (Format.formatter * out_channel) option ->
+  (Format.formatter * out_channel -> unit) -> unit
+)
+ident(
+  int_ref call_if "ocamlbuild/display.ml" 259 8432 8436 "ocamlbuild/display.ml" 259 8432 8443
+)
+"ocamlbuild/display.ml" 267 8564 8574 "ocamlbuild/display.ml" 267 8564 8576
+type(
+  display
+)
+ident(
+  int_ref di "ocamlbuild/display.ml" 266 8545 8557 "ocamlbuild/display.ml" 266 8545 8559
+)
+"ocamlbuild/display.ml" 267 8564 8574 "ocamlbuild/display.ml" 267 8564 8591
+type(
+  (Format.formatter * out_channel) option
+)
+"ocamlbuild/display.ml" 267 8564 8598 "ocamlbuild/display.ml" 267 8564 8599
+type(
+  Format.formatter
+)
+"ocamlbuild/display.ml" 267 8564 8601 "ocamlbuild/display.ml" 267 8564 8603
+type(
+  out_channel
+)
+ident(
+  def oc "ocamlbuild/display.ml" 267 8564 8608 "ocamlbuild/display.ml" 267 8564 8612
+)
+"ocamlbuild/display.ml" 267 8564 8597 "ocamlbuild/display.ml" 267 8564 8604
+type(
+  Format.formatter * out_channel
+)
+"ocamlbuild/display.ml" 267 8564 8608 "ocamlbuild/display.ml" 267 8564 8609
+type(
+  out_channel -> unit
+)
+ident(
+  int_ref f "ocamlbuild/display.ml" 266 8545 8560 "ocamlbuild/display.ml" 266 8545 8561
+)
+"ocamlbuild/display.ml" 267 8564 8610 "ocamlbuild/display.ml" 267 8564 8612
+type(
+  out_channel
+)
+ident(
+  int_ref oc "ocamlbuild/display.ml" 267 8564 8601 "ocamlbuild/display.ml" 267 8564 8603
+)
+"ocamlbuild/display.ml" 267 8564 8608 "ocamlbuild/display.ml" 267 8564 8612
+call(
+  tail
+)
+type(
+  unit
+)
+"ocamlbuild/display.ml" 267 8564 8592 "ocamlbuild/display.ml" 267 8564 8613
+type(
+  Format.formatter * out_channel -> unit
+)
+"ocamlbuild/display.ml" 267 8564 8566 "ocamlbuild/display.ml" 267 8564 8613
+call(
+  stack
+)
+type(
+  unit
+)
+"ocamlbuild/display.ml" 268 8615 8623 "ocamlbuild/display.ml" 268 8615 8625
+type(
+  display
+)
+ident(
+  int_ref di "ocamlbuild/display.ml" 266 8545 8557 "ocamlbuild/display.ml" 266 8545 8559
+)
+"ocamlbuild/display.ml" 268 8615 8623 "ocamlbuild/display.ml" 268 8615 8641
+type(
+  display_line
+)
+"ocamlbuild/display.ml" 269 8647 8651 "ocamlbuild/display.ml" 269 8647 8658
+type(
+  display_line
+)
+"ocamlbuild/display.ml" 269 8647 8662 "ocamlbuild/display.ml" 269 8647 8663
+type(
+  out_channel -> unit
+)
+ident(
+  int_ref f "ocamlbuild/display.ml" 266 8545 8560 "ocamlbuild/display.ml" 266 8545 8561
+)
+"ocamlbuild/display.ml" 269 8647 8664 "ocamlbuild/display.ml" 269 8647 8666
+type(
+  display
+)
+ident(
+  int_ref di "ocamlbuild/display.ml" 266 8545 8557 "ocamlbuild/display.ml" 266 8545 8559
+)
+"ocamlbuild/display.ml" 269 8647 8664 "ocamlbuild/display.ml" 269 8647 8677
+type(
+  out_channel
+)
+"ocamlbuild/display.ml" 269 8647 8662 "ocamlbuild/display.ml" 269 8647 8677
+call(
+  tail
+)
+type(
+  unit
+)
+"ocamlbuild/display.ml" 270 8678 8696 "ocamlbuild/display.ml" 270 8678 8698
+type(
+  sophisticated_display
+)
+ident(
+  def ds "ocamlbuild/display.ml" 270 8678 8702 "ocamlbuild/display.ml" 270 8678 8728
+)
+"ocamlbuild/display.ml" 270 8678 8682 "ocamlbuild/display.ml" 270 8678 8698
+type(
+  display_line
+)
+"ocamlbuild/display.ml" 270 8678 8702 "ocamlbuild/display.ml" 270 8678 8723
+type(
+  sophisticated_display -> (out_channel -> unit) -> unit
+)
+ident(
+  int_ref sophisticated_display "ocamlbuild/display.ml" 253 8292 8296 "ocamlbuild/display.ml" 253 8292 8317
+)
+"ocamlbuild/display.ml" 270 8678 8724 "ocamlbuild/display.ml" 270 8678 8726
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "ocamlbuild/display.ml" 270 8678 8696 "ocamlbuild/display.ml" 270 8678 8698
+)
+"ocamlbuild/display.ml" 270 8678 8727 "ocamlbuild/display.ml" 270 8678 8728
+type(
+  out_channel -> unit
+)
+ident(
+  int_ref f "ocamlbuild/display.ml" 266 8545 8560 "ocamlbuild/display.ml" 266 8545 8561
+)
+"ocamlbuild/display.ml" 270 8678 8702 "ocamlbuild/display.ml" 270 8678 8728
+call(
+  tail
+)
+type(
+  unit
+)
+"ocamlbuild/display.ml" 268 8615 8617 "ocamlbuild/display.ml" 270 8678 8728
+type(
+  unit
+)
+"ocamlbuild/display.ml" 267 8564 8566 "ocamlbuild/display.ml" 270 8678 8728
+type(
+  unit
+)
+"ocamlbuild/display.ml" 274 8755 8759 "ocamlbuild/display.ml" 274 8755 8765
+type(
+  ?how:[< `Error | `Quiet | `Success > `Error `Success ] -> display -> unit
+)
+ident(
+  def finish "ocamlbuild/display.ml" 290 9231 9231 "ocamlbuild/display.ml" 1 0 -1
+)
+"ocamlbuild/display.ml" 274 8755 8768 "ocamlbuild/display.ml" 274 8755 8771
+type(
+  [< `Error | `Quiet | `Success > `Error `Success ] as 'a
+)
+"ocamlbuild/display.ml" 274 8755 8772 "ocamlbuild/display.ml" 274 8755 8780
+type(
+  'a
+)
+type(
+  'a
+)
+ident(
+  int_ref *sth* "ocamlbuild/display.ml" 274 8755 8772 "ocamlbuild/display.ml" 274 8755 8780
+)
+type(
+  'a option
+)
+type(
+  'a option
+)
+type(
+  'a
+)
+"ocamlbuild/display.ml" 274 8755 8782 "ocamlbuild/display.ml" 274 8755 8784
+type(
+  display
+)
+ident(
+  def di "ocamlbuild/display.ml" 275 8787 8789 "ocamlbuild/display.ml" 286 9181 9186
+)
+"ocamlbuild/display.ml" 275 8787 8792 "ocamlbuild/display.ml" 275 8787 8795
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"ocamlbuild/display.ml" 275 8787 8796 "ocamlbuild/display.ml" 275 8787 8798
+type(
+  display
+)
+ident(
+  int_ref di "ocamlbuild/display.ml" 274 8755 8782 "ocamlbuild/display.ml" 274 8755 8784
+)
+"ocamlbuild/display.ml" 275 8787 8796 "ocamlbuild/display.ml" 275 8787 8810
+type(
+  bool
+)
+"ocamlbuild/display.ml" 275 8787 8792 "ocamlbuild/display.ml" 275 8787 8810
+type(
+  bool
+)
+"ocamlbuild/display.ml" 276 8822 8826 "ocamlbuild/display.ml" 276 8822 8828
+type(
+  display
+)
+ident(
+  int_ref di "ocamlbuild/display.ml" 274 8755 8782 "ocamlbuild/display.ml" 274 8755 8784
+)
+"ocamlbuild/display.ml" 276 8822 8844 "ocamlbuild/display.ml" 276 8822 8848
+type(
+  bool
+)
+"ocamlbuild/display.ml" 276 8822 8826 "ocamlbuild/display.ml" 276 8822 8848
+type(
+  unit
+)
+"ocamlbuild/display.ml" 277 8850 8854 "ocamlbuild/display.ml" 277 8850 8861
+type(
+  (Format.formatter * out_channel) option ->
+  (Format.formatter * out_channel -> unit) -> unit
+)
+ident(
+  int_ref call_if "ocamlbuild/display.ml" 259 8432 8436 "ocamlbuild/display.ml" 259 8432 8443
+)
+"ocamlbuild/display.ml" 277 8850 8862 "ocamlbuild/display.ml" 277 8850 8864
+type(
+  display
+)
+ident(
+  int_ref di "ocamlbuild/display.ml" 274 8755 8782 "ocamlbuild/display.ml" 274 8755 8784
+)
+"ocamlbuild/display.ml" 277 8850 8862 "ocamlbuild/display.ml" 277 8850 8879
+type(
+  (Format.formatter * out_channel) option
+)
+"ocamlbuild/display.ml" 278 8880 8897 "ocamlbuild/display.ml" 278 8880 8900
+type(
+  Format.formatter
+)
+ident(
+  def fmt "ocamlbuild/display.ml" 279 8909 8917 "ocamlbuild/display.ml" 281 9027 9060
+)
+"ocamlbuild/display.ml" 278 8880 8902 "ocamlbuild/display.ml" 278 8880 8904
+type(
+  out_channel
+)
+ident(
+  def oc "ocamlbuild/display.ml" 279 8909 8917 "ocamlbuild/display.ml" 281 9027 9060
+)
+"ocamlbuild/display.ml" 278 8880 8896 "ocamlbuild/display.ml" 278 8880 8905
+type(
+  Format.formatter * out_channel
+)
+"ocamlbuild/display.ml" 279 8909 8917 "ocamlbuild/display.ml" 279 8909 8931
+type(
+  Format.formatter ->
+  (string -> unit, Format.formatter, unit) format -> string -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"ocamlbuild/display.ml" 279 8909 8932 "ocamlbuild/display.ml" 279 8909 8935
+type(
+  Format.formatter
+)
+ident(
+  int_ref fmt "ocamlbuild/display.ml" 278 8880 8897 "ocamlbuild/display.ml" 278 8880 8900
+)
+"ocamlbuild/display.ml" 279 8909 8936 "ocamlbuild/display.ml" 279 8909 8967
+type(
+  (string -> unit, Format.formatter, unit) format
+)
+"ocamlbuild/display.ml" 279 8909 8972 "ocamlbuild/display.ml" 279 8909 8975
+type(
+  'a
+)
+ident(
+  int_ref how "ocamlbuild/display.ml" 274 8755 8768 "ocamlbuild/display.ml" 274 8755 8771
+)
+"ocamlbuild/display.ml" 279 8909 8976 "ocamlbuild/display.ml" 279 8909 8977
+type(
+  'a -> 'a -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"ocamlbuild/display.ml" 279 8909 8978 "ocamlbuild/display.ml" 279 8909 8984
+type(
+  'a
+)
+"ocamlbuild/display.ml" 279 8909 8972 "ocamlbuild/display.ml" 279 8909 8984
+type(
+  bool
+)
+"ocamlbuild/display.ml" 279 8909 8990 "ocamlbuild/display.ml" 279 8909 8994
+type(
+  string
+)
+"ocamlbuild/display.ml" 279 8909 9000 "ocamlbuild/display.ml" 279 8909 9002
+type(
+  string
+)
+"ocamlbuild/display.ml" 279 8909 8968 "ocamlbuild/display.ml" 279 8909 9003
+type(
+  string
+)
+"ocamlbuild/display.ml" 279 8909 8917 "ocamlbuild/display.ml" 279 8909 9003
+call(
+  stack
+)
+type(
+  unit
+)
+"ocamlbuild/display.ml" 280 9005 9013 "ocamlbuild/display.ml" 280 9005 9022
+type(
+  out_channel -> unit
+)
+ident(
+  ext_ref Pervasives.close_out
+)
+"ocamlbuild/display.ml" 280 9005 9023 "ocamlbuild/display.ml" 280 9005 9025
+type(
+  out_channel
+)
+ident(
+  int_ref oc "ocamlbuild/display.ml" 278 8880 8902 "ocamlbuild/display.ml" 278 8880 8904
+)
+"ocamlbuild/display.ml" 280 9005 9013 "ocamlbuild/display.ml" 280 9005 9025
+call(
+  stack
+)
+type(
+  unit
+)
+"ocamlbuild/display.ml" 281 9027 9035 "ocamlbuild/display.ml" 281 9027 9037
+type(
+  display
+)
+ident(
+  int_ref di "ocamlbuild/display.ml" 274 8755 8782 "ocamlbuild/display.ml" 274 8755 8784
+)
+"ocamlbuild/display.ml" 281 9027 9056 "ocamlbuild/display.ml" 281 9027 9060
+type(
+  (Format.formatter * out_channel) option
+)
+"ocamlbuild/display.ml" 281 9027 9035 "ocamlbuild/display.ml" 281 9027 9060
+type(
+  unit
+)
+"ocamlbuild/display.ml" 280 9005 9013 "ocamlbuild/display.ml" 281 9027 9060
+type(
+  unit
+)
+"ocamlbuild/display.ml" 279 8909 8917 "ocamlbuild/display.ml" 281 9027 9060
+type(
+  unit
+)
+"ocamlbuild/display.ml" 278 8880 8886 "ocamlbuild/display.ml" 282 9061 9070
+type(
+  Format.formatter * out_channel -> unit
+)
+"ocamlbuild/display.ml" 277 8850 8854 "ocamlbuild/display.ml" 282 9061 9070
+call(
+  stack
+)
+type(
+  unit
+)
+"ocamlbuild/display.ml" 283 9072 9082 "ocamlbuild/display.ml" 283 9072 9084
+type(
+  display
+)
+ident(
+  int_ref di "ocamlbuild/display.ml" 274 8755 8782 "ocamlbuild/display.ml" 274 8755 8784
+)
+"ocamlbuild/display.ml" 283 9072 9082 "ocamlbuild/display.ml" 283 9072 9100
+type(
+  display_line
+)
+"ocamlbuild/display.ml" 284 9106 9112 "ocamlbuild/display.ml" 284 9106 9119
+type(
+  display_line
+)
+"ocamlbuild/display.ml" 284 9106 9123 "ocamlbuild/display.ml" 284 9106 9125
+type(
+  unit
+)
+"ocamlbuild/display.ml" 285 9126 9146 "ocamlbuild/display.ml" 285 9126 9148
+type(
+  sophisticated_display
+)
+ident(
+  def ds "ocamlbuild/display.ml" 285 9126 9152 "ocamlbuild/display.ml" 285 9126 9180
+)
+"ocamlbuild/display.ml" 285 9126 9132 "ocamlbuild/display.ml" 285 9126 9148
+type(
+  display_line
+)
+"ocamlbuild/display.ml" 285 9126 9152 "ocamlbuild/display.ml" 285 9126 9172
+type(
+  ?how:'a -> sophisticated_display -> unit
+)
+ident(
+  int_ref finish_sophisticated "ocamlbuild/display.ml" 231 7674 7678 "ocamlbuild/display.ml" 231 7674 7698
+)
+"ocamlbuild/display.ml" 285 9126 9174 "ocamlbuild/display.ml" 285 9126 9177
+type(
+  'a
+)
+ident(
+  int_ref how "ocamlbuild/display.ml" 274 8755 8768 "ocamlbuild/display.ml" 274 8755 8771
+)
+"ocamlbuild/display.ml" 285 9126 9178 "ocamlbuild/display.ml" 285 9126 9180
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "ocamlbuild/display.ml" 285 9126 9146 "ocamlbuild/display.ml" 285 9126 9148
+)
+"ocamlbuild/display.ml" 285 9126 9152 "ocamlbuild/display.ml" 285 9126 9180
+call(
+  tail
+)
+type(
+  unit
+)
+"ocamlbuild/display.ml" 283 9072 9076 "ocamlbuild/display.ml" 285 9126 9180
+type(
+  unit
+)
+"ocamlbuild/display.ml" 277 8850 8854 "ocamlbuild/display.ml" 285 9126 9180
+type(
+  unit
+)
+"ocamlbuild/display.ml" 275 8787 8816 "ocamlbuild/display.ml" 286 9181 9186
+type(
+  unit
+)
+"ocamlbuild/display.ml" 275 8787 8789 "ocamlbuild/display.ml" 286 9181 9186
+type(
+  unit
+)
+"ocamlbuild/display.ml" 290 9231 9235 "ocamlbuild/display.ml" 290 9231 9259
+type(
+  sophisticated_display -> unit
+)
+ident(
+  def update_tagline_from_tags "ocamlbuild/display.ml" 312 9806 9806 "ocamlbuild/display.ml" 1 0 -1
+)
+"ocamlbuild/display.ml" 290 9231 9260 "ocamlbuild/display.ml" 290 9231 9262
+type(
+  sophisticated_display
+)
+ident(
+  def ds "ocamlbuild/display.ml" 291 9265 9267 "ocamlbuild/display.ml" 308 9746 9765
+)
+"ocamlbuild/display.ml" 291 9265 9271 "ocamlbuild/display.ml" 291 9265 9278
+type(
+  string
+)
+ident(
+  def tagline "ocamlbuild/display.ml" 292 9298 9300 "ocamlbuild/display.ml" 308 9746 9765
+)
+"ocamlbuild/display.ml" 291 9265 9281 "ocamlbuild/display.ml" 291 9265 9283
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "ocamlbuild/display.ml" 290 9231 9260 "ocamlbuild/display.ml" 290 9231 9262
+)
+"ocamlbuild/display.ml" 291 9265 9281 "ocamlbuild/display.ml" 291 9265 9294
+type(
+  string
+)
+"ocamlbuild/display.ml" 292 9298 9304 "ocamlbuild/display.ml" 292 9298 9308
+type(
+  Tags.t
+)
+ident(
+  def tags "ocamlbuild/display.ml" 293 9330 9332 "ocamlbuild/display.ml" 308 9746 9765
+)
+"ocamlbuild/display.ml" 292 9298 9311 "ocamlbuild/display.ml" 292 9298 9313
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "ocamlbuild/display.ml" 290 9231 9260 "ocamlbuild/display.ml" 290 9231 9262
+)
+"ocamlbuild/display.ml" 292 9298 9311 "ocamlbuild/display.ml" 292 9298 9326
+type(
+  Tags.t
+)
+"ocamlbuild/display.ml" 293 9330 9340 "ocamlbuild/display.ml" 293 9330 9344
+type(
+  int -> (Tags.elt * char) list -> unit
+)
+ident(
+  def loop "ocamlbuild/display.ml" 293 9330 9332 "ocamlbuild/display.ml" 308 9746 9765
+)
+"ocamlbuild/display.ml" 293 9330 9345 "ocamlbuild/display.ml" 293 9330 9346
+type(
+  int
+)
+ident(
+  def i "ocamlbuild/display.ml" 293 9330 9349 "ocamlbuild/display.ml" 306 9715 9740
+)
+"ocamlbuild/display.ml" 294 9358 9364 "ocamlbuild/display.ml" 294 9358 9366
+type(
+  (Tags.elt * char) list
+)
+"ocamlbuild/display.ml" 295 9370 9386 "ocamlbuild/display.ml" 295 9370 9387
+type(
+  int
+)
+ident(
+  int_ref i "ocamlbuild/display.ml" 293 9330 9345 "ocamlbuild/display.ml" 293 9330 9346
+)
+"ocamlbuild/display.ml" 295 9370 9391 "ocamlbuild/display.ml" 295 9370 9404
+type(
+  string -> int
+)
+ident(
+  ext_ref My_std.String.length
+)
+"ocamlbuild/display.ml" 295 9370 9405 "ocamlbuild/display.ml" 295 9370 9412
+type(
+  string
+)
+ident(
+  int_ref tagline "ocamlbuild/display.ml" 291 9265 9271 "ocamlbuild/display.ml" 291 9265 9278
+)
+"ocamlbuild/display.ml" 295 9370 9391 "ocamlbuild/display.ml" 295 9370 9412
+type(
+  int
+)
+"ocamlbuild/display.ml" 295 9370 9413 "ocamlbuild/display.ml" 295 9370 9414
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"ocamlbuild/display.ml" 295 9370 9415 "ocamlbuild/display.ml" 295 9370 9416
+type(
+  int
+)
+"ocamlbuild/display.ml" 295 9370 9391 "ocamlbuild/display.ml" 295 9370 9416
+type(
+  int
+)
+"ocamlbuild/display.ml" 296 9420 9430 "ocamlbuild/display.ml" 296 9420 9437
+type(
+  string
+)
+ident(
+  int_ref tagline "ocamlbuild/display.ml" 291 9265 9271 "ocamlbuild/display.ml" 291 9265 9278
+)
+"ocamlbuild/display.ml" 296 9420 9439 "ocamlbuild/display.ml" 296 9420 9440
+type(
+  int
+)
+ident(
+  int_ref j "ocamlbuild/display.ml" 295 9370 9378 "ocamlbuild/display.ml" 297 9449 9461
+)
+"ocamlbuild/display.ml" 296 9420 9445 "ocamlbuild/display.ml" 296 9420 9448
+type(
+  char
+)
+"ocamlbuild/display.ml" 296 9420 9430 "ocamlbuild/display.ml" 296 9420 9448
+type(
+  unit
+)
+"ocamlbuild/display.ml" 295 9370 9378 "ocamlbuild/display.ml" 297 9449 9461
+type(
+  unit
+)
+"ocamlbuild/display.ml" 298 9462 9469 "ocamlbuild/display.ml" 298 9462 9472
+type(
+  Tags.elt
+)
+ident(
+  def tag "ocamlbuild/display.ml" 299 9488 9496 "ocamlbuild/display.ml" 306 9715 9740
+)
+"ocamlbuild/display.ml" 298 9462 9474 "ocamlbuild/display.ml" 298 9462 9475
+type(
+  char
+)
+ident(
+  def c "ocamlbuild/display.ml" 299 9488 9496 "ocamlbuild/display.ml" 306 9715 9740
+)
+"ocamlbuild/display.ml" 298 9462 9468 "ocamlbuild/display.ml" 298 9462 9476
+type(
+  Tags.elt * char
+)
+"ocamlbuild/display.ml" 298 9462 9480 "ocamlbuild/display.ml" 298 9462 9484
+type(
+  (Tags.elt * char) list
+)
+ident(
+  def rest "ocamlbuild/display.ml" 299 9488 9496 "ocamlbuild/display.ml" 306 9715 9740
+)
+"ocamlbuild/display.ml" 298 9462 9468 "ocamlbuild/display.ml" 298 9462 9484
+type(
+  (Tags.elt * char) list
+)
+"ocamlbuild/display.ml" 299 9488 9499 "ocamlbuild/display.ml" 299 9488 9507
+type(
+  Tags.elt -> Tags.t -> bool
+)
+ident(
+  ext_ref Tags.mem
+)
+"ocamlbuild/display.ml" 299 9488 9508 "ocamlbuild/display.ml" 299 9488 9511
+type(
+  Tags.elt
+)
+ident(
+  int_ref tag "ocamlbuild/display.ml" 298 9462 9469 "ocamlbuild/display.ml" 298 9462 9472
+)
+"ocamlbuild/display.ml" 299 9488 9512 "ocamlbuild/display.ml" 299 9488 9516
+type(
+  Tags.t
+)
+ident(
+  int_ref tags "ocamlbuild/display.ml" 292 9298 9304 "ocamlbuild/display.ml" 292 9298 9308
+)
+"ocamlbuild/display.ml" 299 9488 9499 "ocamlbuild/display.ml" 299 9488 9516
+call(
+  stack
+)
+type(
+  bool
+)
+"ocamlbuild/display.ml" 300 9522 9532 "ocamlbuild/display.ml" 300 9522 9539
+type(
+  string
+)
+ident(
+  int_ref tagline "ocamlbuild/display.ml" 291 9265 9271 "ocamlbuild/display.ml" 291 9265 9278
+)
+"ocamlbuild/display.ml" 300 9522 9541 "ocamlbuild/display.ml" 300 9522 9542
+type(
+  int
+)
+ident(
+  int_ref i "ocamlbuild/display.ml" 293 9330 9345 "ocamlbuild/display.ml" 293 9330 9346
+)
+"ocamlbuild/display.ml" 300 9522 9547 "ocamlbuild/display.ml" 300 9522 9561
+type(
+  char -> char
+)
+ident(
+  ext_ref Char.uppercase
+)
+"ocamlbuild/display.ml" 300 9522 9562 "ocamlbuild/display.ml" 300 9522 9563
+type(
+  char
+)
+ident(
+  int_ref c "ocamlbuild/display.ml" 298 9462 9474 "ocamlbuild/display.ml" 298 9462 9475
+)
+"ocamlbuild/display.ml" 300 9522 9547 "ocamlbuild/display.ml" 300 9522 9563
+call(
+  stack
+)
+type(
+  char
+)
+"ocamlbuild/display.ml" 300 9522 9532 "ocamlbuild/display.ml" 300 9522 9563
+type(
+  unit
+)
+"ocamlbuild/display.ml" 302 9577 9590 "ocamlbuild/display.ml" 302 9577 9598
+type(
+  Tags.elt -> Tags.t -> bool
+)
+ident(
+  ext_ref Tags.mem
+)
+"ocamlbuild/display.ml" 302 9577 9599 "ocamlbuild/display.ml" 302 9577 9602
+type(
+  Tags.elt
+)
+ident(
+  int_ref tag "ocamlbuild/display.ml" 298 9462 9469 "ocamlbuild/display.ml" 298 9462 9472
+)
+"ocamlbuild/display.ml" 302 9577 9603 "ocamlbuild/display.ml" 302 9577 9605
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "ocamlbuild/display.ml" 290 9231 9260 "ocamlbuild/display.ml" 290 9231 9262
+)
+"ocamlbuild/display.ml" 302 9577 9603 "ocamlbuild/display.ml" 302 9577 9618
+type(
+  Tags.t
+)
+"ocamlbuild/display.ml" 302 9577 9590 "ocamlbuild/display.ml" 302 9577 9618
+call(
+  stack
+)
+type(
+  bool
+)
+"ocamlbuild/display.ml" 303 9624 9636 "ocamlbuild/display.ml" 303 9624 9643
+type(
+  string
+)
+ident(
+  int_ref tagline "ocamlbuild/display.ml" 291 9265 9271 "ocamlbuild/display.ml" 291 9265 9278
+)
+"ocamlbuild/display.ml" 303 9624 9645 "ocamlbuild/display.ml" 303 9624 9646
+type(
+  int
+)
+ident(
+  int_ref i "ocamlbuild/display.ml" 293 9330 9345 "ocamlbuild/display.ml" 293 9330 9346
+)
+"ocamlbuild/display.ml" 303 9624 9651 "ocamlbuild/display.ml" 303 9624 9665
+type(
+  char -> char
+)
+ident(
+  ext_ref Char.lowercase
+)
+"ocamlbuild/display.ml" 303 9624 9666 "ocamlbuild/display.ml" 303 9624 9667
+type(
+  char
+)
+ident(
+  int_ref c "ocamlbuild/display.ml" 298 9462 9474 "ocamlbuild/display.ml" 298 9462 9475
+)
+"ocamlbuild/display.ml" 303 9624 9651 "ocamlbuild/display.ml" 303 9624 9667
+call(
+  stack
+)
+type(
+  char
+)
+"ocamlbuild/display.ml" 303 9624 9636 "ocamlbuild/display.ml" 303 9624 9667
+type(
+  unit
+)
+"ocamlbuild/display.ml" 305 9683 9695 "ocamlbuild/display.ml" 305 9683 9702
+type(
+  string
+)
+ident(
+  int_ref tagline "ocamlbuild/display.ml" 291 9265 9271 "ocamlbuild/display.ml" 291 9265 9278
+)
+"ocamlbuild/display.ml" 305 9683 9704 "ocamlbuild/display.ml" 305 9683 9705
+type(
+  int
+)
+ident(
+  int_ref i "ocamlbuild/display.ml" 293 9330 9345 "ocamlbuild/display.ml" 293 9330 9346
+)
+"ocamlbuild/display.ml" 305 9683 9710 "ocamlbuild/display.ml" 305 9683 9713
+type(
+  char
+)
+"ocamlbuild/display.ml" 305 9683 9695 "ocamlbuild/display.ml" 305 9683 9713
+type(
+  unit
+)
+"ocamlbuild/display.ml" 302 9577 9587 "ocamlbuild/display.ml" 305 9683 9713
+type(
+  unit
+)
+"ocamlbuild/display.ml" 299 9488 9496 "ocamlbuild/display.ml" 305 9683 9713
+type(
+  unit
+)
+"ocamlbuild/display.ml" 306 9715 9723 "ocamlbuild/display.ml" 306 9715 9727
+type(
+  int -> (Tags.elt * char) list -> unit
+)
+ident(
+  int_ref loop "ocamlbuild/display.ml" 293 9330 9340 "ocamlbuild/display.ml" 293 9330 9344
+)
+"ocamlbuild/display.ml" 306 9715 9729 "ocamlbuild/display.ml" 306 9715 9730
+type(
+  int
+)
+ident(
+  int_ref i "ocamlbuild/display.ml" 293 9330 9345 "ocamlbuild/display.ml" 293 9330 9346
+)
+"ocamlbuild/display.ml" 306 9715 9731 "ocamlbuild/display.ml" 306 9715 9732
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"ocamlbuild/display.ml" 306 9715 9733 "ocamlbuild/display.ml" 306 9715 9734
+type(
+  int
+)
+"ocamlbuild/display.ml" 306 9715 9728 "ocamlbuild/display.ml" 306 9715 9735
+type(
+  int
+)
+"ocamlbuild/display.ml" 306 9715 9736 "ocamlbuild/display.ml" 306 9715 9740
+type(
+  (Tags.elt * char) list
+)
+ident(
+  int_ref rest "ocamlbuild/display.ml" 298 9462 9480 "ocamlbuild/display.ml" 298 9462 9484
+)
+"ocamlbuild/display.ml" 306 9715 9723 "ocamlbuild/display.ml" 306 9715 9740
+call(
+  tail
+)
+type(
+  unit
+)
+"ocamlbuild/display.ml" 299 9488 9496 "ocamlbuild/display.ml" 306 9715 9740
+type(
+  unit
+)
+"ocamlbuild/display.ml" 293 9330 9349 "ocamlbuild/display.ml" 306 9715 9740
+type(
+  (Tags.elt * char) list -> unit
+)
+"ocamlbuild/display.ml" 308 9746 9748 "ocamlbuild/display.ml" 308 9746 9752
+type(
+  int -> tagline_description -> unit
+)
+ident(
+  int_ref loop "ocamlbuild/display.ml" 293 9330 9340 "ocamlbuild/display.ml" 293 9330 9344
+)
+"ocamlbuild/display.ml" 308 9746 9753 "ocamlbuild/display.ml" 308 9746 9754
+type(
+  int
+)
+"ocamlbuild/display.ml" 308 9746 9755 "ocamlbuild/display.ml" 308 9746 9757
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "ocamlbuild/display.ml" 290 9231 9260 "ocamlbuild/display.ml" 290 9231 9262
+)
+"ocamlbuild/display.ml" 308 9746 9755 "ocamlbuild/display.ml" 308 9746 9764
+type(
+  tagline_description
+)
+"ocamlbuild/display.ml" 308 9746 9748 "ocamlbuild/display.ml" 308 9746 9765
+call(
+  tail
+)
+type(
+  unit
+)
+"ocamlbuild/display.ml" 293 9330 9332 "ocamlbuild/display.ml" 308 9746 9765
+type(
+  unit
+)
+"ocamlbuild/display.ml" 292 9298 9300 "ocamlbuild/display.ml" 308 9746 9765
+type(
+  unit
+)
+"ocamlbuild/display.ml" 291 9265 9267 "ocamlbuild/display.ml" 308 9746 9765
+type(
+  unit
+)
+"ocamlbuild/display.ml" 312 9806 9810 "ocamlbuild/display.ml" 312 9806 9830
+type(
+  sophisticated_display -> unit
+)
+ident(
+  def update_sophisticated "ocamlbuild/display.ml" 329 10172 10172 "ocamlbuild/display.ml" 1 0 -1
+)
+"ocamlbuild/display.ml" 312 9806 9831 "ocamlbuild/display.ml" 312 9806 9833
+type(
+  sophisticated_display
+)
+ident(
+  def ds "ocamlbuild/display.ml" 313 9836 9838 "ocamlbuild/display.ml" 325 10121 10127
+)
+"ocamlbuild/display.ml" 313 9836 9842 "ocamlbuild/display.ml" 313 9836 9843
+type(
+  float
+)
+ident(
+  def t "ocamlbuild/display.ml" 314 9865 9867 "ocamlbuild/display.ml" 325 10121 10127
+)
+"ocamlbuild/display.ml" 313 9836 9846 "ocamlbuild/display.ml" 313 9836 9858
+type(
+  unit -> float
+)
+ident(
+  ext_ref My_unix.gettimeofday
+)
+"ocamlbuild/display.ml" 313 9836 9859 "ocamlbuild/display.ml" 313 9836 9861
+type(
+  unit
+)
+"ocamlbuild/display.ml" 313 9836 9846 "ocamlbuild/display.ml" 313 9836 9861
+call(
+  stack
+)
+type(
+  float
+)
+"ocamlbuild/display.ml" 314 9865 9871 "ocamlbuild/display.ml" 314 9865 9873
+type(
+  float
+)
+ident(
+  def dt "ocamlbuild/display.ml" 315 9902 9904 "ocamlbuild/display.ml" 325 10121 10127
+)
+"ocamlbuild/display.ml" 314 9865 9876 "ocamlbuild/display.ml" 314 9865 9877
+type(
+  float
+)
+ident(
+  int_ref t "ocamlbuild/display.ml" 313 9836 9842 "ocamlbuild/display.ml" 313 9836 9843
+)
+"ocamlbuild/display.ml" 314 9865 9878 "ocamlbuild/display.ml" 314 9865 9880
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( -. )
+)
+"ocamlbuild/display.ml" 314 9865 9881 "ocamlbuild/display.ml" 314 9865 9883
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "ocamlbuild/display.ml" 312 9806 9831 "ocamlbuild/display.ml" 312 9806 9833
+)
+"ocamlbuild/display.ml" 314 9865 9881 "ocamlbuild/display.ml" 314 9865 9898
+type(
+  float
+)
+"ocamlbuild/display.ml" 314 9865 9876 "ocamlbuild/display.ml" 314 9865 9898
+type(
+  float
+)
+"ocamlbuild/display.ml" 315 9902 9907 "ocamlbuild/display.ml" 315 9902 9909
+type(
+  float
+)
+ident(
+  int_ref dt "ocamlbuild/display.ml" 314 9865 9871 "ocamlbuild/display.ml" 314 9865 9873
+)
+"ocamlbuild/display.ml" 315 9902 9910 "ocamlbuild/display.ml" 315 9902 9911
+type(
+  float -> float -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"ocamlbuild/display.ml" 315 9902 9912 "ocamlbuild/display.ml" 315 9902 9914
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "ocamlbuild/display.ml" 312 9806 9831 "ocamlbuild/display.ml" 312 9806 9833
+)
+"ocamlbuild/display.ml" 315 9902 9912 "ocamlbuild/display.ml" 315 9902 9933
+type(
+  float
+)
+"ocamlbuild/display.ml" 315 9902 9907 "ocamlbuild/display.ml" 315 9902 9933
+type(
+  bool
+)
+"ocamlbuild/display.ml" 317 9949 9958 "ocamlbuild/display.ml" 317 9949 9960
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "ocamlbuild/display.ml" 312 9806 9831 "ocamlbuild/display.ml" 312 9806 9833
+)
+"ocamlbuild/display.ml" 317 9949 9958 "ocamlbuild/display.ml" 317 9949 9971
+type(
+  bool
+)
+"ocamlbuild/display.ml" 319 9991 10001 "ocamlbuild/display.ml" 319 9991 10025
+type(
+  sophisticated_display -> unit
+)
+ident(
+  int_ref update_tagline_from_tags "ocamlbuild/display.ml" 290 9231 9235 "ocamlbuild/display.ml" 290 9231 9259
+)
+"ocamlbuild/display.ml" 319 9991 10026 "ocamlbuild/display.ml" 319 9991 10028
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "ocamlbuild/display.ml" 312 9806 9831 "ocamlbuild/display.ml" 312 9806 9833
+)
+"ocamlbuild/display.ml" 319 9991 10001 "ocamlbuild/display.ml" 319 9991 10028
+call(
+  stack
+)
+type(
+  unit
+)
+"ocamlbuild/display.ml" 320 10030 10040 "ocamlbuild/display.ml" 320 10030 10042
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "ocamlbuild/display.ml" 312 9806 9831 "ocamlbuild/display.ml" 312 9806 9833
+)
+"ocamlbuild/display.ml" 320 10030 10057 "ocamlbuild/display.ml" 320 10030 10062
+type(
+  bool
+)
+"ocamlbuild/display.ml" 320 10030 10040 "ocamlbuild/display.ml" 320 10030 10062
+type(
+  unit
+)
+"ocamlbuild/display.ml" 318 9977 9985 "ocamlbuild/display.ml" 321 10063 10074
+type(
+  unit
+)
+"ocamlbuild/display.ml" 317 9949 9955 "ocamlbuild/display.ml" 321 10063 10074
+type(
+  unit
+)
+"ocamlbuild/display.ml" 322 10076 10082 "ocamlbuild/display.ml" 322 10076 10102
+type(
+  sophisticated_display -> unit
+)
+ident(
+  int_ref redraw_sophisticated "ocamlbuild/display.ml" 205 6903 6907 "ocamlbuild/display.ml" 205 6903 6927
+)
+"ocamlbuild/display.ml" 322 10076 10103 "ocamlbuild/display.ml" 322 10076 10105
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "ocamlbuild/display.ml" 312 9806 9831 "ocamlbuild/display.ml" 312 9806 9833
+)
+"ocamlbuild/display.ml" 322 10076 10082 "ocamlbuild/display.ml" 322 10076 10105
+call(
+  tail
+)
+type(
+  unit
+)
+"ocamlbuild/display.ml" 316 9939 9943 "ocamlbuild/display.ml" 323 10106 10113
+type(
+  unit
+)
+"ocamlbuild/display.ml" 325 10121 10125 "ocamlbuild/display.ml" 325 10121 10127
+type(
+  unit
+)
+"ocamlbuild/display.ml" 315 9902 9904 "ocamlbuild/display.ml" 325 10121 10127
+type(
+  unit
+)
+"ocamlbuild/display.ml" 314 9865 9867 "ocamlbuild/display.ml" 325 10121 10127
+type(
+  unit
+)
+"ocamlbuild/display.ml" 313 9836 9838 "ocamlbuild/display.ml" 325 10121 10127
+type(
+  unit
+)
+"ocamlbuild/display.ml" 329 10172 10176 "ocamlbuild/display.ml" 329 10172 10200
+type(
+  sophisticated_display -> string -> Tags.t -> bool -> unit
+)
+ident(
+  def set_target_sophisticated "ocamlbuild/display.ml" 340 10527 10527 "ocamlbuild/display.ml" 1 0 -1
+)
+"ocamlbuild/display.ml" 329 10172 10201 "ocamlbuild/display.ml" 329 10172 10203
+type(
+  sophisticated_display
+)
+ident(
+  def ds "ocamlbuild/display.ml" 329 10172 10204 "ocamlbuild/display.ml" 337 10497 10522
+)
+"ocamlbuild/display.ml" 329 10172 10204 "ocamlbuild/display.ml" 329 10172 10210
+type(
+  string
+)
+ident(
+  def target "ocamlbuild/display.ml" 329 10172 10211 "ocamlbuild/display.ml" 337 10497 10522
+)
+"ocamlbuild/display.ml" 329 10172 10211 "ocamlbuild/display.ml" 329 10172 10215
+type(
+  Tags.t
+)
+ident(
+  def tags "ocamlbuild/display.ml" 329 10172 10216 "ocamlbuild/display.ml" 337 10497 10522
+)
+"ocamlbuild/display.ml" 329 10172 10216 "ocamlbuild/display.ml" 329 10172 10222
+type(
+  bool
+)
+ident(
+  def cached "ocamlbuild/display.ml" 330 10225 10227 "ocamlbuild/display.ml" 337 10497 10522
+)
+"ocamlbuild/display.ml" 330 10225 10227 "ocamlbuild/display.ml" 330 10225 10229
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "ocamlbuild/display.ml" 329 10172 10201 "ocamlbuild/display.ml" 329 10172 10203
+)
+"ocamlbuild/display.ml" 330 10225 10244 "ocamlbuild/display.ml" 330 10225 10248
+type(
+  bool
+)
+"ocamlbuild/display.ml" 330 10225 10227 "ocamlbuild/display.ml" 330 10225 10248
+type(
+  unit
+)
+"ocamlbuild/display.ml" 331 10250 10252 "ocamlbuild/display.ml" 331 10250 10254
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "ocamlbuild/display.ml" 329 10172 10201 "ocamlbuild/display.ml" 329 10172 10203
+)
+"ocamlbuild/display.ml" 331 10250 10273 "ocamlbuild/display.ml" 331 10250 10279
+type(
+  string
+)
+ident(
+  int_ref target "ocamlbuild/display.ml" 329 10172 10204 "ocamlbuild/display.ml" 329 10172 10210
+)
+"ocamlbuild/display.ml" 331 10250 10252 "ocamlbuild/display.ml" 331 10250 10279
+type(
+  unit
+)
+"ocamlbuild/display.ml" 332 10281 10283 "ocamlbuild/display.ml" 332 10281 10285
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "ocamlbuild/display.ml" 329 10172 10201 "ocamlbuild/display.ml" 329 10172 10203
+)
+"ocamlbuild/display.ml" 332 10281 10302 "ocamlbuild/display.ml" 332 10281 10306
+type(
+  Tags.t
+)
+ident(
+  int_ref tags "ocamlbuild/display.ml" 329 10172 10211 "ocamlbuild/display.ml" 329 10172 10215
+)
+"ocamlbuild/display.ml" 332 10281 10283 "ocamlbuild/display.ml" 332 10281 10306
+type(
+  unit
+)
+"ocamlbuild/display.ml" 333 10308 10310 "ocamlbuild/display.ml" 333 10308 10312
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "ocamlbuild/display.ml" 329 10172 10201 "ocamlbuild/display.ml" 329 10172 10203
+)
+"ocamlbuild/display.ml" 333 10308 10324 "ocamlbuild/display.ml" 333 10308 10325
+type(
+  int
+)
+"ocamlbuild/display.ml" 333 10308 10326 "ocamlbuild/display.ml" 333 10308 10327
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"ocamlbuild/display.ml" 333 10308 10328 "ocamlbuild/display.ml" 333 10308 10330
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "ocamlbuild/display.ml" 329 10172 10201 "ocamlbuild/display.ml" 329 10172 10203
+)
+"ocamlbuild/display.ml" 333 10308 10328 "ocamlbuild/display.ml" 333 10308 10338
+type(
+  int
+)
+"ocamlbuild/display.ml" 333 10308 10324 "ocamlbuild/display.ml" 333 10308 10338
+type(
+  int
+)
+"ocamlbuild/display.ml" 333 10308 10310 "ocamlbuild/display.ml" 333 10308 10338
+type(
+  unit
+)
+"ocamlbuild/display.ml" 334 10340 10345 "ocamlbuild/display.ml" 334 10340 10351
+type(
+  bool
+)
+ident(
+  int_ref cached "ocamlbuild/display.ml" 329 10172 10216 "ocamlbuild/display.ml" 329 10172 10222
+)
+"ocamlbuild/display.ml" 334 10340 10357 "ocamlbuild/display.ml" 334 10340 10359
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "ocamlbuild/display.ml" 329 10172 10201 "ocamlbuild/display.ml" 329 10172 10203
+)
+"ocamlbuild/display.ml" 334 10340 10378 "ocamlbuild/display.ml" 334 10340 10379
+type(
+  int
+)
+"ocamlbuild/display.ml" 334 10340 10380 "ocamlbuild/display.ml" 334 10340 10381
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"ocamlbuild/display.ml" 334 10340 10382 "ocamlbuild/display.ml" 334 10340 10384
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "ocamlbuild/display.ml" 329 10172 10201 "ocamlbuild/display.ml" 329 10172 10203
+)
+"ocamlbuild/display.ml" 334 10340 10382 "ocamlbuild/display.ml" 334 10340 10399
+type(
+  int
+)
+"ocamlbuild/display.ml" 334 10340 10378 "ocamlbuild/display.ml" 334 10340 10399
+type(
+  int
+)
+"ocamlbuild/display.ml" 334 10340 10357 "ocamlbuild/display.ml" 334 10340 10399
+type(
+  unit
+)
+"ocamlbuild/display.ml" 334 10340 10342 "ocamlbuild/display.ml" 334 10340 10399
+type(
+  unit
+)
+"ocamlbuild/display.ml" 335 10401 10403 "ocamlbuild/display.ml" 335 10401 10405
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "ocamlbuild/display.ml" 329 10172 10201 "ocamlbuild/display.ml" 329 10172 10203
+)
+"ocamlbuild/display.ml" 335 10401 10424 "ocamlbuild/display.ml" 335 10401 10430
+type(
+  bool
+)
+ident(
+  int_ref cached "ocamlbuild/display.ml" 329 10172 10216 "ocamlbuild/display.ml" 329 10172 10222
+)
+"ocamlbuild/display.ml" 335 10401 10403 "ocamlbuild/display.ml" 335 10401 10430
+type(
+  unit
+)
+"ocamlbuild/display.ml" 336 10432 10434 "ocamlbuild/display.ml" 336 10432 10436
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "ocamlbuild/display.ml" 329 10172 10201 "ocamlbuild/display.ml" 329 10172 10203
+)
+"ocamlbuild/display.ml" 336 10432 10453 "ocamlbuild/display.ml" 336 10432 10463
+type(
+  Tags.t -> Tags.t -> Tags.t
+)
+ident(
+  ext_ref Tags.union
+)
+"ocamlbuild/display.ml" 336 10432 10464 "ocamlbuild/display.ml" 336 10432 10466
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "ocamlbuild/display.ml" 329 10172 10201 "ocamlbuild/display.ml" 329 10172 10203
+)
+"ocamlbuild/display.ml" 336 10432 10464 "ocamlbuild/display.ml" 336 10432 10479
+type(
+  Tags.t
+)
+"ocamlbuild/display.ml" 336 10432 10480 "ocamlbuild/display.ml" 336 10432 10482
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "ocamlbuild/display.ml" 329 10172 10201 "ocamlbuild/display.ml" 329 10172 10203
+)
+"ocamlbuild/display.ml" 336 10432 10480 "ocamlbuild/display.ml" 336 10432 10495
+type(
+  Tags.t
+)
+"ocamlbuild/display.ml" 336 10432 10453 "ocamlbuild/display.ml" 336 10432 10495
+call(
+  stack
+)
+type(
+  Tags.t
+)
+"ocamlbuild/display.ml" 336 10432 10434 "ocamlbuild/display.ml" 336 10432 10495
+type(
+  unit
+)
+"ocamlbuild/display.ml" 337 10497 10499 "ocamlbuild/display.ml" 337 10497 10519
+type(
+  sophisticated_display -> unit
+)
+ident(
+  int_ref update_sophisticated "ocamlbuild/display.ml" 312 9806 9810 "ocamlbuild/display.ml" 312 9806 9830
+)
+"ocamlbuild/display.ml" 337 10497 10520 "ocamlbuild/display.ml" 337 10497 10522
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "ocamlbuild/display.ml" 329 10172 10201 "ocamlbuild/display.ml" 329 10172 10203
+)
+"ocamlbuild/display.ml" 337 10497 10499 "ocamlbuild/display.ml" 337 10497 10522
+call(
+  tail
+)
+type(
+  unit
+)
+"ocamlbuild/display.ml" 336 10432 10434 "ocamlbuild/display.ml" 337 10497 10522
+type(
+  unit
+)
+"ocamlbuild/display.ml" 335 10401 10403 "ocamlbuild/display.ml" 337 10497 10522
+type(
+  unit
+)
+"ocamlbuild/display.ml" 334 10340 10342 "ocamlbuild/display.ml" 337 10497 10522
+type(
+  unit
+)
+"ocamlbuild/display.ml" 333 10308 10310 "ocamlbuild/display.ml" 337 10497 10522
+type(
+  unit
+)
+"ocamlbuild/display.ml" 332 10281 10283 "ocamlbuild/display.ml" 337 10497 10522
+type(
+  unit
+)
+"ocamlbuild/display.ml" 331 10250 10252 "ocamlbuild/display.ml" 337 10497 10522
+type(
+  unit
+)
+"ocamlbuild/display.ml" 330 10225 10227 "ocamlbuild/display.ml" 337 10497 10522
+type(
+  unit
+)
+"ocamlbuild/display.ml" 340 10527 10531 "ocamlbuild/display.ml" 340 10527 10541
+type(
+  Format.formatter -> Tags.t -> unit
+)
+ident(
+  def print_tags "ocamlbuild/display.ml" 351 10763 10763 "ocamlbuild/display.ml" 1 0 -1
+)
+"ocamlbuild/display.ml" 340 10527 10542 "ocamlbuild/display.ml" 340 10527 10543
+type(
+  Format.formatter
+)
+ident(
+  def f "ocamlbuild/display.ml" 340 10527 10544 "ocamlbuild/display.ml" 347 10726 10736
+)
+"ocamlbuild/display.ml" 340 10527 10544 "ocamlbuild/display.ml" 340 10527 10548
+type(
+  Tags.t
+)
+ident(
+  def tags "ocamlbuild/display.ml" 341 10551 10553 "ocamlbuild/display.ml" 347 10726 10736
+)
+"ocamlbuild/display.ml" 341 10551 10557 "ocamlbuild/display.ml" 341 10551 10562
+type(
+  bool ref
+)
+ident(
+  def first "ocamlbuild/display.ml" 342 10577 10579 "ocamlbuild/display.ml" 347 10726 10736
+)
+"ocamlbuild/display.ml" 341 10551 10565 "ocamlbuild/display.ml" 341 10551 10568
+type(
+  bool -> bool ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"ocamlbuild/display.ml" 341 10551 10569 "ocamlbuild/display.ml" 341 10551 10573
+type(
+  bool
+)
+"ocamlbuild/display.ml" 341 10551 10565 "ocamlbuild/display.ml" 341 10551 10573
+type(
+  bool ref
+)
+"ocamlbuild/display.ml" 342 10577 10579 "ocamlbuild/display.ml" 342 10577 10588
+type(
+  (Tags.elt -> unit) -> Tags.t -> unit
+)
+ident(
+  ext_ref Tags.iter
+)
+"ocamlbuild/display.ml" 342 10577 10599 "ocamlbuild/display.ml" 342 10577 10602
+type(
+  Tags.elt
+)
+ident(
+  def tag "ocamlbuild/display.ml" 343 10606 10610 "ocamlbuild/display.ml" 346 10685 10725
+)
+"ocamlbuild/display.ml" 343 10606 10613 "ocamlbuild/display.ml" 343 10606 10614
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"ocamlbuild/display.ml" 343 10606 10614 "ocamlbuild/display.ml" 343 10606 10619
+type(
+  bool ref
+)
+ident(
+  int_ref first "ocamlbuild/display.ml" 341 10551 10557 "ocamlbuild/display.ml" 341 10551 10562
+)
+"ocamlbuild/display.ml" 343 10606 10613 "ocamlbuild/display.ml" 343 10606 10619
+type(
+  bool
+)
+"ocamlbuild/display.ml" 344 10631 10637 "ocamlbuild/display.ml" 344 10631 10642
+type(
+  bool ref
+)
+ident(
+  int_ref first "ocamlbuild/display.ml" 341 10551 10557 "ocamlbuild/display.ml" 341 10551 10562
+)
+"ocamlbuild/display.ml" 344 10631 10643 "ocamlbuild/display.ml" 344 10631 10645
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"ocamlbuild/display.ml" 344 10631 10646 "ocamlbuild/display.ml" 344 10631 10651
+type(
+  bool
+)
+"ocamlbuild/display.ml" 344 10631 10637 "ocamlbuild/display.ml" 344 10631 10651
+type(
+  unit
+)
+"ocamlbuild/display.ml" 345 10653 10659 "ocamlbuild/display.ml" 345 10653 10673
+type(
+  Format.formatter ->
+  (Tags.elt -> unit, Format.formatter, unit) format -> Tags.elt -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"ocamlbuild/display.ml" 345 10653 10674 "ocamlbuild/display.ml" 345 10653 10675
+type(
+  Format.formatter
+)
+ident(
+  int_ref f "ocamlbuild/display.ml" 340 10527 10542 "ocamlbuild/display.ml" 340 10527 10543
+)
+"ocamlbuild/display.ml" 345 10653 10676 "ocamlbuild/display.ml" 345 10653 10680
+type(
+  (Tags.elt -> unit, Format.formatter, unit) format
+)
+"ocamlbuild/display.ml" 345 10653 10681 "ocamlbuild/display.ml" 345 10653 10684
+type(
+  Tags.elt
+)
+ident(
+  int_ref tag "ocamlbuild/display.ml" 342 10577 10599 "ocamlbuild/display.ml" 342 10577 10602
+)
+"ocamlbuild/display.ml" 345 10653 10659 "ocamlbuild/display.ml" 345 10653 10684
+call(
+  tail
+)
+type(
+  unit
+)
+"ocamlbuild/display.ml" 343 10606 10625 "ocamlbuild/display.ml" 346 10685 10692
+type(
+  unit
+)
+"ocamlbuild/display.ml" 346 10685 10698 "ocamlbuild/display.ml" 346 10685 10712
+type(
+  Format.formatter ->
+  (Tags.elt -> unit, Format.formatter, unit) format -> Tags.elt -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"ocamlbuild/display.ml" 346 10685 10713 "ocamlbuild/display.ml" 346 10685 10714
+type(
+  Format.formatter
+)
+ident(
+  int_ref f "ocamlbuild/display.ml" 340 10527 10542 "ocamlbuild/display.ml" 340 10527 10543
+)
+"ocamlbuild/display.ml" 346 10685 10715 "ocamlbuild/display.ml" 346 10685 10721
+type(
+  (Tags.elt -> unit, Format.formatter, unit) format
+)
+"ocamlbuild/display.ml" 346 10685 10722 "ocamlbuild/display.ml" 346 10685 10725
+type(
+  Tags.elt
+)
+ident(
+  int_ref tag "ocamlbuild/display.ml" 342 10577 10599 "ocamlbuild/display.ml" 342 10577 10602
+)
+"ocamlbuild/display.ml" 346 10685 10698 "ocamlbuild/display.ml" 346 10685 10725
+call(
+  tail
+)
+type(
+  unit
+)
+"ocamlbuild/display.ml" 343 10606 10610 "ocamlbuild/display.ml" 346 10685 10725
+type(
+  unit
+)
+"ocamlbuild/display.ml" 342 10577 10589 "ocamlbuild/display.ml" 347 10726 10731
+type(
+  Tags.elt -> unit
+)
+"ocamlbuild/display.ml" 347 10726 10732 "ocamlbuild/display.ml" 347 10726 10736
+type(
+  Tags.t
+)
+ident(
+  int_ref tags "ocamlbuild/display.ml" 340 10527 10544 "ocamlbuild/display.ml" 340 10527 10548
+)
+"ocamlbuild/display.ml" 342 10577 10579 "ocamlbuild/display.ml" 347 10726 10736
+call(
+  tail
+)
+type(
+  unit
+)
+"ocamlbuild/display.ml" 341 10551 10553 "ocamlbuild/display.ml" 347 10726 10736
+type(
+  unit
+)
+"ocamlbuild/display.ml" 351 10763 10767 "ocamlbuild/display.ml" 351 10763 10773
+type(
+  display -> unit
+)
+ident(
+  def update "ocamlbuild/display.ml" 358 10902 10902 "ocamlbuild/display.ml" 1 0 -1
+)
+"ocamlbuild/display.ml" 351 10763 10774 "ocamlbuild/display.ml" 351 10763 10776
+type(
+  display
+)
+ident(
+  def di "ocamlbuild/display.ml" 352 10779 10781 "ocamlbuild/display.ml" 354 10829 10876
+)
+"ocamlbuild/display.ml" 352 10779 10787 "ocamlbuild/display.ml" 352 10779 10789
+type(
+  display
+)
+ident(
+  int_ref di "ocamlbuild/display.ml" 351 10763 10774 "ocamlbuild/display.ml" 351 10763 10776
+)
+"ocamlbuild/display.ml" 352 10779 10787 "ocamlbuild/display.ml" 352 10779 10805
+type(
+  display_line
+)
+"ocamlbuild/display.ml" 353 10811 10815 "ocamlbuild/display.ml" 353 10811 10822
+type(
+  display_line
+)
+"ocamlbuild/display.ml" 353 10811 10826 "ocamlbuild/display.ml" 353 10811 10828
+type(
+  unit
+)
+"ocamlbuild/display.ml" 354 10829 10847 "ocamlbuild/display.ml" 354 10829 10849
+type(
+  sophisticated_display
+)
+ident(
+  def ds "ocamlbuild/display.ml" 354 10829 10853 "ocamlbuild/display.ml" 354 10829 10876
+)
+"ocamlbuild/display.ml" 354 10829 10833 "ocamlbuild/display.ml" 354 10829 10849
+type(
+  display_line
+)
+"ocamlbuild/display.ml" 354 10829 10853 "ocamlbuild/display.ml" 354 10829 10873
+type(
+  sophisticated_display -> unit
+)
+ident(
+  int_ref update_sophisticated "ocamlbuild/display.ml" 312 9806 9810 "ocamlbuild/display.ml" 312 9806 9830
+)
+"ocamlbuild/display.ml" 354 10829 10874 "ocamlbuild/display.ml" 354 10829 10876
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "ocamlbuild/display.ml" 354 10829 10847 "ocamlbuild/display.ml" 354 10829 10849
+)
+"ocamlbuild/display.ml" 354 10829 10853 "ocamlbuild/display.ml" 354 10829 10876
+call(
+  tail
+)
+type(
+  unit
+)
+"ocamlbuild/display.ml" 352 10779 10781 "ocamlbuild/display.ml" 354 10829 10876
+type(
+  unit
+)
+"ocamlbuild/display.ml" 358 10902 10906 "ocamlbuild/display.ml" 358 10902 10911
+type(
+  display -> ?pretend:bool -> string -> string -> Tags.t -> unit
+)
+ident(
+  def event "ocamlbuild/display.ml" 379 11696 11696 "ocamlbuild/display.ml" 1 0 -1
+)
+"ocamlbuild/display.ml" 358 10902 10912 "ocamlbuild/display.ml" 358 10902 10914
+type(
+  display
+)
+ident(
+  def di "ocamlbuild/display.ml" 358 10902 10915 "ocamlbuild/display.ml" 375 11639 11668
+)
+"ocamlbuild/display.ml" 358 10902 10917 "ocamlbuild/display.ml" 358 10902 10924
+type(
+  bool
+)
+"ocamlbuild/display.ml" 358 10902 10925 "ocamlbuild/display.ml" 358 10902 10930
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "ocamlbuild/display.ml" 358 10902 10925 "ocamlbuild/display.ml" 358 10902 10930
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+"ocamlbuild/display.ml" 358 10902 10932 "ocamlbuild/display.ml" 358 10902 10939
+type(
+  string
+)
+ident(
+  def command "ocamlbuild/display.ml" 358 10902 10940 "ocamlbuild/display.ml" 375 11639 11668
+)
+"ocamlbuild/display.ml" 358 10902 10940 "ocamlbuild/display.ml" 358 10902 10946
+type(
+  string
+)
+ident(
+  def target "ocamlbuild/display.ml" 358 10902 10947 "ocamlbuild/display.ml" 375 11639 11668
+)
+"ocamlbuild/display.ml" 358 10902 10947 "ocamlbuild/display.ml" 358 10902 10951
+type(
+  Tags.t
+)
+ident(
+  def tags "ocamlbuild/display.ml" 359 10954 10956 "ocamlbuild/display.ml" 375 11639 11668
+)
+"ocamlbuild/display.ml" 359 10954 10956 "ocamlbuild/display.ml" 359 10954 10963
+type(
+  (Format.formatter * out_channel) option ->
+  (Format.formatter * out_channel -> unit) -> unit
+)
+ident(
+  int_ref call_if "ocamlbuild/display.ml" 259 8432 8436 "ocamlbuild/display.ml" 259 8432 8443
+)
+"ocamlbuild/display.ml" 359 10954 10964 "ocamlbuild/display.ml" 359 10954 10966
+type(
+  display
+)
+ident(
+  int_ref di "ocamlbuild/display.ml" 358 10902 10912 "ocamlbuild/display.ml" 358 10902 10914
+)
+"ocamlbuild/display.ml" 359 10954 10964 "ocamlbuild/display.ml" 359 10954 10981
+type(
+  (Format.formatter * out_channel) option
+)
+"ocamlbuild/display.ml" 360 10982 10992 "ocamlbuild/display.ml" 360 10982 10995
+type(
+  Format.formatter
+)
+ident(
+  def fmt "ocamlbuild/display.ml" 361 11003 11009 "ocamlbuild/display.ml" 362 11083 11162
+)
+"ocamlbuild/display.ml" 360 10982 10997 "ocamlbuild/display.ml" 360 10982 10998
+type(
+  out_channel
+)
+"ocamlbuild/display.ml" 360 10982 10991 "ocamlbuild/display.ml" 360 10982 10999
+type(
+  Format.formatter * out_channel
+)
+"ocamlbuild/display.ml" 361 11003 11009 "ocamlbuild/display.ml" 361 11003 11023
+type(
+  Format.formatter ->
+  (string -> (Format.formatter -> Tags.t -> unit) -> Tags.t -> unit,
+   Format.formatter, unit)
+  format -> string -> (Format.formatter -> Tags.t -> unit) -> Tags.t -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"ocamlbuild/display.ml" 361 11003 11024 "ocamlbuild/display.ml" 361 11003 11027
+type(
+  Format.formatter
+)
+ident(
+  int_ref fmt "ocamlbuild/display.ml" 360 10982 10992 "ocamlbuild/display.ml" 360 10982 10995
+)
+"ocamlbuild/display.ml" 361 11003 11028 "ocamlbuild/display.ml" 361 11003 11058
+type(
+  (string -> (Format.formatter -> Tags.t -> unit) -> Tags.t -> unit,
+   Format.formatter, unit)
+  format
+)
+"ocamlbuild/display.ml" 361 11003 11059 "ocamlbuild/display.ml" 361 11003 11065
+type(
+  string
+)
+ident(
+  int_ref target "ocamlbuild/display.ml" 358 10902 10940 "ocamlbuild/display.ml" 358 10902 10946
+)
+"ocamlbuild/display.ml" 361 11003 11066 "ocamlbuild/display.ml" 361 11003 11076
+type(
+  Format.formatter -> Tags.t -> unit
+)
+ident(
+  int_ref print_tags "ocamlbuild/display.ml" 340 10527 10531 "ocamlbuild/display.ml" 340 10527 10541
+)
+"ocamlbuild/display.ml" 361 11003 11077 "ocamlbuild/display.ml" 361 11003 11081
+type(
+  Tags.t
+)
+ident(
+  int_ref tags "ocamlbuild/display.ml" 358 10902 10947 "ocamlbuild/display.ml" 358 10902 10951
+)
+"ocamlbuild/display.ml" 361 11003 11009 "ocamlbuild/display.ml" 361 11003 11081
+call(
+  stack
+)
+type(
+  unit
+)
+"ocamlbuild/display.ml" 362 11083 11089 "ocamlbuild/display.ml" 362 11083 11103
+type(
+  Format.formatter ->
+  (string -> string -> unit, Format.formatter, unit) format ->
+  string -> string -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"ocamlbuild/display.ml" 362 11083 11104 "ocamlbuild/display.ml" 362 11083 11107
+type(
+  Format.formatter
+)
+ident(
+  int_ref fmt "ocamlbuild/display.ml" 360 10982 10992 "ocamlbuild/display.ml" 360 10982 10995
+)
+"ocamlbuild/display.ml" 362 11083 11108 "ocamlbuild/display.ml" 362 11083 11116
+type(
+  (string -> string -> unit, Format.formatter, unit) format
+)
+"ocamlbuild/display.ml" 362 11083 11117 "ocamlbuild/display.ml" 362 11083 11124
+type(
+  string
+)
+ident(
+  int_ref command "ocamlbuild/display.ml" 358 10902 10932 "ocamlbuild/display.ml" 358 10902 10939
+)
+"ocamlbuild/display.ml" 362 11083 11129 "ocamlbuild/display.ml" 362 11083 11136
+type(
+  bool
+)
+ident(
+  int_ref pretend "ocamlbuild/display.ml" 358 10902 10917 "ocamlbuild/display.ml" 358 10902 10924
+)
+"ocamlbuild/display.ml" 362 11083 11142 "ocamlbuild/display.ml" 362 11083 11153
+type(
+  string
+)
+"ocamlbuild/display.ml" 362 11083 11159 "ocamlbuild/display.ml" 362 11083 11161
+type(
+  string
+)
+"ocamlbuild/display.ml" 362 11083 11125 "ocamlbuild/display.ml" 362 11083 11162
+type(
+  string
+)
+"ocamlbuild/display.ml" 362 11083 11089 "ocamlbuild/display.ml" 362 11083 11162
+call(
+  tail
+)
+type(
+  unit
+)
+"ocamlbuild/display.ml" 361 11003 11009 "ocamlbuild/display.ml" 362 11083 11162
+type(
+  unit
+)
+"ocamlbuild/display.ml" 360 10982 10986 "ocamlbuild/display.ml" 362 11083 11163
+type(
+  Format.formatter * out_channel -> unit
+)
+"ocamlbuild/display.ml" 359 10954 10956 "ocamlbuild/display.ml" 362 11083 11163
+call(
+  stack
+)
+type(
+  unit
+)
+"ocamlbuild/display.ml" 363 11165 11173 "ocamlbuild/display.ml" 363 11165 11175
+type(
+  display
+)
+ident(
+  int_ref di "ocamlbuild/display.ml" 358 10902 10912 "ocamlbuild/display.ml" 358 10902 10914
+)
+"ocamlbuild/display.ml" 363 11165 11173 "ocamlbuild/display.ml" 363 11165 11191
+type(
+  display_line
+)
+"ocamlbuild/display.ml" 364 11197 11201 "ocamlbuild/display.ml" 364 11197 11208
+type(
+  display_line
+)
+"ocamlbuild/display.ml" 365 11212 11221 "ocamlbuild/display.ml" 365 11212 11228
+type(
+  bool
+)
+ident(
+  int_ref pretend "ocamlbuild/display.ml" 358 10902 10917 "ocamlbuild/display.ml" 358 10902 10924
+)
+"ocamlbuild/display.ml" 368 11298 11312 "ocamlbuild/display.ml" 368 11298 11319
+type(
+  string
+)
+ident(
+  def command "ocamlbuild/display.ml" 369 11351 11361 "ocamlbuild/display.ml" 369 11351 11449
+)
+"ocamlbuild/display.ml" 368 11298 11322 "ocamlbuild/display.ml" 368 11298 11339
+type(
+  string -> string
+)
+ident(
+  ext_ref Filename.basename
+)
+"ocamlbuild/display.ml" 368 11298 11340 "ocamlbuild/display.ml" 368 11298 11347
+type(
+  string
+)
+ident(
+  int_ref command "ocamlbuild/display.ml" 358 10902 10932 "ocamlbuild/display.ml" 358 10902 10939
+)
+"ocamlbuild/display.ml" 368 11298 11322 "ocamlbuild/display.ml" 368 11298 11347
+call(
+  stack
+)
+type(
+  string
+)
+"ocamlbuild/display.ml" 369 11351 11364 "ocamlbuild/display.ml" 369 11351 11366
+type(
+  display
+)
+ident(
+  int_ref di "ocamlbuild/display.ml" 358 10902 10912 "ocamlbuild/display.ml" 358 10902 10914
+)
+"ocamlbuild/display.ml" 369 11351 11364 "ocamlbuild/display.ml" 369 11351 11379
+type(
+  int
+)
+"ocamlbuild/display.ml" 369 11351 11380 "ocamlbuild/display.ml" 369 11351 11382
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"ocamlbuild/display.ml" 369 11351 11383 "ocamlbuild/display.ml" 369 11351 11384
+type(
+  int
+)
+"ocamlbuild/display.ml" 369 11351 11364 "ocamlbuild/display.ml" 369 11351 11384
+type(
+  bool
+)
+"ocamlbuild/display.ml" 369 11351 11390 "ocamlbuild/display.ml" 369 11351 11404
+type(
+  Format.formatter ->
+  (string -> unit, Format.formatter, unit) format -> string -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"ocamlbuild/display.ml" 369 11351 11405 "ocamlbuild/display.ml" 369 11351 11407
+type(
+  display
+)
+ident(
+  int_ref di "ocamlbuild/display.ml" 358 10902 10912 "ocamlbuild/display.ml" 358 10902 10914
+)
+"ocamlbuild/display.ml" 369 11351 11405 "ocamlbuild/display.ml" 369 11351 11420
+type(
+  Format.formatter
+)
+"ocamlbuild/display.ml" 369 11351 11421 "ocamlbuild/display.ml" 369 11351 11441
+type(
+  (string -> unit, Format.formatter, unit) format
+)
+"ocamlbuild/display.ml" 369 11351 11442 "ocamlbuild/display.ml" 369 11351 11449
+type(
+  string
+)
+ident(
+  int_ref command "ocamlbuild/display.ml" 368 11298 11312 "ocamlbuild/display.ml" 368 11298 11319
+)
+"ocamlbuild/display.ml" 369 11351 11390 "ocamlbuild/display.ml" 369 11351 11449
+call(
+  tail
+)
+type(
+  unit
+)
+"ocamlbuild/display.ml" 369 11351 11361 "ocamlbuild/display.ml" 369 11351 11449
+type(
+  unit
+)
+"ocamlbuild/display.ml" 366 11234 11242 "ocamlbuild/display.ml" 370 11450 11461
+type(
+  unit
+)
+"ocamlbuild/display.ml" 372 11473 11485 "ocamlbuild/display.ml" 372 11473 11487
+type(
+  display
+)
+ident(
+  int_ref di "ocamlbuild/display.ml" 358 10902 10912 "ocamlbuild/display.ml" 358 10902 10914
+)
+"ocamlbuild/display.ml" 372 11473 11485 "ocamlbuild/display.ml" 372 11473 11500
+type(
+  int
+)
+"ocamlbuild/display.ml" 372 11473 11501 "ocamlbuild/display.ml" 372 11473 11503
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"ocamlbuild/display.ml" 372 11473 11504 "ocamlbuild/display.ml" 372 11473 11505
+type(
+  int
+)
+"ocamlbuild/display.ml" 372 11473 11485 "ocamlbuild/display.ml" 372 11473 11505
+type(
+  bool
+)
+"ocamlbuild/display.ml" 372 11473 11511 "ocamlbuild/display.ml" 372 11473 11525
+type(
+  Format.formatter ->
+  (string -> unit, Format.formatter, unit) format -> string -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"ocamlbuild/display.ml" 372 11473 11526 "ocamlbuild/display.ml" 372 11473 11528
+type(
+  display
+)
+ident(
+  int_ref di "ocamlbuild/display.ml" 358 10902 10912 "ocamlbuild/display.ml" 358 10902 10914
+)
+"ocamlbuild/display.ml" 372 11473 11526 "ocamlbuild/display.ml" 372 11473 11541
+type(
+  Format.formatter
+)
+"ocamlbuild/display.ml" 372 11473 11542 "ocamlbuild/display.ml" 372 11473 11550
+type(
+  (string -> unit, Format.formatter, unit) format
+)
+"ocamlbuild/display.ml" 372 11473 11551 "ocamlbuild/display.ml" 372 11473 11558
+type(
+  string
+)
+ident(
+  int_ref command "ocamlbuild/display.ml" 358 10902 10932 "ocamlbuild/display.ml" 358 10902 10939
+)
+"ocamlbuild/display.ml" 372 11473 11511 "ocamlbuild/display.ml" 372 11473 11558
+call(
+  tail
+)
+type(
+  unit
+)
+"ocamlbuild/display.ml" 372 11473 11481 "ocamlbuild/display.ml" 372 11473 11559
+type(
+  unit
+)
+"ocamlbuild/display.ml" 365 11212 11218 "ocamlbuild/display.ml" 372 11473 11559
+type(
+  unit
+)
+"ocamlbuild/display.ml" 373 11560 11578 "ocamlbuild/display.ml" 373 11560 11580
+type(
+  sophisticated_display
+)
+ident(
+  def ds "ocamlbuild/display.ml" 374 11584 11590 "ocamlbuild/display.ml" 375 11639 11668
+)
+"ocamlbuild/display.ml" 373 11560 11564 "ocamlbuild/display.ml" 373 11560 11580
+type(
+  display_line
+)
+"ocamlbuild/display.ml" 374 11584 11590 "ocamlbuild/display.ml" 374 11584 11614
+type(
+  sophisticated_display -> string -> Tags.t -> bool -> unit
+)
+ident(
+  int_ref set_target_sophisticated "ocamlbuild/display.ml" 329 10172 10176 "ocamlbuild/display.ml" 329 10172 10200
+)
+"ocamlbuild/display.ml" 374 11584 11615 "ocamlbuild/display.ml" 374 11584 11617
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "ocamlbuild/display.ml" 373 11560 11578 "ocamlbuild/display.ml" 373 11560 11580
+)
+"ocamlbuild/display.ml" 374 11584 11618 "ocamlbuild/display.ml" 374 11584 11624
+type(
+  string
+)
+ident(
+  int_ref target "ocamlbuild/display.ml" 358 10902 10940 "ocamlbuild/display.ml" 358 10902 10946
+)
+"ocamlbuild/display.ml" 374 11584 11625 "ocamlbuild/display.ml" 374 11584 11629
+type(
+  Tags.t
+)
+ident(
+  int_ref tags "ocamlbuild/display.ml" 358 10902 10947 "ocamlbuild/display.ml" 358 10902 10951
+)
+"ocamlbuild/display.ml" 374 11584 11630 "ocamlbuild/display.ml" 374 11584 11637
+type(
+  bool
+)
+ident(
+  int_ref pretend "ocamlbuild/display.ml" 358 10902 10917 "ocamlbuild/display.ml" 358 10902 10924
+)
+"ocamlbuild/display.ml" 374 11584 11590 "ocamlbuild/display.ml" 374 11584 11637
+call(
+  stack
+)
+type(
+  unit
+)
+"ocamlbuild/display.ml" 375 11639 11645 "ocamlbuild/display.ml" 375 11639 11665
+type(
+  sophisticated_display -> unit
+)
+ident(
+  int_ref update_sophisticated "ocamlbuild/display.ml" 312 9806 9810 "ocamlbuild/display.ml" 312 9806 9830
+)
+"ocamlbuild/display.ml" 375 11639 11666 "ocamlbuild/display.ml" 375 11639 11668
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "ocamlbuild/display.ml" 373 11560 11578 "ocamlbuild/display.ml" 373 11560 11580
+)
+"ocamlbuild/display.ml" 375 11639 11645 "ocamlbuild/display.ml" 375 11639 11668
+call(
+  tail
+)
+type(
+  unit
+)
+"ocamlbuild/display.ml" 374 11584 11590 "ocamlbuild/display.ml" 375 11639 11668
+type(
+  unit
+)
+"ocamlbuild/display.ml" 363 11165 11167 "ocamlbuild/display.ml" 375 11639 11668
+type(
+  unit
+)
+"ocamlbuild/display.ml" 359 10954 10956 "ocamlbuild/display.ml" 375 11639 11668
+type(
+  unit
+)
+"ocamlbuild/display.ml" 379 11696 11700 "ocamlbuild/display.ml" 379 11696 11707
+type(
+  ?log_level:int -> display -> ('a, Format.formatter, unit) format -> 'a
+)
+ident(
+  def dprintf "ocamlbuild/display.ml" 392 12136 12187 "ocamlbuild/display.ml" 1 0 -1
+)
+"ocamlbuild/display.ml" 379 11696 11710 "ocamlbuild/display.ml" 379 11696 11719
+type(
+  int
+)
+"ocamlbuild/display.ml" 379 11696 11720 "ocamlbuild/display.ml" 379 11696 11721
+type(
+  int
+)
+type(
+  int
+)
+ident(
+  int_ref *sth* "ocamlbuild/display.ml" 379 11696 11720 "ocamlbuild/display.ml" 379 11696 11721
+)
+type(
+  int option
+)
+type(
+  int option
+)
+type(
+  int
+)
+"ocamlbuild/display.ml" 379 11696 11723 "ocamlbuild/display.ml" 379 11696 11725
+type(
+  display
+)
+ident(
+  def di "ocamlbuild/display.ml" 379 11696 11726 "ocamlbuild/display.ml" 392 12136 12187
+)
+"ocamlbuild/display.ml" 379 11696 11726 "ocamlbuild/display.ml" 379 11696 11729
+type(
+  ('a, Format.formatter, unit) format
+)
+ident(
+  def fmt "ocamlbuild/display.ml" 380 11732 11734 "ocamlbuild/display.ml" 392 12136 12187
+)
+"ocamlbuild/display.ml" 380 11732 11737 "ocamlbuild/display.ml" 380 11732 11746
+type(
+  int
+)
+ident(
+  int_ref log_level "ocamlbuild/display.ml" 379 11696 11710 "ocamlbuild/display.ml" 379 11696 11719
+)
+"ocamlbuild/display.ml" 380 11732 11747 "ocamlbuild/display.ml" 380 11732 11748
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"ocamlbuild/display.ml" 380 11732 11749 "ocamlbuild/display.ml" 380 11732 11751
+type(
+  display
+)
+ident(
+  int_ref di "ocamlbuild/display.ml" 379 11696 11723 "ocamlbuild/display.ml" 379 11696 11725
+)
+"ocamlbuild/display.ml" 380 11732 11749 "ocamlbuild/display.ml" 380 11732 11764
+type(
+  int
+)
+"ocamlbuild/display.ml" 380 11732 11737 "ocamlbuild/display.ml" 380 11732 11764
+type(
+  bool
+)
+"ocamlbuild/display.ml" 380 11732 11770 "ocamlbuild/display.ml" 380 11732 11799
+type(
+  ('a, Format.formatter, unit) format -> 'a
+)
+ident(
+  ext_ref Discard_printf.discard_printf
+)
+"ocamlbuild/display.ml" 380 11732 11800 "ocamlbuild/display.ml" 380 11732 11803
+type(
+  ('a, Format.formatter, unit) format
+)
+ident(
+  int_ref fmt "ocamlbuild/display.ml" 379 11696 11726 "ocamlbuild/display.ml" 379 11696 11729
+)
+"ocamlbuild/display.ml" 380 11732 11770 "ocamlbuild/display.ml" 380 11732 11803
+call(
+  tail
+)
+type(
+  'a
+)
+"ocamlbuild/display.ml" 381 11809 11817 "ocamlbuild/display.ml" 381 11809 11819
+type(
+  display
+)
+ident(
+  int_ref di "ocamlbuild/display.ml" 379 11696 11723 "ocamlbuild/display.ml" 379 11696 11725
+)
+"ocamlbuild/display.ml" 381 11809 11817 "ocamlbuild/display.ml" 381 11809 11835
+type(
+  display_line
+)
+"ocamlbuild/display.ml" 382 11841 11845 "ocamlbuild/display.ml" 382 11841 11852
+type(
+  display_line
+)
+"ocamlbuild/display.ml" 382 11841 11856 "ocamlbuild/display.ml" 382 11841 11870
+type(
+  Format.formatter -> ('a, Format.formatter, unit) format -> 'a
+)
+ident(
+  ext_ref Format.fprintf
+)
+"ocamlbuild/display.ml" 382 11841 11871 "ocamlbuild/display.ml" 382 11841 11873
+type(
+  display
+)
+ident(
+  int_ref di "ocamlbuild/display.ml" 379 11696 11723 "ocamlbuild/display.ml" 379 11696 11725
+)
+"ocamlbuild/display.ml" 382 11841 11871 "ocamlbuild/display.ml" 382 11841 11886
+type(
+  Format.formatter
+)
+"ocamlbuild/display.ml" 382 11841 11887 "ocamlbuild/display.ml" 382 11841 11890
+type(
+  ('a, Format.formatter, unit) format
+)
+ident(
+  int_ref fmt "ocamlbuild/display.ml" 379 11696 11726 "ocamlbuild/display.ml" 379 11696 11729
+)
+"ocamlbuild/display.ml" 382 11841 11856 "ocamlbuild/display.ml" 382 11841 11890
+call(
+  tail
+)
+type(
+  'a
+)
+"ocamlbuild/display.ml" 383 11891 11909 "ocamlbuild/display.ml" 383 11891 11910
+type(
+  sophisticated_display
+)
+"ocamlbuild/display.ml" 383 11891 11895 "ocamlbuild/display.ml" 383 11891 11910
+type(
+  display_line
+)
+"ocamlbuild/display.ml" 384 11914 11923 "ocamlbuild/display.ml" 384 11914 11932
+type(
+  int
+)
+ident(
+  int_ref log_level "ocamlbuild/display.ml" 379 11696 11710 "ocamlbuild/display.ml" 379 11696 11719
+)
+"ocamlbuild/display.ml" 384 11914 11933 "ocamlbuild/display.ml" 384 11914 11934
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"ocamlbuild/display.ml" 384 11914 11935 "ocamlbuild/display.ml" 384 11914 11936
+type(
+  int
+)
+"ocamlbuild/display.ml" 384 11914 11923 "ocamlbuild/display.ml" 384 11914 11936
+type(
+  bool
+)
+"ocamlbuild/display.ml" 386 11956 11966 "ocamlbuild/display.ml" 386 11956 11973
+type(
+  display -> (out_channel -> unit) -> unit
+)
+ident(
+  int_ref display "ocamlbuild/display.ml" 266 8545 8549 "ocamlbuild/display.ml" 266 8545 8556
+)
+"ocamlbuild/display.ml" 386 11956 11974 "ocamlbuild/display.ml" 386 11956 11976
+type(
+  display
+)
+ident(
+  int_ref di "ocamlbuild/display.ml" 379 11696 11723 "ocamlbuild/display.ml" 379 11696 11725
+)
+"ocamlbuild/display.ml" 386 11956 11977 "ocamlbuild/display.ml" 386 11956 11983
+type(
+  out_channel -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"ocamlbuild/display.ml" 386 11956 11966 "ocamlbuild/display.ml" 386 11956 11983
+call(
+  stack
+)
+type(
+  unit
+)
+"ocamlbuild/display.ml" 387 11985 11995 "ocamlbuild/display.ml" 387 11985 12009
+type(
+  Format.formatter -> ('a, Format.formatter, unit) format -> 'a
+)
+ident(
+  ext_ref Format.fprintf
+)
+"ocamlbuild/display.ml" 387 11985 12010 "ocamlbuild/display.ml" 387 11985 12012
+type(
+  display
+)
+ident(
+  int_ref di "ocamlbuild/display.ml" 379 11696 11723 "ocamlbuild/display.ml" 379 11696 11725
+)
+"ocamlbuild/display.ml" 387 11985 12010 "ocamlbuild/display.ml" 387 11985 12025
+type(
+  Format.formatter
+)
+"ocamlbuild/display.ml" 387 11985 12026 "ocamlbuild/display.ml" 387 11985 12029
+type(
+  ('a, Format.formatter, unit) format
+)
+ident(
+  int_ref fmt "ocamlbuild/display.ml" 379 11696 11726 "ocamlbuild/display.ml" 379 11696 11729
+)
+"ocamlbuild/display.ml" 387 11985 11995 "ocamlbuild/display.ml" 387 11985 12029
+call(
+  tail
+)
+type(
+  'a
+)
+"ocamlbuild/display.ml" 385 11942 11950 "ocamlbuild/display.ml" 388 12030 12041
+type(
+  'a
+)
+"ocamlbuild/display.ml" 390 12053 12067 "ocamlbuild/display.ml" 390 12053 12069
+type(
+  display
+)
+ident(
+  int_ref di "ocamlbuild/display.ml" 379 11696 11723 "ocamlbuild/display.ml" 379 11696 11725
+)
+"ocamlbuild/display.ml" 390 12053 12067 "ocamlbuild/display.ml" 390 12053 12084
+type(
+  (Format.formatter * out_channel) option
+)
+"ocamlbuild/display.ml" 391 12090 12106 "ocamlbuild/display.ml" 391 12090 12107
+type(
+  Format.formatter
+)
+ident(
+  def f "ocamlbuild/display.ml" 391 12090 12115 "ocamlbuild/display.ml" 391 12090 12135
+)
+"ocamlbuild/display.ml" 391 12090 12109 "ocamlbuild/display.ml" 391 12090 12110
+type(
+  out_channel
+)
+"ocamlbuild/display.ml" 391 12090 12105 "ocamlbuild/display.ml" 391 12090 12111
+type(
+  Format.formatter * out_channel
+)
+"ocamlbuild/display.ml" 391 12090 12100 "ocamlbuild/display.ml" 391 12090 12111
+type(
+  (Format.formatter * out_channel) option
+)
+"ocamlbuild/display.ml" 391 12090 12115 "ocamlbuild/display.ml" 391 12090 12129
+type(
+  Format.formatter -> ('a, Format.formatter, unit) format -> 'a
+)
+ident(
+  ext_ref Format.fprintf
+)
+"ocamlbuild/display.ml" 391 12090 12130 "ocamlbuild/display.ml" 391 12090 12131
+type(
+  Format.formatter
+)
+ident(
+  int_ref f "ocamlbuild/display.ml" 391 12090 12106 "ocamlbuild/display.ml" 391 12090 12107
+)
+"ocamlbuild/display.ml" 391 12090 12132 "ocamlbuild/display.ml" 391 12090 12135
+type(
+  ('a, Format.formatter, unit) format
+)
+ident(
+  int_ref fmt "ocamlbuild/display.ml" 379 11696 11726 "ocamlbuild/display.ml" 379 11696 11729
+)
+"ocamlbuild/display.ml" 391 12090 12115 "ocamlbuild/display.ml" 391 12090 12135
+call(
+  tail
+)
+type(
+  'a
+)
+"ocamlbuild/display.ml" 392 12136 12146 "ocamlbuild/display.ml" 392 12136 12150
+type(
+  (Format.formatter * out_channel) option
+)
+"ocamlbuild/display.ml" 392 12136 12154 "ocamlbuild/display.ml" 392 12136 12183
+type(
+  ('a, Format.formatter, unit) format -> 'a
+)
+ident(
+  ext_ref Discard_printf.discard_printf
+)
+"ocamlbuild/display.ml" 392 12136 12184 "ocamlbuild/display.ml" 392 12136 12187
+type(
+  ('a, Format.formatter, unit) format
+)
+ident(
+  int_ref fmt "ocamlbuild/display.ml" 379 11696 11726 "ocamlbuild/display.ml" 379 11696 11729
+)
+"ocamlbuild/display.ml" 392 12136 12154 "ocamlbuild/display.ml" 392 12136 12187
+call(
+  tail
+)
+type(
+  'a
+)
+"ocamlbuild/display.ml" 390 12053 12061 "ocamlbuild/display.ml" 392 12136 12187
+type(
+  'a
+)
+"ocamlbuild/display.ml" 384 11914 11920 "ocamlbuild/display.ml" 392 12136 12187
+type(
+  'a
+)
+"ocamlbuild/display.ml" 381 11809 11811 "ocamlbuild/display.ml" 392 12136 12187
+type(
+  'a
+)
+"ocamlbuild/display.ml" 380 11732 11734 "ocamlbuild/display.ml" 392 12136 12187
+type(
+  'a
+)

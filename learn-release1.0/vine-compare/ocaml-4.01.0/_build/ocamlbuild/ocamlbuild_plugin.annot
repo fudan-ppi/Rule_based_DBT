@@ -1,0 +1,334 @@
+"ocamlbuild/ocamlbuild_plugin.ml" 35 1690 1694 "ocamlbuild/ocamlbuild_plugin.ml" 35 1690 1698
+type(
+  string ->
+  ?tags:string list ->
+  ?prods:string list ->
+  ?deps:string list ->
+  ?prod:string ->
+  ?dep:string ->
+  ?stamp:string ->
+  ?insert:[ `after of string | `before of string | `bottom | `top ] ->
+  Rule.action -> unit
+)
+ident(
+  def rule "ocamlbuild/ocamlbuild_plugin.ml" 36 1711 1711 "ocamlbuild/ocamlbuild_plugin.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_plugin.ml" 35 1690 1701 "ocamlbuild/ocamlbuild_plugin.ml" 35 1690 1710
+type(
+  string ->
+  ?tags:string list ->
+  ?prods:string list ->
+  ?deps:string list ->
+  ?prod:string ->
+  ?dep:string ->
+  ?stamp:string ->
+  ?insert:[ `after of string | `before of string | `bottom | `top ] ->
+  Rule.action -> unit
+)
+ident(
+  ext_ref Rule.rule
+)
+"ocamlbuild/ocamlbuild_plugin.ml" 36 1711 1715 "ocamlbuild/ocamlbuild_plugin.ml" 36 1711 1726
+type(
+  unit -> unit
+)
+ident(
+  def clear_rules "ocamlbuild/ocamlbuild_plugin.ml" 37 1746 1746 "ocamlbuild/ocamlbuild_plugin.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_plugin.ml" 36 1711 1729 "ocamlbuild/ocamlbuild_plugin.ml" 36 1711 1745
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Rule.clear_rules
+)
+"ocamlbuild/ocamlbuild_plugin.ml" 37 1746 1750 "ocamlbuild/ocamlbuild_plugin.ml" 37 1746 1753
+type(
+  Ocamlbuild_pack.Tags.elt list -> Command.pathname list -> unit
+)
+ident(
+  def dep "ocamlbuild/ocamlbuild_plugin.ml" 38 1768 1768 "ocamlbuild/ocamlbuild_plugin.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_plugin.ml" 37 1746 1756 "ocamlbuild/ocamlbuild_plugin.ml" 37 1746 1767
+type(
+  Ocamlbuild_pack.Tags.elt list -> Command.pathname list -> unit
+)
+ident(
+  ext_ref Command.dep
+)
+"ocamlbuild/ocamlbuild_plugin.ml" 38 1768 1772 "ocamlbuild/ocamlbuild_plugin.ml" 38 1768 1776
+type(
+  Ocamlbuild_pack.Tags.elt list ->
+  Ocamlbuild_pack.Tags.elt -> (string -> Command.pathname list) -> unit
+)
+ident(
+  def pdep "ocamlbuild/ocamlbuild_plugin.ml" 39 1792 1792 "ocamlbuild/ocamlbuild_plugin.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_plugin.ml" 38 1768 1779 "ocamlbuild/ocamlbuild_plugin.ml" 38 1768 1791
+type(
+  Ocamlbuild_pack.Tags.elt list ->
+  Ocamlbuild_pack.Tags.elt -> (string -> Command.pathname list) -> unit
+)
+ident(
+  ext_ref Command.pdep
+)
+"ocamlbuild/ocamlbuild_plugin.ml" 39 1792 1796 "ocamlbuild/ocamlbuild_plugin.ml" 39 1792 1805
+type(
+  string ->
+  ?insert:[ `after of string | `before of string | `bottom | `top ] ->
+  string -> string -> unit
+)
+ident(
+  def copy_rule "ocamlbuild/ocamlbuild_plugin.ml" 40 1823 1823 "ocamlbuild/ocamlbuild_plugin.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_plugin.ml" 39 1792 1808 "ocamlbuild/ocamlbuild_plugin.ml" 39 1792 1822
+type(
+  string ->
+  ?insert:[ `after of string | `before of string | `bottom | `top ] ->
+  string -> string -> unit
+)
+ident(
+  ext_ref Rule.copy_rule
+)
+"ocamlbuild/ocamlbuild_plugin.ml" 40 1823 1827 "ocamlbuild/ocamlbuild_plugin.ml" 40 1823 1836
+type(
+  ?extern:bool ->
+  ?byte:bool ->
+  ?native:bool ->
+  ?dir:Ocamlbuild_pack.Pathname.t ->
+  ?tag_name:string -> Ocamlbuild_pack.Pathname.t -> unit
+)
+ident(
+  def ocaml_lib "ocamlbuild/ocamlbuild_plugin.ml" 41 1877 1877 "ocamlbuild/ocamlbuild_plugin.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_plugin.ml" 40 1823 1839 "ocamlbuild/ocamlbuild_plugin.ml" 40 1823 1876
+type(
+  ?extern:bool ->
+  ?byte:bool ->
+  ?native:bool ->
+  ?dir:Ocamlbuild_pack.Pathname.t ->
+  ?tag_name:string -> Ocamlbuild_pack.Pathname.t -> unit
+)
+ident(
+  ext_ref Ocamlbuild_pack.Ocaml_utils.ocaml_lib
+)
+"ocamlbuild/ocamlbuild_plugin.ml" 41 1877 1881 "ocamlbuild/ocamlbuild_plugin.ml" 41 1877 1885
+type(
+  Ocamlbuild_pack.Tags.elt list -> Ocamlbuild_pack.Command.spec -> unit
+)
+ident(
+  def flag "ocamlbuild/ocamlbuild_plugin.ml" 42 1915 1915 "ocamlbuild/ocamlbuild_plugin.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_plugin.ml" 41 1877 1888 "ocamlbuild/ocamlbuild_plugin.ml" 41 1877 1914
+type(
+  Ocamlbuild_pack.Tags.elt list -> Ocamlbuild_pack.Command.spec -> unit
+)
+ident(
+  ext_ref Ocamlbuild_pack.Flags.flag
+)
+"ocamlbuild/ocamlbuild_plugin.ml" 42 1915 1919 "ocamlbuild/ocamlbuild_plugin.ml" 42 1915 1924
+type(
+  Ocamlbuild_pack.Tags.elt list ->
+  string -> (string -> Ocamlbuild_pack.Command.spec) -> unit
+)
+ident(
+  def pflag "ocamlbuild/ocamlbuild_plugin.ml" 43 1955 1955 "ocamlbuild/ocamlbuild_plugin.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_plugin.ml" 42 1915 1927 "ocamlbuild/ocamlbuild_plugin.ml" 42 1915 1954
+type(
+  Ocamlbuild_pack.Tags.elt list ->
+  string -> (string -> Ocamlbuild_pack.Command.spec) -> unit
+)
+ident(
+  ext_ref Ocamlbuild_pack.Flags.pflag
+)
+"ocamlbuild/ocamlbuild_plugin.ml" 43 1955 1959 "ocamlbuild/ocamlbuild_plugin.ml" 43 1955 1971
+type(
+  Ocamlbuild_pack.Tags.elt list -> Ocamlbuild_pack.Command.spec -> unit
+)
+ident(
+  def flag_and_dep "ocamlbuild/ocamlbuild_plugin.ml" 44 2015 2015 "ocamlbuild/ocamlbuild_plugin.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_plugin.ml" 43 1955 1974 "ocamlbuild/ocamlbuild_plugin.ml" 43 1955 2014
+type(
+  Ocamlbuild_pack.Tags.elt list -> Ocamlbuild_pack.Command.spec -> unit
+)
+ident(
+  ext_ref Ocamlbuild_pack.Ocaml_utils.flag_and_dep
+)
+"ocamlbuild/ocamlbuild_plugin.ml" 44 2015 2019 "ocamlbuild/ocamlbuild_plugin.ml" 44 2015 2032
+type(
+  Ocamlbuild_pack.Tags.elt list ->
+  Ocamlbuild_pack.Tags.elt ->
+  (string -> Ocamlbuild_pack.Command.spec) -> unit
+)
+ident(
+  def pflag_and_dep "ocamlbuild/ocamlbuild_plugin.ml" 45 2077 2077 "ocamlbuild/ocamlbuild_plugin.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_plugin.ml" 44 2015 2035 "ocamlbuild/ocamlbuild_plugin.ml" 44 2015 2076
+type(
+  Ocamlbuild_pack.Tags.elt list ->
+  Ocamlbuild_pack.Tags.elt ->
+  (string -> Ocamlbuild_pack.Command.spec) -> unit
+)
+ident(
+  ext_ref Ocamlbuild_pack.Ocaml_utils.pflag_and_dep
+)
+"ocamlbuild/ocamlbuild_plugin.ml" 45 2077 2081 "ocamlbuild/ocamlbuild_plugin.ml" 45 2077 2095
+type(
+  string -> string -> unit
+)
+ident(
+  def non_dependency "ocamlbuild/ocamlbuild_plugin.ml" 46 2141 2141 "ocamlbuild/ocamlbuild_plugin.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_plugin.ml" 45 2077 2098 "ocamlbuild/ocamlbuild_plugin.ml" 45 2077 2140
+type(
+  string -> string -> unit
+)
+ident(
+  ext_ref Ocamlbuild_pack.Ocaml_utils.non_dependency
+)
+"ocamlbuild/ocamlbuild_plugin.ml" 46 2141 2145 "ocamlbuild/ocamlbuild_plugin.ml" 46 2141 2152
+type(
+  Ocamlbuild_pack.Pathname.t -> Ocamlbuild_pack.Pathname.t -> unit
+)
+ident(
+  def use_lib "ocamlbuild/ocamlbuild_plugin.ml" 47 2191 2191 "ocamlbuild/ocamlbuild_plugin.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_plugin.ml" 46 2141 2155 "ocamlbuild/ocamlbuild_plugin.ml" 46 2141 2190
+type(
+  Ocamlbuild_pack.Pathname.t -> Ocamlbuild_pack.Pathname.t -> unit
+)
+ident(
+  ext_ref Ocamlbuild_pack.Ocaml_utils.use_lib
+)
+"ocamlbuild/ocamlbuild_plugin.ml" 47 2191 2195 "ocamlbuild/ocamlbuild_plugin.ml" 47 2191 2218
+type(
+  Ocamlbuild_pack.Pathname.t -> string
+)
+ident(
+  def module_name_of_pathname "ocamlbuild/ocamlbuild_plugin.ml" 48 2273 2273 "ocamlbuild/ocamlbuild_plugin.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_plugin.ml" 47 2191 2221 "ocamlbuild/ocamlbuild_plugin.ml" 47 2191 2272
+type(
+  Ocamlbuild_pack.Pathname.t -> string
+)
+ident(
+  ext_ref Ocamlbuild_pack.Ocaml_utils.module_name_of_pathname
+)
+"ocamlbuild/ocamlbuild_plugin.ml" 48 2273 2277 "ocamlbuild/ocamlbuild_plugin.ml" 48 2273 2296
+type(
+  string -> string list
+)
+ident(
+  def string_list_of_file "ocamlbuild/ocamlbuild_plugin.ml" 49 2347 2347 "ocamlbuild/ocamlbuild_plugin.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_plugin.ml" 48 2273 2299 "ocamlbuild/ocamlbuild_plugin.ml" 48 2273 2346
+type(
+  string -> string list
+)
+ident(
+  ext_ref Ocamlbuild_pack.Ocaml_utils.string_list_of_file
+)
+"ocamlbuild/ocamlbuild_plugin.ml" 49 2347 2351 "ocamlbuild/ocamlbuild_plugin.ml" 49 2347 2364
+type(
+  Ocamlbuild_pack.Pathname.t list ->
+  Ocamlbuild_pack.Pathname.t ->
+  string list -> Ocamlbuild_pack.Pathname.t list
+)
+ident(
+  def expand_module "ocamlbuild/ocamlbuild_plugin.ml" 50 2409 2409 "ocamlbuild/ocamlbuild_plugin.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_plugin.ml" 49 2347 2367 "ocamlbuild/ocamlbuild_plugin.ml" 49 2347 2408
+type(
+  Ocamlbuild_pack.Pathname.t list ->
+  Ocamlbuild_pack.Pathname.t ->
+  string list -> Ocamlbuild_pack.Pathname.t list
+)
+ident(
+  ext_ref Ocamlbuild_pack.Ocaml_utils.expand_module
+)
+"ocamlbuild/ocamlbuild_plugin.ml" 50 2409 2413 "ocamlbuild/ocamlbuild_plugin.ml" 50 2409 2429
+type(
+  Ocamlbuild_pack.Pathname.t -> Ocamlbuild_pack.Tags.t
+)
+ident(
+  def tags_of_pathname "ocamlbuild/ocamlbuild_plugin.ml" 51 2471 2471 "ocamlbuild/ocamlbuild_plugin.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_plugin.ml" 50 2409 2432 "ocamlbuild/ocamlbuild_plugin.ml" 50 2409 2470
+type(
+  Ocamlbuild_pack.Pathname.t -> Ocamlbuild_pack.Tags.t
+)
+ident(
+  ext_ref Ocamlbuild_pack.Tools.tags_of_pathname
+)
+"ocamlbuild/ocamlbuild_plugin.ml" 51 2471 2475 "ocamlbuild/ocamlbuild_plugin.ml" 51 2471 2496
+type(
+  string -> unit
+)
+ident(
+  def hide_package_contents "ocamlbuild/ocamlbuild_plugin.ml" 52 2552 2552 "ocamlbuild/ocamlbuild_plugin.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_plugin.ml" 51 2471 2499 "ocamlbuild/ocamlbuild_plugin.ml" 51 2471 2551
+type(
+  string -> unit
+)
+ident(
+  ext_ref Ocamlbuild_pack.Ocaml_compiler.hide_package_contents
+)
+"ocamlbuild/ocamlbuild_plugin.ml" 52 2552 2556 "ocamlbuild/ocamlbuild_plugin.ml" 52 2552 2564
+type(
+  Ocamlbuild_pack.Pathname.t -> Ocamlbuild_pack.Tags.elt list -> unit
+)
+ident(
+  def tag_file "ocamlbuild/ocamlbuild_plugin.ml" 53 2606 2606 "ocamlbuild/ocamlbuild_plugin.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_plugin.ml" 52 2552 2567 "ocamlbuild/ocamlbuild_plugin.ml" 52 2552 2605
+type(
+  Ocamlbuild_pack.Pathname.t -> Ocamlbuild_pack.Tags.elt list -> unit
+)
+ident(
+  ext_ref Ocamlbuild_pack.Configuration.tag_file
+)
+"ocamlbuild/ocamlbuild_plugin.ml" 53 2606 2610 "ocamlbuild/ocamlbuild_plugin.ml" 53 2606 2617
+type(
+  Ocamlbuild_pack.Tags.elt list -> unit
+)
+ident(
+  def tag_any "ocamlbuild/ocamlbuild_plugin.ml" 54 2658 2658 "ocamlbuild/ocamlbuild_plugin.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_plugin.ml" 53 2606 2620 "ocamlbuild/ocamlbuild_plugin.ml" 53 2606 2657
+type(
+  Ocamlbuild_pack.Tags.elt list -> unit
+)
+ident(
+  ext_ref Ocamlbuild_pack.Configuration.tag_any
+)
+"ocamlbuild/ocamlbuild_plugin.ml" 54 2658 2662 "ocamlbuild/ocamlbuild_plugin.ml" 54 2658 2674
+type(
+  string -> string
+)
+ident(
+  def run_and_read "ocamlbuild/ocamlbuild_plugin.ml" 55 2714 2714 "ocamlbuild/ocamlbuild_plugin.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_plugin.ml" 54 2658 2677 "ocamlbuild/ocamlbuild_plugin.ml" 54 2658 2713
+type(
+  string -> string
+)
+ident(
+  ext_ref Ocamlbuild_pack.My_unix.run_and_read
+)
+"ocamlbuild/ocamlbuild_plugin.ml" 62 2865 2869 "ocamlbuild/ocamlbuild_plugin.ml" 62 2865 2877
+type(
+  (Ocamlbuild_pack.Hooks.message -> unit) -> unit
+)
+ident(
+  def dispatch "ocamlbuild/ocamlbuild_plugin.ml" 62 2865 2913 "ocamlbuild/ocamlbuild_plugin.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_plugin.ml" 62 2865 2880 "ocamlbuild/ocamlbuild_plugin.ml" 62 2865 2913
+type(
+  (Ocamlbuild_pack.Hooks.message -> unit) -> unit
+)
+ident(
+  ext_ref Ocamlbuild_pack.Hooks.setup_hooks
+)
