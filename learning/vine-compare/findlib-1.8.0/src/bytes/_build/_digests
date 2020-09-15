@@ -1,0 +1,7 @@
+"Rule: ocaml: cmo* -> cma (%=bytes )": "\205Q\133\170p\005\227\194 H\228kA\216\129\024"
+"Rule: ocaml dependencies ml (%=bytes )": "\212*\231\146\220$\171\187\251P\231Hhu\252K"
+"Rule: ocaml: cmx & o -> cmxa & a (%=bytes )": "\189'\131n;\228\b\230\138\151G\216\246lC\220"
+"Resource: /home/ppi/dbt/pattern-dbt/vine-compare/findlib-1.8.0/src/bytes/bytes.ml": "\019\177\025\238\221P~28\171\187S}\160_*"
+"Rule: ocaml: cmx & o -> cmxs (%=bytes )": "\235\245\237z)\246\217(CFX\023_\223\165!"
+"Rule: ocaml: ml -> cmo & cmi (%=bytes )": "V\017|\007\012Z\144M\199\137\205\147\228t\024&"
+"Rule: ocaml: ml & cmi -> cmx & o (%=bytes )": "\232PNT\222\173\183\t\202\139\163xL\223\198\195"

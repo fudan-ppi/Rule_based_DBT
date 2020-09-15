@@ -1,0 +1,110 @@
+"ocamlbuild/hooks.ml" 23 980 984 "ocamlbuild/hooks.ml" 23 980 989
+type(
+  (message -> unit) ref
+)
+ident(
+  def hooks "ocamlbuild/hooks.ml" 25 1004 1004 "ocamlbuild/hooks.ml" 1 0 -1
+)
+"ocamlbuild/hooks.ml" 23 980 992 "ocamlbuild/hooks.ml" 23 980 995
+type(
+  (message -> unit) -> (message -> unit) ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"ocamlbuild/hooks.ml" 23 980 996 "ocamlbuild/hooks.ml" 23 980 1002
+type(
+  message -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"ocamlbuild/hooks.ml" 23 980 992 "ocamlbuild/hooks.ml" 23 980 1002
+type(
+  (message -> unit) ref
+)
+"ocamlbuild/hooks.ml" 25 1004 1008 "ocamlbuild/hooks.ml" 25 1004 1019
+type(
+  (message -> unit) -> unit
+)
+ident(
+  def setup_hooks "ocamlbuild/hooks.ml" 27 1036 1036 "ocamlbuild/hooks.ml" 1 0 -1
+)
+"ocamlbuild/hooks.ml" 25 1004 1020 "ocamlbuild/hooks.ml" 25 1004 1021
+type(
+  message -> unit
+)
+ident(
+  def f "ocamlbuild/hooks.ml" 25 1004 1024 "ocamlbuild/hooks.ml" 25 1004 1034
+)
+"ocamlbuild/hooks.ml" 25 1004 1024 "ocamlbuild/hooks.ml" 25 1004 1029
+type(
+  (message -> unit) ref
+)
+ident(
+  int_ref hooks "ocamlbuild/hooks.ml" 23 980 984 "ocamlbuild/hooks.ml" 23 980 989
+)
+"ocamlbuild/hooks.ml" 25 1004 1030 "ocamlbuild/hooks.ml" 25 1004 1032
+type(
+  (message -> unit) ref -> (message -> unit) -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"ocamlbuild/hooks.ml" 25 1004 1033 "ocamlbuild/hooks.ml" 25 1004 1034
+type(
+  message -> unit
+)
+ident(
+  int_ref f "ocamlbuild/hooks.ml" 25 1004 1020 "ocamlbuild/hooks.ml" 25 1004 1021
+)
+"ocamlbuild/hooks.ml" 25 1004 1024 "ocamlbuild/hooks.ml" 25 1004 1034
+type(
+  unit
+)
+"ocamlbuild/hooks.ml" 27 1036 1040 "ocamlbuild/hooks.ml" 27 1036 1049
+type(
+  message -> unit
+)
+ident(
+  def call_hook "ocamlbuild/hooks.ml" 27 1036 1062 "ocamlbuild/hooks.ml" 1 0 -1
+)
+"ocamlbuild/hooks.ml" 27 1036 1050 "ocamlbuild/hooks.ml" 27 1036 1051
+type(
+  message
+)
+ident(
+  def m "ocamlbuild/hooks.ml" 27 1036 1054 "ocamlbuild/hooks.ml" 27 1036 1062
+)
+"ocamlbuild/hooks.ml" 27 1036 1054 "ocamlbuild/hooks.ml" 27 1036 1055
+type(
+  (message -> unit) ref -> message -> unit
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"ocamlbuild/hooks.ml" 27 1036 1055 "ocamlbuild/hooks.ml" 27 1036 1060
+type(
+  (message -> unit) ref
+)
+ident(
+  int_ref hooks "ocamlbuild/hooks.ml" 23 980 984 "ocamlbuild/hooks.ml" 23 980 989
+)
+"ocamlbuild/hooks.ml" 27 1036 1054 "ocamlbuild/hooks.ml" 27 1036 1060
+type(
+  message -> unit
+)
+"ocamlbuild/hooks.ml" 27 1036 1061 "ocamlbuild/hooks.ml" 27 1036 1062
+type(
+  message
+)
+ident(
+  int_ref m "ocamlbuild/hooks.ml" 27 1036 1050 "ocamlbuild/hooks.ml" 27 1036 1051
+)
+"ocamlbuild/hooks.ml" 27 1036 1054 "ocamlbuild/hooks.ml" 27 1036 1062
+call(
+  tail
+)
+type(
+  unit
+)

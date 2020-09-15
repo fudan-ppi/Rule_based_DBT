@@ -1,0 +1,42 @@
+"ocamlbuild/discard_printf.ml" 16 858 862 "ocamlbuild/discard_printf.ml" 16 858 876
+type(
+  ('a, Format.formatter, unit) format -> 'a
+)
+ident(
+  def discard_printf "ocamlbuild/discard_printf.ml" 16 858 923 "ocamlbuild/discard_printf.ml" 1 0 -1
+)
+"ocamlbuild/discard_printf.ml" 16 858 877 "ocamlbuild/discard_printf.ml" 16 858 880
+type(
+  ('a, Format.formatter, unit) format
+)
+ident(
+  def fmt "ocamlbuild/discard_printf.ml" 16 858 883 "ocamlbuild/discard_printf.ml" 16 858 923
+)
+"ocamlbuild/discard_printf.ml" 16 858 883 "ocamlbuild/discard_printf.ml" 16 858 898
+type(
+  Format.formatter -> ('a, Format.formatter, unit) format -> 'a
+)
+ident(
+  ext_ref Format.ifprintf
+)
+"ocamlbuild/discard_printf.ml" 16 858 899 "ocamlbuild/discard_printf.ml" 16 858 919
+type(
+  Format.formatter
+)
+ident(
+  ext_ref Format.std_formatter
+)
+"ocamlbuild/discard_printf.ml" 16 858 920 "ocamlbuild/discard_printf.ml" 16 858 923
+type(
+  ('a, Format.formatter, unit) format
+)
+ident(
+  int_ref fmt "ocamlbuild/discard_printf.ml" 16 858 877 "ocamlbuild/discard_printf.ml" 16 858 880
+)
+"ocamlbuild/discard_printf.ml" 16 858 883 "ocamlbuild/discard_printf.ml" 16 858 923
+call(
+  tail
+)
+type(
+  'a
+)

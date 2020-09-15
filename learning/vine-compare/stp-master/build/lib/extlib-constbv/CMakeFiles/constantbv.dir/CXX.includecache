@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ppi/dbt/pattern-dbt/vine-compare/stp-master/lib/extlib-constbv/constantbv.cpp
+stdio.h
+-
+stdlib.h
+-
+limits.h
+-
+string.h
+-
+ctype.h
+-
+constantbv.h
+/home/ppi/dbt/pattern-dbt/vine-compare/stp-master/lib/extlib-constbv/constantbv.h
+
+/home/ppi/dbt/pattern-dbt/vine-compare/stp-master/lib/extlib-constbv/constantbv.h
+stdlib.h
+-
+limits.h
+-
+string.h
+-
+ctype.h
+-
+

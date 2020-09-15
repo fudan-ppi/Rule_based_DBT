@@ -1,0 +1,48 @@
+findlib.cmo : fl_split.cmo fl_package_base.cmi fl_metascanner.cmi \
+    findlib_config.cmo findlib.cmi
+findlib.cmx : fl_split.cmx fl_package_base.cmx fl_metascanner.cmx \
+    findlib_config.cmx findlib.cmi
+findlib_config.cmo :
+findlib_config.cmx :
+fl_args.cmo :
+fl_args.cmx :
+fl_dynload.cmo : fl_split.cmo findlib.cmi fl_dynload.cmi
+fl_dynload.cmx : fl_split.cmx findlib.cmx fl_dynload.cmi
+fl_lint.cmo : fl_metascanner.cmi
+fl_lint.cmx : fl_metascanner.cmx
+fl_meta.cmo : fl_metatoken.cmo
+fl_meta.cmx : fl_metatoken.cmx
+fl_metascanner.cmo : fl_metatoken.cmo fl_meta.cmo fl_metascanner.cmi
+fl_metascanner.cmx : fl_metatoken.cmx fl_meta.cmx fl_metascanner.cmi
+fl_metatoken.cmo :
+fl_metatoken.cmx :
+fl_package_base.cmo : fl_topo.cmi fl_split.cmo fl_metascanner.cmi \
+    fl_package_base.cmi
+fl_package_base.cmx : fl_topo.cmx fl_split.cmx fl_metascanner.cmx \
+    fl_package_base.cmi
+fl_split.cmo :
+fl_split.cmx :
+fl_topo.cmo : fl_topo.cmi
+fl_topo.cmx : fl_topo.cmi
+frontend.cmo : ocaml_args.cmo fl_split.cmo fl_package_base.cmi \
+    fl_metascanner.cmi fl_lint.cmo fl_args.cmo findlib_config.cmo findlib.cmi
+frontend.cmx : ocaml_args.cmx fl_split.cmx fl_package_base.cmx \
+    fl_metascanner.cmx fl_lint.cmx fl_args.cmx findlib_config.cmx findlib.cmx
+num_top.cmo : num_top.cmi
+num_top.cmx : num_top.cmi
+num_top_printers.cmo : num_top_printers.cmi
+num_top_printers.cmx : num_top_printers.cmi
+ocaml_args.cmo :
+ocaml_args.cmx :
+test_parser.cmo : fl_metascanner.cmi
+test_parser.cmx : fl_metascanner.cmx
+topfind.cmo : fl_split.cmo fl_package_base.cmi findlib.cmi topfind.cmi
+topfind.cmx : fl_split.cmx fl_package_base.cmx findlib.cmx topfind.cmi
+findlib.cmi :
+fl_dynload.cmi :
+fl_metascanner.cmi : fl_metatoken.cmo
+fl_package_base.cmi : fl_metascanner.cmi
+fl_topo.cmi :
+num_top.cmi :
+num_top_printers.cmi :
+topfind.cmi :

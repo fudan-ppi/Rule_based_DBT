@@ -1,0 +1,1319 @@
+"ocamlbuild/configuration.ml" 21 913 917 "ocamlbuild/configuration.ml" 21 913 935
+type(
+  ('a * Lexers.conf_values) list -> unit
+)
+ident(
+  def acknowledge_config "ocamlbuild/configuration.ml" 26 1044 1044 "ocamlbuild/configuration.ml" 1 0 -1
+)
+"ocamlbuild/configuration.ml" 21 913 936 "ocamlbuild/configuration.ml" 21 913 942
+type(
+  ('a * Lexers.conf_values) list
+)
+ident(
+  def config "ocamlbuild/configuration.ml" 22 945 947 "ocamlbuild/configuration.ml" 24 1032 1042
+)
+"ocamlbuild/configuration.ml" 22 945 947 "ocamlbuild/configuration.ml" 22 945 956
+type(
+  ('a * Lexers.conf_values -> unit) -> ('a * Lexers.conf_values) list -> unit
+)
+ident(
+  ext_ref My_std.List.iter
+)
+"ocamlbuild/configuration.ml" 23 957 967 "ocamlbuild/configuration.ml" 23 957 968
+type(
+  'a
+)
+"ocamlbuild/configuration.ml" 23 957 970 "ocamlbuild/configuration.ml" 23 957 976
+type(
+  Lexers.conf_values
+)
+ident(
+  def config "ocamlbuild/configuration.ml" 23 957 981 "ocamlbuild/configuration.ml" 23 957 1030
+)
+"ocamlbuild/configuration.ml" 23 957 966 "ocamlbuild/configuration.ml" 23 957 977
+type(
+  'a * Lexers.conf_values
+)
+"ocamlbuild/configuration.ml" 23 957 981 "ocamlbuild/configuration.ml" 23 957 990
+type(
+  (string -> unit) -> string list -> unit
+)
+ident(
+  ext_ref My_std.List.iter
+)
+"ocamlbuild/configuration.ml" 23 957 991 "ocamlbuild/configuration.ml" 23 957 1013
+type(
+  string -> unit
+)
+ident(
+  ext_ref Param_tags.acknowledge
+)
+"ocamlbuild/configuration.ml" 23 957 1014 "ocamlbuild/configuration.ml" 23 957 1020
+type(
+  Lexers.conf_values
+)
+ident(
+  int_ref config "ocamlbuild/configuration.ml" 23 957 970 "ocamlbuild/configuration.ml" 23 957 976
+)
+"ocamlbuild/configuration.ml" 23 957 1014 "ocamlbuild/configuration.ml" 23 957 1030
+type(
+  string list
+)
+"ocamlbuild/configuration.ml" 23 957 981 "ocamlbuild/configuration.ml" 23 957 1030
+call(
+  tail
+)
+type(
+  unit
+)
+"ocamlbuild/configuration.ml" 23 957 961 "ocamlbuild/configuration.ml" 23 957 1031
+type(
+  'a * Lexers.conf_values -> unit
+)
+"ocamlbuild/configuration.ml" 24 1032 1036 "ocamlbuild/configuration.ml" 24 1032 1042
+type(
+  ('a * Lexers.conf_values) list
+)
+ident(
+  int_ref config "ocamlbuild/configuration.ml" 21 913 936 "ocamlbuild/configuration.ml" 21 913 942
+)
+"ocamlbuild/configuration.ml" 22 945 947 "ocamlbuild/configuration.ml" 24 1032 1042
+call(
+  tail
+)
+type(
+  unit
+)
+"ocamlbuild/configuration.ml" 26 1044 1048 "ocamlbuild/configuration.ml" 26 1044 1053
+type(
+  (string, Tags.t) Hashtbl.t
+)
+ident(
+  def cache "ocamlbuild/configuration.ml" 27 1075 1075 "ocamlbuild/configuration.ml" 1 0 -1
+)
+"ocamlbuild/configuration.ml" 26 1044 1056 "ocamlbuild/configuration.ml" 26 1044 1070
+type(
+  ?random:bool -> int -> (string, Tags.t) Hashtbl.t
+)
+ident(
+  ext_ref Hashtbl.create
+)
+"ocamlbuild/configuration.ml" 26 1044 1071 "ocamlbuild/configuration.ml" 26 1044 1074
+type(
+  int
+)
+"ocamlbuild/configuration.ml" 26 1044 1056 "ocamlbuild/configuration.ml" 26 1044 1074
+call(
+  stack
+)
+type(
+  (string, Tags.t) Hashtbl.t
+)
+"ocamlbuild/configuration.ml" 27 1075 1080 "ocamlbuild/configuration.ml" 27 1075 1087
+type(
+  unit -> Lexers.conf list
+)
+ident(
+  def configs "ocamlbuild/configuration.ml" 35 1265 1265 "ocamlbuild/configuration.ml" 1 0 -1
+)
+"ocamlbuild/configuration.ml" 27 1075 1089 "ocamlbuild/configuration.ml" 27 1075 1099
+type(
+  Lexers.conf -> unit
+)
+ident(
+  def add_config "ocamlbuild/configuration.ml" 35 1265 1265 "ocamlbuild/configuration.ml" 1 0 -1
+)
+"ocamlbuild/configuration.ml" 27 1075 1079 "ocamlbuild/configuration.ml" 27 1075 1100
+type(
+  (unit -> Lexers.conf list) * (Lexers.conf -> unit)
+)
+"ocamlbuild/configuration.ml" 28 1103 1109 "ocamlbuild/configuration.ml" 28 1103 1116
+type(
+  Lexers.conf list ref
+)
+ident(
+  def configs "ocamlbuild/configuration.ml" 29 1129 1131 "ocamlbuild/configuration.ml" 33 1238 1263
+)
+"ocamlbuild/configuration.ml" 28 1103 1119 "ocamlbuild/configuration.ml" 28 1103 1122
+type(
+  Lexers.conf list -> Lexers.conf list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"ocamlbuild/configuration.ml" 28 1103 1123 "ocamlbuild/configuration.ml" 28 1103 1125
+type(
+  Lexers.conf list
+)
+"ocamlbuild/configuration.ml" 28 1103 1119 "ocamlbuild/configuration.ml" 28 1103 1125
+type(
+  Lexers.conf list ref
+)
+"ocamlbuild/configuration.ml" 29 1129 1136 "ocamlbuild/configuration.ml" 29 1129 1138
+type(
+  unit
+)
+"ocamlbuild/configuration.ml" 29 1129 1142 "ocamlbuild/configuration.ml" 29 1129 1143
+type(
+  Lexers.conf list ref -> Lexers.conf list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"ocamlbuild/configuration.ml" 29 1129 1143 "ocamlbuild/configuration.ml" 29 1129 1150
+type(
+  Lexers.conf list ref
+)
+ident(
+  int_ref configs "ocamlbuild/configuration.ml" 28 1103 1109 "ocamlbuild/configuration.ml" 28 1103 1116
+)
+"ocamlbuild/configuration.ml" 29 1129 1142 "ocamlbuild/configuration.ml" 29 1129 1150
+type(
+  Lexers.conf list
+)
+"ocamlbuild/configuration.ml" 29 1129 1131 "ocamlbuild/configuration.ml" 29 1129 1151
+type(
+  unit -> Lexers.conf list
+)
+"ocamlbuild/configuration.ml" 30 1153 1160 "ocamlbuild/configuration.ml" 30 1153 1166
+type(
+  Lexers.conf
+)
+ident(
+  def config "ocamlbuild/configuration.ml" 31 1170 1175 "ocamlbuild/configuration.ml" 33 1238 1262
+)
+"ocamlbuild/configuration.ml" 31 1170 1175 "ocamlbuild/configuration.ml" 31 1170 1193
+type(
+  Lexers.conf -> unit
+)
+ident(
+  int_ref acknowledge_config "ocamlbuild/configuration.ml" 21 913 917 "ocamlbuild/configuration.ml" 21 913 935
+)
+"ocamlbuild/configuration.ml" 31 1170 1194 "ocamlbuild/configuration.ml" 31 1170 1200
+type(
+  Lexers.conf
+)
+ident(
+  int_ref config "ocamlbuild/configuration.ml" 30 1153 1160 "ocamlbuild/configuration.ml" 30 1153 1166
+)
+"ocamlbuild/configuration.ml" 31 1170 1175 "ocamlbuild/configuration.ml" 31 1170 1200
+call(
+  stack
+)
+type(
+  unit
+)
+"ocamlbuild/configuration.ml" 32 1202 1207 "ocamlbuild/configuration.ml" 32 1202 1214
+type(
+  Lexers.conf list ref
+)
+ident(
+  int_ref configs "ocamlbuild/configuration.ml" 28 1103 1109 "ocamlbuild/configuration.ml" 28 1103 1116
+)
+"ocamlbuild/configuration.ml" 32 1202 1215 "ocamlbuild/configuration.ml" 32 1202 1217
+type(
+  Lexers.conf list ref -> Lexers.conf list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"ocamlbuild/configuration.ml" 32 1202 1218 "ocamlbuild/configuration.ml" 32 1202 1224
+type(
+  Lexers.conf
+)
+ident(
+  int_ref config "ocamlbuild/configuration.ml" 30 1153 1160 "ocamlbuild/configuration.ml" 30 1153 1166
+)
+"ocamlbuild/configuration.ml" 32 1202 1228 "ocamlbuild/configuration.ml" 32 1202 1229
+type(
+  Lexers.conf list ref -> Lexers.conf list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"ocamlbuild/configuration.ml" 32 1202 1229 "ocamlbuild/configuration.ml" 32 1202 1236
+type(
+  Lexers.conf list ref
+)
+ident(
+  int_ref configs "ocamlbuild/configuration.ml" 28 1103 1109 "ocamlbuild/configuration.ml" 28 1103 1116
+)
+"ocamlbuild/configuration.ml" 32 1202 1228 "ocamlbuild/configuration.ml" 32 1202 1236
+type(
+  Lexers.conf list
+)
+"ocamlbuild/configuration.ml" 32 1202 1218 "ocamlbuild/configuration.ml" 32 1202 1236
+type(
+  Lexers.conf list
+)
+"ocamlbuild/configuration.ml" 32 1202 1207 "ocamlbuild/configuration.ml" 32 1202 1236
+type(
+  unit
+)
+"ocamlbuild/configuration.ml" 33 1238 1243 "ocamlbuild/configuration.ml" 33 1238 1256
+type(
+  (string, Tags.t) Hashtbl.t -> unit
+)
+ident(
+  ext_ref Hashtbl.clear
+)
+"ocamlbuild/configuration.ml" 33 1238 1257 "ocamlbuild/configuration.ml" 33 1238 1262
+type(
+  (string, Tags.t) Hashtbl.t
+)
+ident(
+  int_ref cache "ocamlbuild/configuration.ml" 26 1044 1048 "ocamlbuild/configuration.ml" 26 1044 1053
+)
+"ocamlbuild/configuration.ml" 33 1238 1243 "ocamlbuild/configuration.ml" 33 1238 1262
+call(
+  tail
+)
+type(
+  unit
+)
+"ocamlbuild/configuration.ml" 32 1202 1207 "ocamlbuild/configuration.ml" 33 1238 1262
+type(
+  unit
+)
+"ocamlbuild/configuration.ml" 31 1170 1175 "ocamlbuild/configuration.ml" 33 1238 1262
+type(
+  unit
+)
+"ocamlbuild/configuration.ml" 30 1153 1155 "ocamlbuild/configuration.ml" 33 1238 1263
+type(
+  Lexers.conf -> unit
+)
+"ocamlbuild/configuration.ml" 29 1129 1131 "ocamlbuild/configuration.ml" 33 1238 1263
+type(
+  (unit -> Lexers.conf list) * (Lexers.conf -> unit)
+)
+"ocamlbuild/configuration.ml" 28 1103 1105 "ocamlbuild/configuration.ml" 33 1238 1263
+type(
+  (unit -> Lexers.conf list) * (Lexers.conf -> unit)
+)
+"ocamlbuild/configuration.ml" 35 1265 1269 "ocamlbuild/configuration.ml" 35 1265 1281
+type(
+  ?dir:string -> string -> Lexing.lexbuf -> unit
+)
+ident(
+  def parse_lexbuf "ocamlbuild/configuration.ml" 40 1458 1458 "ocamlbuild/configuration.ml" 1 0 -1
+)
+"ocamlbuild/configuration.ml" 35 1265 1283 "ocamlbuild/configuration.ml" 35 1265 1286
+type(
+  string option
+)
+ident(
+  def dir "ocamlbuild/configuration.ml" 35 1265 1287 "ocamlbuild/configuration.ml" 38 1439 1456
+)
+"ocamlbuild/configuration.ml" 35 1265 1287 "ocamlbuild/configuration.ml" 35 1265 1293
+type(
+  string
+)
+ident(
+  def source "ocamlbuild/configuration.ml" 35 1265 1294 "ocamlbuild/configuration.ml" 38 1439 1456
+)
+"ocamlbuild/configuration.ml" 35 1265 1294 "ocamlbuild/configuration.ml" 35 1265 1300
+type(
+  Lexing.lexbuf
+)
+ident(
+  def lexbuf "ocamlbuild/configuration.ml" 36 1303 1305 "ocamlbuild/configuration.ml" 38 1439 1456
+)
+"ocamlbuild/configuration.ml" 36 1303 1305 "ocamlbuild/configuration.ml" 36 1303 1311
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "ocamlbuild/configuration.ml" 35 1265 1294 "ocamlbuild/configuration.ml" 35 1265 1300
+)
+"ocamlbuild/configuration.ml" 36 1303 1335 "ocamlbuild/configuration.ml" 36 1303 1341
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "ocamlbuild/configuration.ml" 35 1265 1294 "ocamlbuild/configuration.ml" 35 1265 1300
+)
+"ocamlbuild/configuration.ml" 36 1303 1335 "ocamlbuild/configuration.ml" 36 1303 1359
+type(
+  Lexing.position
+)
+"ocamlbuild/configuration.ml" 36 1303 1384 "ocamlbuild/configuration.ml" 36 1303 1390
+type(
+  string
+)
+ident(
+  int_ref source "ocamlbuild/configuration.ml" 35 1265 1287 "ocamlbuild/configuration.ml" 35 1265 1293
+)
+"ocamlbuild/configuration.ml" 36 1303 1333 "ocamlbuild/configuration.ml" 36 1303 1392
+type(
+  Lexing.position
+)
+"ocamlbuild/configuration.ml" 36 1303 1305 "ocamlbuild/configuration.ml" 36 1303 1392
+type(
+  unit
+)
+"ocamlbuild/configuration.ml" 37 1394 1400 "ocamlbuild/configuration.ml" 37 1394 1404
+type(
+  Lexers.conf
+)
+ident(
+  def conf "ocamlbuild/configuration.ml" 38 1439 1441 "ocamlbuild/configuration.ml" 38 1439 1456
+)
+"ocamlbuild/configuration.ml" 37 1394 1407 "ocamlbuild/configuration.ml" 37 1394 1424
+type(
+  string option -> Lexing.lexbuf -> Lexers.conf
+)
+ident(
+  ext_ref Lexers.conf_lines
+)
+"ocamlbuild/configuration.ml" 37 1394 1425 "ocamlbuild/configuration.ml" 37 1394 1428
+type(
+  string option
+)
+ident(
+  int_ref dir "ocamlbuild/configuration.ml" 35 1265 1283 "ocamlbuild/configuration.ml" 35 1265 1286
+)
+"ocamlbuild/configuration.ml" 37 1394 1429 "ocamlbuild/configuration.ml" 37 1394 1435
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "ocamlbuild/configuration.ml" 35 1265 1294 "ocamlbuild/configuration.ml" 35 1265 1300
+)
+"ocamlbuild/configuration.ml" 37 1394 1407 "ocamlbuild/configuration.ml" 37 1394 1435
+call(
+  stack
+)
+type(
+  Lexers.conf
+)
+"ocamlbuild/configuration.ml" 38 1439 1441 "ocamlbuild/configuration.ml" 38 1439 1451
+type(
+  Lexers.conf -> unit
+)
+ident(
+  int_ref add_config "ocamlbuild/configuration.ml" 27 1075 1089 "ocamlbuild/configuration.ml" 27 1075 1099
+)
+"ocamlbuild/configuration.ml" 38 1439 1452 "ocamlbuild/configuration.ml" 38 1439 1456
+type(
+  Lexers.conf
+)
+ident(
+  int_ref conf "ocamlbuild/configuration.ml" 37 1394 1400 "ocamlbuild/configuration.ml" 37 1394 1404
+)
+"ocamlbuild/configuration.ml" 38 1439 1441 "ocamlbuild/configuration.ml" 38 1439 1456
+call(
+  tail
+)
+type(
+  unit
+)
+"ocamlbuild/configuration.ml" 37 1394 1396 "ocamlbuild/configuration.ml" 38 1439 1456
+type(
+  unit
+)
+"ocamlbuild/configuration.ml" 36 1303 1305 "ocamlbuild/configuration.ml" 38 1439 1456
+type(
+  unit
+)
+"ocamlbuild/configuration.ml" 40 1458 1462 "ocamlbuild/configuration.ml" 40 1458 1474
+type(
+  string -> unit
+)
+ident(
+  def parse_string "ocamlbuild/configuration.ml" 42 1547 1547 "ocamlbuild/configuration.ml" 1 0 -1
+)
+"ocamlbuild/configuration.ml" 40 1458 1475 "ocamlbuild/configuration.ml" 40 1458 1476
+type(
+  string
+)
+ident(
+  def s "ocamlbuild/configuration.ml" 40 1458 1479 "ocamlbuild/configuration.ml" 40 1458 1545
+)
+"ocamlbuild/configuration.ml" 40 1458 1479 "ocamlbuild/configuration.ml" 40 1458 1491
+type(
+  ?dir:string -> string -> Lexing.lexbuf -> unit
+)
+ident(
+  int_ref parse_lexbuf "ocamlbuild/configuration.ml" 35 1265 1269 "ocamlbuild/configuration.ml" 35 1265 1281
+)
+"ocamlbuild/configuration.ml" 40 1458 1493 "ocamlbuild/configuration.ml" 40 1458 1507
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"ocamlbuild/configuration.ml" 40 1458 1508 "ocamlbuild/configuration.ml" 40 1458 1519
+type(
+  (string -> string, unit, string) format
+)
+"ocamlbuild/configuration.ml" 40 1458 1520 "ocamlbuild/configuration.ml" 40 1458 1521
+type(
+  string
+)
+ident(
+  int_ref s "ocamlbuild/configuration.ml" 40 1458 1475 "ocamlbuild/configuration.ml" 40 1458 1476
+)
+"ocamlbuild/configuration.ml" 40 1458 1492 "ocamlbuild/configuration.ml" 40 1458 1522
+call(
+  stack
+)
+type(
+  string
+)
+"ocamlbuild/configuration.ml" 40 1458 1524 "ocamlbuild/configuration.ml" 40 1458 1542
+type(
+  string -> Lexing.lexbuf
+)
+ident(
+  ext_ref Lexing.from_string
+)
+"ocamlbuild/configuration.ml" 40 1458 1543 "ocamlbuild/configuration.ml" 40 1458 1544
+type(
+  string
+)
+ident(
+  int_ref s "ocamlbuild/configuration.ml" 40 1458 1475 "ocamlbuild/configuration.ml" 40 1458 1476
+)
+"ocamlbuild/configuration.ml" 40 1458 1523 "ocamlbuild/configuration.ml" 40 1458 1545
+call(
+  stack
+)
+type(
+  Lexing.lexbuf
+)
+"ocamlbuild/configuration.ml" 40 1458 1479 "ocamlbuild/configuration.ml" 40 1458 1545
+call(
+  tail
+)
+type(
+  unit
+)
+"ocamlbuild/configuration.ml" 42 1547 1551 "ocamlbuild/configuration.ml" 42 1547 1561
+type(
+  ?dir:string -> string -> unit
+)
+ident(
+  def parse_file "ocamlbuild/configuration.ml" 47 1699 1699 "ocamlbuild/configuration.ml" 1 0 -1
+)
+"ocamlbuild/configuration.ml" 42 1547 1563 "ocamlbuild/configuration.ml" 42 1547 1566
+type(
+  string option
+)
+ident(
+  def dir "ocamlbuild/configuration.ml" 42 1547 1567 "ocamlbuild/configuration.ml" 45 1692 1697
+)
+"ocamlbuild/configuration.ml" 42 1547 1567 "ocamlbuild/configuration.ml" 42 1547 1571
+type(
+  string
+)
+ident(
+  def file "ocamlbuild/configuration.ml" 43 1574 1576 "ocamlbuild/configuration.ml" 45 1692 1697
+)
+"ocamlbuild/configuration.ml" 43 1574 1576 "ocamlbuild/configuration.ml" 43 1574 1591
+type(
+  ?bin:bool -> string -> (in_channel -> unit) -> unit
+)
+ident(
+  ext_ref My_std.with_input_file
+)
+"ocamlbuild/configuration.ml" 43 1574 1592 "ocamlbuild/configuration.ml" 43 1574 1596
+type(
+  string
+)
+ident(
+  int_ref file "ocamlbuild/configuration.ml" 42 1547 1567 "ocamlbuild/configuration.ml" 42 1547 1571
+)
+"ocamlbuild/configuration.ml" 43 1574 1607 "ocamlbuild/configuration.ml" 43 1574 1609
+type(
+  in_channel
+)
+ident(
+  def ic "ocamlbuild/configuration.ml" 44 1613 1617 "ocamlbuild/configuration.ml" 44 1613 1691
+)
+"ocamlbuild/configuration.ml" 44 1613 1617 "ocamlbuild/configuration.ml" 44 1613 1629
+type(
+  ?dir:string -> string -> Lexing.lexbuf -> unit
+)
+ident(
+  int_ref parse_lexbuf "ocamlbuild/configuration.ml" 35 1265 1269 "ocamlbuild/configuration.ml" 35 1265 1281
+)
+"ocamlbuild/configuration.ml" 44 1613 1631 "ocamlbuild/configuration.ml" 44 1613 1634
+type(
+  string option
+)
+ident(
+  int_ref dir "ocamlbuild/configuration.ml" 42 1547 1563 "ocamlbuild/configuration.ml" 42 1547 1566
+)
+"ocamlbuild/configuration.ml" 44 1613 1636 "ocamlbuild/configuration.ml" 44 1613 1650
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"ocamlbuild/configuration.ml" 44 1613 1651 "ocamlbuild/configuration.ml" 44 1613 1660
+type(
+  (string -> string, unit, string) format
+)
+"ocamlbuild/configuration.ml" 44 1613 1661 "ocamlbuild/configuration.ml" 44 1613 1665
+type(
+  string
+)
+ident(
+  int_ref file "ocamlbuild/configuration.ml" 42 1547 1567 "ocamlbuild/configuration.ml" 42 1547 1571
+)
+"ocamlbuild/configuration.ml" 44 1613 1635 "ocamlbuild/configuration.ml" 44 1613 1666
+call(
+  stack
+)
+type(
+  string
+)
+"ocamlbuild/configuration.ml" 44 1613 1668 "ocamlbuild/configuration.ml" 44 1613 1687
+type(
+  in_channel -> Lexing.lexbuf
+)
+ident(
+  ext_ref Lexing.from_channel
+)
+"ocamlbuild/configuration.ml" 44 1613 1688 "ocamlbuild/configuration.ml" 44 1613 1690
+type(
+  in_channel
+)
+ident(
+  int_ref ic "ocamlbuild/configuration.ml" 43 1574 1607 "ocamlbuild/configuration.ml" 43 1574 1609
+)
+"ocamlbuild/configuration.ml" 44 1613 1667 "ocamlbuild/configuration.ml" 44 1613 1691
+call(
+  stack
+)
+type(
+  Lexing.lexbuf
+)
+"ocamlbuild/configuration.ml" 44 1613 1617 "ocamlbuild/configuration.ml" 44 1613 1691
+call(
+  tail
+)
+type(
+  unit
+)
+"ocamlbuild/configuration.ml" 43 1574 1597 "ocamlbuild/configuration.ml" 45 1692 1697
+type(
+  in_channel -> unit
+)
+"ocamlbuild/configuration.ml" 43 1574 1576 "ocamlbuild/configuration.ml" 45 1692 1697
+call(
+  tail
+)
+type(
+  unit
+)
+"ocamlbuild/configuration.ml" 47 1699 1703 "ocamlbuild/configuration.ml" 47 1699 1712
+type(
+  Glob.globber -> string -> bool
+)
+ident(
+  def key_match "ocamlbuild/configuration.ml" 49 1726 1726 "ocamlbuild/configuration.ml" 1 0 -1
+)
+"ocamlbuild/configuration.ml" 47 1699 1715 "ocamlbuild/configuration.ml" 47 1699 1724
+type(
+  Glob.globber -> string -> bool
+)
+ident(
+  ext_ref Glob.eval
+)
+"ocamlbuild/configuration.ml" 49 1726 1730 "ocamlbuild/configuration.ml" 49 1726 1742
+type(
+  string -> t -> Tags.t -> Tags.t
+)
+ident(
+  def apply_config "ocamlbuild/configuration.ml" 56 1961 1961 "ocamlbuild/configuration.ml" 1 0 -1
+)
+"ocamlbuild/configuration.ml" 49 1726 1743 "ocamlbuild/configuration.ml" 49 1726 1744
+type(
+  string
+)
+ident(
+  def s "ocamlbuild/configuration.ml" 49 1726 1745 "ocamlbuild/configuration.ml" 54 1942 1959
+)
+"ocamlbuild/configuration.ml" 49 1726 1746 "ocamlbuild/configuration.ml" 49 1726 1752
+type(
+  t
+)
+ident(
+  def config "ocamlbuild/configuration.ml" 49 1726 1758 "ocamlbuild/configuration.ml" 54 1942 1959
+)
+"ocamlbuild/configuration.ml" 49 1726 1758 "ocamlbuild/configuration.ml" 49 1726 1762
+type(
+  Tags.t
+)
+ident(
+  def init "ocamlbuild/configuration.ml" 50 1765 1767 "ocamlbuild/configuration.ml" 54 1942 1959
+)
+"ocamlbuild/configuration.ml" 50 1765 1767 "ocamlbuild/configuration.ml" 50 1765 1781
+type(
+  (Tags.t -> Glob.globber * Lexers.conf_values -> Tags.t) ->
+  Tags.t -> t -> Tags.t
+)
+ident(
+  ext_ref My_std.List.fold_left
+)
+"ocamlbuild/configuration.ml" 50 1765 1792 "ocamlbuild/configuration.ml" 50 1765 1796
+type(
+  Tags.t
+)
+ident(
+  def tags "ocamlbuild/configuration.ml" 50 1765 1797 "ocamlbuild/configuration.ml" 53 1928 1941
+)
+"ocamlbuild/configuration.ml" 50 1765 1798 "ocamlbuild/configuration.ml" 50 1765 1801
+type(
+  Glob.globber
+)
+ident(
+  def key "ocamlbuild/configuration.ml" 51 1809 1813 "ocamlbuild/configuration.ml" 53 1928 1941
+)
+"ocamlbuild/configuration.ml" 50 1765 1803 "ocamlbuild/configuration.ml" 50 1765 1804
+type(
+  Lexers.conf_values
+)
+ident(
+  def v "ocamlbuild/configuration.ml" 51 1809 1813 "ocamlbuild/configuration.ml" 53 1928 1941
+)
+"ocamlbuild/configuration.ml" 50 1765 1797 "ocamlbuild/configuration.ml" 50 1765 1805
+type(
+  Glob.globber * Lexers.conf_values
+)
+"ocamlbuild/configuration.ml" 51 1809 1816 "ocamlbuild/configuration.ml" 51 1809 1825
+type(
+  Glob.globber -> string -> bool
+)
+ident(
+  int_ref key_match "ocamlbuild/configuration.ml" 47 1699 1703 "ocamlbuild/configuration.ml" 47 1699 1712
+)
+"ocamlbuild/configuration.ml" 51 1809 1826 "ocamlbuild/configuration.ml" 51 1809 1829
+type(
+  Glob.globber
+)
+ident(
+  int_ref key "ocamlbuild/configuration.ml" 50 1765 1798 "ocamlbuild/configuration.ml" 50 1765 1801
+)
+"ocamlbuild/configuration.ml" 51 1809 1830 "ocamlbuild/configuration.ml" 51 1809 1831
+type(
+  string
+)
+ident(
+  int_ref s "ocamlbuild/configuration.ml" 49 1726 1743 "ocamlbuild/configuration.ml" 49 1726 1744
+)
+"ocamlbuild/configuration.ml" 51 1809 1816 "ocamlbuild/configuration.ml" 51 1809 1831
+call(
+  stack
+)
+type(
+  bool
+)
+"ocamlbuild/configuration.ml" 52 1837 1843 "ocamlbuild/configuration.ml" 52 1837 1858
+type(
+  (Tags.elt -> Tags.t -> Tags.t) -> Tags.elt list -> Tags.t -> Tags.t
+)
+ident(
+  ext_ref My_std.List.fold_right
+)
+"ocamlbuild/configuration.ml" 52 1837 1859 "ocamlbuild/configuration.ml" 52 1837 1867
+type(
+  Tags.elt -> Tags.t -> Tags.t
+)
+ident(
+  ext_ref Tags.add
+)
+"ocamlbuild/configuration.ml" 52 1837 1868 "ocamlbuild/configuration.ml" 52 1837 1869
+type(
+  Lexers.conf_values
+)
+ident(
+  int_ref v "ocamlbuild/configuration.ml" 50 1765 1803 "ocamlbuild/configuration.ml" 50 1765 1804
+)
+"ocamlbuild/configuration.ml" 52 1837 1868 "ocamlbuild/configuration.ml" 52 1837 1879
+type(
+  Tags.elt list
+)
+"ocamlbuild/configuration.ml" 52 1837 1881 "ocamlbuild/configuration.ml" 52 1837 1896
+type(
+  (Tags.elt -> Tags.t -> Tags.t) -> Tags.elt list -> Tags.t -> Tags.t
+)
+ident(
+  ext_ref My_std.List.fold_right
+)
+"ocamlbuild/configuration.ml" 52 1837 1897 "ocamlbuild/configuration.ml" 52 1837 1908
+type(
+  Tags.elt -> Tags.t -> Tags.t
+)
+ident(
+  ext_ref Tags.remove
+)
+"ocamlbuild/configuration.ml" 52 1837 1909 "ocamlbuild/configuration.ml" 52 1837 1910
+type(
+  Lexers.conf_values
+)
+ident(
+  int_ref v "ocamlbuild/configuration.ml" 50 1765 1803 "ocamlbuild/configuration.ml" 50 1765 1804
+)
+"ocamlbuild/configuration.ml" 52 1837 1909 "ocamlbuild/configuration.ml" 52 1837 1921
+type(
+  Tags.elt list
+)
+"ocamlbuild/configuration.ml" 52 1837 1922 "ocamlbuild/configuration.ml" 52 1837 1926
+type(
+  Tags.t
+)
+ident(
+  int_ref tags "ocamlbuild/configuration.ml" 50 1765 1792 "ocamlbuild/configuration.ml" 50 1765 1796
+)
+"ocamlbuild/configuration.ml" 52 1837 1880 "ocamlbuild/configuration.ml" 52 1837 1927
+call(
+  stack
+)
+type(
+  Tags.t
+)
+"ocamlbuild/configuration.ml" 52 1837 1843 "ocamlbuild/configuration.ml" 52 1837 1927
+call(
+  tail
+)
+type(
+  Tags.t
+)
+"ocamlbuild/configuration.ml" 53 1928 1937 "ocamlbuild/configuration.ml" 53 1928 1941
+type(
+  Tags.t
+)
+ident(
+  int_ref tags "ocamlbuild/configuration.ml" 50 1765 1792 "ocamlbuild/configuration.ml" 50 1765 1796
+)
+"ocamlbuild/configuration.ml" 51 1809 1813 "ocamlbuild/configuration.ml" 53 1928 1941
+type(
+  Tags.t
+)
+"ocamlbuild/configuration.ml" 50 1765 1782 "ocamlbuild/configuration.ml" 54 1942 1947
+type(
+  Tags.t -> Glob.globber * Lexers.conf_values -> Tags.t
+)
+"ocamlbuild/configuration.ml" 54 1942 1948 "ocamlbuild/configuration.ml" 54 1942 1952
+type(
+  Tags.t
+)
+ident(
+  int_ref init "ocamlbuild/configuration.ml" 49 1726 1758 "ocamlbuild/configuration.ml" 49 1726 1762
+)
+"ocamlbuild/configuration.ml" 54 1942 1953 "ocamlbuild/configuration.ml" 54 1942 1959
+type(
+  t
+)
+ident(
+  int_ref config "ocamlbuild/configuration.ml" 49 1726 1746 "ocamlbuild/configuration.ml" 49 1726 1752
+)
+"ocamlbuild/configuration.ml" 50 1765 1767 "ocamlbuild/configuration.ml" 54 1942 1959
+call(
+  tail
+)
+type(
+  Tags.t
+)
+"ocamlbuild/configuration.ml" 56 1961 1965 "ocamlbuild/configuration.ml" 56 1961 1978
+type(
+  string -> Tags.t
+)
+ident(
+  def apply_configs "ocamlbuild/configuration.ml" 58 2041 2041 "ocamlbuild/configuration.ml" 1 0 -1
+)
+"ocamlbuild/configuration.ml" 56 1961 1979 "ocamlbuild/configuration.ml" 56 1961 1980
+type(
+  string
+)
+ident(
+  def s "ocamlbuild/configuration.ml" 56 1961 1983 "ocamlbuild/configuration.ml" 56 1961 2039
+)
+"ocamlbuild/configuration.ml" 56 1961 1983 "ocamlbuild/configuration.ml" 56 1961 1998
+type(
+  (t -> Tags.t -> Tags.t) -> t list -> Tags.t -> Tags.t
+)
+ident(
+  ext_ref My_std.List.fold_right
+)
+"ocamlbuild/configuration.ml" 56 1961 2000 "ocamlbuild/configuration.ml" 56 1961 2012
+type(
+  string -> t -> Tags.t -> Tags.t
+)
+ident(
+  int_ref apply_config "ocamlbuild/configuration.ml" 49 1726 1730 "ocamlbuild/configuration.ml" 49 1726 1742
+)
+"ocamlbuild/configuration.ml" 56 1961 2013 "ocamlbuild/configuration.ml" 56 1961 2014
+type(
+  string
+)
+ident(
+  int_ref s "ocamlbuild/configuration.ml" 56 1961 1979 "ocamlbuild/configuration.ml" 56 1961 1980
+)
+"ocamlbuild/configuration.ml" 56 1961 1999 "ocamlbuild/configuration.ml" 56 1961 2015
+call(
+  stack
+)
+type(
+  t -> Tags.t -> Tags.t
+)
+"ocamlbuild/configuration.ml" 56 1961 2017 "ocamlbuild/configuration.ml" 56 1961 2024
+type(
+  unit -> t list
+)
+ident(
+  int_ref configs "ocamlbuild/configuration.ml" 27 1075 1080 "ocamlbuild/configuration.ml" 27 1075 1087
+)
+"ocamlbuild/configuration.ml" 56 1961 2025 "ocamlbuild/configuration.ml" 56 1961 2027
+type(
+  unit
+)
+"ocamlbuild/configuration.ml" 56 1961 2016 "ocamlbuild/configuration.ml" 56 1961 2028
+call(
+  stack
+)
+type(
+  t list
+)
+"ocamlbuild/configuration.ml" 56 1961 2029 "ocamlbuild/configuration.ml" 56 1961 2039
+type(
+  Tags.t
+)
+ident(
+  ext_ref Tags.empty
+)
+"ocamlbuild/configuration.ml" 56 1961 1983 "ocamlbuild/configuration.ml" 56 1961 2039
+call(
+  tail
+)
+type(
+  Tags.t
+)
+"ocamlbuild/configuration.ml" 58 2041 2045 "ocamlbuild/configuration.ml" 58 2041 2061
+type(
+  string -> Tags.t
+)
+ident(
+  def tags_of_filename "ocamlbuild/configuration.ml" 65 2199 2199 "ocamlbuild/configuration.ml" 1 0 -1
+)
+"ocamlbuild/configuration.ml" 58 2041 2062 "ocamlbuild/configuration.ml" 58 2041 2063
+type(
+  string
+)
+ident(
+  def s "ocamlbuild/configuration.ml" 59 2066 2068 "ocamlbuild/configuration.ml" 63 2190 2197
+)
+"ocamlbuild/configuration.ml" 59 2066 2072 "ocamlbuild/configuration.ml" 59 2066 2084
+type(
+  (string, Tags.t) Hashtbl.t -> string -> Tags.t
+)
+ident(
+  ext_ref Hashtbl.find
+)
+"ocamlbuild/configuration.ml" 59 2066 2085 "ocamlbuild/configuration.ml" 59 2066 2090
+type(
+  (string, Tags.t) Hashtbl.t
+)
+ident(
+  int_ref cache "ocamlbuild/configuration.ml" 26 1044 1048 "ocamlbuild/configuration.ml" 26 1044 1053
+)
+"ocamlbuild/configuration.ml" 59 2066 2091 "ocamlbuild/configuration.ml" 59 2066 2092
+type(
+  string
+)
+ident(
+  int_ref s "ocamlbuild/configuration.ml" 58 2041 2062 "ocamlbuild/configuration.ml" 58 2041 2063
+)
+"ocamlbuild/configuration.ml" 59 2066 2072 "ocamlbuild/configuration.ml" 59 2066 2092
+call(
+  stack
+)
+type(
+  Tags.t
+)
+"ocamlbuild/configuration.ml" 60 2093 2100 "ocamlbuild/configuration.ml" 60 2093 2109
+type(
+  exn
+)
+"ocamlbuild/configuration.ml" 61 2113 2121 "ocamlbuild/configuration.ml" 61 2113 2124
+type(
+  Tags.t
+)
+ident(
+  def res "ocamlbuild/configuration.ml" 62 2146 2150 "ocamlbuild/configuration.ml" 63 2190 2197
+)
+"ocamlbuild/configuration.ml" 61 2113 2127 "ocamlbuild/configuration.ml" 61 2113 2140
+type(
+  string -> Tags.t
+)
+ident(
+  int_ref apply_configs "ocamlbuild/configuration.ml" 56 1961 1965 "ocamlbuild/configuration.ml" 56 1961 1978
+)
+"ocamlbuild/configuration.ml" 61 2113 2141 "ocamlbuild/configuration.ml" 61 2113 2142
+type(
+  string
+)
+ident(
+  int_ref s "ocamlbuild/configuration.ml" 58 2041 2062 "ocamlbuild/configuration.ml" 58 2041 2063
+)
+"ocamlbuild/configuration.ml" 61 2113 2127 "ocamlbuild/configuration.ml" 61 2113 2142
+call(
+  stack
+)
+type(
+  Tags.t
+)
+"ocamlbuild/configuration.ml" 62 2146 2154 "ocamlbuild/configuration.ml" 62 2146 2156
+type(
+  unit
+)
+"ocamlbuild/configuration.ml" 62 2146 2159 "ocamlbuild/configuration.ml" 62 2146 2174
+type(
+  (string, Tags.t) Hashtbl.t -> string -> Tags.t -> unit
+)
+ident(
+  ext_ref Hashtbl.replace
+)
+"ocamlbuild/configuration.ml" 62 2146 2175 "ocamlbuild/configuration.ml" 62 2146 2180
+type(
+  (string, Tags.t) Hashtbl.t
+)
+ident(
+  int_ref cache "ocamlbuild/configuration.ml" 26 1044 1048 "ocamlbuild/configuration.ml" 26 1044 1053
+)
+"ocamlbuild/configuration.ml" 62 2146 2181 "ocamlbuild/configuration.ml" 62 2146 2182
+type(
+  string
+)
+ident(
+  int_ref s "ocamlbuild/configuration.ml" 58 2041 2062 "ocamlbuild/configuration.ml" 58 2041 2063
+)
+"ocamlbuild/configuration.ml" 62 2146 2183 "ocamlbuild/configuration.ml" 62 2146 2186
+type(
+  Tags.t
+)
+ident(
+  int_ref res "ocamlbuild/configuration.ml" 61 2113 2121 "ocamlbuild/configuration.ml" 61 2113 2124
+)
+"ocamlbuild/configuration.ml" 62 2146 2159 "ocamlbuild/configuration.ml" 62 2146 2186
+call(
+  stack
+)
+type(
+  unit
+)
+"ocamlbuild/configuration.ml" 63 2190 2194 "ocamlbuild/configuration.ml" 63 2190 2197
+type(
+  Tags.t
+)
+ident(
+  int_ref res "ocamlbuild/configuration.ml" 61 2113 2121 "ocamlbuild/configuration.ml" 61 2113 2124
+)
+"ocamlbuild/configuration.ml" 62 2146 2150 "ocamlbuild/configuration.ml" 63 2190 2197
+type(
+  Tags.t
+)
+"ocamlbuild/configuration.ml" 61 2113 2117 "ocamlbuild/configuration.ml" 63 2190 2197
+type(
+  Tags.t
+)
+"ocamlbuild/configuration.ml" 59 2066 2068 "ocamlbuild/configuration.ml" 63 2190 2197
+type(
+  Tags.t
+)
+"ocamlbuild/configuration.ml" 65 2199 2203 "ocamlbuild/configuration.ml" 65 2199 2214
+type(
+  unit -> Tags.t
+)
+ident(
+  def global_tags "ocamlbuild/configuration.ml" 66 2240 2240 "ocamlbuild/configuration.ml" 1 0 -1
+)
+"ocamlbuild/configuration.ml" 65 2199 2215 "ocamlbuild/configuration.ml" 65 2199 2217
+type(
+  unit
+)
+"ocamlbuild/configuration.ml" 65 2199 2220 "ocamlbuild/configuration.ml" 65 2199 2236
+type(
+  string -> Tags.t
+)
+ident(
+  int_ref tags_of_filename "ocamlbuild/configuration.ml" 58 2041 2045 "ocamlbuild/configuration.ml" 58 2041 2061
+)
+"ocamlbuild/configuration.ml" 65 2199 2237 "ocamlbuild/configuration.ml" 65 2199 2239
+type(
+  string
+)
+"ocamlbuild/configuration.ml" 65 2199 2220 "ocamlbuild/configuration.ml" 65 2199 2239
+call(
+  tail
+)
+type(
+  Tags.t
+)
+"ocamlbuild/configuration.ml" 66 2240 2244 "ocamlbuild/configuration.ml" 66 2240 2251
+type(
+  Tags.elt -> bool
+)
+ident(
+  def has_tag "ocamlbuild/configuration.ml" 68 2289 2289 "ocamlbuild/configuration.ml" 1 0 -1
+)
+"ocamlbuild/configuration.ml" 66 2240 2252 "ocamlbuild/configuration.ml" 66 2240 2255
+type(
+  Tags.elt
+)
+ident(
+  def tag "ocamlbuild/configuration.ml" 66 2240 2258 "ocamlbuild/configuration.ml" 66 2240 2287
+)
+"ocamlbuild/configuration.ml" 66 2240 2258 "ocamlbuild/configuration.ml" 66 2240 2266
+type(
+  Tags.elt -> Tags.t -> bool
+)
+ident(
+  ext_ref Tags.mem
+)
+"ocamlbuild/configuration.ml" 66 2240 2267 "ocamlbuild/configuration.ml" 66 2240 2270
+type(
+  Tags.elt
+)
+ident(
+  int_ref tag "ocamlbuild/configuration.ml" 66 2240 2252 "ocamlbuild/configuration.ml" 66 2240 2255
+)
+"ocamlbuild/configuration.ml" 66 2240 2272 "ocamlbuild/configuration.ml" 66 2240 2283
+type(
+  unit -> Tags.t
+)
+ident(
+  int_ref global_tags "ocamlbuild/configuration.ml" 65 2199 2203 "ocamlbuild/configuration.ml" 65 2199 2214
+)
+"ocamlbuild/configuration.ml" 66 2240 2284 "ocamlbuild/configuration.ml" 66 2240 2286
+type(
+  unit
+)
+"ocamlbuild/configuration.ml" 66 2240 2271 "ocamlbuild/configuration.ml" 66 2240 2287
+call(
+  stack
+)
+type(
+  Tags.t
+)
+"ocamlbuild/configuration.ml" 66 2240 2258 "ocamlbuild/configuration.ml" 66 2240 2287
+call(
+  tail
+)
+type(
+  bool
+)
+"ocamlbuild/configuration.ml" 68 2289 2293 "ocamlbuild/configuration.ml" 68 2289 2301
+type(
+  string -> string list -> unit
+)
+ident(
+  def tag_file "ocamlbuild/configuration.ml" 71 2408 2408 "ocamlbuild/configuration.ml" 1 0 -1
+)
+"ocamlbuild/configuration.ml" 68 2289 2302 "ocamlbuild/configuration.ml" 68 2289 2306
+type(
+  string
+)
+ident(
+  def file "ocamlbuild/configuration.ml" 68 2289 2307 "ocamlbuild/configuration.ml" 69 2314 2404
+)
+"ocamlbuild/configuration.ml" 68 2289 2307 "ocamlbuild/configuration.ml" 68 2289 2311
+type(
+  string list
+)
+ident(
+  def tags "ocamlbuild/configuration.ml" 69 2314 2316 "ocamlbuild/configuration.ml" 69 2314 2404
+)
+"ocamlbuild/configuration.ml" 69 2314 2319 "ocamlbuild/configuration.ml" 69 2314 2323
+type(
+  string list
+)
+ident(
+  int_ref tags "ocamlbuild/configuration.ml" 68 2289 2307 "ocamlbuild/configuration.ml" 68 2289 2311
+)
+"ocamlbuild/configuration.ml" 69 2314 2324 "ocamlbuild/configuration.ml" 69 2314 2326
+type(
+  string list -> string list -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"ocamlbuild/configuration.ml" 69 2314 2327 "ocamlbuild/configuration.ml" 69 2314 2329
+type(
+  string list
+)
+"ocamlbuild/configuration.ml" 69 2314 2319 "ocamlbuild/configuration.ml" 69 2314 2329
+type(
+  bool
+)
+"ocamlbuild/configuration.ml" 69 2314 2335 "ocamlbuild/configuration.ml" 69 2314 2347
+type(
+  string -> unit
+)
+ident(
+  int_ref parse_string "ocamlbuild/configuration.ml" 40 1458 1462 "ocamlbuild/configuration.ml" 40 1458 1474
+)
+"ocamlbuild/configuration.ml" 69 2314 2349 "ocamlbuild/configuration.ml" 69 2314 2363
+type(
+  (string -> string -> string, unit, string) format ->
+  string -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"ocamlbuild/configuration.ml" 69 2314 2364 "ocamlbuild/configuration.ml" 69 2314 2372
+type(
+  (string -> string -> string, unit, string) format
+)
+"ocamlbuild/configuration.ml" 69 2314 2373 "ocamlbuild/configuration.ml" 69 2314 2377
+type(
+  string
+)
+ident(
+  int_ref file "ocamlbuild/configuration.ml" 68 2289 2302 "ocamlbuild/configuration.ml" 68 2289 2306
+)
+"ocamlbuild/configuration.ml" 69 2314 2379 "ocamlbuild/configuration.ml" 69 2314 2392
+type(
+  string -> string list -> string
+)
+ident(
+  ext_ref My_std.String.concat
+)
+"ocamlbuild/configuration.ml" 69 2314 2393 "ocamlbuild/configuration.ml" 69 2314 2397
+type(
+  string
+)
+"ocamlbuild/configuration.ml" 69 2314 2398 "ocamlbuild/configuration.ml" 69 2314 2402
+type(
+  string list
+)
+ident(
+  int_ref tags "ocamlbuild/configuration.ml" 68 2289 2307 "ocamlbuild/configuration.ml" 68 2289 2311
+)
+"ocamlbuild/configuration.ml" 69 2314 2378 "ocamlbuild/configuration.ml" 69 2314 2403
+call(
+  stack
+)
+type(
+  string
+)
+"ocamlbuild/configuration.ml" 69 2314 2348 "ocamlbuild/configuration.ml" 69 2314 2404
+call(
+  stack
+)
+type(
+  string
+)
+"ocamlbuild/configuration.ml" 69 2314 2335 "ocamlbuild/configuration.ml" 69 2314 2404
+call(
+  tail
+)
+type(
+  unit
+)
+"ocamlbuild/configuration.ml" 69 2314 2316 "ocamlbuild/configuration.ml" 69 2314 2404
+type(
+  unit
+)
+"ocamlbuild/configuration.ml" 71 2408 2412 "ocamlbuild/configuration.ml" 71 2408 2419
+type(
+  string list -> unit
+)
+ident(
+  def tag_any "ocamlbuild/configuration.ml" 72 2427 2514 "ocamlbuild/configuration.ml" 1 0 -1
+)
+"ocamlbuild/configuration.ml" 71 2408 2420 "ocamlbuild/configuration.ml" 71 2408 2424
+type(
+  string list
+)
+ident(
+  def tags "ocamlbuild/configuration.ml" 72 2427 2429 "ocamlbuild/configuration.ml" 72 2427 2514
+)
+"ocamlbuild/configuration.ml" 72 2427 2432 "ocamlbuild/configuration.ml" 72 2427 2436
+type(
+  string list
+)
+ident(
+  int_ref tags "ocamlbuild/configuration.ml" 71 2408 2420 "ocamlbuild/configuration.ml" 71 2408 2424
+)
+"ocamlbuild/configuration.ml" 72 2427 2437 "ocamlbuild/configuration.ml" 72 2427 2439
+type(
+  string list -> string list -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"ocamlbuild/configuration.ml" 72 2427 2440 "ocamlbuild/configuration.ml" 72 2427 2442
+type(
+  string list
+)
+"ocamlbuild/configuration.ml" 72 2427 2432 "ocamlbuild/configuration.ml" 72 2427 2442
+type(
+  bool
+)
+"ocamlbuild/configuration.ml" 72 2427 2448 "ocamlbuild/configuration.ml" 72 2427 2460
+type(
+  string -> unit
+)
+ident(
+  int_ref parse_string "ocamlbuild/configuration.ml" 40 1458 1462 "ocamlbuild/configuration.ml" 40 1458 1474
+)
+"ocamlbuild/configuration.ml" 72 2427 2462 "ocamlbuild/configuration.ml" 72 2427 2476
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"ocamlbuild/configuration.ml" 72 2427 2477 "ocamlbuild/configuration.ml" 72 2427 2487
+type(
+  (string -> string, unit, string) format
+)
+"ocamlbuild/configuration.ml" 72 2427 2489 "ocamlbuild/configuration.ml" 72 2427 2502
+type(
+  string -> string list -> string
+)
+ident(
+  ext_ref My_std.String.concat
+)
+"ocamlbuild/configuration.ml" 72 2427 2503 "ocamlbuild/configuration.ml" 72 2427 2507
+type(
+  string
+)
+"ocamlbuild/configuration.ml" 72 2427 2508 "ocamlbuild/configuration.ml" 72 2427 2512
+type(
+  string list
+)
+ident(
+  int_ref tags "ocamlbuild/configuration.ml" 71 2408 2420 "ocamlbuild/configuration.ml" 71 2408 2424
+)
+"ocamlbuild/configuration.ml" 72 2427 2488 "ocamlbuild/configuration.ml" 72 2427 2513
+call(
+  stack
+)
+type(
+  string
+)
+"ocamlbuild/configuration.ml" 72 2427 2461 "ocamlbuild/configuration.ml" 72 2427 2514
+call(
+  stack
+)
+type(
+  string
+)
+"ocamlbuild/configuration.ml" 72 2427 2448 "ocamlbuild/configuration.ml" 72 2427 2514
+call(
+  tail
+)
+type(
+  unit
+)
+"ocamlbuild/configuration.ml" 72 2427 2429 "ocamlbuild/configuration.ml" 72 2427 2514
+type(
+  unit
+)

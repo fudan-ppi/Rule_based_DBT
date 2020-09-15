@@ -1,0 +1,5681 @@
+   0  $accept : %entry% $end
+
+   1  file : component_list EOF
+
+   2  component_list :
+   3                 | component_list component
+
+   4  component : const_decl SEMI
+   5            | type_decl SEMI
+   6            | attributes struct_declarator SEMI
+   7            | attributes union_declarator SEMI
+   8            | attributes enum_declarator SEMI
+   9            | attributes STRUCT opt_ident SEMI
+  10            | attributes UNION opt_ident SWITCH LPAREN simple_type_spec ident RPAREN SEMI
+  11            | attributes UNION opt_ident SEMI
+  12            | fun_decl SEMI
+  13            | interface_attributes INTERFACE tydef_ident opt_superinterface LBRACE component_list RBRACE opt_semi
+  14            | interface_attributes INTERFACE tydef_ident SEMI
+  15            | IMPORT STRING SEMI
+  16            | quote opt_semi
+
+  17  const_decl : CONST attributes type_spec pointer_opt IDENT EQUAL lexpr
+
+  18  type_decl : TYPEDEF attributes type_spec declarators
+
+  19  fun_decl : attributes type_spec pointer_opt IDENT LPAREN param_list_declarator RPAREN opt_quotes
+
+  20  opt_quotes : opt_quotes QUOTE LPAREN STRING RPAREN
+  21             | opt_quotes QUOTE LPAREN ident COMMA STRING RPAREN
+  22             |
+
+  23  param_list_declarator :
+  24                        | VOID
+  25                        | param_declarators
+
+  26  param_declarators : param_declarator
+  27                    | param_declarators COMMA param_declarator
+
+  28  param_declarator : attributes type_spec declarator
+
+  29  type_spec : simple_type_spec
+  30            | STRUCT opt_ident
+  31            | struct_declarator
+  32            | UNION opt_ident
+  33            | union_declarator
+  34            | ENUM opt_ident
+  35            | enum_declarator
+  36            | CONST type_spec
+  37            | type_spec CONST
+
+  38  simple_type_spec : FLOAT
+  39                   | DOUBLE
+  40                   | INT
+  41                   | UNSIGNED INT
+  42                   | SIGNED INT
+  43                   | integer_size opt_int
+  44                   | UNSIGNED integer_size opt_int
+  45                   | integer_size UNSIGNED opt_int
+  46                   | SIGNED integer_size opt_int
+  47                   | integer_size SIGNED opt_int
+  48                   | CHAR
+  49                   | UNSIGNED CHAR
+  50                   | SIGNED CHAR
+  51                   | BOOLEAN
+  52                   | BYTE
+  53                   | INT64
+  54                   | UNSIGNED INT64
+  55                   | SIGNED INT64
+  56                   | VOID
+  57                   | TYPEIDENT
+  58                   | WCHAR_T
+  59                   | HANDLE_T
+
+  60  integer_size : LONG
+  61               | SMALL
+  62               | SHORT
+  63               | HYPER
+  64               | LONG LONG
+
+  65  opt_int :
+  66          | INT
+
+  67  declarators : declarator
+  68              | declarators COMMA declarator
+
+  69  declarator : pointer_opt direct_declarator
+
+  70  pointer_opt :
+  71              | pointer_opt STAR
+  72              | pointer_opt STAR CONST
+
+  73  direct_declarator : ident
+  74                    | LPAREN declarator RPAREN
+  75                    | direct_declarator array_bounds_declarator
+
+  76  array_bounds_declarator : LBRACKET RBRACKET
+  77                          | LBRACKET STAR RBRACKET
+  78                          | LBRACKET lexpr RBRACKET
+
+  79  union_name : ident
+  80             |
+
+  81  struct_declarator : STRUCT opt_ident LBRACE field_declarators RBRACE
+  82                    | UNION opt_ident SWITCH LPAREN simple_type_spec ident RPAREN union_name LBRACE union_body RBRACE
+
+  83  field_declarators : field_declarator
+  84                    | field_declarators field_declarator
+
+  85  field_declarator : attributes type_spec declarators SEMI
+
+  86  union_declarator : UNION opt_ident LBRACE union_body RBRACE
+
+  87  union_body : union_case
+  88             | union_body union_case
+
+  89  union_case : case_list opt_field_declarator SEMI
+  90             | DEFAULT COLON opt_field_declarator SEMI
+
+  91  case_list : case_label
+  92            | case_list case_label
+
+  93  case_label : CASE ident COLON
+
+  94  opt_field_declarator :
+  95                       | attributes type_spec declarator
+
+  96  enum_declarator : ENUM opt_ident LBRACE enum_cases opt_comma RBRACE
+
+  97  enum_cases : enum_case
+  98             | enum_cases COMMA enum_case
+
+  99  enum_case : ident
+ 100            | ident EQUAL lexpr
+
+ 101  opt_comma : COMMA
+ 102            |
+
+ 103  interface_attributes : attributes
+
+ 104  attributes :
+ 105             | LBRACKET attribute_list RBRACKET
+
+ 106  attribute_list : attribute
+ 107                 |
+ 108                 | attribute_list COMMA attribute
+ 109                 | attribute_list COMMA
+
+ 110  attribute : ident
+ 111            | ident LPAREN attr_vars RPAREN
+ 112            | STAR attribute
+ 113            | attribute STAR
+ 114            | ident UUID
+
+ 115  attr_vars : attr_var
+ 116            | attr_vars COMMA attr_var
+
+ 117  attr_var : lexpr
+ 118           |
+
+ 119  lexpr : IDENT
+ 120        | INTEGER
+ 121        | CHARACTER
+ 122        | TRUE
+ 123        | FALSE
+ 124        | STRING
+ 125        | lexpr QUESTIONMARK lexpr COLON lexpr
+ 126        | lexpr BARBAR lexpr
+ 127        | lexpr AMPERAMPER lexpr
+ 128        | lexpr BAR lexpr
+ 129        | lexpr CARET lexpr
+ 130        | lexpr AMPER lexpr
+ 131        | lexpr EQUALEQUAL lexpr
+ 132        | lexpr BANGEQUAL lexpr
+ 133        | lexpr LESS lexpr
+ 134        | lexpr GREATER lexpr
+ 135        | lexpr LESSEQUAL lexpr
+ 136        | lexpr GREATEREQUAL lexpr
+ 137        | lexpr LESSLESS lexpr
+ 138        | lexpr GREATERGREATER lexpr
+ 139        | lexpr GREATERGREATERGREATER lexpr
+ 140        | lexpr PLUS lexpr
+ 141        | lexpr MINUS lexpr
+ 142        | lexpr STAR lexpr
+ 143        | lexpr SLASH lexpr
+ 144        | lexpr PERCENT lexpr
+ 145        | PLUS lexpr
+ 146        | MINUS lexpr
+ 147        | TILDE lexpr
+ 148        | BANG lexpr
+ 149        | STAR lexpr
+ 150        | AMPER lexpr
+ 151        | LPAREN type_expr RPAREN lexpr
+ 152        | SIZEOF LPAREN type_expr RPAREN
+ 153        | lexpr LBRACKET lexpr RBRACKET
+ 154        | lexpr MINUSGREATER ident
+ 155        | lexpr DOT ident
+ 156        | lexpr DOT INTEGER
+ 157        | LPAREN lexpr RPAREN
+
+ 158  type_expr : type_spec
+ 159            | type_spec abstract_declarator
+
+ 160  abstract_declarator : STAR
+ 161                      | STAR direct_abstract_declarator
+ 162                      | direct_abstract_declarator
+
+ 163  direct_abstract_declarator : LPAREN abstract_declarator RPAREN
+ 164                             | direct_abstract_declarator array_bounds_declarator
+
+ 165  opt_ident :
+ 166            | ident
+
+ 167  opt_superinterface :
+ 168                     | COLON ident
+
+ 169  opt_semi : SEMI
+ 170           |
+
+ 171  ident : IDENT
+ 172        | TYPEIDENT
+
+ 173  tydef_ident : ident
+
+ 174  quote : QUOTE LPAREN STRING RPAREN
+ 175        | QUOTE LPAREN ident COMMA STRING RPAREN
+ 176        | CPP_QUOTE LPAREN STRING RPAREN
+
+ 177  %entry% : '\001' file
+
+state 0
+	$accept : . %entry% $end  (0)
+
+	'\001'  shift 1
+	.  error
+
+	%entry%  goto 2
+
+
+state 1
+	%entry% : '\001' . file  (177)
+	component_list : .  (2)
+
+	.  reduce 2
+
+	file  goto 3
+	component_list  goto 4
+
+
+state 2
+	$accept : %entry% . $end  (0)
+
+	$end  accept
+
+
+state 3
+	%entry% : '\001' file .  (177)
+
+	.  reduce 177
+
+
+4: shift/reduce conflict (shift 5, reduce 104) on CONST
+state 4
+	file : component_list . EOF  (1)
+	component_list : component_list . component  (3)
+	attributes : .  (104)
+
+	CONST  shift 5
+	CPP_QUOTE  shift 6
+	EOF  shift 7
+	IMPORT  shift 8
+	LBRACKET  shift 9
+	QUOTE  shift 10
+	TYPEDEF  shift 11
+	BOOLEAN  reduce 104
+	BYTE  reduce 104
+	CHAR  reduce 104
+	DOUBLE  reduce 104
+	ENUM  reduce 104
+	FLOAT  reduce 104
+	HANDLE_T  reduce 104
+	HYPER  reduce 104
+	INT  reduce 104
+	INT64  reduce 104
+	INTERFACE  reduce 104
+	LONG  reduce 104
+	SHORT  reduce 104
+	SIGNED  reduce 104
+	SMALL  reduce 104
+	STRUCT  reduce 104
+	TYPEIDENT  reduce 104
+	UNION  reduce 104
+	UNSIGNED  reduce 104
+	VOID  reduce 104
+	WCHAR_T  reduce 104
+
+	component  goto 12
+	const_decl  goto 13
+	type_decl  goto 14
+	attributes  goto 15
+	fun_decl  goto 16
+	interface_attributes  goto 17
+	quote  goto 18
+
+
+state 5
+	const_decl : CONST . attributes type_spec pointer_opt IDENT EQUAL lexpr  (17)
+	attributes : .  (104)
+
+	LBRACKET  shift 9
+	BOOLEAN  reduce 104
+	BYTE  reduce 104
+	CHAR  reduce 104
+	CONST  reduce 104
+	DOUBLE  reduce 104
+	ENUM  reduce 104
+	FLOAT  reduce 104
+	HANDLE_T  reduce 104
+	HYPER  reduce 104
+	INT  reduce 104
+	INT64  reduce 104
+	LONG  reduce 104
+	SHORT  reduce 104
+	SIGNED  reduce 104
+	SMALL  reduce 104
+	STRUCT  reduce 104
+	TYPEIDENT  reduce 104
+	UNION  reduce 104
+	UNSIGNED  reduce 104
+	VOID  reduce 104
+	WCHAR_T  reduce 104
+
+	attributes  goto 19
+
+
+state 6
+	quote : CPP_QUOTE . LPAREN STRING RPAREN  (176)
+
+	LPAREN  shift 20
+	.  error
+
+
+state 7
+	file : component_list EOF .  (1)
+
+	.  reduce 1
+
+
+state 8
+	component : IMPORT . STRING SEMI  (15)
+
+	STRING  shift 21
+	.  error
+
+
+state 9
+	attributes : LBRACKET . attribute_list RBRACKET  (105)
+	attribute_list : .  (107)
+
+	IDENT  shift 22
+	STAR  shift 23
+	TYPEIDENT  shift 24
+	COMMA  reduce 107
+	RBRACKET  reduce 107
+
+	ident  goto 25
+	attribute_list  goto 26
+	attribute  goto 27
+
+
+state 10
+	quote : QUOTE . LPAREN STRING RPAREN  (174)
+	quote : QUOTE . LPAREN ident COMMA STRING RPAREN  (175)
+
+	LPAREN  shift 28
+	.  error
+
+
+state 11
+	type_decl : TYPEDEF . attributes type_spec declarators  (18)
+	attributes : .  (104)
+
+	LBRACKET  shift 9
+	BOOLEAN  reduce 104
+	BYTE  reduce 104
+	CHAR  reduce 104
+	CONST  reduce 104
+	DOUBLE  reduce 104
+	ENUM  reduce 104
+	FLOAT  reduce 104
+	HANDLE_T  reduce 104
+	HYPER  reduce 104
+	INT  reduce 104
+	INT64  reduce 104
+	LONG  reduce 104
+	SHORT  reduce 104
+	SIGNED  reduce 104
+	SMALL  reduce 104
+	STRUCT  reduce 104
+	TYPEIDENT  reduce 104
+	UNION  reduce 104
+	UNSIGNED  reduce 104
+	VOID  reduce 104
+	WCHAR_T  reduce 104
+
+	attributes  goto 29
+
+
+state 12
+	component_list : component_list component .  (3)
+
+	.  reduce 3
+
+
+state 13
+	component : const_decl . SEMI  (4)
+
+	SEMI  shift 30
+	.  error
+
+
+state 14
+	component : type_decl . SEMI  (5)
+
+	SEMI  shift 31
+	.  error
+
+
+state 15
+	component : attributes . struct_declarator SEMI  (6)
+	component : attributes . union_declarator SEMI  (7)
+	component : attributes . enum_declarator SEMI  (8)
+	component : attributes . STRUCT opt_ident SEMI  (9)
+	component : attributes . UNION opt_ident SWITCH LPAREN simple_type_spec ident RPAREN SEMI  (10)
+	component : attributes . UNION opt_ident SEMI  (11)
+	fun_decl : attributes . type_spec pointer_opt IDENT LPAREN param_list_declarator RPAREN opt_quotes  (19)
+	interface_attributes : attributes .  (103)
+
+	BOOLEAN  shift 32
+	BYTE  shift 33
+	CHAR  shift 34
+	CONST  shift 35
+	DOUBLE  shift 36
+	ENUM  shift 37
+	FLOAT  shift 38
+	HANDLE_T  shift 39
+	HYPER  shift 40
+	INT  shift 41
+	INT64  shift 42
+	LONG  shift 43
+	SHORT  shift 44
+	SIGNED  shift 45
+	SMALL  shift 46
+	STRUCT  shift 47
+	TYPEIDENT  shift 48
+	UNION  shift 49
+	UNSIGNED  shift 50
+	VOID  shift 51
+	WCHAR_T  shift 52
+	INTERFACE  reduce 103
+
+	struct_declarator  goto 53
+	union_declarator  goto 54
+	enum_declarator  goto 55
+	simple_type_spec  goto 56
+	type_spec  goto 57
+	integer_size  goto 58
+
+
+state 16
+	component : fun_decl . SEMI  (12)
+
+	SEMI  shift 59
+	.  error
+
+
+state 17
+	component : interface_attributes . INTERFACE tydef_ident opt_superinterface LBRACE component_list RBRACE opt_semi  (13)
+	component : interface_attributes . INTERFACE tydef_ident SEMI  (14)
+
+	INTERFACE  shift 60
+	.  error
+
+
+state 18
+	component : quote . opt_semi  (16)
+	opt_semi : .  (170)
+
+	SEMI  shift 61
+	BOOLEAN  reduce 170
+	BYTE  reduce 170
+	CHAR  reduce 170
+	CONST  reduce 170
+	CPP_QUOTE  reduce 170
+	DOUBLE  reduce 170
+	ENUM  reduce 170
+	EOF  reduce 170
+	FLOAT  reduce 170
+	HANDLE_T  reduce 170
+	HYPER  reduce 170
+	IMPORT  reduce 170
+	INT  reduce 170
+	INT64  reduce 170
+	INTERFACE  reduce 170
+	LBRACKET  reduce 170
+	LONG  reduce 170
+	QUOTE  reduce 170
+	RBRACE  reduce 170
+	SHORT  reduce 170
+	SIGNED  reduce 170
+	SMALL  reduce 170
+	STRUCT  reduce 170
+	TYPEDEF  reduce 170
+	TYPEIDENT  reduce 170
+	UNION  reduce 170
+	UNSIGNED  reduce 170
+	VOID  reduce 170
+	WCHAR_T  reduce 170
+
+	opt_semi  goto 62
+
+
+state 19
+	const_decl : CONST attributes . type_spec pointer_opt IDENT EQUAL lexpr  (17)
+
+	BOOLEAN  shift 32
+	BYTE  shift 33
+	CHAR  shift 34
+	CONST  shift 35
+	DOUBLE  shift 36
+	ENUM  shift 37
+	FLOAT  shift 38
+	HANDLE_T  shift 39
+	HYPER  shift 40
+	INT  shift 41
+	INT64  shift 42
+	LONG  shift 43
+	SHORT  shift 44
+	SIGNED  shift 45
+	SMALL  shift 46
+	STRUCT  shift 63
+	TYPEIDENT  shift 48
+	UNION  shift 64
+	UNSIGNED  shift 50
+	VOID  shift 51
+	WCHAR_T  shift 52
+	.  error
+
+	struct_declarator  goto 65
+	union_declarator  goto 66
+	enum_declarator  goto 67
+	simple_type_spec  goto 56
+	type_spec  goto 68
+	integer_size  goto 58
+
+
+state 20
+	quote : CPP_QUOTE LPAREN . STRING RPAREN  (176)
+
+	STRING  shift 69
+	.  error
+
+
+state 21
+	component : IMPORT STRING . SEMI  (15)
+
+	SEMI  shift 70
+	.  error
+
+
+state 22
+	ident : IDENT .  (171)
+
+	.  reduce 171
+
+
+state 23
+	attribute : STAR . attribute  (112)
+
+	IDENT  shift 22
+	STAR  shift 23
+	TYPEIDENT  shift 24
+	.  error
+
+	ident  goto 25
+	attribute  goto 71
+
+
+state 24
+	ident : TYPEIDENT .  (172)
+
+	.  reduce 172
+
+
+state 25
+	attribute : ident .  (110)
+	attribute : ident . LPAREN attr_vars RPAREN  (111)
+	attribute : ident . UUID  (114)
+
+	LPAREN  shift 72
+	UUID  shift 73
+	COMMA  reduce 110
+	RBRACKET  reduce 110
+	STAR  reduce 110
+
+
+state 26
+	attributes : LBRACKET attribute_list . RBRACKET  (105)
+	attribute_list : attribute_list . COMMA attribute  (108)
+	attribute_list : attribute_list . COMMA  (109)
+
+	COMMA  shift 74
+	RBRACKET  shift 75
+	.  error
+
+
+state 27
+	attribute_list : attribute .  (106)
+	attribute : attribute . STAR  (113)
+
+	STAR  shift 76
+	COMMA  reduce 106
+	RBRACKET  reduce 106
+
+
+state 28
+	quote : QUOTE LPAREN . STRING RPAREN  (174)
+	quote : QUOTE LPAREN . ident COMMA STRING RPAREN  (175)
+
+	IDENT  shift 22
+	STRING  shift 77
+	TYPEIDENT  shift 24
+	.  error
+
+	ident  goto 78
+
+
+state 29
+	type_decl : TYPEDEF attributes . type_spec declarators  (18)
+
+	BOOLEAN  shift 32
+	BYTE  shift 33
+	CHAR  shift 34
+	CONST  shift 35
+	DOUBLE  shift 36
+	ENUM  shift 37
+	FLOAT  shift 38
+	HANDLE_T  shift 39
+	HYPER  shift 40
+	INT  shift 41
+	INT64  shift 42
+	LONG  shift 43
+	SHORT  shift 44
+	SIGNED  shift 45
+	SMALL  shift 46
+	STRUCT  shift 63
+	TYPEIDENT  shift 48
+	UNION  shift 64
+	UNSIGNED  shift 50
+	VOID  shift 51
+	WCHAR_T  shift 52
+	.  error
+
+	struct_declarator  goto 65
+	union_declarator  goto 66
+	enum_declarator  goto 67
+	simple_type_spec  goto 56
+	type_spec  goto 79
+	integer_size  goto 58
+
+
+state 30
+	component : const_decl SEMI .  (4)
+
+	.  reduce 4
+
+
+state 31
+	component : type_decl SEMI .  (5)
+
+	.  reduce 5
+
+
+state 32
+	simple_type_spec : BOOLEAN .  (51)
+
+	.  reduce 51
+
+
+state 33
+	simple_type_spec : BYTE .  (52)
+
+	.  reduce 52
+
+
+state 34
+	simple_type_spec : CHAR .  (48)
+
+	.  reduce 48
+
+
+state 35
+	type_spec : CONST . type_spec  (36)
+
+	BOOLEAN  shift 32
+	BYTE  shift 33
+	CHAR  shift 34
+	CONST  shift 35
+	DOUBLE  shift 36
+	ENUM  shift 37
+	FLOAT  shift 38
+	HANDLE_T  shift 39
+	HYPER  shift 40
+	INT  shift 41
+	INT64  shift 42
+	LONG  shift 43
+	SHORT  shift 44
+	SIGNED  shift 45
+	SMALL  shift 46
+	STRUCT  shift 63
+	TYPEIDENT  shift 48
+	UNION  shift 64
+	UNSIGNED  shift 50
+	VOID  shift 51
+	WCHAR_T  shift 52
+	.  error
+
+	struct_declarator  goto 65
+	union_declarator  goto 66
+	enum_declarator  goto 67
+	simple_type_spec  goto 56
+	type_spec  goto 80
+	integer_size  goto 58
+
+
+state 36
+	simple_type_spec : DOUBLE .  (39)
+
+	.  reduce 39
+
+
+37: shift/reduce conflict (shift 22, reduce 165) on IDENT
+37: shift/reduce conflict (shift 24, reduce 165) on TYPEIDENT
+state 37
+	type_spec : ENUM . opt_ident  (34)
+	enum_declarator : ENUM . opt_ident LBRACE enum_cases opt_comma RBRACE  (96)
+	opt_ident : .  (165)
+
+	IDENT  shift 22
+	TYPEIDENT  shift 24
+	CONST  reduce 165
+	LBRACE  reduce 165
+	LPAREN  reduce 165
+	RPAREN  reduce 165
+	STAR  reduce 165
+
+	opt_ident  goto 81
+	ident  goto 82
+
+
+state 38
+	simple_type_spec : FLOAT .  (38)
+
+	.  reduce 38
+
+
+state 39
+	simple_type_spec : HANDLE_T .  (59)
+
+	.  reduce 59
+
+
+state 40
+	integer_size : HYPER .  (63)
+
+	.  reduce 63
+
+
+state 41
+	simple_type_spec : INT .  (40)
+
+	.  reduce 40
+
+
+state 42
+	simple_type_spec : INT64 .  (53)
+
+	.  reduce 53
+
+
+state 43
+	integer_size : LONG .  (60)
+	integer_size : LONG . LONG  (64)
+
+	LONG  shift 83
+	CONST  reduce 60
+	IDENT  reduce 60
+	INT  reduce 60
+	LPAREN  reduce 60
+	RPAREN  reduce 60
+	SIGNED  reduce 60
+	STAR  reduce 60
+	TYPEIDENT  reduce 60
+	UNSIGNED  reduce 60
+
+
+state 44
+	integer_size : SHORT .  (62)
+
+	.  reduce 62
+
+
+state 45
+	simple_type_spec : SIGNED . INT  (42)
+	simple_type_spec : SIGNED . integer_size opt_int  (46)
+	simple_type_spec : SIGNED . CHAR  (50)
+	simple_type_spec : SIGNED . INT64  (55)
+
+	CHAR  shift 84
+	HYPER  shift 40
+	INT  shift 85
+	INT64  shift 86
+	LONG  shift 43
+	SHORT  shift 44
+	SMALL  shift 46
+	.  error
+
+	integer_size  goto 87
+
+
+state 46
+	integer_size : SMALL .  (61)
+
+	.  reduce 61
+
+
+47: shift/reduce conflict (shift 22, reduce 165) on IDENT
+state 47
+	component : attributes STRUCT . opt_ident SEMI  (9)
+	type_spec : STRUCT . opt_ident  (30)
+	struct_declarator : STRUCT . opt_ident LBRACE field_declarators RBRACE  (81)
+	opt_ident : .  (165)
+
+	IDENT  shift 22
+	TYPEIDENT  shift 24
+	CONST  reduce 165
+	LBRACE  reduce 165
+	SEMI  reduce 165
+	STAR  reduce 165
+
+	opt_ident  goto 88
+	ident  goto 82
+
+
+state 48
+	simple_type_spec : TYPEIDENT .  (57)
+
+	.  reduce 57
+
+
+49: shift/reduce conflict (shift 22, reduce 165) on IDENT
+state 49
+	component : attributes UNION . opt_ident SWITCH LPAREN simple_type_spec ident RPAREN SEMI  (10)
+	component : attributes UNION . opt_ident SEMI  (11)
+	type_spec : UNION . opt_ident  (32)
+	struct_declarator : UNION . opt_ident SWITCH LPAREN simple_type_spec ident RPAREN union_name LBRACE union_body RBRACE  (82)
+	union_declarator : UNION . opt_ident LBRACE union_body RBRACE  (86)
+	opt_ident : .  (165)
+
+	IDENT  shift 22
+	TYPEIDENT  shift 24
+	CONST  reduce 165
+	LBRACE  reduce 165
+	SEMI  reduce 165
+	STAR  reduce 165
+	SWITCH  reduce 165
+
+	opt_ident  goto 89
+	ident  goto 82
+
+
+state 50
+	simple_type_spec : UNSIGNED . INT  (41)
+	simple_type_spec : UNSIGNED . integer_size opt_int  (44)
+	simple_type_spec : UNSIGNED . CHAR  (49)
+	simple_type_spec : UNSIGNED . INT64  (54)
+
+	CHAR  shift 90
+	HYPER  shift 40
+	INT  shift 91
+	INT64  shift 92
+	LONG  shift 43
+	SHORT  shift 44
+	SMALL  shift 46
+	.  error
+
+	integer_size  goto 93
+
+
+state 51
+	simple_type_spec : VOID .  (56)
+
+	.  reduce 56
+
+
+state 52
+	simple_type_spec : WCHAR_T .  (58)
+
+	.  reduce 58
+
+
+state 53
+	component : attributes struct_declarator . SEMI  (6)
+	type_spec : struct_declarator .  (31)
+
+	SEMI  shift 94
+	CONST  reduce 31
+	IDENT  reduce 31
+	STAR  reduce 31
+
+
+state 54
+	component : attributes union_declarator . SEMI  (7)
+	type_spec : union_declarator .  (33)
+
+	SEMI  shift 95
+	CONST  reduce 33
+	IDENT  reduce 33
+	STAR  reduce 33
+
+
+state 55
+	component : attributes enum_declarator . SEMI  (8)
+	type_spec : enum_declarator .  (35)
+
+	SEMI  shift 96
+	CONST  reduce 35
+	IDENT  reduce 35
+	STAR  reduce 35
+
+
+state 56
+	type_spec : simple_type_spec .  (29)
+
+	.  reduce 29
+
+
+state 57
+	fun_decl : attributes type_spec . pointer_opt IDENT LPAREN param_list_declarator RPAREN opt_quotes  (19)
+	type_spec : type_spec . CONST  (37)
+	pointer_opt : .  (70)
+
+	CONST  shift 97
+	IDENT  reduce 70
+	STAR  reduce 70
+
+	pointer_opt  goto 98
+
+
+state 58
+	simple_type_spec : integer_size . opt_int  (43)
+	simple_type_spec : integer_size . UNSIGNED opt_int  (45)
+	simple_type_spec : integer_size . SIGNED opt_int  (47)
+	opt_int : .  (65)
+
+	INT  shift 99
+	SIGNED  shift 100
+	UNSIGNED  shift 101
+	CONST  reduce 65
+	IDENT  reduce 65
+	LPAREN  reduce 65
+	RPAREN  reduce 65
+	STAR  reduce 65
+	TYPEIDENT  reduce 65
+
+	opt_int  goto 102
+
+
+state 59
+	component : fun_decl SEMI .  (12)
+
+	.  reduce 12
+
+
+state 60
+	component : interface_attributes INTERFACE . tydef_ident opt_superinterface LBRACE component_list RBRACE opt_semi  (13)
+	component : interface_attributes INTERFACE . tydef_ident SEMI  (14)
+
+	IDENT  shift 22
+	TYPEIDENT  shift 24
+	.  error
+
+	ident  goto 103
+	tydef_ident  goto 104
+
+
+state 61
+	opt_semi : SEMI .  (169)
+
+	.  reduce 169
+
+
+state 62
+	component : quote opt_semi .  (16)
+
+	.  reduce 16
+
+
+63: shift/reduce conflict (shift 22, reduce 165) on IDENT
+63: shift/reduce conflict (shift 24, reduce 165) on TYPEIDENT
+state 63
+	type_spec : STRUCT . opt_ident  (30)
+	struct_declarator : STRUCT . opt_ident LBRACE field_declarators RBRACE  (81)
+	opt_ident : .  (165)
+
+	IDENT  shift 22
+	TYPEIDENT  shift 24
+	CONST  reduce 165
+	LBRACE  reduce 165
+	LPAREN  reduce 165
+	RPAREN  reduce 165
+	STAR  reduce 165
+
+	opt_ident  goto 105
+	ident  goto 82
+
+
+64: shift/reduce conflict (shift 22, reduce 165) on IDENT
+64: shift/reduce conflict (shift 24, reduce 165) on TYPEIDENT
+state 64
+	type_spec : UNION . opt_ident  (32)
+	struct_declarator : UNION . opt_ident SWITCH LPAREN simple_type_spec ident RPAREN union_name LBRACE union_body RBRACE  (82)
+	union_declarator : UNION . opt_ident LBRACE union_body RBRACE  (86)
+	opt_ident : .  (165)
+
+	IDENT  shift 22
+	TYPEIDENT  shift 24
+	CONST  reduce 165
+	LBRACE  reduce 165
+	LPAREN  reduce 165
+	RPAREN  reduce 165
+	STAR  reduce 165
+	SWITCH  reduce 165
+
+	opt_ident  goto 106
+	ident  goto 82
+
+
+state 65
+	type_spec : struct_declarator .  (31)
+
+	.  reduce 31
+
+
+state 66
+	type_spec : union_declarator .  (33)
+
+	.  reduce 33
+
+
+state 67
+	type_spec : enum_declarator .  (35)
+
+	.  reduce 35
+
+
+state 68
+	const_decl : CONST attributes type_spec . pointer_opt IDENT EQUAL lexpr  (17)
+	type_spec : type_spec . CONST  (37)
+	pointer_opt : .  (70)
+
+	CONST  shift 97
+	IDENT  reduce 70
+	STAR  reduce 70
+
+	pointer_opt  goto 107
+
+
+state 69
+	quote : CPP_QUOTE LPAREN STRING . RPAREN  (176)
+
+	RPAREN  shift 108
+	.  error
+
+
+state 70
+	component : IMPORT STRING SEMI .  (15)
+
+	.  reduce 15
+
+
+state 71
+	attribute : STAR attribute .  (112)
+	attribute : attribute . STAR  (113)
+
+	.  reduce 112
+
+
+state 72
+	attribute : ident LPAREN . attr_vars RPAREN  (111)
+	attr_var : .  (118)
+
+	AMPER  shift 109
+	BANG  shift 110
+	CHARACTER  shift 111
+	FALSE  shift 112
+	IDENT  shift 113
+	INTEGER  shift 114
+	LPAREN  shift 115
+	MINUS  shift 116
+	PLUS  shift 117
+	SIZEOF  shift 118
+	STAR  shift 119
+	STRING  shift 120
+	TILDE  shift 121
+	TRUE  shift 122
+	COMMA  reduce 118
+	RPAREN  reduce 118
+
+	lexpr  goto 123
+	attr_vars  goto 124
+	attr_var  goto 125
+
+
+state 73
+	attribute : ident UUID .  (114)
+
+	.  reduce 114
+
+
+state 74
+	attribute_list : attribute_list COMMA . attribute  (108)
+	attribute_list : attribute_list COMMA .  (109)
+
+	IDENT  shift 22
+	STAR  shift 23
+	TYPEIDENT  shift 24
+	COMMA  reduce 109
+	RBRACKET  reduce 109
+
+	ident  goto 25
+	attribute  goto 126
+
+
+state 75
+	attributes : LBRACKET attribute_list RBRACKET .  (105)
+
+	.  reduce 105
+
+
+state 76
+	attribute : attribute STAR .  (113)
+
+	.  reduce 113
+
+
+state 77
+	quote : QUOTE LPAREN STRING . RPAREN  (174)
+
+	RPAREN  shift 127
+	.  error
+
+
+state 78
+	quote : QUOTE LPAREN ident . COMMA STRING RPAREN  (175)
+
+	COMMA  shift 128
+	.  error
+
+
+state 79
+	type_decl : TYPEDEF attributes type_spec . declarators  (18)
+	type_spec : type_spec . CONST  (37)
+	pointer_opt : .  (70)
+
+	CONST  shift 97
+	IDENT  reduce 70
+	LPAREN  reduce 70
+	STAR  reduce 70
+	TYPEIDENT  reduce 70
+
+	pointer_opt  goto 129
+	declarators  goto 130
+	declarator  goto 131
+
+
+80: shift/reduce conflict (shift 97, reduce 36) on CONST
+state 80
+	type_spec : CONST type_spec .  (36)
+	type_spec : type_spec . CONST  (37)
+
+	CONST  shift 97
+	IDENT  reduce 36
+	LPAREN  reduce 36
+	RPAREN  reduce 36
+	STAR  reduce 36
+	TYPEIDENT  reduce 36
+
+
+state 81
+	type_spec : ENUM opt_ident .  (34)
+	enum_declarator : ENUM opt_ident . LBRACE enum_cases opt_comma RBRACE  (96)
+
+	LBRACE  shift 132
+	CONST  reduce 34
+	IDENT  reduce 34
+	LPAREN  reduce 34
+	RPAREN  reduce 34
+	STAR  reduce 34
+	TYPEIDENT  reduce 34
+
+
+state 82
+	opt_ident : ident .  (166)
+
+	.  reduce 166
+
+
+state 83
+	integer_size : LONG LONG .  (64)
+
+	.  reduce 64
+
+
+state 84
+	simple_type_spec : SIGNED CHAR .  (50)
+
+	.  reduce 50
+
+
+state 85
+	simple_type_spec : SIGNED INT .  (42)
+
+	.  reduce 42
+
+
+state 86
+	simple_type_spec : SIGNED INT64 .  (55)
+
+	.  reduce 55
+
+
+state 87
+	simple_type_spec : SIGNED integer_size . opt_int  (46)
+	opt_int : .  (65)
+
+	INT  shift 99
+	CONST  reduce 65
+	IDENT  reduce 65
+	LPAREN  reduce 65
+	RPAREN  reduce 65
+	STAR  reduce 65
+	TYPEIDENT  reduce 65
+
+	opt_int  goto 133
+
+
+state 88
+	component : attributes STRUCT opt_ident . SEMI  (9)
+	type_spec : STRUCT opt_ident .  (30)
+	struct_declarator : STRUCT opt_ident . LBRACE field_declarators RBRACE  (81)
+
+	LBRACE  shift 134
+	SEMI  shift 135
+	CONST  reduce 30
+	IDENT  reduce 30
+	STAR  reduce 30
+
+
+state 89
+	component : attributes UNION opt_ident . SWITCH LPAREN simple_type_spec ident RPAREN SEMI  (10)
+	component : attributes UNION opt_ident . SEMI  (11)
+	type_spec : UNION opt_ident .  (32)
+	struct_declarator : UNION opt_ident . SWITCH LPAREN simple_type_spec ident RPAREN union_name LBRACE union_body RBRACE  (82)
+	union_declarator : UNION opt_ident . LBRACE union_body RBRACE  (86)
+
+	LBRACE  shift 136
+	SEMI  shift 137
+	SWITCH  shift 138
+	CONST  reduce 32
+	IDENT  reduce 32
+	STAR  reduce 32
+
+
+state 90
+	simple_type_spec : UNSIGNED CHAR .  (49)
+
+	.  reduce 49
+
+
+state 91
+	simple_type_spec : UNSIGNED INT .  (41)
+
+	.  reduce 41
+
+
+state 92
+	simple_type_spec : UNSIGNED INT64 .  (54)
+
+	.  reduce 54
+
+
+state 93
+	simple_type_spec : UNSIGNED integer_size . opt_int  (44)
+	opt_int : .  (65)
+
+	INT  shift 99
+	CONST  reduce 65
+	IDENT  reduce 65
+	LPAREN  reduce 65
+	RPAREN  reduce 65
+	STAR  reduce 65
+	TYPEIDENT  reduce 65
+
+	opt_int  goto 139
+
+
+state 94
+	component : attributes struct_declarator SEMI .  (6)
+
+	.  reduce 6
+
+
+state 95
+	component : attributes union_declarator SEMI .  (7)
+
+	.  reduce 7
+
+
+state 96
+	component : attributes enum_declarator SEMI .  (8)
+
+	.  reduce 8
+
+
+state 97
+	type_spec : type_spec CONST .  (37)
+
+	.  reduce 37
+
+
+state 98
+	fun_decl : attributes type_spec pointer_opt . IDENT LPAREN param_list_declarator RPAREN opt_quotes  (19)
+	pointer_opt : pointer_opt . STAR  (71)
+	pointer_opt : pointer_opt . STAR CONST  (72)
+
+	IDENT  shift 140
+	STAR  shift 141
+	.  error
+
+
+state 99
+	opt_int : INT .  (66)
+
+	.  reduce 66
+
+
+state 100
+	simple_type_spec : integer_size SIGNED . opt_int  (47)
+	opt_int : .  (65)
+
+	INT  shift 99
+	CONST  reduce 65
+	IDENT  reduce 65
+	LPAREN  reduce 65
+	RPAREN  reduce 65
+	STAR  reduce 65
+	TYPEIDENT  reduce 65
+
+	opt_int  goto 142
+
+
+state 101
+	simple_type_spec : integer_size UNSIGNED . opt_int  (45)
+	opt_int : .  (65)
+
+	INT  shift 99
+	CONST  reduce 65
+	IDENT  reduce 65
+	LPAREN  reduce 65
+	RPAREN  reduce 65
+	STAR  reduce 65
+	TYPEIDENT  reduce 65
+
+	opt_int  goto 143
+
+
+state 102
+	simple_type_spec : integer_size opt_int .  (43)
+
+	.  reduce 43
+
+
+state 103
+	tydef_ident : ident .  (173)
+
+	.  reduce 173
+
+
+state 104
+	component : interface_attributes INTERFACE tydef_ident . opt_superinterface LBRACE component_list RBRACE opt_semi  (13)
+	component : interface_attributes INTERFACE tydef_ident . SEMI  (14)
+	opt_superinterface : .  (167)
+
+	COLON  shift 144
+	SEMI  shift 145
+	LBRACE  reduce 167
+
+	opt_superinterface  goto 146
+
+
+state 105
+	type_spec : STRUCT opt_ident .  (30)
+	struct_declarator : STRUCT opt_ident . LBRACE field_declarators RBRACE  (81)
+
+	LBRACE  shift 134
+	CONST  reduce 30
+	IDENT  reduce 30
+	LPAREN  reduce 30
+	RPAREN  reduce 30
+	STAR  reduce 30
+	TYPEIDENT  reduce 30
+
+
+state 106
+	type_spec : UNION opt_ident .  (32)
+	struct_declarator : UNION opt_ident . SWITCH LPAREN simple_type_spec ident RPAREN union_name LBRACE union_body RBRACE  (82)
+	union_declarator : UNION opt_ident . LBRACE union_body RBRACE  (86)
+
+	LBRACE  shift 136
+	SWITCH  shift 147
+	CONST  reduce 32
+	IDENT  reduce 32
+	LPAREN  reduce 32
+	RPAREN  reduce 32
+	STAR  reduce 32
+	TYPEIDENT  reduce 32
+
+
+state 107
+	const_decl : CONST attributes type_spec pointer_opt . IDENT EQUAL lexpr  (17)
+	pointer_opt : pointer_opt . STAR  (71)
+	pointer_opt : pointer_opt . STAR CONST  (72)
+
+	IDENT  shift 148
+	STAR  shift 141
+	.  error
+
+
+state 108
+	quote : CPP_QUOTE LPAREN STRING RPAREN .  (176)
+
+	.  reduce 176
+
+
+state 109
+	lexpr : AMPER . lexpr  (150)
+
+	AMPER  shift 109
+	BANG  shift 110
+	CHARACTER  shift 111
+	FALSE  shift 112
+	IDENT  shift 113
+	INTEGER  shift 114
+	LPAREN  shift 115
+	MINUS  shift 116
+	PLUS  shift 117
+	SIZEOF  shift 118
+	STAR  shift 119
+	STRING  shift 120
+	TILDE  shift 121
+	TRUE  shift 122
+	.  error
+
+	lexpr  goto 149
+
+
+state 110
+	lexpr : BANG . lexpr  (148)
+
+	AMPER  shift 109
+	BANG  shift 110
+	CHARACTER  shift 111
+	FALSE  shift 112
+	IDENT  shift 113
+	INTEGER  shift 114
+	LPAREN  shift 115
+	MINUS  shift 116
+	PLUS  shift 117
+	SIZEOF  shift 118
+	STAR  shift 119
+	STRING  shift 120
+	TILDE  shift 121
+	TRUE  shift 122
+	.  error
+
+	lexpr  goto 150
+
+
+state 111
+	lexpr : CHARACTER .  (121)
+
+	.  reduce 121
+
+
+state 112
+	lexpr : FALSE .  (123)
+
+	.  reduce 123
+
+
+state 113
+	lexpr : IDENT .  (119)
+
+	.  reduce 119
+
+
+state 114
+	lexpr : INTEGER .  (120)
+
+	.  reduce 120
+
+
+state 115
+	lexpr : LPAREN . type_expr RPAREN lexpr  (151)
+	lexpr : LPAREN . lexpr RPAREN  (157)
+
+	AMPER  shift 109
+	BANG  shift 110
+	BOOLEAN  shift 32
+	BYTE  shift 33
+	CHAR  shift 34
+	CHARACTER  shift 111
+	CONST  shift 35
+	DOUBLE  shift 36
+	ENUM  shift 37
+	FALSE  shift 112
+	FLOAT  shift 38
+	HANDLE_T  shift 39
+	HYPER  shift 40
+	IDENT  shift 113
+	INT  shift 41
+	INT64  shift 42
+	INTEGER  shift 114
+	LONG  shift 43
+	LPAREN  shift 115
+	MINUS  shift 116
+	PLUS  shift 117
+	SHORT  shift 44
+	SIGNED  shift 45
+	SIZEOF  shift 118
+	SMALL  shift 46
+	STAR  shift 119
+	STRING  shift 120
+	STRUCT  shift 63
+	TILDE  shift 121
+	TRUE  shift 122
+	TYPEIDENT  shift 48
+	UNION  shift 64
+	UNSIGNED  shift 50
+	VOID  shift 51
+	WCHAR_T  shift 52
+	.  error
+
+	struct_declarator  goto 65
+	union_declarator  goto 66
+	enum_declarator  goto 67
+	simple_type_spec  goto 56
+	type_spec  goto 151
+	lexpr  goto 152
+	integer_size  goto 58
+	type_expr  goto 153
+
+
+state 116
+	lexpr : MINUS . lexpr  (146)
+
+	AMPER  shift 109
+	BANG  shift 110
+	CHARACTER  shift 111
+	FALSE  shift 112
+	IDENT  shift 113
+	INTEGER  shift 114
+	LPAREN  shift 115
+	MINUS  shift 116
+	PLUS  shift 117
+	SIZEOF  shift 118
+	STAR  shift 119
+	STRING  shift 120
+	TILDE  shift 121
+	TRUE  shift 122
+	.  error
+
+	lexpr  goto 154
+
+
+state 117
+	lexpr : PLUS . lexpr  (145)
+
+	AMPER  shift 109
+	BANG  shift 110
+	CHARACTER  shift 111
+	FALSE  shift 112
+	IDENT  shift 113
+	INTEGER  shift 114
+	LPAREN  shift 115
+	MINUS  shift 116
+	PLUS  shift 117
+	SIZEOF  shift 118
+	STAR  shift 119
+	STRING  shift 120
+	TILDE  shift 121
+	TRUE  shift 122
+	.  error
+
+	lexpr  goto 155
+
+
+state 118
+	lexpr : SIZEOF . LPAREN type_expr RPAREN  (152)
+
+	LPAREN  shift 156
+	.  error
+
+
+state 119
+	lexpr : STAR . lexpr  (149)
+
+	AMPER  shift 109
+	BANG  shift 110
+	CHARACTER  shift 111
+	FALSE  shift 112
+	IDENT  shift 113
+	INTEGER  shift 114
+	LPAREN  shift 115
+	MINUS  shift 116
+	PLUS  shift 117
+	SIZEOF  shift 118
+	STAR  shift 119
+	STRING  shift 120
+	TILDE  shift 121
+	TRUE  shift 122
+	.  error
+
+	lexpr  goto 157
+
+
+state 120
+	lexpr : STRING .  (124)
+
+	.  reduce 124
+
+
+state 121
+	lexpr : TILDE . lexpr  (147)
+
+	AMPER  shift 109
+	BANG  shift 110
+	CHARACTER  shift 111
+	FALSE  shift 112
+	IDENT  shift 113
+	INTEGER  shift 114
+	LPAREN  shift 115
+	MINUS  shift 116
+	PLUS  shift 117
+	SIZEOF  shift 118
+	STAR  shift 119
+	STRING  shift 120
+	TILDE  shift 121
+	TRUE  shift 122
+	.  error
+
+	lexpr  goto 158
+
+
+state 122
+	lexpr : TRUE .  (122)
+
+	.  reduce 122
+
+
+state 123
+	attr_var : lexpr .  (117)
+	lexpr : lexpr . QUESTIONMARK lexpr COLON lexpr  (125)
+	lexpr : lexpr . BARBAR lexpr  (126)
+	lexpr : lexpr . AMPERAMPER lexpr  (127)
+	lexpr : lexpr . BAR lexpr  (128)
+	lexpr : lexpr . CARET lexpr  (129)
+	lexpr : lexpr . AMPER lexpr  (130)
+	lexpr : lexpr . EQUALEQUAL lexpr  (131)
+	lexpr : lexpr . BANGEQUAL lexpr  (132)
+	lexpr : lexpr . LESS lexpr  (133)
+	lexpr : lexpr . GREATER lexpr  (134)
+	lexpr : lexpr . LESSEQUAL lexpr  (135)
+	lexpr : lexpr . GREATEREQUAL lexpr  (136)
+	lexpr : lexpr . LESSLESS lexpr  (137)
+	lexpr : lexpr . GREATERGREATER lexpr  (138)
+	lexpr : lexpr . GREATERGREATERGREATER lexpr  (139)
+	lexpr : lexpr . PLUS lexpr  (140)
+	lexpr : lexpr . MINUS lexpr  (141)
+	lexpr : lexpr . STAR lexpr  (142)
+	lexpr : lexpr . SLASH lexpr  (143)
+	lexpr : lexpr . PERCENT lexpr  (144)
+	lexpr : lexpr . LBRACKET lexpr RBRACKET  (153)
+	lexpr : lexpr . MINUSGREATER ident  (154)
+	lexpr : lexpr . DOT ident  (155)
+	lexpr : lexpr . DOT INTEGER  (156)
+
+	AMPER  shift 159
+	AMPERAMPER  shift 160
+	BANGEQUAL  shift 161
+	BAR  shift 162
+	BARBAR  shift 163
+	CARET  shift 164
+	DOT  shift 165
+	EQUALEQUAL  shift 166
+	GREATER  shift 167
+	GREATEREQUAL  shift 168
+	GREATERGREATER  shift 169
+	GREATERGREATERGREATER  shift 170
+	LBRACKET  shift 171
+	LESS  shift 172
+	LESSEQUAL  shift 173
+	LESSLESS  shift 174
+	MINUS  shift 175
+	PERCENT  shift 176
+	PLUS  shift 177
+	QUESTIONMARK  shift 178
+	SLASH  shift 179
+	STAR  shift 180
+	MINUSGREATER  shift 181
+	COMMA  reduce 117
+	RPAREN  reduce 117
+
+
+state 124
+	attribute : ident LPAREN attr_vars . RPAREN  (111)
+	attr_vars : attr_vars . COMMA attr_var  (116)
+
+	COMMA  shift 182
+	RPAREN  shift 183
+	.  error
+
+
+state 125
+	attr_vars : attr_var .  (115)
+
+	.  reduce 115
+
+
+state 126
+	attribute_list : attribute_list COMMA attribute .  (108)
+	attribute : attribute . STAR  (113)
+
+	STAR  shift 76
+	COMMA  reduce 108
+	RBRACKET  reduce 108
+
+
+state 127
+	quote : QUOTE LPAREN STRING RPAREN .  (174)
+
+	.  reduce 174
+
+
+state 128
+	quote : QUOTE LPAREN ident COMMA . STRING RPAREN  (175)
+
+	STRING  shift 184
+	.  error
+
+
+state 129
+	declarator : pointer_opt . direct_declarator  (69)
+	pointer_opt : pointer_opt . STAR  (71)
+	pointer_opt : pointer_opt . STAR CONST  (72)
+
+	IDENT  shift 22
+	LPAREN  shift 185
+	STAR  shift 141
+	TYPEIDENT  shift 24
+	.  error
+
+	ident  goto 186
+	direct_declarator  goto 187
+
+
+state 130
+	type_decl : TYPEDEF attributes type_spec declarators .  (18)
+	declarators : declarators . COMMA declarator  (68)
+
+	COMMA  shift 188
+	SEMI  reduce 18
+
+
+state 131
+	declarators : declarator .  (67)
+
+	.  reduce 67
+
+
+state 132
+	enum_declarator : ENUM opt_ident LBRACE . enum_cases opt_comma RBRACE  (96)
+
+	IDENT  shift 22
+	TYPEIDENT  shift 24
+	.  error
+
+	ident  goto 189
+	enum_cases  goto 190
+	enum_case  goto 191
+
+
+state 133
+	simple_type_spec : SIGNED integer_size opt_int .  (46)
+
+	.  reduce 46
+
+
+state 134
+	struct_declarator : STRUCT opt_ident LBRACE . field_declarators RBRACE  (81)
+	attributes : .  (104)
+
+	LBRACKET  shift 9
+	BOOLEAN  reduce 104
+	BYTE  reduce 104
+	CHAR  reduce 104
+	CONST  reduce 104
+	DOUBLE  reduce 104
+	ENUM  reduce 104
+	FLOAT  reduce 104
+	HANDLE_T  reduce 104
+	HYPER  reduce 104
+	INT  reduce 104
+	INT64  reduce 104
+	LONG  reduce 104
+	SHORT  reduce 104
+	SIGNED  reduce 104
+	SMALL  reduce 104
+	STRUCT  reduce 104
+	TYPEIDENT  reduce 104
+	UNION  reduce 104
+	UNSIGNED  reduce 104
+	VOID  reduce 104
+	WCHAR_T  reduce 104
+
+	attributes  goto 192
+	field_declarators  goto 193
+	field_declarator  goto 194
+
+
+state 135
+	component : attributes STRUCT opt_ident SEMI .  (9)
+
+	.  reduce 9
+
+
+state 136
+	union_declarator : UNION opt_ident LBRACE . union_body RBRACE  (86)
+
+	CASE  shift 195
+	DEFAULT  shift 196
+	.  error
+
+	union_body  goto 197
+	union_case  goto 198
+	case_list  goto 199
+	case_label  goto 200
+
+
+state 137
+	component : attributes UNION opt_ident SEMI .  (11)
+
+	.  reduce 11
+
+
+state 138
+	component : attributes UNION opt_ident SWITCH . LPAREN simple_type_spec ident RPAREN SEMI  (10)
+	struct_declarator : UNION opt_ident SWITCH . LPAREN simple_type_spec ident RPAREN union_name LBRACE union_body RBRACE  (82)
+
+	LPAREN  shift 201
+	.  error
+
+
+state 139
+	simple_type_spec : UNSIGNED integer_size opt_int .  (44)
+
+	.  reduce 44
+
+
+state 140
+	fun_decl : attributes type_spec pointer_opt IDENT . LPAREN param_list_declarator RPAREN opt_quotes  (19)
+
+	LPAREN  shift 202
+	.  error
+
+
+state 141
+	pointer_opt : pointer_opt STAR .  (71)
+	pointer_opt : pointer_opt STAR . CONST  (72)
+
+	CONST  shift 203
+	IDENT  reduce 71
+	LPAREN  reduce 71
+	STAR  reduce 71
+	TYPEIDENT  reduce 71
+
+
+state 142
+	simple_type_spec : integer_size SIGNED opt_int .  (47)
+
+	.  reduce 47
+
+
+state 143
+	simple_type_spec : integer_size UNSIGNED opt_int .  (45)
+
+	.  reduce 45
+
+
+state 144
+	opt_superinterface : COLON . ident  (168)
+
+	IDENT  shift 22
+	TYPEIDENT  shift 24
+	.  error
+
+	ident  goto 204
+
+
+state 145
+	component : interface_attributes INTERFACE tydef_ident SEMI .  (14)
+
+	.  reduce 14
+
+
+state 146
+	component : interface_attributes INTERFACE tydef_ident opt_superinterface . LBRACE component_list RBRACE opt_semi  (13)
+
+	LBRACE  shift 205
+	.  error
+
+
+state 147
+	struct_declarator : UNION opt_ident SWITCH . LPAREN simple_type_spec ident RPAREN union_name LBRACE union_body RBRACE  (82)
+
+	LPAREN  shift 206
+	.  error
+
+
+state 148
+	const_decl : CONST attributes type_spec pointer_opt IDENT . EQUAL lexpr  (17)
+
+	EQUAL  shift 207
+	.  error
+
+
+state 149
+	lexpr : lexpr . QUESTIONMARK lexpr COLON lexpr  (125)
+	lexpr : lexpr . BARBAR lexpr  (126)
+	lexpr : lexpr . AMPERAMPER lexpr  (127)
+	lexpr : lexpr . BAR lexpr  (128)
+	lexpr : lexpr . CARET lexpr  (129)
+	lexpr : lexpr . AMPER lexpr  (130)
+	lexpr : lexpr . EQUALEQUAL lexpr  (131)
+	lexpr : lexpr . BANGEQUAL lexpr  (132)
+	lexpr : lexpr . LESS lexpr  (133)
+	lexpr : lexpr . GREATER lexpr  (134)
+	lexpr : lexpr . LESSEQUAL lexpr  (135)
+	lexpr : lexpr . GREATEREQUAL lexpr  (136)
+	lexpr : lexpr . LESSLESS lexpr  (137)
+	lexpr : lexpr . GREATERGREATER lexpr  (138)
+	lexpr : lexpr . GREATERGREATERGREATER lexpr  (139)
+	lexpr : lexpr . PLUS lexpr  (140)
+	lexpr : lexpr . MINUS lexpr  (141)
+	lexpr : lexpr . STAR lexpr  (142)
+	lexpr : lexpr . SLASH lexpr  (143)
+	lexpr : lexpr . PERCENT lexpr  (144)
+	lexpr : AMPER lexpr .  (150)
+	lexpr : lexpr . LBRACKET lexpr RBRACKET  (153)
+	lexpr : lexpr . MINUSGREATER ident  (154)
+	lexpr : lexpr . DOT ident  (155)
+	lexpr : lexpr . DOT INTEGER  (156)
+
+	DOT  shift 165
+	LBRACKET  shift 171
+	MINUSGREATER  shift 181
+	AMPER  reduce 150
+	AMPERAMPER  reduce 150
+	BANGEQUAL  reduce 150
+	BAR  reduce 150
+	BARBAR  reduce 150
+	CARET  reduce 150
+	COLON  reduce 150
+	COMMA  reduce 150
+	EQUALEQUAL  reduce 150
+	GREATER  reduce 150
+	GREATEREQUAL  reduce 150
+	GREATERGREATER  reduce 150
+	GREATERGREATERGREATER  reduce 150
+	LESS  reduce 150
+	LESSEQUAL  reduce 150
+	LESSLESS  reduce 150
+	MINUS  reduce 150
+	PERCENT  reduce 150
+	PLUS  reduce 150
+	QUESTIONMARK  reduce 150
+	RBRACE  reduce 150
+	RBRACKET  reduce 150
+	RPAREN  reduce 150
+	SEMI  reduce 150
+	SLASH  reduce 150
+	STAR  reduce 150
+
+
+state 150
+	lexpr : lexpr . QUESTIONMARK lexpr COLON lexpr  (125)
+	lexpr : lexpr . BARBAR lexpr  (126)
+	lexpr : lexpr . AMPERAMPER lexpr  (127)
+	lexpr : lexpr . BAR lexpr  (128)
+	lexpr : lexpr . CARET lexpr  (129)
+	lexpr : lexpr . AMPER lexpr  (130)
+	lexpr : lexpr . EQUALEQUAL lexpr  (131)
+	lexpr : lexpr . BANGEQUAL lexpr  (132)
+	lexpr : lexpr . LESS lexpr  (133)
+	lexpr : lexpr . GREATER lexpr  (134)
+	lexpr : lexpr . LESSEQUAL lexpr  (135)
+	lexpr : lexpr . GREATEREQUAL lexpr  (136)
+	lexpr : lexpr . LESSLESS lexpr  (137)
+	lexpr : lexpr . GREATERGREATER lexpr  (138)
+	lexpr : lexpr . GREATERGREATERGREATER lexpr  (139)
+	lexpr : lexpr . PLUS lexpr  (140)
+	lexpr : lexpr . MINUS lexpr  (141)
+	lexpr : lexpr . STAR lexpr  (142)
+	lexpr : lexpr . SLASH lexpr  (143)
+	lexpr : lexpr . PERCENT lexpr  (144)
+	lexpr : BANG lexpr .  (148)
+	lexpr : lexpr . LBRACKET lexpr RBRACKET  (153)
+	lexpr : lexpr . MINUSGREATER ident  (154)
+	lexpr : lexpr . DOT ident  (155)
+	lexpr : lexpr . DOT INTEGER  (156)
+
+	DOT  shift 165
+	LBRACKET  shift 171
+	MINUSGREATER  shift 181
+	AMPER  reduce 148
+	AMPERAMPER  reduce 148
+	BANGEQUAL  reduce 148
+	BAR  reduce 148
+	BARBAR  reduce 148
+	CARET  reduce 148
+	COLON  reduce 148
+	COMMA  reduce 148
+	EQUALEQUAL  reduce 148
+	GREATER  reduce 148
+	GREATEREQUAL  reduce 148
+	GREATERGREATER  reduce 148
+	GREATERGREATERGREATER  reduce 148
+	LESS  reduce 148
+	LESSEQUAL  reduce 148
+	LESSLESS  reduce 148
+	MINUS  reduce 148
+	PERCENT  reduce 148
+	PLUS  reduce 148
+	QUESTIONMARK  reduce 148
+	RBRACE  reduce 148
+	RBRACKET  reduce 148
+	RPAREN  reduce 148
+	SEMI  reduce 148
+	SLASH  reduce 148
+	STAR  reduce 148
+
+
+state 151
+	type_spec : type_spec . CONST  (37)
+	type_expr : type_spec .  (158)
+	type_expr : type_spec . abstract_declarator  (159)
+
+	CONST  shift 97
+	LPAREN  shift 208
+	STAR  shift 209
+	RPAREN  reduce 158
+
+	abstract_declarator  goto 210
+	direct_abstract_declarator  goto 211
+
+
+state 152
+	lexpr : lexpr . QUESTIONMARK lexpr COLON lexpr  (125)
+	lexpr : lexpr . BARBAR lexpr  (126)
+	lexpr : lexpr . AMPERAMPER lexpr  (127)
+	lexpr : lexpr . BAR lexpr  (128)
+	lexpr : lexpr . CARET lexpr  (129)
+	lexpr : lexpr . AMPER lexpr  (130)
+	lexpr : lexpr . EQUALEQUAL lexpr  (131)
+	lexpr : lexpr . BANGEQUAL lexpr  (132)
+	lexpr : lexpr . LESS lexpr  (133)
+	lexpr : lexpr . GREATER lexpr  (134)
+	lexpr : lexpr . LESSEQUAL lexpr  (135)
+	lexpr : lexpr . GREATEREQUAL lexpr  (136)
+	lexpr : lexpr . LESSLESS lexpr  (137)
+	lexpr : lexpr . GREATERGREATER lexpr  (138)
+	lexpr : lexpr . GREATERGREATERGREATER lexpr  (139)
+	lexpr : lexpr . PLUS lexpr  (140)
+	lexpr : lexpr . MINUS lexpr  (141)
+	lexpr : lexpr . STAR lexpr  (142)
+	lexpr : lexpr . SLASH lexpr  (143)
+	lexpr : lexpr . PERCENT lexpr  (144)
+	lexpr : lexpr . LBRACKET lexpr RBRACKET  (153)
+	lexpr : lexpr . MINUSGREATER ident  (154)
+	lexpr : lexpr . DOT ident  (155)
+	lexpr : lexpr . DOT INTEGER  (156)
+	lexpr : LPAREN lexpr . RPAREN  (157)
+
+	AMPER  shift 159
+	AMPERAMPER  shift 160
+	BANGEQUAL  shift 161
+	BAR  shift 162
+	BARBAR  shift 163
+	CARET  shift 164
+	DOT  shift 165
+	EQUALEQUAL  shift 166
+	GREATER  shift 167
+	GREATEREQUAL  shift 168
+	GREATERGREATER  shift 169
+	GREATERGREATERGREATER  shift 170
+	LBRACKET  shift 171
+	LESS  shift 172
+	LESSEQUAL  shift 173
+	LESSLESS  shift 174
+	MINUS  shift 175
+	PERCENT  shift 176
+	PLUS  shift 177
+	QUESTIONMARK  shift 178
+	RPAREN  shift 212
+	SLASH  shift 179
+	STAR  shift 180
+	MINUSGREATER  shift 181
+	.  error
+
+
+state 153
+	lexpr : LPAREN type_expr . RPAREN lexpr  (151)
+
+	RPAREN  shift 213
+	.  error
+
+
+state 154
+	lexpr : lexpr . QUESTIONMARK lexpr COLON lexpr  (125)
+	lexpr : lexpr . BARBAR lexpr  (126)
+	lexpr : lexpr . AMPERAMPER lexpr  (127)
+	lexpr : lexpr . BAR lexpr  (128)
+	lexpr : lexpr . CARET lexpr  (129)
+	lexpr : lexpr . AMPER lexpr  (130)
+	lexpr : lexpr . EQUALEQUAL lexpr  (131)
+	lexpr : lexpr . BANGEQUAL lexpr  (132)
+	lexpr : lexpr . LESS lexpr  (133)
+	lexpr : lexpr . GREATER lexpr  (134)
+	lexpr : lexpr . LESSEQUAL lexpr  (135)
+	lexpr : lexpr . GREATEREQUAL lexpr  (136)
+	lexpr : lexpr . LESSLESS lexpr  (137)
+	lexpr : lexpr . GREATERGREATER lexpr  (138)
+	lexpr : lexpr . GREATERGREATERGREATER lexpr  (139)
+	lexpr : lexpr . PLUS lexpr  (140)
+	lexpr : lexpr . MINUS lexpr  (141)
+	lexpr : lexpr . STAR lexpr  (142)
+	lexpr : lexpr . SLASH lexpr  (143)
+	lexpr : lexpr . PERCENT lexpr  (144)
+	lexpr : MINUS lexpr .  (146)
+	lexpr : lexpr . LBRACKET lexpr RBRACKET  (153)
+	lexpr : lexpr . MINUSGREATER ident  (154)
+	lexpr : lexpr . DOT ident  (155)
+	lexpr : lexpr . DOT INTEGER  (156)
+
+	DOT  shift 165
+	LBRACKET  shift 171
+	MINUSGREATER  shift 181
+	AMPER  reduce 146
+	AMPERAMPER  reduce 146
+	BANGEQUAL  reduce 146
+	BAR  reduce 146
+	BARBAR  reduce 146
+	CARET  reduce 146
+	COLON  reduce 146
+	COMMA  reduce 146
+	EQUALEQUAL  reduce 146
+	GREATER  reduce 146
+	GREATEREQUAL  reduce 146
+	GREATERGREATER  reduce 146
+	GREATERGREATERGREATER  reduce 146
+	LESS  reduce 146
+	LESSEQUAL  reduce 146
+	LESSLESS  reduce 146
+	MINUS  reduce 146
+	PERCENT  reduce 146
+	PLUS  reduce 146
+	QUESTIONMARK  reduce 146
+	RBRACE  reduce 146
+	RBRACKET  reduce 146
+	RPAREN  reduce 146
+	SEMI  reduce 146
+	SLASH  reduce 146
+	STAR  reduce 146
+
+
+state 155
+	lexpr : lexpr . QUESTIONMARK lexpr COLON lexpr  (125)
+	lexpr : lexpr . BARBAR lexpr  (126)
+	lexpr : lexpr . AMPERAMPER lexpr  (127)
+	lexpr : lexpr . BAR lexpr  (128)
+	lexpr : lexpr . CARET lexpr  (129)
+	lexpr : lexpr . AMPER lexpr  (130)
+	lexpr : lexpr . EQUALEQUAL lexpr  (131)
+	lexpr : lexpr . BANGEQUAL lexpr  (132)
+	lexpr : lexpr . LESS lexpr  (133)
+	lexpr : lexpr . GREATER lexpr  (134)
+	lexpr : lexpr . LESSEQUAL lexpr  (135)
+	lexpr : lexpr . GREATEREQUAL lexpr  (136)
+	lexpr : lexpr . LESSLESS lexpr  (137)
+	lexpr : lexpr . GREATERGREATER lexpr  (138)
+	lexpr : lexpr . GREATERGREATERGREATER lexpr  (139)
+	lexpr : lexpr . PLUS lexpr  (140)
+	lexpr : lexpr . MINUS lexpr  (141)
+	lexpr : lexpr . STAR lexpr  (142)
+	lexpr : lexpr . SLASH lexpr  (143)
+	lexpr : lexpr . PERCENT lexpr  (144)
+	lexpr : PLUS lexpr .  (145)
+	lexpr : lexpr . LBRACKET lexpr RBRACKET  (153)
+	lexpr : lexpr . MINUSGREATER ident  (154)
+	lexpr : lexpr . DOT ident  (155)
+	lexpr : lexpr . DOT INTEGER  (156)
+
+	DOT  shift 165
+	LBRACKET  shift 171
+	MINUSGREATER  shift 181
+	AMPER  reduce 145
+	AMPERAMPER  reduce 145
+	BANGEQUAL  reduce 145
+	BAR  reduce 145
+	BARBAR  reduce 145
+	CARET  reduce 145
+	COLON  reduce 145
+	COMMA  reduce 145
+	EQUALEQUAL  reduce 145
+	GREATER  reduce 145
+	GREATEREQUAL  reduce 145
+	GREATERGREATER  reduce 145
+	GREATERGREATERGREATER  reduce 145
+	LESS  reduce 145
+	LESSEQUAL  reduce 145
+	LESSLESS  reduce 145
+	MINUS  reduce 145
+	PERCENT  reduce 145
+	PLUS  reduce 145
+	QUESTIONMARK  reduce 145
+	RBRACE  reduce 145
+	RBRACKET  reduce 145
+	RPAREN  reduce 145
+	SEMI  reduce 145
+	SLASH  reduce 145
+	STAR  reduce 145
+
+
+state 156
+	lexpr : SIZEOF LPAREN . type_expr RPAREN  (152)
+
+	BOOLEAN  shift 32
+	BYTE  shift 33
+	CHAR  shift 34
+	CONST  shift 35
+	DOUBLE  shift 36
+	ENUM  shift 37
+	FLOAT  shift 38
+	HANDLE_T  shift 39
+	HYPER  shift 40
+	INT  shift 41
+	INT64  shift 42
+	LONG  shift 43
+	SHORT  shift 44
+	SIGNED  shift 45
+	SMALL  shift 46
+	STRUCT  shift 63
+	TYPEIDENT  shift 48
+	UNION  shift 64
+	UNSIGNED  shift 50
+	VOID  shift 51
+	WCHAR_T  shift 52
+	.  error
+
+	struct_declarator  goto 65
+	union_declarator  goto 66
+	enum_declarator  goto 67
+	simple_type_spec  goto 56
+	type_spec  goto 151
+	integer_size  goto 58
+	type_expr  goto 214
+
+
+state 157
+	lexpr : lexpr . QUESTIONMARK lexpr COLON lexpr  (125)
+	lexpr : lexpr . BARBAR lexpr  (126)
+	lexpr : lexpr . AMPERAMPER lexpr  (127)
+	lexpr : lexpr . BAR lexpr  (128)
+	lexpr : lexpr . CARET lexpr  (129)
+	lexpr : lexpr . AMPER lexpr  (130)
+	lexpr : lexpr . EQUALEQUAL lexpr  (131)
+	lexpr : lexpr . BANGEQUAL lexpr  (132)
+	lexpr : lexpr . LESS lexpr  (133)
+	lexpr : lexpr . GREATER lexpr  (134)
+	lexpr : lexpr . LESSEQUAL lexpr  (135)
+	lexpr : lexpr . GREATEREQUAL lexpr  (136)
+	lexpr : lexpr . LESSLESS lexpr  (137)
+	lexpr : lexpr . GREATERGREATER lexpr  (138)
+	lexpr : lexpr . GREATERGREATERGREATER lexpr  (139)
+	lexpr : lexpr . PLUS lexpr  (140)
+	lexpr : lexpr . MINUS lexpr  (141)
+	lexpr : lexpr . STAR lexpr  (142)
+	lexpr : lexpr . SLASH lexpr  (143)
+	lexpr : lexpr . PERCENT lexpr  (144)
+	lexpr : STAR lexpr .  (149)
+	lexpr : lexpr . LBRACKET lexpr RBRACKET  (153)
+	lexpr : lexpr . MINUSGREATER ident  (154)
+	lexpr : lexpr . DOT ident  (155)
+	lexpr : lexpr . DOT INTEGER  (156)
+
+	DOT  shift 165
+	LBRACKET  shift 171
+	MINUSGREATER  shift 181
+	AMPER  reduce 149
+	AMPERAMPER  reduce 149
+	BANGEQUAL  reduce 149
+	BAR  reduce 149
+	BARBAR  reduce 149
+	CARET  reduce 149
+	COLON  reduce 149
+	COMMA  reduce 149
+	EQUALEQUAL  reduce 149
+	GREATER  reduce 149
+	GREATEREQUAL  reduce 149
+	GREATERGREATER  reduce 149
+	GREATERGREATERGREATER  reduce 149
+	LESS  reduce 149
+	LESSEQUAL  reduce 149
+	LESSLESS  reduce 149
+	MINUS  reduce 149
+	PERCENT  reduce 149
+	PLUS  reduce 149
+	QUESTIONMARK  reduce 149
+	RBRACE  reduce 149
+	RBRACKET  reduce 149
+	RPAREN  reduce 149
+	SEMI  reduce 149
+	SLASH  reduce 149
+	STAR  reduce 149
+
+
+state 158
+	lexpr : lexpr . QUESTIONMARK lexpr COLON lexpr  (125)
+	lexpr : lexpr . BARBAR lexpr  (126)
+	lexpr : lexpr . AMPERAMPER lexpr  (127)
+	lexpr : lexpr . BAR lexpr  (128)
+	lexpr : lexpr . CARET lexpr  (129)
+	lexpr : lexpr . AMPER lexpr  (130)
+	lexpr : lexpr . EQUALEQUAL lexpr  (131)
+	lexpr : lexpr . BANGEQUAL lexpr  (132)
+	lexpr : lexpr . LESS lexpr  (133)
+	lexpr : lexpr . GREATER lexpr  (134)
+	lexpr : lexpr . LESSEQUAL lexpr  (135)
+	lexpr : lexpr . GREATEREQUAL lexpr  (136)
+	lexpr : lexpr . LESSLESS lexpr  (137)
+	lexpr : lexpr . GREATERGREATER lexpr  (138)
+	lexpr : lexpr . GREATERGREATERGREATER lexpr  (139)
+	lexpr : lexpr . PLUS lexpr  (140)
+	lexpr : lexpr . MINUS lexpr  (141)
+	lexpr : lexpr . STAR lexpr  (142)
+	lexpr : lexpr . SLASH lexpr  (143)
+	lexpr : lexpr . PERCENT lexpr  (144)
+	lexpr : TILDE lexpr .  (147)
+	lexpr : lexpr . LBRACKET lexpr RBRACKET  (153)
+	lexpr : lexpr . MINUSGREATER ident  (154)
+	lexpr : lexpr . DOT ident  (155)
+	lexpr : lexpr . DOT INTEGER  (156)
+
+	DOT  shift 165
+	LBRACKET  shift 171
+	MINUSGREATER  shift 181
+	AMPER  reduce 147
+	AMPERAMPER  reduce 147
+	BANGEQUAL  reduce 147
+	BAR  reduce 147
+	BARBAR  reduce 147
+	CARET  reduce 147
+	COLON  reduce 147
+	COMMA  reduce 147
+	EQUALEQUAL  reduce 147
+	GREATER  reduce 147
+	GREATEREQUAL  reduce 147
+	GREATERGREATER  reduce 147
+	GREATERGREATERGREATER  reduce 147
+	LESS  reduce 147
+	LESSEQUAL  reduce 147
+	LESSLESS  reduce 147
+	MINUS  reduce 147
+	PERCENT  reduce 147
+	PLUS  reduce 147
+	QUESTIONMARK  reduce 147
+	RBRACE  reduce 147
+	RBRACKET  reduce 147
+	RPAREN  reduce 147
+	SEMI  reduce 147
+	SLASH  reduce 147
+	STAR  reduce 147
+
+
+state 159
+	lexpr : lexpr AMPER . lexpr  (130)
+
+	AMPER  shift 109
+	BANG  shift 110
+	CHARACTER  shift 111
+	FALSE  shift 112
+	IDENT  shift 113
+	INTEGER  shift 114
+	LPAREN  shift 115
+	MINUS  shift 116
+	PLUS  shift 117
+	SIZEOF  shift 118
+	STAR  shift 119
+	STRING  shift 120
+	TILDE  shift 121
+	TRUE  shift 122
+	.  error
+
+	lexpr  goto 215
+
+
+state 160
+	lexpr : lexpr AMPERAMPER . lexpr  (127)
+
+	AMPER  shift 109
+	BANG  shift 110
+	CHARACTER  shift 111
+	FALSE  shift 112
+	IDENT  shift 113
+	INTEGER  shift 114
+	LPAREN  shift 115
+	MINUS  shift 116
+	PLUS  shift 117
+	SIZEOF  shift 118
+	STAR  shift 119
+	STRING  shift 120
+	TILDE  shift 121
+	TRUE  shift 122
+	.  error
+
+	lexpr  goto 216
+
+
+state 161
+	lexpr : lexpr BANGEQUAL . lexpr  (132)
+
+	AMPER  shift 109
+	BANG  shift 110
+	CHARACTER  shift 111
+	FALSE  shift 112
+	IDENT  shift 113
+	INTEGER  shift 114
+	LPAREN  shift 115
+	MINUS  shift 116
+	PLUS  shift 117
+	SIZEOF  shift 118
+	STAR  shift 119
+	STRING  shift 120
+	TILDE  shift 121
+	TRUE  shift 122
+	.  error
+
+	lexpr  goto 217
+
+
+state 162
+	lexpr : lexpr BAR . lexpr  (128)
+
+	AMPER  shift 109
+	BANG  shift 110
+	CHARACTER  shift 111
+	FALSE  shift 112
+	IDENT  shift 113
+	INTEGER  shift 114
+	LPAREN  shift 115
+	MINUS  shift 116
+	PLUS  shift 117
+	SIZEOF  shift 118
+	STAR  shift 119
+	STRING  shift 120
+	TILDE  shift 121
+	TRUE  shift 122
+	.  error
+
+	lexpr  goto 218
+
+
+state 163
+	lexpr : lexpr BARBAR . lexpr  (126)
+
+	AMPER  shift 109
+	BANG  shift 110
+	CHARACTER  shift 111
+	FALSE  shift 112
+	IDENT  shift 113
+	INTEGER  shift 114
+	LPAREN  shift 115
+	MINUS  shift 116
+	PLUS  shift 117
+	SIZEOF  shift 118
+	STAR  shift 119
+	STRING  shift 120
+	TILDE  shift 121
+	TRUE  shift 122
+	.  error
+
+	lexpr  goto 219
+
+
+state 164
+	lexpr : lexpr CARET . lexpr  (129)
+
+	AMPER  shift 109
+	BANG  shift 110
+	CHARACTER  shift 111
+	FALSE  shift 112
+	IDENT  shift 113
+	INTEGER  shift 114
+	LPAREN  shift 115
+	MINUS  shift 116
+	PLUS  shift 117
+	SIZEOF  shift 118
+	STAR  shift 119
+	STRING  shift 120
+	TILDE  shift 121
+	TRUE  shift 122
+	.  error
+
+	lexpr  goto 220
+
+
+state 165
+	lexpr : lexpr DOT . ident  (155)
+	lexpr : lexpr DOT . INTEGER  (156)
+
+	IDENT  shift 22
+	INTEGER  shift 221
+	TYPEIDENT  shift 24
+	.  error
+
+	ident  goto 222
+
+
+state 166
+	lexpr : lexpr EQUALEQUAL . lexpr  (131)
+
+	AMPER  shift 109
+	BANG  shift 110
+	CHARACTER  shift 111
+	FALSE  shift 112
+	IDENT  shift 113
+	INTEGER  shift 114
+	LPAREN  shift 115
+	MINUS  shift 116
+	PLUS  shift 117
+	SIZEOF  shift 118
+	STAR  shift 119
+	STRING  shift 120
+	TILDE  shift 121
+	TRUE  shift 122
+	.  error
+
+	lexpr  goto 223
+
+
+state 167
+	lexpr : lexpr GREATER . lexpr  (134)
+
+	AMPER  shift 109
+	BANG  shift 110
+	CHARACTER  shift 111
+	FALSE  shift 112
+	IDENT  shift 113
+	INTEGER  shift 114
+	LPAREN  shift 115
+	MINUS  shift 116
+	PLUS  shift 117
+	SIZEOF  shift 118
+	STAR  shift 119
+	STRING  shift 120
+	TILDE  shift 121
+	TRUE  shift 122
+	.  error
+
+	lexpr  goto 224
+
+
+state 168
+	lexpr : lexpr GREATEREQUAL . lexpr  (136)
+
+	AMPER  shift 109
+	BANG  shift 110
+	CHARACTER  shift 111
+	FALSE  shift 112
+	IDENT  shift 113
+	INTEGER  shift 114
+	LPAREN  shift 115
+	MINUS  shift 116
+	PLUS  shift 117
+	SIZEOF  shift 118
+	STAR  shift 119
+	STRING  shift 120
+	TILDE  shift 121
+	TRUE  shift 122
+	.  error
+
+	lexpr  goto 225
+
+
+state 169
+	lexpr : lexpr GREATERGREATER . lexpr  (138)
+
+	AMPER  shift 109
+	BANG  shift 110
+	CHARACTER  shift 111
+	FALSE  shift 112
+	IDENT  shift 113
+	INTEGER  shift 114
+	LPAREN  shift 115
+	MINUS  shift 116
+	PLUS  shift 117
+	SIZEOF  shift 118
+	STAR  shift 119
+	STRING  shift 120
+	TILDE  shift 121
+	TRUE  shift 122
+	.  error
+
+	lexpr  goto 226
+
+
+state 170
+	lexpr : lexpr GREATERGREATERGREATER . lexpr  (139)
+
+	AMPER  shift 109
+	BANG  shift 110
+	CHARACTER  shift 111
+	FALSE  shift 112
+	IDENT  shift 113
+	INTEGER  shift 114
+	LPAREN  shift 115
+	MINUS  shift 116
+	PLUS  shift 117
+	SIZEOF  shift 118
+	STAR  shift 119
+	STRING  shift 120
+	TILDE  shift 121
+	TRUE  shift 122
+	.  error
+
+	lexpr  goto 227
+
+
+state 171
+	lexpr : lexpr LBRACKET . lexpr RBRACKET  (153)
+
+	AMPER  shift 109
+	BANG  shift 110
+	CHARACTER  shift 111
+	FALSE  shift 112
+	IDENT  shift 113
+	INTEGER  shift 114
+	LPAREN  shift 115
+	MINUS  shift 116
+	PLUS  shift 117
+	SIZEOF  shift 118
+	STAR  shift 119
+	STRING  shift 120
+	TILDE  shift 121
+	TRUE  shift 122
+	.  error
+
+	lexpr  goto 228
+
+
+state 172
+	lexpr : lexpr LESS . lexpr  (133)
+
+	AMPER  shift 109
+	BANG  shift 110
+	CHARACTER  shift 111
+	FALSE  shift 112
+	IDENT  shift 113
+	INTEGER  shift 114
+	LPAREN  shift 115
+	MINUS  shift 116
+	PLUS  shift 117
+	SIZEOF  shift 118
+	STAR  shift 119
+	STRING  shift 120
+	TILDE  shift 121
+	TRUE  shift 122
+	.  error
+
+	lexpr  goto 229
+
+
+state 173
+	lexpr : lexpr LESSEQUAL . lexpr  (135)
+
+	AMPER  shift 109
+	BANG  shift 110
+	CHARACTER  shift 111
+	FALSE  shift 112
+	IDENT  shift 113
+	INTEGER  shift 114
+	LPAREN  shift 115
+	MINUS  shift 116
+	PLUS  shift 117
+	SIZEOF  shift 118
+	STAR  shift 119
+	STRING  shift 120
+	TILDE  shift 121
+	TRUE  shift 122
+	.  error
+
+	lexpr  goto 230
+
+
+state 174
+	lexpr : lexpr LESSLESS . lexpr  (137)
+
+	AMPER  shift 109
+	BANG  shift 110
+	CHARACTER  shift 111
+	FALSE  shift 112
+	IDENT  shift 113
+	INTEGER  shift 114
+	LPAREN  shift 115
+	MINUS  shift 116
+	PLUS  shift 117
+	SIZEOF  shift 118
+	STAR  shift 119
+	STRING  shift 120
+	TILDE  shift 121
+	TRUE  shift 122
+	.  error
+
+	lexpr  goto 231
+
+
+state 175
+	lexpr : lexpr MINUS . lexpr  (141)
+
+	AMPER  shift 109
+	BANG  shift 110
+	CHARACTER  shift 111
+	FALSE  shift 112
+	IDENT  shift 113
+	INTEGER  shift 114
+	LPAREN  shift 115
+	MINUS  shift 116
+	PLUS  shift 117
+	SIZEOF  shift 118
+	STAR  shift 119
+	STRING  shift 120
+	TILDE  shift 121
+	TRUE  shift 122
+	.  error
+
+	lexpr  goto 232
+
+
+state 176
+	lexpr : lexpr PERCENT . lexpr  (144)
+
+	AMPER  shift 109
+	BANG  shift 110
+	CHARACTER  shift 111
+	FALSE  shift 112
+	IDENT  shift 113
+	INTEGER  shift 114
+	LPAREN  shift 115
+	MINUS  shift 116
+	PLUS  shift 117
+	SIZEOF  shift 118
+	STAR  shift 119
+	STRING  shift 120
+	TILDE  shift 121
+	TRUE  shift 122
+	.  error
+
+	lexpr  goto 233
+
+
+state 177
+	lexpr : lexpr PLUS . lexpr  (140)
+
+	AMPER  shift 109
+	BANG  shift 110
+	CHARACTER  shift 111
+	FALSE  shift 112
+	IDENT  shift 113
+	INTEGER  shift 114
+	LPAREN  shift 115
+	MINUS  shift 116
+	PLUS  shift 117
+	SIZEOF  shift 118
+	STAR  shift 119
+	STRING  shift 120
+	TILDE  shift 121
+	TRUE  shift 122
+	.  error
+
+	lexpr  goto 234
+
+
+state 178
+	lexpr : lexpr QUESTIONMARK . lexpr COLON lexpr  (125)
+
+	AMPER  shift 109
+	BANG  shift 110
+	CHARACTER  shift 111
+	FALSE  shift 112
+	IDENT  shift 113
+	INTEGER  shift 114
+	LPAREN  shift 115
+	MINUS  shift 116
+	PLUS  shift 117
+	SIZEOF  shift 118
+	STAR  shift 119
+	STRING  shift 120
+	TILDE  shift 121
+	TRUE  shift 122
+	.  error
+
+	lexpr  goto 235
+
+
+state 179
+	lexpr : lexpr SLASH . lexpr  (143)
+
+	AMPER  shift 109
+	BANG  shift 110
+	CHARACTER  shift 111
+	FALSE  shift 112
+	IDENT  shift 113
+	INTEGER  shift 114
+	LPAREN  shift 115
+	MINUS  shift 116
+	PLUS  shift 117
+	SIZEOF  shift 118
+	STAR  shift 119
+	STRING  shift 120
+	TILDE  shift 121
+	TRUE  shift 122
+	.  error
+
+	lexpr  goto 236
+
+
+state 180
+	lexpr : lexpr STAR . lexpr  (142)
+
+	AMPER  shift 109
+	BANG  shift 110
+	CHARACTER  shift 111
+	FALSE  shift 112
+	IDENT  shift 113
+	INTEGER  shift 114
+	LPAREN  shift 115
+	MINUS  shift 116
+	PLUS  shift 117
+	SIZEOF  shift 118
+	STAR  shift 119
+	STRING  shift 120
+	TILDE  shift 121
+	TRUE  shift 122
+	.  error
+
+	lexpr  goto 237
+
+
+state 181
+	lexpr : lexpr MINUSGREATER . ident  (154)
+
+	IDENT  shift 22
+	TYPEIDENT  shift 24
+	.  error
+
+	ident  goto 238
+
+
+state 182
+	attr_vars : attr_vars COMMA . attr_var  (116)
+	attr_var : .  (118)
+
+	AMPER  shift 109
+	BANG  shift 110
+	CHARACTER  shift 111
+	FALSE  shift 112
+	IDENT  shift 113
+	INTEGER  shift 114
+	LPAREN  shift 115
+	MINUS  shift 116
+	PLUS  shift 117
+	SIZEOF  shift 118
+	STAR  shift 119
+	STRING  shift 120
+	TILDE  shift 121
+	TRUE  shift 122
+	COMMA  reduce 118
+	RPAREN  reduce 118
+
+	lexpr  goto 123
+	attr_var  goto 239
+
+
+state 183
+	attribute : ident LPAREN attr_vars RPAREN .  (111)
+
+	.  reduce 111
+
+
+state 184
+	quote : QUOTE LPAREN ident COMMA STRING . RPAREN  (175)
+
+	RPAREN  shift 240
+	.  error
+
+
+state 185
+	direct_declarator : LPAREN . declarator RPAREN  (74)
+	pointer_opt : .  (70)
+
+	.  reduce 70
+
+	pointer_opt  goto 129
+	declarator  goto 241
+
+
+state 186
+	direct_declarator : ident .  (73)
+
+	.  reduce 73
+
+
+state 187
+	declarator : pointer_opt direct_declarator .  (69)
+	direct_declarator : direct_declarator . array_bounds_declarator  (75)
+
+	LBRACKET  shift 242
+	COMMA  reduce 69
+	RPAREN  reduce 69
+	SEMI  reduce 69
+
+	array_bounds_declarator  goto 243
+
+
+state 188
+	declarators : declarators COMMA . declarator  (68)
+	pointer_opt : .  (70)
+
+	.  reduce 70
+
+	pointer_opt  goto 129
+	declarator  goto 244
+
+
+state 189
+	enum_case : ident .  (99)
+	enum_case : ident . EQUAL lexpr  (100)
+
+	EQUAL  shift 245
+	COMMA  reduce 99
+	RBRACE  reduce 99
+
+
+state 190
+	enum_declarator : ENUM opt_ident LBRACE enum_cases . opt_comma RBRACE  (96)
+	enum_cases : enum_cases . COMMA enum_case  (98)
+	opt_comma : .  (102)
+
+	COMMA  shift 246
+	RBRACE  reduce 102
+
+	opt_comma  goto 247
+
+
+state 191
+	enum_cases : enum_case .  (97)
+
+	.  reduce 97
+
+
+state 192
+	field_declarator : attributes . type_spec declarators SEMI  (85)
+
+	BOOLEAN  shift 32
+	BYTE  shift 33
+	CHAR  shift 34
+	CONST  shift 35
+	DOUBLE  shift 36
+	ENUM  shift 37
+	FLOAT  shift 38
+	HANDLE_T  shift 39
+	HYPER  shift 40
+	INT  shift 41
+	INT64  shift 42
+	LONG  shift 43
+	SHORT  shift 44
+	SIGNED  shift 45
+	SMALL  shift 46
+	STRUCT  shift 63
+	TYPEIDENT  shift 48
+	UNION  shift 64
+	UNSIGNED  shift 50
+	VOID  shift 51
+	WCHAR_T  shift 52
+	.  error
+
+	struct_declarator  goto 65
+	union_declarator  goto 66
+	enum_declarator  goto 67
+	simple_type_spec  goto 56
+	type_spec  goto 248
+	integer_size  goto 58
+
+
+state 193
+	struct_declarator : STRUCT opt_ident LBRACE field_declarators . RBRACE  (81)
+	field_declarators : field_declarators . field_declarator  (84)
+	attributes : .  (104)
+
+	LBRACKET  shift 9
+	RBRACE  shift 249
+	BOOLEAN  reduce 104
+	BYTE  reduce 104
+	CHAR  reduce 104
+	CONST  reduce 104
+	DOUBLE  reduce 104
+	ENUM  reduce 104
+	FLOAT  reduce 104
+	HANDLE_T  reduce 104
+	HYPER  reduce 104
+	INT  reduce 104
+	INT64  reduce 104
+	LONG  reduce 104
+	SHORT  reduce 104
+	SIGNED  reduce 104
+	SMALL  reduce 104
+	STRUCT  reduce 104
+	TYPEIDENT  reduce 104
+	UNION  reduce 104
+	UNSIGNED  reduce 104
+	VOID  reduce 104
+	WCHAR_T  reduce 104
+
+	attributes  goto 192
+	field_declarator  goto 250
+
+
+state 194
+	field_declarators : field_declarator .  (83)
+
+	.  reduce 83
+
+
+state 195
+	case_label : CASE . ident COLON  (93)
+
+	IDENT  shift 22
+	TYPEIDENT  shift 24
+	.  error
+
+	ident  goto 251
+
+
+state 196
+	union_case : DEFAULT . COLON opt_field_declarator SEMI  (90)
+
+	COLON  shift 252
+	.  error
+
+
+state 197
+	union_declarator : UNION opt_ident LBRACE union_body . RBRACE  (86)
+	union_body : union_body . union_case  (88)
+
+	CASE  shift 195
+	DEFAULT  shift 196
+	RBRACE  shift 253
+	.  error
+
+	union_case  goto 254
+	case_list  goto 199
+	case_label  goto 200
+
+
+state 198
+	union_body : union_case .  (87)
+
+	.  reduce 87
+
+
+state 199
+	union_case : case_list . opt_field_declarator SEMI  (89)
+	case_list : case_list . case_label  (92)
+	opt_field_declarator : .  (94)
+	attributes : .  (104)
+
+	CASE  shift 195
+	LBRACKET  shift 9
+	BOOLEAN  reduce 104
+	BYTE  reduce 104
+	CHAR  reduce 104
+	CONST  reduce 104
+	DOUBLE  reduce 104
+	ENUM  reduce 104
+	FLOAT  reduce 104
+	HANDLE_T  reduce 104
+	HYPER  reduce 104
+	INT  reduce 104
+	INT64  reduce 104
+	LONG  reduce 104
+	SEMI  reduce 94
+	SHORT  reduce 104
+	SIGNED  reduce 104
+	SMALL  reduce 104
+	STRUCT  reduce 104
+	TYPEIDENT  reduce 104
+	UNION  reduce 104
+	UNSIGNED  reduce 104
+	VOID  reduce 104
+	WCHAR_T  reduce 104
+
+	attributes  goto 255
+	opt_field_declarator  goto 256
+	case_label  goto 257
+
+
+state 200
+	case_list : case_label .  (91)
+
+	.  reduce 91
+
+
+state 201
+	component : attributes UNION opt_ident SWITCH LPAREN . simple_type_spec ident RPAREN SEMI  (10)
+	struct_declarator : UNION opt_ident SWITCH LPAREN . simple_type_spec ident RPAREN union_name LBRACE union_body RBRACE  (82)
+
+	BOOLEAN  shift 32
+	BYTE  shift 33
+	CHAR  shift 34
+	DOUBLE  shift 36
+	FLOAT  shift 38
+	HANDLE_T  shift 39
+	HYPER  shift 40
+	INT  shift 41
+	INT64  shift 42
+	LONG  shift 43
+	SHORT  shift 44
+	SIGNED  shift 45
+	SMALL  shift 46
+	TYPEIDENT  shift 48
+	UNSIGNED  shift 50
+	VOID  shift 51
+	WCHAR_T  shift 52
+	.  error
+
+	simple_type_spec  goto 258
+	integer_size  goto 58
+
+
+202: shift/reduce conflict (shift 259, reduce 104) on VOID
+state 202
+	fun_decl : attributes type_spec pointer_opt IDENT LPAREN . param_list_declarator RPAREN opt_quotes  (19)
+	param_list_declarator : .  (23)
+	attributes : .  (104)
+
+	LBRACKET  shift 9
+	VOID  shift 259
+	BOOLEAN  reduce 104
+	BYTE  reduce 104
+	CHAR  reduce 104
+	CONST  reduce 104
+	DOUBLE  reduce 104
+	ENUM  reduce 104
+	FLOAT  reduce 104
+	HANDLE_T  reduce 104
+	HYPER  reduce 104
+	INT  reduce 104
+	INT64  reduce 104
+	LONG  reduce 104
+	RPAREN  reduce 23
+	SHORT  reduce 104
+	SIGNED  reduce 104
+	SMALL  reduce 104
+	STRUCT  reduce 104
+	TYPEIDENT  reduce 104
+	UNION  reduce 104
+	UNSIGNED  reduce 104
+	WCHAR_T  reduce 104
+
+	attributes  goto 260
+	param_list_declarator  goto 261
+	param_declarators  goto 262
+	param_declarator  goto 263
+
+
+state 203
+	pointer_opt : pointer_opt STAR CONST .  (72)
+
+	.  reduce 72
+
+
+state 204
+	opt_superinterface : COLON ident .  (168)
+
+	.  reduce 168
+
+
+state 205
+	component : interface_attributes INTERFACE tydef_ident opt_superinterface LBRACE . component_list RBRACE opt_semi  (13)
+	component_list : .  (2)
+
+	.  reduce 2
+
+	component_list  goto 264
+
+
+state 206
+	struct_declarator : UNION opt_ident SWITCH LPAREN . simple_type_spec ident RPAREN union_name LBRACE union_body RBRACE  (82)
+
+	BOOLEAN  shift 32
+	BYTE  shift 33
+	CHAR  shift 34
+	DOUBLE  shift 36
+	FLOAT  shift 38
+	HANDLE_T  shift 39
+	HYPER  shift 40
+	INT  shift 41
+	INT64  shift 42
+	LONG  shift 43
+	SHORT  shift 44
+	SIGNED  shift 45
+	SMALL  shift 46
+	TYPEIDENT  shift 48
+	UNSIGNED  shift 50
+	VOID  shift 51
+	WCHAR_T  shift 52
+	.  error
+
+	simple_type_spec  goto 265
+	integer_size  goto 58
+
+
+state 207
+	const_decl : CONST attributes type_spec pointer_opt IDENT EQUAL . lexpr  (17)
+
+	AMPER  shift 109
+	BANG  shift 110
+	CHARACTER  shift 111
+	FALSE  shift 112
+	IDENT  shift 113
+	INTEGER  shift 114
+	LPAREN  shift 115
+	MINUS  shift 116
+	PLUS  shift 117
+	SIZEOF  shift 118
+	STAR  shift 119
+	STRING  shift 120
+	TILDE  shift 121
+	TRUE  shift 122
+	.  error
+
+	lexpr  goto 266
+
+
+state 208
+	direct_abstract_declarator : LPAREN . abstract_declarator RPAREN  (163)
+
+	LPAREN  shift 208
+	STAR  shift 209
+	.  error
+
+	abstract_declarator  goto 267
+	direct_abstract_declarator  goto 211
+
+
+state 209
+	abstract_declarator : STAR .  (160)
+	abstract_declarator : STAR . direct_abstract_declarator  (161)
+
+	LPAREN  shift 208
+	RPAREN  reduce 160
+
+	direct_abstract_declarator  goto 268
+
+
+state 210
+	type_expr : type_spec abstract_declarator .  (159)
+
+	.  reduce 159
+
+
+state 211
+	abstract_declarator : direct_abstract_declarator .  (162)
+	direct_abstract_declarator : direct_abstract_declarator . array_bounds_declarator  (164)
+
+	LBRACKET  shift 242
+	RPAREN  reduce 162
+
+	array_bounds_declarator  goto 269
+
+
+state 212
+	lexpr : LPAREN lexpr RPAREN .  (157)
+
+	.  reduce 157
+
+
+state 213
+	lexpr : LPAREN type_expr RPAREN . lexpr  (151)
+
+	AMPER  shift 109
+	BANG  shift 110
+	CHARACTER  shift 111
+	FALSE  shift 112
+	IDENT  shift 113
+	INTEGER  shift 114
+	LPAREN  shift 115
+	MINUS  shift 116
+	PLUS  shift 117
+	SIZEOF  shift 118
+	STAR  shift 119
+	STRING  shift 120
+	TILDE  shift 121
+	TRUE  shift 122
+	.  error
+
+	lexpr  goto 270
+
+
+state 214
+	lexpr : SIZEOF LPAREN type_expr . RPAREN  (152)
+
+	RPAREN  shift 271
+	.  error
+
+
+state 215
+	lexpr : lexpr . QUESTIONMARK lexpr COLON lexpr  (125)
+	lexpr : lexpr . BARBAR lexpr  (126)
+	lexpr : lexpr . AMPERAMPER lexpr  (127)
+	lexpr : lexpr . BAR lexpr  (128)
+	lexpr : lexpr . CARET lexpr  (129)
+	lexpr : lexpr . AMPER lexpr  (130)
+	lexpr : lexpr AMPER lexpr .  (130)
+	lexpr : lexpr . EQUALEQUAL lexpr  (131)
+	lexpr : lexpr . BANGEQUAL lexpr  (132)
+	lexpr : lexpr . LESS lexpr  (133)
+	lexpr : lexpr . GREATER lexpr  (134)
+	lexpr : lexpr . LESSEQUAL lexpr  (135)
+	lexpr : lexpr . GREATEREQUAL lexpr  (136)
+	lexpr : lexpr . LESSLESS lexpr  (137)
+	lexpr : lexpr . GREATERGREATER lexpr  (138)
+	lexpr : lexpr . GREATERGREATERGREATER lexpr  (139)
+	lexpr : lexpr . PLUS lexpr  (140)
+	lexpr : lexpr . MINUS lexpr  (141)
+	lexpr : lexpr . STAR lexpr  (142)
+	lexpr : lexpr . SLASH lexpr  (143)
+	lexpr : lexpr . PERCENT lexpr  (144)
+	lexpr : lexpr . LBRACKET lexpr RBRACKET  (153)
+	lexpr : lexpr . MINUSGREATER ident  (154)
+	lexpr : lexpr . DOT ident  (155)
+	lexpr : lexpr . DOT INTEGER  (156)
+
+	BANGEQUAL  shift 161
+	DOT  shift 165
+	EQUALEQUAL  shift 166
+	GREATER  shift 167
+	GREATEREQUAL  shift 168
+	GREATERGREATER  shift 169
+	GREATERGREATERGREATER  shift 170
+	LBRACKET  shift 171
+	LESS  shift 172
+	LESSEQUAL  shift 173
+	LESSLESS  shift 174
+	MINUS  shift 175
+	PERCENT  shift 176
+	PLUS  shift 177
+	SLASH  shift 179
+	STAR  shift 180
+	MINUSGREATER  shift 181
+	AMPER  reduce 130
+	AMPERAMPER  reduce 130
+	BAR  reduce 130
+	BARBAR  reduce 130
+	CARET  reduce 130
+	COLON  reduce 130
+	COMMA  reduce 130
+	QUESTIONMARK  reduce 130
+	RBRACE  reduce 130
+	RBRACKET  reduce 130
+	RPAREN  reduce 130
+	SEMI  reduce 130
+
+
+state 216
+	lexpr : lexpr . QUESTIONMARK lexpr COLON lexpr  (125)
+	lexpr : lexpr . BARBAR lexpr  (126)
+	lexpr : lexpr . AMPERAMPER lexpr  (127)
+	lexpr : lexpr AMPERAMPER lexpr .  (127)
+	lexpr : lexpr . BAR lexpr  (128)
+	lexpr : lexpr . CARET lexpr  (129)
+	lexpr : lexpr . AMPER lexpr  (130)
+	lexpr : lexpr . EQUALEQUAL lexpr  (131)
+	lexpr : lexpr . BANGEQUAL lexpr  (132)
+	lexpr : lexpr . LESS lexpr  (133)
+	lexpr : lexpr . GREATER lexpr  (134)
+	lexpr : lexpr . LESSEQUAL lexpr  (135)
+	lexpr : lexpr . GREATEREQUAL lexpr  (136)
+	lexpr : lexpr . LESSLESS lexpr  (137)
+	lexpr : lexpr . GREATERGREATER lexpr  (138)
+	lexpr : lexpr . GREATERGREATERGREATER lexpr  (139)
+	lexpr : lexpr . PLUS lexpr  (140)
+	lexpr : lexpr . MINUS lexpr  (141)
+	lexpr : lexpr . STAR lexpr  (142)
+	lexpr : lexpr . SLASH lexpr  (143)
+	lexpr : lexpr . PERCENT lexpr  (144)
+	lexpr : lexpr . LBRACKET lexpr RBRACKET  (153)
+	lexpr : lexpr . MINUSGREATER ident  (154)
+	lexpr : lexpr . DOT ident  (155)
+	lexpr : lexpr . DOT INTEGER  (156)
+
+	AMPER  shift 159
+	BANGEQUAL  shift 161
+	BAR  shift 162
+	CARET  shift 164
+	DOT  shift 165
+	EQUALEQUAL  shift 166
+	GREATER  shift 167
+	GREATEREQUAL  shift 168
+	GREATERGREATER  shift 169
+	GREATERGREATERGREATER  shift 170
+	LBRACKET  shift 171
+	LESS  shift 172
+	LESSEQUAL  shift 173
+	LESSLESS  shift 174
+	MINUS  shift 175
+	PERCENT  shift 176
+	PLUS  shift 177
+	SLASH  shift 179
+	STAR  shift 180
+	MINUSGREATER  shift 181
+	AMPERAMPER  reduce 127
+	BARBAR  reduce 127
+	COLON  reduce 127
+	COMMA  reduce 127
+	QUESTIONMARK  reduce 127
+	RBRACE  reduce 127
+	RBRACKET  reduce 127
+	RPAREN  reduce 127
+	SEMI  reduce 127
+
+
+state 217
+	lexpr : lexpr . QUESTIONMARK lexpr COLON lexpr  (125)
+	lexpr : lexpr . BARBAR lexpr  (126)
+	lexpr : lexpr . AMPERAMPER lexpr  (127)
+	lexpr : lexpr . BAR lexpr  (128)
+	lexpr : lexpr . CARET lexpr  (129)
+	lexpr : lexpr . AMPER lexpr  (130)
+	lexpr : lexpr . EQUALEQUAL lexpr  (131)
+	lexpr : lexpr . BANGEQUAL lexpr  (132)
+	lexpr : lexpr BANGEQUAL lexpr .  (132)
+	lexpr : lexpr . LESS lexpr  (133)
+	lexpr : lexpr . GREATER lexpr  (134)
+	lexpr : lexpr . LESSEQUAL lexpr  (135)
+	lexpr : lexpr . GREATEREQUAL lexpr  (136)
+	lexpr : lexpr . LESSLESS lexpr  (137)
+	lexpr : lexpr . GREATERGREATER lexpr  (138)
+	lexpr : lexpr . GREATERGREATERGREATER lexpr  (139)
+	lexpr : lexpr . PLUS lexpr  (140)
+	lexpr : lexpr . MINUS lexpr  (141)
+	lexpr : lexpr . STAR lexpr  (142)
+	lexpr : lexpr . SLASH lexpr  (143)
+	lexpr : lexpr . PERCENT lexpr  (144)
+	lexpr : lexpr . LBRACKET lexpr RBRACKET  (153)
+	lexpr : lexpr . MINUSGREATER ident  (154)
+	lexpr : lexpr . DOT ident  (155)
+	lexpr : lexpr . DOT INTEGER  (156)
+
+	DOT  shift 165
+	GREATER  shift 167
+	GREATEREQUAL  shift 168
+	GREATERGREATER  shift 169
+	GREATERGREATERGREATER  shift 170
+	LBRACKET  shift 171
+	LESS  shift 172
+	LESSEQUAL  shift 173
+	LESSLESS  shift 174
+	MINUS  shift 175
+	PERCENT  shift 176
+	PLUS  shift 177
+	SLASH  shift 179
+	STAR  shift 180
+	MINUSGREATER  shift 181
+	AMPER  reduce 132
+	AMPERAMPER  reduce 132
+	BANGEQUAL  reduce 132
+	BAR  reduce 132
+	BARBAR  reduce 132
+	CARET  reduce 132
+	COLON  reduce 132
+	COMMA  reduce 132
+	EQUALEQUAL  reduce 132
+	QUESTIONMARK  reduce 132
+	RBRACE  reduce 132
+	RBRACKET  reduce 132
+	RPAREN  reduce 132
+	SEMI  reduce 132
+
+
+state 218
+	lexpr : lexpr . QUESTIONMARK lexpr COLON lexpr  (125)
+	lexpr : lexpr . BARBAR lexpr  (126)
+	lexpr : lexpr . AMPERAMPER lexpr  (127)
+	lexpr : lexpr . BAR lexpr  (128)
+	lexpr : lexpr BAR lexpr .  (128)
+	lexpr : lexpr . CARET lexpr  (129)
+	lexpr : lexpr . AMPER lexpr  (130)
+	lexpr : lexpr . EQUALEQUAL lexpr  (131)
+	lexpr : lexpr . BANGEQUAL lexpr  (132)
+	lexpr : lexpr . LESS lexpr  (133)
+	lexpr : lexpr . GREATER lexpr  (134)
+	lexpr : lexpr . LESSEQUAL lexpr  (135)
+	lexpr : lexpr . GREATEREQUAL lexpr  (136)
+	lexpr : lexpr . LESSLESS lexpr  (137)
+	lexpr : lexpr . GREATERGREATER lexpr  (138)
+	lexpr : lexpr . GREATERGREATERGREATER lexpr  (139)
+	lexpr : lexpr . PLUS lexpr  (140)
+	lexpr : lexpr . MINUS lexpr  (141)
+	lexpr : lexpr . STAR lexpr  (142)
+	lexpr : lexpr . SLASH lexpr  (143)
+	lexpr : lexpr . PERCENT lexpr  (144)
+	lexpr : lexpr . LBRACKET lexpr RBRACKET  (153)
+	lexpr : lexpr . MINUSGREATER ident  (154)
+	lexpr : lexpr . DOT ident  (155)
+	lexpr : lexpr . DOT INTEGER  (156)
+
+	AMPER  shift 159
+	BANGEQUAL  shift 161
+	CARET  shift 164
+	DOT  shift 165
+	EQUALEQUAL  shift 166
+	GREATER  shift 167
+	GREATEREQUAL  shift 168
+	GREATERGREATER  shift 169
+	GREATERGREATERGREATER  shift 170
+	LBRACKET  shift 171
+	LESS  shift 172
+	LESSEQUAL  shift 173
+	LESSLESS  shift 174
+	MINUS  shift 175
+	PERCENT  shift 176
+	PLUS  shift 177
+	SLASH  shift 179
+	STAR  shift 180
+	MINUSGREATER  shift 181
+	AMPERAMPER  reduce 128
+	BAR  reduce 128
+	BARBAR  reduce 128
+	COLON  reduce 128
+	COMMA  reduce 128
+	QUESTIONMARK  reduce 128
+	RBRACE  reduce 128
+	RBRACKET  reduce 128
+	RPAREN  reduce 128
+	SEMI  reduce 128
+
+
+state 219
+	lexpr : lexpr . QUESTIONMARK lexpr COLON lexpr  (125)
+	lexpr : lexpr . BARBAR lexpr  (126)
+	lexpr : lexpr BARBAR lexpr .  (126)
+	lexpr : lexpr . AMPERAMPER lexpr  (127)
+	lexpr : lexpr . BAR lexpr  (128)
+	lexpr : lexpr . CARET lexpr  (129)
+	lexpr : lexpr . AMPER lexpr  (130)
+	lexpr : lexpr . EQUALEQUAL lexpr  (131)
+	lexpr : lexpr . BANGEQUAL lexpr  (132)
+	lexpr : lexpr . LESS lexpr  (133)
+	lexpr : lexpr . GREATER lexpr  (134)
+	lexpr : lexpr . LESSEQUAL lexpr  (135)
+	lexpr : lexpr . GREATEREQUAL lexpr  (136)
+	lexpr : lexpr . LESSLESS lexpr  (137)
+	lexpr : lexpr . GREATERGREATER lexpr  (138)
+	lexpr : lexpr . GREATERGREATERGREATER lexpr  (139)
+	lexpr : lexpr . PLUS lexpr  (140)
+	lexpr : lexpr . MINUS lexpr  (141)
+	lexpr : lexpr . STAR lexpr  (142)
+	lexpr : lexpr . SLASH lexpr  (143)
+	lexpr : lexpr . PERCENT lexpr  (144)
+	lexpr : lexpr . LBRACKET lexpr RBRACKET  (153)
+	lexpr : lexpr . MINUSGREATER ident  (154)
+	lexpr : lexpr . DOT ident  (155)
+	lexpr : lexpr . DOT INTEGER  (156)
+
+	AMPER  shift 159
+	AMPERAMPER  shift 160
+	BANGEQUAL  shift 161
+	BAR  shift 162
+	CARET  shift 164
+	DOT  shift 165
+	EQUALEQUAL  shift 166
+	GREATER  shift 167
+	GREATEREQUAL  shift 168
+	GREATERGREATER  shift 169
+	GREATERGREATERGREATER  shift 170
+	LBRACKET  shift 171
+	LESS  shift 172
+	LESSEQUAL  shift 173
+	LESSLESS  shift 174
+	MINUS  shift 175
+	PERCENT  shift 176
+	PLUS  shift 177
+	SLASH  shift 179
+	STAR  shift 180
+	MINUSGREATER  shift 181
+	BARBAR  reduce 126
+	COLON  reduce 126
+	COMMA  reduce 126
+	QUESTIONMARK  reduce 126
+	RBRACE  reduce 126
+	RBRACKET  reduce 126
+	RPAREN  reduce 126
+	SEMI  reduce 126
+
+
+state 220
+	lexpr : lexpr . QUESTIONMARK lexpr COLON lexpr  (125)
+	lexpr : lexpr . BARBAR lexpr  (126)
+	lexpr : lexpr . AMPERAMPER lexpr  (127)
+	lexpr : lexpr . BAR lexpr  (128)
+	lexpr : lexpr . CARET lexpr  (129)
+	lexpr : lexpr CARET lexpr .  (129)
+	lexpr : lexpr . AMPER lexpr  (130)
+	lexpr : lexpr . EQUALEQUAL lexpr  (131)
+	lexpr : lexpr . BANGEQUAL lexpr  (132)
+	lexpr : lexpr . LESS lexpr  (133)
+	lexpr : lexpr . GREATER lexpr  (134)
+	lexpr : lexpr . LESSEQUAL lexpr  (135)
+	lexpr : lexpr . GREATEREQUAL lexpr  (136)
+	lexpr : lexpr . LESSLESS lexpr  (137)
+	lexpr : lexpr . GREATERGREATER lexpr  (138)
+	lexpr : lexpr . GREATERGREATERGREATER lexpr  (139)
+	lexpr : lexpr . PLUS lexpr  (140)
+	lexpr : lexpr . MINUS lexpr  (141)
+	lexpr : lexpr . STAR lexpr  (142)
+	lexpr : lexpr . SLASH lexpr  (143)
+	lexpr : lexpr . PERCENT lexpr  (144)
+	lexpr : lexpr . LBRACKET lexpr RBRACKET  (153)
+	lexpr : lexpr . MINUSGREATER ident  (154)
+	lexpr : lexpr . DOT ident  (155)
+	lexpr : lexpr . DOT INTEGER  (156)
+
+	AMPER  shift 159
+	BANGEQUAL  shift 161
+	DOT  shift 165
+	EQUALEQUAL  shift 166
+	GREATER  shift 167
+	GREATEREQUAL  shift 168
+	GREATERGREATER  shift 169
+	GREATERGREATERGREATER  shift 170
+	LBRACKET  shift 171
+	LESS  shift 172
+	LESSEQUAL  shift 173
+	LESSLESS  shift 174
+	MINUS  shift 175
+	PERCENT  shift 176
+	PLUS  shift 177
+	SLASH  shift 179
+	STAR  shift 180
+	MINUSGREATER  shift 181
+	AMPERAMPER  reduce 129
+	BAR  reduce 129
+	BARBAR  reduce 129
+	CARET  reduce 129
+	COLON  reduce 129
+	COMMA  reduce 129
+	QUESTIONMARK  reduce 129
+	RBRACE  reduce 129
+	RBRACKET  reduce 129
+	RPAREN  reduce 129
+	SEMI  reduce 129
+
+
+state 221
+	lexpr : lexpr DOT INTEGER .  (156)
+
+	.  reduce 156
+
+
+state 222
+	lexpr : lexpr DOT ident .  (155)
+
+	.  reduce 155
+
+
+state 223
+	lexpr : lexpr . QUESTIONMARK lexpr COLON lexpr  (125)
+	lexpr : lexpr . BARBAR lexpr  (126)
+	lexpr : lexpr . AMPERAMPER lexpr  (127)
+	lexpr : lexpr . BAR lexpr  (128)
+	lexpr : lexpr . CARET lexpr  (129)
+	lexpr : lexpr . AMPER lexpr  (130)
+	lexpr : lexpr . EQUALEQUAL lexpr  (131)
+	lexpr : lexpr EQUALEQUAL lexpr .  (131)
+	lexpr : lexpr . BANGEQUAL lexpr  (132)
+	lexpr : lexpr . LESS lexpr  (133)
+	lexpr : lexpr . GREATER lexpr  (134)
+	lexpr : lexpr . LESSEQUAL lexpr  (135)
+	lexpr : lexpr . GREATEREQUAL lexpr  (136)
+	lexpr : lexpr . LESSLESS lexpr  (137)
+	lexpr : lexpr . GREATERGREATER lexpr  (138)
+	lexpr : lexpr . GREATERGREATERGREATER lexpr  (139)
+	lexpr : lexpr . PLUS lexpr  (140)
+	lexpr : lexpr . MINUS lexpr  (141)
+	lexpr : lexpr . STAR lexpr  (142)
+	lexpr : lexpr . SLASH lexpr  (143)
+	lexpr : lexpr . PERCENT lexpr  (144)
+	lexpr : lexpr . LBRACKET lexpr RBRACKET  (153)
+	lexpr : lexpr . MINUSGREATER ident  (154)
+	lexpr : lexpr . DOT ident  (155)
+	lexpr : lexpr . DOT INTEGER  (156)
+
+	DOT  shift 165
+	GREATER  shift 167
+	GREATEREQUAL  shift 168
+	GREATERGREATER  shift 169
+	GREATERGREATERGREATER  shift 170
+	LBRACKET  shift 171
+	LESS  shift 172
+	LESSEQUAL  shift 173
+	LESSLESS  shift 174
+	MINUS  shift 175
+	PERCENT  shift 176
+	PLUS  shift 177
+	SLASH  shift 179
+	STAR  shift 180
+	MINUSGREATER  shift 181
+	AMPER  reduce 131
+	AMPERAMPER  reduce 131
+	BANGEQUAL  reduce 131
+	BAR  reduce 131
+	BARBAR  reduce 131
+	CARET  reduce 131
+	COLON  reduce 131
+	COMMA  reduce 131
+	EQUALEQUAL  reduce 131
+	QUESTIONMARK  reduce 131
+	RBRACE  reduce 131
+	RBRACKET  reduce 131
+	RPAREN  reduce 131
+	SEMI  reduce 131
+
+
+state 224
+	lexpr : lexpr . QUESTIONMARK lexpr COLON lexpr  (125)
+	lexpr : lexpr . BARBAR lexpr  (126)
+	lexpr : lexpr . AMPERAMPER lexpr  (127)
+	lexpr : lexpr . BAR lexpr  (128)
+	lexpr : lexpr . CARET lexpr  (129)
+	lexpr : lexpr . AMPER lexpr  (130)
+	lexpr : lexpr . EQUALEQUAL lexpr  (131)
+	lexpr : lexpr . BANGEQUAL lexpr  (132)
+	lexpr : lexpr . LESS lexpr  (133)
+	lexpr : lexpr . GREATER lexpr  (134)
+	lexpr : lexpr GREATER lexpr .  (134)
+	lexpr : lexpr . LESSEQUAL lexpr  (135)
+	lexpr : lexpr . GREATEREQUAL lexpr  (136)
+	lexpr : lexpr . LESSLESS lexpr  (137)
+	lexpr : lexpr . GREATERGREATER lexpr  (138)
+	lexpr : lexpr . GREATERGREATERGREATER lexpr  (139)
+	lexpr : lexpr . PLUS lexpr  (140)
+	lexpr : lexpr . MINUS lexpr  (141)
+	lexpr : lexpr . STAR lexpr  (142)
+	lexpr : lexpr . SLASH lexpr  (143)
+	lexpr : lexpr . PERCENT lexpr  (144)
+	lexpr : lexpr . LBRACKET lexpr RBRACKET  (153)
+	lexpr : lexpr . MINUSGREATER ident  (154)
+	lexpr : lexpr . DOT ident  (155)
+	lexpr : lexpr . DOT INTEGER  (156)
+
+	DOT  shift 165
+	GREATERGREATER  shift 169
+	GREATERGREATERGREATER  shift 170
+	LBRACKET  shift 171
+	LESSLESS  shift 174
+	MINUS  shift 175
+	PERCENT  shift 176
+	PLUS  shift 177
+	SLASH  shift 179
+	STAR  shift 180
+	MINUSGREATER  shift 181
+	AMPER  reduce 134
+	AMPERAMPER  reduce 134
+	BANGEQUAL  reduce 134
+	BAR  reduce 134
+	BARBAR  reduce 134
+	CARET  reduce 134
+	COLON  reduce 134
+	COMMA  reduce 134
+	EQUALEQUAL  reduce 134
+	GREATER  reduce 134
+	GREATEREQUAL  reduce 134
+	LESS  reduce 134
+	LESSEQUAL  reduce 134
+	QUESTIONMARK  reduce 134
+	RBRACE  reduce 134
+	RBRACKET  reduce 134
+	RPAREN  reduce 134
+	SEMI  reduce 134
+
+
+state 225
+	lexpr : lexpr . QUESTIONMARK lexpr COLON lexpr  (125)
+	lexpr : lexpr . BARBAR lexpr  (126)
+	lexpr : lexpr . AMPERAMPER lexpr  (127)
+	lexpr : lexpr . BAR lexpr  (128)
+	lexpr : lexpr . CARET lexpr  (129)
+	lexpr : lexpr . AMPER lexpr  (130)
+	lexpr : lexpr . EQUALEQUAL lexpr  (131)
+	lexpr : lexpr . BANGEQUAL lexpr  (132)
+	lexpr : lexpr . LESS lexpr  (133)
+	lexpr : lexpr . GREATER lexpr  (134)
+	lexpr : lexpr . LESSEQUAL lexpr  (135)
+	lexpr : lexpr . GREATEREQUAL lexpr  (136)
+	lexpr : lexpr GREATEREQUAL lexpr .  (136)
+	lexpr : lexpr . LESSLESS lexpr  (137)
+	lexpr : lexpr . GREATERGREATER lexpr  (138)
+	lexpr : lexpr . GREATERGREATERGREATER lexpr  (139)
+	lexpr : lexpr . PLUS lexpr  (140)
+	lexpr : lexpr . MINUS lexpr  (141)
+	lexpr : lexpr . STAR lexpr  (142)
+	lexpr : lexpr . SLASH lexpr  (143)
+	lexpr : lexpr . PERCENT lexpr  (144)
+	lexpr : lexpr . LBRACKET lexpr RBRACKET  (153)
+	lexpr : lexpr . MINUSGREATER ident  (154)
+	lexpr : lexpr . DOT ident  (155)
+	lexpr : lexpr . DOT INTEGER  (156)
+
+	DOT  shift 165
+	GREATERGREATER  shift 169
+	GREATERGREATERGREATER  shift 170
+	LBRACKET  shift 171
+	LESSLESS  shift 174
+	MINUS  shift 175
+	PERCENT  shift 176
+	PLUS  shift 177
+	SLASH  shift 179
+	STAR  shift 180
+	MINUSGREATER  shift 181
+	AMPER  reduce 136
+	AMPERAMPER  reduce 136
+	BANGEQUAL  reduce 136
+	BAR  reduce 136
+	BARBAR  reduce 136
+	CARET  reduce 136
+	COLON  reduce 136
+	COMMA  reduce 136
+	EQUALEQUAL  reduce 136
+	GREATER  reduce 136
+	GREATEREQUAL  reduce 136
+	LESS  reduce 136
+	LESSEQUAL  reduce 136
+	QUESTIONMARK  reduce 136
+	RBRACE  reduce 136
+	RBRACKET  reduce 136
+	RPAREN  reduce 136
+	SEMI  reduce 136
+
+
+state 226
+	lexpr : lexpr . QUESTIONMARK lexpr COLON lexpr  (125)
+	lexpr : lexpr . BARBAR lexpr  (126)
+	lexpr : lexpr . AMPERAMPER lexpr  (127)
+	lexpr : lexpr . BAR lexpr  (128)
+	lexpr : lexpr . CARET lexpr  (129)
+	lexpr : lexpr . AMPER lexpr  (130)
+	lexpr : lexpr . EQUALEQUAL lexpr  (131)
+	lexpr : lexpr . BANGEQUAL lexpr  (132)
+	lexpr : lexpr . LESS lexpr  (133)
+	lexpr : lexpr . GREATER lexpr  (134)
+	lexpr : lexpr . LESSEQUAL lexpr  (135)
+	lexpr : lexpr . GREATEREQUAL lexpr  (136)
+	lexpr : lexpr . LESSLESS lexpr  (137)
+	lexpr : lexpr . GREATERGREATER lexpr  (138)
+	lexpr : lexpr GREATERGREATER lexpr .  (138)
+	lexpr : lexpr . GREATERGREATERGREATER lexpr  (139)
+	lexpr : lexpr . PLUS lexpr  (140)
+	lexpr : lexpr . MINUS lexpr  (141)
+	lexpr : lexpr . STAR lexpr  (142)
+	lexpr : lexpr . SLASH lexpr  (143)
+	lexpr : lexpr . PERCENT lexpr  (144)
+	lexpr : lexpr . LBRACKET lexpr RBRACKET  (153)
+	lexpr : lexpr . MINUSGREATER ident  (154)
+	lexpr : lexpr . DOT ident  (155)
+	lexpr : lexpr . DOT INTEGER  (156)
+
+	DOT  shift 165
+	LBRACKET  shift 171
+	MINUS  shift 175
+	PERCENT  shift 176
+	PLUS  shift 177
+	SLASH  shift 179
+	STAR  shift 180
+	MINUSGREATER  shift 181
+	AMPER  reduce 138
+	AMPERAMPER  reduce 138
+	BANGEQUAL  reduce 138
+	BAR  reduce 138
+	BARBAR  reduce 138
+	CARET  reduce 138
+	COLON  reduce 138
+	COMMA  reduce 138
+	EQUALEQUAL  reduce 138
+	GREATER  reduce 138
+	GREATEREQUAL  reduce 138
+	GREATERGREATER  reduce 138
+	GREATERGREATERGREATER  reduce 138
+	LESS  reduce 138
+	LESSEQUAL  reduce 138
+	LESSLESS  reduce 138
+	QUESTIONMARK  reduce 138
+	RBRACE  reduce 138
+	RBRACKET  reduce 138
+	RPAREN  reduce 138
+	SEMI  reduce 138
+
+
+state 227
+	lexpr : lexpr . QUESTIONMARK lexpr COLON lexpr  (125)
+	lexpr : lexpr . BARBAR lexpr  (126)
+	lexpr : lexpr . AMPERAMPER lexpr  (127)
+	lexpr : lexpr . BAR lexpr  (128)
+	lexpr : lexpr . CARET lexpr  (129)
+	lexpr : lexpr . AMPER lexpr  (130)
+	lexpr : lexpr . EQUALEQUAL lexpr  (131)
+	lexpr : lexpr . BANGEQUAL lexpr  (132)
+	lexpr : lexpr . LESS lexpr  (133)
+	lexpr : lexpr . GREATER lexpr  (134)
+	lexpr : lexpr . LESSEQUAL lexpr  (135)
+	lexpr : lexpr . GREATEREQUAL lexpr  (136)
+	lexpr : lexpr . LESSLESS lexpr  (137)
+	lexpr : lexpr . GREATERGREATER lexpr  (138)
+	lexpr : lexpr . GREATERGREATERGREATER lexpr  (139)
+	lexpr : lexpr GREATERGREATERGREATER lexpr .  (139)
+	lexpr : lexpr . PLUS lexpr  (140)
+	lexpr : lexpr . MINUS lexpr  (141)
+	lexpr : lexpr . STAR lexpr  (142)
+	lexpr : lexpr . SLASH lexpr  (143)
+	lexpr : lexpr . PERCENT lexpr  (144)
+	lexpr : lexpr . LBRACKET lexpr RBRACKET  (153)
+	lexpr : lexpr . MINUSGREATER ident  (154)
+	lexpr : lexpr . DOT ident  (155)
+	lexpr : lexpr . DOT INTEGER  (156)
+
+	DOT  shift 165
+	LBRACKET  shift 171
+	MINUS  shift 175
+	PERCENT  shift 176
+	PLUS  shift 177
+	SLASH  shift 179
+	STAR  shift 180
+	MINUSGREATER  shift 181
+	AMPER  reduce 139
+	AMPERAMPER  reduce 139
+	BANGEQUAL  reduce 139
+	BAR  reduce 139
+	BARBAR  reduce 139
+	CARET  reduce 139
+	COLON  reduce 139
+	COMMA  reduce 139
+	EQUALEQUAL  reduce 139
+	GREATER  reduce 139
+	GREATEREQUAL  reduce 139
+	GREATERGREATER  reduce 139
+	GREATERGREATERGREATER  reduce 139
+	LESS  reduce 139
+	LESSEQUAL  reduce 139
+	LESSLESS  reduce 139
+	QUESTIONMARK  reduce 139
+	RBRACE  reduce 139
+	RBRACKET  reduce 139
+	RPAREN  reduce 139
+	SEMI  reduce 139
+
+
+state 228
+	lexpr : lexpr . QUESTIONMARK lexpr COLON lexpr  (125)
+	lexpr : lexpr . BARBAR lexpr  (126)
+	lexpr : lexpr . AMPERAMPER lexpr  (127)
+	lexpr : lexpr . BAR lexpr  (128)
+	lexpr : lexpr . CARET lexpr  (129)
+	lexpr : lexpr . AMPER lexpr  (130)
+	lexpr : lexpr . EQUALEQUAL lexpr  (131)
+	lexpr : lexpr . BANGEQUAL lexpr  (132)
+	lexpr : lexpr . LESS lexpr  (133)
+	lexpr : lexpr . GREATER lexpr  (134)
+	lexpr : lexpr . LESSEQUAL lexpr  (135)
+	lexpr : lexpr . GREATEREQUAL lexpr  (136)
+	lexpr : lexpr . LESSLESS lexpr  (137)
+	lexpr : lexpr . GREATERGREATER lexpr  (138)
+	lexpr : lexpr . GREATERGREATERGREATER lexpr  (139)
+	lexpr : lexpr . PLUS lexpr  (140)
+	lexpr : lexpr . MINUS lexpr  (141)
+	lexpr : lexpr . STAR lexpr  (142)
+	lexpr : lexpr . SLASH lexpr  (143)
+	lexpr : lexpr . PERCENT lexpr  (144)
+	lexpr : lexpr . LBRACKET lexpr RBRACKET  (153)
+	lexpr : lexpr LBRACKET lexpr . RBRACKET  (153)
+	lexpr : lexpr . MINUSGREATER ident  (154)
+	lexpr : lexpr . DOT ident  (155)
+	lexpr : lexpr . DOT INTEGER  (156)
+
+	AMPER  shift 159
+	AMPERAMPER  shift 160
+	BANGEQUAL  shift 161
+	BAR  shift 162
+	BARBAR  shift 163
+	CARET  shift 164
+	DOT  shift 165
+	EQUALEQUAL  shift 166
+	GREATER  shift 167
+	GREATEREQUAL  shift 168
+	GREATERGREATER  shift 169
+	GREATERGREATERGREATER  shift 170
+	LBRACKET  shift 171
+	LESS  shift 172
+	LESSEQUAL  shift 173
+	LESSLESS  shift 174
+	MINUS  shift 175
+	PERCENT  shift 176
+	PLUS  shift 177
+	QUESTIONMARK  shift 178
+	RBRACKET  shift 272
+	SLASH  shift 179
+	STAR  shift 180
+	MINUSGREATER  shift 181
+	.  error
+
+
+state 229
+	lexpr : lexpr . QUESTIONMARK lexpr COLON lexpr  (125)
+	lexpr : lexpr . BARBAR lexpr  (126)
+	lexpr : lexpr . AMPERAMPER lexpr  (127)
+	lexpr : lexpr . BAR lexpr  (128)
+	lexpr : lexpr . CARET lexpr  (129)
+	lexpr : lexpr . AMPER lexpr  (130)
+	lexpr : lexpr . EQUALEQUAL lexpr  (131)
+	lexpr : lexpr . BANGEQUAL lexpr  (132)
+	lexpr : lexpr . LESS lexpr  (133)
+	lexpr : lexpr LESS lexpr .  (133)
+	lexpr : lexpr . GREATER lexpr  (134)
+	lexpr : lexpr . LESSEQUAL lexpr  (135)
+	lexpr : lexpr . GREATEREQUAL lexpr  (136)
+	lexpr : lexpr . LESSLESS lexpr  (137)
+	lexpr : lexpr . GREATERGREATER lexpr  (138)
+	lexpr : lexpr . GREATERGREATERGREATER lexpr  (139)
+	lexpr : lexpr . PLUS lexpr  (140)
+	lexpr : lexpr . MINUS lexpr  (141)
+	lexpr : lexpr . STAR lexpr  (142)
+	lexpr : lexpr . SLASH lexpr  (143)
+	lexpr : lexpr . PERCENT lexpr  (144)
+	lexpr : lexpr . LBRACKET lexpr RBRACKET  (153)
+	lexpr : lexpr . MINUSGREATER ident  (154)
+	lexpr : lexpr . DOT ident  (155)
+	lexpr : lexpr . DOT INTEGER  (156)
+
+	DOT  shift 165
+	GREATERGREATER  shift 169
+	GREATERGREATERGREATER  shift 170
+	LBRACKET  shift 171
+	LESSLESS  shift 174
+	MINUS  shift 175
+	PERCENT  shift 176
+	PLUS  shift 177
+	SLASH  shift 179
+	STAR  shift 180
+	MINUSGREATER  shift 181
+	AMPER  reduce 133
+	AMPERAMPER  reduce 133
+	BANGEQUAL  reduce 133
+	BAR  reduce 133
+	BARBAR  reduce 133
+	CARET  reduce 133
+	COLON  reduce 133
+	COMMA  reduce 133
+	EQUALEQUAL  reduce 133
+	GREATER  reduce 133
+	GREATEREQUAL  reduce 133
+	LESS  reduce 133
+	LESSEQUAL  reduce 133
+	QUESTIONMARK  reduce 133
+	RBRACE  reduce 133
+	RBRACKET  reduce 133
+	RPAREN  reduce 133
+	SEMI  reduce 133
+
+
+state 230
+	lexpr : lexpr . QUESTIONMARK lexpr COLON lexpr  (125)
+	lexpr : lexpr . BARBAR lexpr  (126)
+	lexpr : lexpr . AMPERAMPER lexpr  (127)
+	lexpr : lexpr . BAR lexpr  (128)
+	lexpr : lexpr . CARET lexpr  (129)
+	lexpr : lexpr . AMPER lexpr  (130)
+	lexpr : lexpr . EQUALEQUAL lexpr  (131)
+	lexpr : lexpr . BANGEQUAL lexpr  (132)
+	lexpr : lexpr . LESS lexpr  (133)
+	lexpr : lexpr . GREATER lexpr  (134)
+	lexpr : lexpr . LESSEQUAL lexpr  (135)
+	lexpr : lexpr LESSEQUAL lexpr .  (135)
+	lexpr : lexpr . GREATEREQUAL lexpr  (136)
+	lexpr : lexpr . LESSLESS lexpr  (137)
+	lexpr : lexpr . GREATERGREATER lexpr  (138)
+	lexpr : lexpr . GREATERGREATERGREATER lexpr  (139)
+	lexpr : lexpr . PLUS lexpr  (140)
+	lexpr : lexpr . MINUS lexpr  (141)
+	lexpr : lexpr . STAR lexpr  (142)
+	lexpr : lexpr . SLASH lexpr  (143)
+	lexpr : lexpr . PERCENT lexpr  (144)
+	lexpr : lexpr . LBRACKET lexpr RBRACKET  (153)
+	lexpr : lexpr . MINUSGREATER ident  (154)
+	lexpr : lexpr . DOT ident  (155)
+	lexpr : lexpr . DOT INTEGER  (156)
+
+	DOT  shift 165
+	GREATERGREATER  shift 169
+	GREATERGREATERGREATER  shift 170
+	LBRACKET  shift 171
+	LESSLESS  shift 174
+	MINUS  shift 175
+	PERCENT  shift 176
+	PLUS  shift 177
+	SLASH  shift 179
+	STAR  shift 180
+	MINUSGREATER  shift 181
+	AMPER  reduce 135
+	AMPERAMPER  reduce 135
+	BANGEQUAL  reduce 135
+	BAR  reduce 135
+	BARBAR  reduce 135
+	CARET  reduce 135
+	COLON  reduce 135
+	COMMA  reduce 135
+	EQUALEQUAL  reduce 135
+	GREATER  reduce 135
+	GREATEREQUAL  reduce 135
+	LESS  reduce 135
+	LESSEQUAL  reduce 135
+	QUESTIONMARK  reduce 135
+	RBRACE  reduce 135
+	RBRACKET  reduce 135
+	RPAREN  reduce 135
+	SEMI  reduce 135
+
+
+state 231
+	lexpr : lexpr . QUESTIONMARK lexpr COLON lexpr  (125)
+	lexpr : lexpr . BARBAR lexpr  (126)
+	lexpr : lexpr . AMPERAMPER lexpr  (127)
+	lexpr : lexpr . BAR lexpr  (128)
+	lexpr : lexpr . CARET lexpr  (129)
+	lexpr : lexpr . AMPER lexpr  (130)
+	lexpr : lexpr . EQUALEQUAL lexpr  (131)
+	lexpr : lexpr . BANGEQUAL lexpr  (132)
+	lexpr : lexpr . LESS lexpr  (133)
+	lexpr : lexpr . GREATER lexpr  (134)
+	lexpr : lexpr . LESSEQUAL lexpr  (135)
+	lexpr : lexpr . GREATEREQUAL lexpr  (136)
+	lexpr : lexpr . LESSLESS lexpr  (137)
+	lexpr : lexpr LESSLESS lexpr .  (137)
+	lexpr : lexpr . GREATERGREATER lexpr  (138)
+	lexpr : lexpr . GREATERGREATERGREATER lexpr  (139)
+	lexpr : lexpr . PLUS lexpr  (140)
+	lexpr : lexpr . MINUS lexpr  (141)
+	lexpr : lexpr . STAR lexpr  (142)
+	lexpr : lexpr . SLASH lexpr  (143)
+	lexpr : lexpr . PERCENT lexpr  (144)
+	lexpr : lexpr . LBRACKET lexpr RBRACKET  (153)
+	lexpr : lexpr . MINUSGREATER ident  (154)
+	lexpr : lexpr . DOT ident  (155)
+	lexpr : lexpr . DOT INTEGER  (156)
+
+	DOT  shift 165
+	LBRACKET  shift 171
+	MINUS  shift 175
+	PERCENT  shift 176
+	PLUS  shift 177
+	SLASH  shift 179
+	STAR  shift 180
+	MINUSGREATER  shift 181
+	AMPER  reduce 137
+	AMPERAMPER  reduce 137
+	BANGEQUAL  reduce 137
+	BAR  reduce 137
+	BARBAR  reduce 137
+	CARET  reduce 137
+	COLON  reduce 137
+	COMMA  reduce 137
+	EQUALEQUAL  reduce 137
+	GREATER  reduce 137
+	GREATEREQUAL  reduce 137
+	GREATERGREATER  reduce 137
+	GREATERGREATERGREATER  reduce 137
+	LESS  reduce 137
+	LESSEQUAL  reduce 137
+	LESSLESS  reduce 137
+	QUESTIONMARK  reduce 137
+	RBRACE  reduce 137
+	RBRACKET  reduce 137
+	RPAREN  reduce 137
+	SEMI  reduce 137
+
+
+state 232
+	lexpr : lexpr . QUESTIONMARK lexpr COLON lexpr  (125)
+	lexpr : lexpr . BARBAR lexpr  (126)
+	lexpr : lexpr . AMPERAMPER lexpr  (127)
+	lexpr : lexpr . BAR lexpr  (128)
+	lexpr : lexpr . CARET lexpr  (129)
+	lexpr : lexpr . AMPER lexpr  (130)
+	lexpr : lexpr . EQUALEQUAL lexpr  (131)
+	lexpr : lexpr . BANGEQUAL lexpr  (132)
+	lexpr : lexpr . LESS lexpr  (133)
+	lexpr : lexpr . GREATER lexpr  (134)
+	lexpr : lexpr . LESSEQUAL lexpr  (135)
+	lexpr : lexpr . GREATEREQUAL lexpr  (136)
+	lexpr : lexpr . LESSLESS lexpr  (137)
+	lexpr : lexpr . GREATERGREATER lexpr  (138)
+	lexpr : lexpr . GREATERGREATERGREATER lexpr  (139)
+	lexpr : lexpr . PLUS lexpr  (140)
+	lexpr : lexpr . MINUS lexpr  (141)
+	lexpr : lexpr MINUS lexpr .  (141)
+	lexpr : lexpr . STAR lexpr  (142)
+	lexpr : lexpr . SLASH lexpr  (143)
+	lexpr : lexpr . PERCENT lexpr  (144)
+	lexpr : lexpr . LBRACKET lexpr RBRACKET  (153)
+	lexpr : lexpr . MINUSGREATER ident  (154)
+	lexpr : lexpr . DOT ident  (155)
+	lexpr : lexpr . DOT INTEGER  (156)
+
+	DOT  shift 165
+	LBRACKET  shift 171
+	PERCENT  shift 176
+	SLASH  shift 179
+	STAR  shift 180
+	MINUSGREATER  shift 181
+	AMPER  reduce 141
+	AMPERAMPER  reduce 141
+	BANGEQUAL  reduce 141
+	BAR  reduce 141
+	BARBAR  reduce 141
+	CARET  reduce 141
+	COLON  reduce 141
+	COMMA  reduce 141
+	EQUALEQUAL  reduce 141
+	GREATER  reduce 141
+	GREATEREQUAL  reduce 141
+	GREATERGREATER  reduce 141
+	GREATERGREATERGREATER  reduce 141
+	LESS  reduce 141
+	LESSEQUAL  reduce 141
+	LESSLESS  reduce 141
+	MINUS  reduce 141
+	PLUS  reduce 141
+	QUESTIONMARK  reduce 141
+	RBRACE  reduce 141
+	RBRACKET  reduce 141
+	RPAREN  reduce 141
+	SEMI  reduce 141
+
+
+state 233
+	lexpr : lexpr . QUESTIONMARK lexpr COLON lexpr  (125)
+	lexpr : lexpr . BARBAR lexpr  (126)
+	lexpr : lexpr . AMPERAMPER lexpr  (127)
+	lexpr : lexpr . BAR lexpr  (128)
+	lexpr : lexpr . CARET lexpr  (129)
+	lexpr : lexpr . AMPER lexpr  (130)
+	lexpr : lexpr . EQUALEQUAL lexpr  (131)
+	lexpr : lexpr . BANGEQUAL lexpr  (132)
+	lexpr : lexpr . LESS lexpr  (133)
+	lexpr : lexpr . GREATER lexpr  (134)
+	lexpr : lexpr . LESSEQUAL lexpr  (135)
+	lexpr : lexpr . GREATEREQUAL lexpr  (136)
+	lexpr : lexpr . LESSLESS lexpr  (137)
+	lexpr : lexpr . GREATERGREATER lexpr  (138)
+	lexpr : lexpr . GREATERGREATERGREATER lexpr  (139)
+	lexpr : lexpr . PLUS lexpr  (140)
+	lexpr : lexpr . MINUS lexpr  (141)
+	lexpr : lexpr . STAR lexpr  (142)
+	lexpr : lexpr . SLASH lexpr  (143)
+	lexpr : lexpr . PERCENT lexpr  (144)
+	lexpr : lexpr PERCENT lexpr .  (144)
+	lexpr : lexpr . LBRACKET lexpr RBRACKET  (153)
+	lexpr : lexpr . MINUSGREATER ident  (154)
+	lexpr : lexpr . DOT ident  (155)
+	lexpr : lexpr . DOT INTEGER  (156)
+
+	DOT  shift 165
+	LBRACKET  shift 171
+	MINUSGREATER  shift 181
+	AMPER  reduce 144
+	AMPERAMPER  reduce 144
+	BANGEQUAL  reduce 144
+	BAR  reduce 144
+	BARBAR  reduce 144
+	CARET  reduce 144
+	COLON  reduce 144
+	COMMA  reduce 144
+	EQUALEQUAL  reduce 144
+	GREATER  reduce 144
+	GREATEREQUAL  reduce 144
+	GREATERGREATER  reduce 144
+	GREATERGREATERGREATER  reduce 144
+	LESS  reduce 144
+	LESSEQUAL  reduce 144
+	LESSLESS  reduce 144
+	MINUS  reduce 144
+	PERCENT  reduce 144
+	PLUS  reduce 144
+	QUESTIONMARK  reduce 144
+	RBRACE  reduce 144
+	RBRACKET  reduce 144
+	RPAREN  reduce 144
+	SEMI  reduce 144
+	SLASH  reduce 144
+	STAR  reduce 144
+
+
+state 234
+	lexpr : lexpr . QUESTIONMARK lexpr COLON lexpr  (125)
+	lexpr : lexpr . BARBAR lexpr  (126)
+	lexpr : lexpr . AMPERAMPER lexpr  (127)
+	lexpr : lexpr . BAR lexpr  (128)
+	lexpr : lexpr . CARET lexpr  (129)
+	lexpr : lexpr . AMPER lexpr  (130)
+	lexpr : lexpr . EQUALEQUAL lexpr  (131)
+	lexpr : lexpr . BANGEQUAL lexpr  (132)
+	lexpr : lexpr . LESS lexpr  (133)
+	lexpr : lexpr . GREATER lexpr  (134)
+	lexpr : lexpr . LESSEQUAL lexpr  (135)
+	lexpr : lexpr . GREATEREQUAL lexpr  (136)
+	lexpr : lexpr . LESSLESS lexpr  (137)
+	lexpr : lexpr . GREATERGREATER lexpr  (138)
+	lexpr : lexpr . GREATERGREATERGREATER lexpr  (139)
+	lexpr : lexpr . PLUS lexpr  (140)
+	lexpr : lexpr PLUS lexpr .  (140)
+	lexpr : lexpr . MINUS lexpr  (141)
+	lexpr : lexpr . STAR lexpr  (142)
+	lexpr : lexpr . SLASH lexpr  (143)
+	lexpr : lexpr . PERCENT lexpr  (144)
+	lexpr : lexpr . LBRACKET lexpr RBRACKET  (153)
+	lexpr : lexpr . MINUSGREATER ident  (154)
+	lexpr : lexpr . DOT ident  (155)
+	lexpr : lexpr . DOT INTEGER  (156)
+
+	DOT  shift 165
+	LBRACKET  shift 171
+	PERCENT  shift 176
+	SLASH  shift 179
+	STAR  shift 180
+	MINUSGREATER  shift 181
+	AMPER  reduce 140
+	AMPERAMPER  reduce 140
+	BANGEQUAL  reduce 140
+	BAR  reduce 140
+	BARBAR  reduce 140
+	CARET  reduce 140
+	COLON  reduce 140
+	COMMA  reduce 140
+	EQUALEQUAL  reduce 140
+	GREATER  reduce 140
+	GREATEREQUAL  reduce 140
+	GREATERGREATER  reduce 140
+	GREATERGREATERGREATER  reduce 140
+	LESS  reduce 140
+	LESSEQUAL  reduce 140
+	LESSLESS  reduce 140
+	MINUS  reduce 140
+	PLUS  reduce 140
+	QUESTIONMARK  reduce 140
+	RBRACE  reduce 140
+	RBRACKET  reduce 140
+	RPAREN  reduce 140
+	SEMI  reduce 140
+
+
+state 235
+	lexpr : lexpr . QUESTIONMARK lexpr COLON lexpr  (125)
+	lexpr : lexpr QUESTIONMARK lexpr . COLON lexpr  (125)
+	lexpr : lexpr . BARBAR lexpr  (126)
+	lexpr : lexpr . AMPERAMPER lexpr  (127)
+	lexpr : lexpr . BAR lexpr  (128)
+	lexpr : lexpr . CARET lexpr  (129)
+	lexpr : lexpr . AMPER lexpr  (130)
+	lexpr : lexpr . EQUALEQUAL lexpr  (131)
+	lexpr : lexpr . BANGEQUAL lexpr  (132)
+	lexpr : lexpr . LESS lexpr  (133)
+	lexpr : lexpr . GREATER lexpr  (134)
+	lexpr : lexpr . LESSEQUAL lexpr  (135)
+	lexpr : lexpr . GREATEREQUAL lexpr  (136)
+	lexpr : lexpr . LESSLESS lexpr  (137)
+	lexpr : lexpr . GREATERGREATER lexpr  (138)
+	lexpr : lexpr . GREATERGREATERGREATER lexpr  (139)
+	lexpr : lexpr . PLUS lexpr  (140)
+	lexpr : lexpr . MINUS lexpr  (141)
+	lexpr : lexpr . STAR lexpr  (142)
+	lexpr : lexpr . SLASH lexpr  (143)
+	lexpr : lexpr . PERCENT lexpr  (144)
+	lexpr : lexpr . LBRACKET lexpr RBRACKET  (153)
+	lexpr : lexpr . MINUSGREATER ident  (154)
+	lexpr : lexpr . DOT ident  (155)
+	lexpr : lexpr . DOT INTEGER  (156)
+
+	AMPER  shift 159
+	AMPERAMPER  shift 160
+	BANGEQUAL  shift 161
+	BAR  shift 162
+	BARBAR  shift 163
+	CARET  shift 164
+	COLON  shift 273
+	DOT  shift 165
+	EQUALEQUAL  shift 166
+	GREATER  shift 167
+	GREATEREQUAL  shift 168
+	GREATERGREATER  shift 169
+	GREATERGREATERGREATER  shift 170
+	LBRACKET  shift 171
+	LESS  shift 172
+	LESSEQUAL  shift 173
+	LESSLESS  shift 174
+	MINUS  shift 175
+	PERCENT  shift 176
+	PLUS  shift 177
+	QUESTIONMARK  shift 178
+	SLASH  shift 179
+	STAR  shift 180
+	MINUSGREATER  shift 181
+	.  error
+
+
+state 236
+	lexpr : lexpr . QUESTIONMARK lexpr COLON lexpr  (125)
+	lexpr : lexpr . BARBAR lexpr  (126)
+	lexpr : lexpr . AMPERAMPER lexpr  (127)
+	lexpr : lexpr . BAR lexpr  (128)
+	lexpr : lexpr . CARET lexpr  (129)
+	lexpr : lexpr . AMPER lexpr  (130)
+	lexpr : lexpr . EQUALEQUAL lexpr  (131)
+	lexpr : lexpr . BANGEQUAL lexpr  (132)
+	lexpr : lexpr . LESS lexpr  (133)
+	lexpr : lexpr . GREATER lexpr  (134)
+	lexpr : lexpr . LESSEQUAL lexpr  (135)
+	lexpr : lexpr . GREATEREQUAL lexpr  (136)
+	lexpr : lexpr . LESSLESS lexpr  (137)
+	lexpr : lexpr . GREATERGREATER lexpr  (138)
+	lexpr : lexpr . GREATERGREATERGREATER lexpr  (139)
+	lexpr : lexpr . PLUS lexpr  (140)
+	lexpr : lexpr . MINUS lexpr  (141)
+	lexpr : lexpr . STAR lexpr  (142)
+	lexpr : lexpr . SLASH lexpr  (143)
+	lexpr : lexpr SLASH lexpr .  (143)
+	lexpr : lexpr . PERCENT lexpr  (144)
+	lexpr : lexpr . LBRACKET lexpr RBRACKET  (153)
+	lexpr : lexpr . MINUSGREATER ident  (154)
+	lexpr : lexpr . DOT ident  (155)
+	lexpr : lexpr . DOT INTEGER  (156)
+
+	DOT  shift 165
+	LBRACKET  shift 171
+	MINUSGREATER  shift 181
+	AMPER  reduce 143
+	AMPERAMPER  reduce 143
+	BANGEQUAL  reduce 143
+	BAR  reduce 143
+	BARBAR  reduce 143
+	CARET  reduce 143
+	COLON  reduce 143
+	COMMA  reduce 143
+	EQUALEQUAL  reduce 143
+	GREATER  reduce 143
+	GREATEREQUAL  reduce 143
+	GREATERGREATER  reduce 143
+	GREATERGREATERGREATER  reduce 143
+	LESS  reduce 143
+	LESSEQUAL  reduce 143
+	LESSLESS  reduce 143
+	MINUS  reduce 143
+	PERCENT  reduce 143
+	PLUS  reduce 143
+	QUESTIONMARK  reduce 143
+	RBRACE  reduce 143
+	RBRACKET  reduce 143
+	RPAREN  reduce 143
+	SEMI  reduce 143
+	SLASH  reduce 143
+	STAR  reduce 143
+
+
+state 237
+	lexpr : lexpr . QUESTIONMARK lexpr COLON lexpr  (125)
+	lexpr : lexpr . BARBAR lexpr  (126)
+	lexpr : lexpr . AMPERAMPER lexpr  (127)
+	lexpr : lexpr . BAR lexpr  (128)
+	lexpr : lexpr . CARET lexpr  (129)
+	lexpr : lexpr . AMPER lexpr  (130)
+	lexpr : lexpr . EQUALEQUAL lexpr  (131)
+	lexpr : lexpr . BANGEQUAL lexpr  (132)
+	lexpr : lexpr . LESS lexpr  (133)
+	lexpr : lexpr . GREATER lexpr  (134)
+	lexpr : lexpr . LESSEQUAL lexpr  (135)
+	lexpr : lexpr . GREATEREQUAL lexpr  (136)
+	lexpr : lexpr . LESSLESS lexpr  (137)
+	lexpr : lexpr . GREATERGREATER lexpr  (138)
+	lexpr : lexpr . GREATERGREATERGREATER lexpr  (139)
+	lexpr : lexpr . PLUS lexpr  (140)
+	lexpr : lexpr . MINUS lexpr  (141)
+	lexpr : lexpr . STAR lexpr  (142)
+	lexpr : lexpr STAR lexpr .  (142)
+	lexpr : lexpr . SLASH lexpr  (143)
+	lexpr : lexpr . PERCENT lexpr  (144)
+	lexpr : lexpr . LBRACKET lexpr RBRACKET  (153)
+	lexpr : lexpr . MINUSGREATER ident  (154)
+	lexpr : lexpr . DOT ident  (155)
+	lexpr : lexpr . DOT INTEGER  (156)
+
+	DOT  shift 165
+	LBRACKET  shift 171
+	MINUSGREATER  shift 181
+	AMPER  reduce 142
+	AMPERAMPER  reduce 142
+	BANGEQUAL  reduce 142
+	BAR  reduce 142
+	BARBAR  reduce 142
+	CARET  reduce 142
+	COLON  reduce 142
+	COMMA  reduce 142
+	EQUALEQUAL  reduce 142
+	GREATER  reduce 142
+	GREATEREQUAL  reduce 142
+	GREATERGREATER  reduce 142
+	GREATERGREATERGREATER  reduce 142
+	LESS  reduce 142
+	LESSEQUAL  reduce 142
+	LESSLESS  reduce 142
+	MINUS  reduce 142
+	PERCENT  reduce 142
+	PLUS  reduce 142
+	QUESTIONMARK  reduce 142
+	RBRACE  reduce 142
+	RBRACKET  reduce 142
+	RPAREN  reduce 142
+	SEMI  reduce 142
+	SLASH  reduce 142
+	STAR  reduce 142
+
+
+state 238
+	lexpr : lexpr MINUSGREATER ident .  (154)
+
+	.  reduce 154
+
+
+state 239
+	attr_vars : attr_vars COMMA attr_var .  (116)
+
+	.  reduce 116
+
+
+state 240
+	quote : QUOTE LPAREN ident COMMA STRING RPAREN .  (175)
+
+	.  reduce 175
+
+
+state 241
+	direct_declarator : LPAREN declarator . RPAREN  (74)
+
+	RPAREN  shift 274
+	.  error
+
+
+state 242
+	array_bounds_declarator : LBRACKET . RBRACKET  (76)
+	array_bounds_declarator : LBRACKET . STAR RBRACKET  (77)
+	array_bounds_declarator : LBRACKET . lexpr RBRACKET  (78)
+
+	AMPER  shift 109
+	BANG  shift 110
+	CHARACTER  shift 111
+	FALSE  shift 112
+	IDENT  shift 113
+	INTEGER  shift 114
+	LPAREN  shift 115
+	MINUS  shift 116
+	PLUS  shift 117
+	RBRACKET  shift 275
+	SIZEOF  shift 118
+	STAR  shift 276
+	STRING  shift 120
+	TILDE  shift 121
+	TRUE  shift 122
+	.  error
+
+	lexpr  goto 277
+
+
+state 243
+	direct_declarator : direct_declarator array_bounds_declarator .  (75)
+
+	.  reduce 75
+
+
+state 244
+	declarators : declarators COMMA declarator .  (68)
+
+	.  reduce 68
+
+
+state 245
+	enum_case : ident EQUAL . lexpr  (100)
+
+	AMPER  shift 109
+	BANG  shift 110
+	CHARACTER  shift 111
+	FALSE  shift 112
+	IDENT  shift 113
+	INTEGER  shift 114
+	LPAREN  shift 115
+	MINUS  shift 116
+	PLUS  shift 117
+	SIZEOF  shift 118
+	STAR  shift 119
+	STRING  shift 120
+	TILDE  shift 121
+	TRUE  shift 122
+	.  error
+
+	lexpr  goto 278
+
+
+state 246
+	enum_cases : enum_cases COMMA . enum_case  (98)
+	opt_comma : COMMA .  (101)
+
+	IDENT  shift 22
+	TYPEIDENT  shift 24
+	RBRACE  reduce 101
+
+	ident  goto 189
+	enum_case  goto 279
+
+
+state 247
+	enum_declarator : ENUM opt_ident LBRACE enum_cases opt_comma . RBRACE  (96)
+
+	RBRACE  shift 280
+	.  error
+
+
+state 248
+	type_spec : type_spec . CONST  (37)
+	field_declarator : attributes type_spec . declarators SEMI  (85)
+	pointer_opt : .  (70)
+
+	CONST  shift 97
+	IDENT  reduce 70
+	LPAREN  reduce 70
+	STAR  reduce 70
+	TYPEIDENT  reduce 70
+
+	pointer_opt  goto 129
+	declarators  goto 281
+	declarator  goto 131
+
+
+state 249
+	struct_declarator : STRUCT opt_ident LBRACE field_declarators RBRACE .  (81)
+
+	.  reduce 81
+
+
+state 250
+	field_declarators : field_declarators field_declarator .  (84)
+
+	.  reduce 84
+
+
+state 251
+	case_label : CASE ident . COLON  (93)
+
+	COLON  shift 282
+	.  error
+
+
+state 252
+	union_case : DEFAULT COLON . opt_field_declarator SEMI  (90)
+	opt_field_declarator : .  (94)
+	attributes : .  (104)
+
+	LBRACKET  shift 9
+	BOOLEAN  reduce 104
+	BYTE  reduce 104
+	CHAR  reduce 104
+	CONST  reduce 104
+	DOUBLE  reduce 104
+	ENUM  reduce 104
+	FLOAT  reduce 104
+	HANDLE_T  reduce 104
+	HYPER  reduce 104
+	INT  reduce 104
+	INT64  reduce 104
+	LONG  reduce 104
+	SEMI  reduce 94
+	SHORT  reduce 104
+	SIGNED  reduce 104
+	SMALL  reduce 104
+	STRUCT  reduce 104
+	TYPEIDENT  reduce 104
+	UNION  reduce 104
+	UNSIGNED  reduce 104
+	VOID  reduce 104
+	WCHAR_T  reduce 104
+
+	attributes  goto 255
+	opt_field_declarator  goto 283
+
+
+state 253
+	union_declarator : UNION opt_ident LBRACE union_body RBRACE .  (86)
+
+	.  reduce 86
+
+
+state 254
+	union_body : union_body union_case .  (88)
+
+	.  reduce 88
+
+
+state 255
+	opt_field_declarator : attributes . type_spec declarator  (95)
+
+	BOOLEAN  shift 32
+	BYTE  shift 33
+	CHAR  shift 34
+	CONST  shift 35
+	DOUBLE  shift 36
+	ENUM  shift 37
+	FLOAT  shift 38
+	HANDLE_T  shift 39
+	HYPER  shift 40
+	INT  shift 41
+	INT64  shift 42
+	LONG  shift 43
+	SHORT  shift 44
+	SIGNED  shift 45
+	SMALL  shift 46
+	STRUCT  shift 63
+	TYPEIDENT  shift 48
+	UNION  shift 64
+	UNSIGNED  shift 50
+	VOID  shift 51
+	WCHAR_T  shift 52
+	.  error
+
+	struct_declarator  goto 65
+	union_declarator  goto 66
+	enum_declarator  goto 67
+	simple_type_spec  goto 56
+	type_spec  goto 284
+	integer_size  goto 58
+
+
+state 256
+	union_case : case_list opt_field_declarator . SEMI  (89)
+
+	SEMI  shift 285
+	.  error
+
+
+state 257
+	case_list : case_list case_label .  (92)
+
+	.  reduce 92
+
+
+state 258
+	component : attributes UNION opt_ident SWITCH LPAREN simple_type_spec . ident RPAREN SEMI  (10)
+	struct_declarator : UNION opt_ident SWITCH LPAREN simple_type_spec . ident RPAREN union_name LBRACE union_body RBRACE  (82)
+
+	IDENT  shift 22
+	TYPEIDENT  shift 24
+	.  error
+
+	ident  goto 286
+
+
+state 259
+	param_list_declarator : VOID .  (24)
+
+	.  reduce 24
+
+
+state 260
+	param_declarator : attributes . type_spec declarator  (28)
+
+	BOOLEAN  shift 32
+	BYTE  shift 33
+	CHAR  shift 34
+	CONST  shift 35
+	DOUBLE  shift 36
+	ENUM  shift 37
+	FLOAT  shift 38
+	HANDLE_T  shift 39
+	HYPER  shift 40
+	INT  shift 41
+	INT64  shift 42
+	LONG  shift 43
+	SHORT  shift 44
+	SIGNED  shift 45
+	SMALL  shift 46
+	STRUCT  shift 63
+	TYPEIDENT  shift 48
+	UNION  shift 64
+	UNSIGNED  shift 50
+	VOID  shift 51
+	WCHAR_T  shift 52
+	.  error
+
+	struct_declarator  goto 65
+	union_declarator  goto 66
+	enum_declarator  goto 67
+	simple_type_spec  goto 56
+	type_spec  goto 287
+	integer_size  goto 58
+
+
+state 261
+	fun_decl : attributes type_spec pointer_opt IDENT LPAREN param_list_declarator . RPAREN opt_quotes  (19)
+
+	RPAREN  shift 288
+	.  error
+
+
+state 262
+	param_list_declarator : param_declarators .  (25)
+	param_declarators : param_declarators . COMMA param_declarator  (27)
+
+	COMMA  shift 289
+	RPAREN  reduce 25
+
+
+state 263
+	param_declarators : param_declarator .  (26)
+
+	.  reduce 26
+
+
+264: shift/reduce conflict (shift 5, reduce 104) on CONST
+state 264
+	component_list : component_list . component  (3)
+	component : interface_attributes INTERFACE tydef_ident opt_superinterface LBRACE component_list . RBRACE opt_semi  (13)
+	attributes : .  (104)
+
+	CONST  shift 5
+	CPP_QUOTE  shift 6
+	IMPORT  shift 8
+	LBRACKET  shift 9
+	QUOTE  shift 10
+	RBRACE  shift 290
+	TYPEDEF  shift 11
+	BOOLEAN  reduce 104
+	BYTE  reduce 104
+	CHAR  reduce 104
+	DOUBLE  reduce 104
+	ENUM  reduce 104
+	FLOAT  reduce 104
+	HANDLE_T  reduce 104
+	HYPER  reduce 104
+	INT  reduce 104
+	INT64  reduce 104
+	INTERFACE  reduce 104
+	LONG  reduce 104
+	SHORT  reduce 104
+	SIGNED  reduce 104
+	SMALL  reduce 104
+	STRUCT  reduce 104
+	TYPEIDENT  reduce 104
+	UNION  reduce 104
+	UNSIGNED  reduce 104
+	VOID  reduce 104
+	WCHAR_T  reduce 104
+
+	component  goto 12
+	const_decl  goto 13
+	type_decl  goto 14
+	attributes  goto 15
+	fun_decl  goto 16
+	interface_attributes  goto 17
+	quote  goto 18
+
+
+state 265
+	struct_declarator : UNION opt_ident SWITCH LPAREN simple_type_spec . ident RPAREN union_name LBRACE union_body RBRACE  (82)
+
+	IDENT  shift 22
+	TYPEIDENT  shift 24
+	.  error
+
+	ident  goto 291
+
+
+state 266
+	const_decl : CONST attributes type_spec pointer_opt IDENT EQUAL lexpr .  (17)
+	lexpr : lexpr . QUESTIONMARK lexpr COLON lexpr  (125)
+	lexpr : lexpr . BARBAR lexpr  (126)
+	lexpr : lexpr . AMPERAMPER lexpr  (127)
+	lexpr : lexpr . BAR lexpr  (128)
+	lexpr : lexpr . CARET lexpr  (129)
+	lexpr : lexpr . AMPER lexpr  (130)
+	lexpr : lexpr . EQUALEQUAL lexpr  (131)
+	lexpr : lexpr . BANGEQUAL lexpr  (132)
+	lexpr : lexpr . LESS lexpr  (133)
+	lexpr : lexpr . GREATER lexpr  (134)
+	lexpr : lexpr . LESSEQUAL lexpr  (135)
+	lexpr : lexpr . GREATEREQUAL lexpr  (136)
+	lexpr : lexpr . LESSLESS lexpr  (137)
+	lexpr : lexpr . GREATERGREATER lexpr  (138)
+	lexpr : lexpr . GREATERGREATERGREATER lexpr  (139)
+	lexpr : lexpr . PLUS lexpr  (140)
+	lexpr : lexpr . MINUS lexpr  (141)
+	lexpr : lexpr . STAR lexpr  (142)
+	lexpr : lexpr . SLASH lexpr  (143)
+	lexpr : lexpr . PERCENT lexpr  (144)
+	lexpr : lexpr . LBRACKET lexpr RBRACKET  (153)
+	lexpr : lexpr . MINUSGREATER ident  (154)
+	lexpr : lexpr . DOT ident  (155)
+	lexpr : lexpr . DOT INTEGER  (156)
+
+	AMPER  shift 159
+	AMPERAMPER  shift 160
+	BANGEQUAL  shift 161
+	BAR  shift 162
+	BARBAR  shift 163
+	CARET  shift 164
+	DOT  shift 165
+	EQUALEQUAL  shift 166
+	GREATER  shift 167
+	GREATEREQUAL  shift 168
+	GREATERGREATER  shift 169
+	GREATERGREATERGREATER  shift 170
+	LBRACKET  shift 171
+	LESS  shift 172
+	LESSEQUAL  shift 173
+	LESSLESS  shift 174
+	MINUS  shift 175
+	PERCENT  shift 176
+	PLUS  shift 177
+	QUESTIONMARK  shift 178
+	SLASH  shift 179
+	STAR  shift 180
+	MINUSGREATER  shift 181
+	SEMI  reduce 17
+
+
+state 267
+	direct_abstract_declarator : LPAREN abstract_declarator . RPAREN  (163)
+
+	RPAREN  shift 292
+	.  error
+
+
+state 268
+	abstract_declarator : STAR direct_abstract_declarator .  (161)
+	direct_abstract_declarator : direct_abstract_declarator . array_bounds_declarator  (164)
+
+	LBRACKET  shift 242
+	RPAREN  reduce 161
+
+	array_bounds_declarator  goto 269
+
+
+state 269
+	direct_abstract_declarator : direct_abstract_declarator array_bounds_declarator .  (164)
+
+	.  reduce 164
+
+
+state 270
+	lexpr : lexpr . QUESTIONMARK lexpr COLON lexpr  (125)
+	lexpr : lexpr . BARBAR lexpr  (126)
+	lexpr : lexpr . AMPERAMPER lexpr  (127)
+	lexpr : lexpr . BAR lexpr  (128)
+	lexpr : lexpr . CARET lexpr  (129)
+	lexpr : lexpr . AMPER lexpr  (130)
+	lexpr : lexpr . EQUALEQUAL lexpr  (131)
+	lexpr : lexpr . BANGEQUAL lexpr  (132)
+	lexpr : lexpr . LESS lexpr  (133)
+	lexpr : lexpr . GREATER lexpr  (134)
+	lexpr : lexpr . LESSEQUAL lexpr  (135)
+	lexpr : lexpr . GREATEREQUAL lexpr  (136)
+	lexpr : lexpr . LESSLESS lexpr  (137)
+	lexpr : lexpr . GREATERGREATER lexpr  (138)
+	lexpr : lexpr . GREATERGREATERGREATER lexpr  (139)
+	lexpr : lexpr . PLUS lexpr  (140)
+	lexpr : lexpr . MINUS lexpr  (141)
+	lexpr : lexpr . STAR lexpr  (142)
+	lexpr : lexpr . SLASH lexpr  (143)
+	lexpr : lexpr . PERCENT lexpr  (144)
+	lexpr : LPAREN type_expr RPAREN lexpr .  (151)
+	lexpr : lexpr . LBRACKET lexpr RBRACKET  (153)
+	lexpr : lexpr . MINUSGREATER ident  (154)
+	lexpr : lexpr . DOT ident  (155)
+	lexpr : lexpr . DOT INTEGER  (156)
+
+	DOT  shift 165
+	LBRACKET  shift 171
+	MINUSGREATER  shift 181
+	AMPER  reduce 151
+	AMPERAMPER  reduce 151
+	BANGEQUAL  reduce 151
+	BAR  reduce 151
+	BARBAR  reduce 151
+	CARET  reduce 151
+	COLON  reduce 151
+	COMMA  reduce 151
+	EQUALEQUAL  reduce 151
+	GREATER  reduce 151
+	GREATEREQUAL  reduce 151
+	GREATERGREATER  reduce 151
+	GREATERGREATERGREATER  reduce 151
+	LESS  reduce 151
+	LESSEQUAL  reduce 151
+	LESSLESS  reduce 151
+	MINUS  reduce 151
+	PERCENT  reduce 151
+	PLUS  reduce 151
+	QUESTIONMARK  reduce 151
+	RBRACE  reduce 151
+	RBRACKET  reduce 151
+	RPAREN  reduce 151
+	SEMI  reduce 151
+	SLASH  reduce 151
+	STAR  reduce 151
+
+
+state 271
+	lexpr : SIZEOF LPAREN type_expr RPAREN .  (152)
+
+	.  reduce 152
+
+
+state 272
+	lexpr : lexpr LBRACKET lexpr RBRACKET .  (153)
+
+	.  reduce 153
+
+
+state 273
+	lexpr : lexpr QUESTIONMARK lexpr COLON . lexpr  (125)
+
+	AMPER  shift 109
+	BANG  shift 110
+	CHARACTER  shift 111
+	FALSE  shift 112
+	IDENT  shift 113
+	INTEGER  shift 114
+	LPAREN  shift 115
+	MINUS  shift 116
+	PLUS  shift 117
+	SIZEOF  shift 118
+	STAR  shift 119
+	STRING  shift 120
+	TILDE  shift 121
+	TRUE  shift 122
+	.  error
+
+	lexpr  goto 293
+
+
+state 274
+	direct_declarator : LPAREN declarator RPAREN .  (74)
+
+	.  reduce 74
+
+
+state 275
+	array_bounds_declarator : LBRACKET RBRACKET .  (76)
+
+	.  reduce 76
+
+
+state 276
+	array_bounds_declarator : LBRACKET STAR . RBRACKET  (77)
+	lexpr : STAR . lexpr  (149)
+
+	AMPER  shift 109
+	BANG  shift 110
+	CHARACTER  shift 111
+	FALSE  shift 112
+	IDENT  shift 113
+	INTEGER  shift 114
+	LPAREN  shift 115
+	MINUS  shift 116
+	PLUS  shift 117
+	RBRACKET  shift 294
+	SIZEOF  shift 118
+	STAR  shift 119
+	STRING  shift 120
+	TILDE  shift 121
+	TRUE  shift 122
+	.  error
+
+	lexpr  goto 157
+
+
+state 277
+	array_bounds_declarator : LBRACKET lexpr . RBRACKET  (78)
+	lexpr : lexpr . QUESTIONMARK lexpr COLON lexpr  (125)
+	lexpr : lexpr . BARBAR lexpr  (126)
+	lexpr : lexpr . AMPERAMPER lexpr  (127)
+	lexpr : lexpr . BAR lexpr  (128)
+	lexpr : lexpr . CARET lexpr  (129)
+	lexpr : lexpr . AMPER lexpr  (130)
+	lexpr : lexpr . EQUALEQUAL lexpr  (131)
+	lexpr : lexpr . BANGEQUAL lexpr  (132)
+	lexpr : lexpr . LESS lexpr  (133)
+	lexpr : lexpr . GREATER lexpr  (134)
+	lexpr : lexpr . LESSEQUAL lexpr  (135)
+	lexpr : lexpr . GREATEREQUAL lexpr  (136)
+	lexpr : lexpr . LESSLESS lexpr  (137)
+	lexpr : lexpr . GREATERGREATER lexpr  (138)
+	lexpr : lexpr . GREATERGREATERGREATER lexpr  (139)
+	lexpr : lexpr . PLUS lexpr  (140)
+	lexpr : lexpr . MINUS lexpr  (141)
+	lexpr : lexpr . STAR lexpr  (142)
+	lexpr : lexpr . SLASH lexpr  (143)
+	lexpr : lexpr . PERCENT lexpr  (144)
+	lexpr : lexpr . LBRACKET lexpr RBRACKET  (153)
+	lexpr : lexpr . MINUSGREATER ident  (154)
+	lexpr : lexpr . DOT ident  (155)
+	lexpr : lexpr . DOT INTEGER  (156)
+
+	AMPER  shift 159
+	AMPERAMPER  shift 160
+	BANGEQUAL  shift 161
+	BAR  shift 162
+	BARBAR  shift 163
+	CARET  shift 164
+	DOT  shift 165
+	EQUALEQUAL  shift 166
+	GREATER  shift 167
+	GREATEREQUAL  shift 168
+	GREATERGREATER  shift 169
+	GREATERGREATERGREATER  shift 170
+	LBRACKET  shift 171
+	LESS  shift 172
+	LESSEQUAL  shift 173
+	LESSLESS  shift 174
+	MINUS  shift 175
+	PERCENT  shift 176
+	PLUS  shift 177
+	QUESTIONMARK  shift 178
+	RBRACKET  shift 295
+	SLASH  shift 179
+	STAR  shift 180
+	MINUSGREATER  shift 181
+	.  error
+
+
+state 278
+	enum_case : ident EQUAL lexpr .  (100)
+	lexpr : lexpr . QUESTIONMARK lexpr COLON lexpr  (125)
+	lexpr : lexpr . BARBAR lexpr  (126)
+	lexpr : lexpr . AMPERAMPER lexpr  (127)
+	lexpr : lexpr . BAR lexpr  (128)
+	lexpr : lexpr . CARET lexpr  (129)
+	lexpr : lexpr . AMPER lexpr  (130)
+	lexpr : lexpr . EQUALEQUAL lexpr  (131)
+	lexpr : lexpr . BANGEQUAL lexpr  (132)
+	lexpr : lexpr . LESS lexpr  (133)
+	lexpr : lexpr . GREATER lexpr  (134)
+	lexpr : lexpr . LESSEQUAL lexpr  (135)
+	lexpr : lexpr . GREATEREQUAL lexpr  (136)
+	lexpr : lexpr . LESSLESS lexpr  (137)
+	lexpr : lexpr . GREATERGREATER lexpr  (138)
+	lexpr : lexpr . GREATERGREATERGREATER lexpr  (139)
+	lexpr : lexpr . PLUS lexpr  (140)
+	lexpr : lexpr . MINUS lexpr  (141)
+	lexpr : lexpr . STAR lexpr  (142)
+	lexpr : lexpr . SLASH lexpr  (143)
+	lexpr : lexpr . PERCENT lexpr  (144)
+	lexpr : lexpr . LBRACKET lexpr RBRACKET  (153)
+	lexpr : lexpr . MINUSGREATER ident  (154)
+	lexpr : lexpr . DOT ident  (155)
+	lexpr : lexpr . DOT INTEGER  (156)
+
+	AMPER  shift 159
+	AMPERAMPER  shift 160
+	BANGEQUAL  shift 161
+	BAR  shift 162
+	BARBAR  shift 163
+	CARET  shift 164
+	DOT  shift 165
+	EQUALEQUAL  shift 166
+	GREATER  shift 167
+	GREATEREQUAL  shift 168
+	GREATERGREATER  shift 169
+	GREATERGREATERGREATER  shift 170
+	LBRACKET  shift 171
+	LESS  shift 172
+	LESSEQUAL  shift 173
+	LESSLESS  shift 174
+	MINUS  shift 175
+	PERCENT  shift 176
+	PLUS  shift 177
+	QUESTIONMARK  shift 178
+	SLASH  shift 179
+	STAR  shift 180
+	MINUSGREATER  shift 181
+	COMMA  reduce 100
+	RBRACE  reduce 100
+
+
+state 279
+	enum_cases : enum_cases COMMA enum_case .  (98)
+
+	.  reduce 98
+
+
+state 280
+	enum_declarator : ENUM opt_ident LBRACE enum_cases opt_comma RBRACE .  (96)
+
+	.  reduce 96
+
+
+state 281
+	declarators : declarators . COMMA declarator  (68)
+	field_declarator : attributes type_spec declarators . SEMI  (85)
+
+	COMMA  shift 188
+	SEMI  shift 296
+	.  error
+
+
+state 282
+	case_label : CASE ident COLON .  (93)
+
+	.  reduce 93
+
+
+state 283
+	union_case : DEFAULT COLON opt_field_declarator . SEMI  (90)
+
+	SEMI  shift 297
+	.  error
+
+
+state 284
+	type_spec : type_spec . CONST  (37)
+	opt_field_declarator : attributes type_spec . declarator  (95)
+	pointer_opt : .  (70)
+
+	CONST  shift 97
+	IDENT  reduce 70
+	LPAREN  reduce 70
+	STAR  reduce 70
+	TYPEIDENT  reduce 70
+
+	pointer_opt  goto 129
+	declarator  goto 298
+
+
+state 285
+	union_case : case_list opt_field_declarator SEMI .  (89)
+
+	.  reduce 89
+
+
+state 286
+	component : attributes UNION opt_ident SWITCH LPAREN simple_type_spec ident . RPAREN SEMI  (10)
+	struct_declarator : UNION opt_ident SWITCH LPAREN simple_type_spec ident . RPAREN union_name LBRACE union_body RBRACE  (82)
+
+	RPAREN  shift 299
+	.  error
+
+
+state 287
+	param_declarator : attributes type_spec . declarator  (28)
+	type_spec : type_spec . CONST  (37)
+	pointer_opt : .  (70)
+
+	CONST  shift 97
+	IDENT  reduce 70
+	LPAREN  reduce 70
+	STAR  reduce 70
+	TYPEIDENT  reduce 70
+
+	pointer_opt  goto 129
+	declarator  goto 300
+
+
+state 288
+	fun_decl : attributes type_spec pointer_opt IDENT LPAREN param_list_declarator RPAREN . opt_quotes  (19)
+	opt_quotes : .  (22)
+
+	.  reduce 22
+
+	opt_quotes  goto 301
+
+
+state 289
+	param_declarators : param_declarators COMMA . param_declarator  (27)
+	attributes : .  (104)
+
+	LBRACKET  shift 9
+	BOOLEAN  reduce 104
+	BYTE  reduce 104
+	CHAR  reduce 104
+	CONST  reduce 104
+	DOUBLE  reduce 104
+	ENUM  reduce 104
+	FLOAT  reduce 104
+	HANDLE_T  reduce 104
+	HYPER  reduce 104
+	INT  reduce 104
+	INT64  reduce 104
+	LONG  reduce 104
+	SHORT  reduce 104
+	SIGNED  reduce 104
+	SMALL  reduce 104
+	STRUCT  reduce 104
+	TYPEIDENT  reduce 104
+	UNION  reduce 104
+	UNSIGNED  reduce 104
+	VOID  reduce 104
+	WCHAR_T  reduce 104
+
+	attributes  goto 260
+	param_declarator  goto 302
+
+
+state 290
+	component : interface_attributes INTERFACE tydef_ident opt_superinterface LBRACE component_list RBRACE . opt_semi  (13)
+	opt_semi : .  (170)
+
+	SEMI  shift 61
+	BOOLEAN  reduce 170
+	BYTE  reduce 170
+	CHAR  reduce 170
+	CONST  reduce 170
+	CPP_QUOTE  reduce 170
+	DOUBLE  reduce 170
+	ENUM  reduce 170
+	EOF  reduce 170
+	FLOAT  reduce 170
+	HANDLE_T  reduce 170
+	HYPER  reduce 170
+	IMPORT  reduce 170
+	INT  reduce 170
+	INT64  reduce 170
+	INTERFACE  reduce 170
+	LBRACKET  reduce 170
+	LONG  reduce 170
+	QUOTE  reduce 170
+	RBRACE  reduce 170
+	SHORT  reduce 170
+	SIGNED  reduce 170
+	SMALL  reduce 170
+	STRUCT  reduce 170
+	TYPEDEF  reduce 170
+	TYPEIDENT  reduce 170
+	UNION  reduce 170
+	UNSIGNED  reduce 170
+	VOID  reduce 170
+	WCHAR_T  reduce 170
+
+	opt_semi  goto 303
+
+
+state 291
+	struct_declarator : UNION opt_ident SWITCH LPAREN simple_type_spec ident . RPAREN union_name LBRACE union_body RBRACE  (82)
+
+	RPAREN  shift 304
+	.  error
+
+
+state 292
+	direct_abstract_declarator : LPAREN abstract_declarator RPAREN .  (163)
+
+	.  reduce 163
+
+
+state 293
+	lexpr : lexpr . QUESTIONMARK lexpr COLON lexpr  (125)
+	lexpr : lexpr QUESTIONMARK lexpr COLON lexpr .  (125)
+	lexpr : lexpr . BARBAR lexpr  (126)
+	lexpr : lexpr . AMPERAMPER lexpr  (127)
+	lexpr : lexpr . BAR lexpr  (128)
+	lexpr : lexpr . CARET lexpr  (129)
+	lexpr : lexpr . AMPER lexpr  (130)
+	lexpr : lexpr . EQUALEQUAL lexpr  (131)
+	lexpr : lexpr . BANGEQUAL lexpr  (132)
+	lexpr : lexpr . LESS lexpr  (133)
+	lexpr : lexpr . GREATER lexpr  (134)
+	lexpr : lexpr . LESSEQUAL lexpr  (135)
+	lexpr : lexpr . GREATEREQUAL lexpr  (136)
+	lexpr : lexpr . LESSLESS lexpr  (137)
+	lexpr : lexpr . GREATERGREATER lexpr  (138)
+	lexpr : lexpr . GREATERGREATERGREATER lexpr  (139)
+	lexpr : lexpr . PLUS lexpr  (140)
+	lexpr : lexpr . MINUS lexpr  (141)
+	lexpr : lexpr . STAR lexpr  (142)
+	lexpr : lexpr . SLASH lexpr  (143)
+	lexpr : lexpr . PERCENT lexpr  (144)
+	lexpr : lexpr . LBRACKET lexpr RBRACKET  (153)
+	lexpr : lexpr . MINUSGREATER ident  (154)
+	lexpr : lexpr . DOT ident  (155)
+	lexpr : lexpr . DOT INTEGER  (156)
+
+	AMPER  shift 159
+	AMPERAMPER  shift 160
+	BANGEQUAL  shift 161
+	BAR  shift 162
+	BARBAR  shift 163
+	CARET  shift 164
+	DOT  shift 165
+	EQUALEQUAL  shift 166
+	GREATER  shift 167
+	GREATEREQUAL  shift 168
+	GREATERGREATER  shift 169
+	GREATERGREATERGREATER  shift 170
+	LBRACKET  shift 171
+	LESS  shift 172
+	LESSEQUAL  shift 173
+	LESSLESS  shift 174
+	MINUS  shift 175
+	PERCENT  shift 176
+	PLUS  shift 177
+	QUESTIONMARK  shift 178
+	SLASH  shift 179
+	STAR  shift 180
+	MINUSGREATER  shift 181
+	COLON  reduce 125
+	COMMA  reduce 125
+	RBRACE  reduce 125
+	RBRACKET  reduce 125
+	RPAREN  reduce 125
+	SEMI  reduce 125
+
+
+state 294
+	array_bounds_declarator : LBRACKET STAR RBRACKET .  (77)
+
+	.  reduce 77
+
+
+state 295
+	array_bounds_declarator : LBRACKET lexpr RBRACKET .  (78)
+
+	.  reduce 78
+
+
+state 296
+	field_declarator : attributes type_spec declarators SEMI .  (85)
+
+	.  reduce 85
+
+
+state 297
+	union_case : DEFAULT COLON opt_field_declarator SEMI .  (90)
+
+	.  reduce 90
+
+
+state 298
+	opt_field_declarator : attributes type_spec declarator .  (95)
+
+	.  reduce 95
+
+
+state 299
+	component : attributes UNION opt_ident SWITCH LPAREN simple_type_spec ident RPAREN . SEMI  (10)
+	struct_declarator : UNION opt_ident SWITCH LPAREN simple_type_spec ident RPAREN . union_name LBRACE union_body RBRACE  (82)
+	union_name : .  (80)
+
+	IDENT  shift 22
+	SEMI  shift 305
+	TYPEIDENT  shift 24
+	LBRACE  reduce 80
+
+	ident  goto 306
+	union_name  goto 307
+
+
+state 300
+	param_declarator : attributes type_spec declarator .  (28)
+
+	.  reduce 28
+
+
+state 301
+	fun_decl : attributes type_spec pointer_opt IDENT LPAREN param_list_declarator RPAREN opt_quotes .  (19)
+	opt_quotes : opt_quotes . QUOTE LPAREN STRING RPAREN  (20)
+	opt_quotes : opt_quotes . QUOTE LPAREN ident COMMA STRING RPAREN  (21)
+
+	QUOTE  shift 308
+	SEMI  reduce 19
+
+
+state 302
+	param_declarators : param_declarators COMMA param_declarator .  (27)
+
+	.  reduce 27
+
+
+state 303
+	component : interface_attributes INTERFACE tydef_ident opt_superinterface LBRACE component_list RBRACE opt_semi .  (13)
+
+	.  reduce 13
+
+
+state 304
+	struct_declarator : UNION opt_ident SWITCH LPAREN simple_type_spec ident RPAREN . union_name LBRACE union_body RBRACE  (82)
+	union_name : .  (80)
+
+	IDENT  shift 22
+	TYPEIDENT  shift 24
+	LBRACE  reduce 80
+
+	ident  goto 306
+	union_name  goto 307
+
+
+state 305
+	component : attributes UNION opt_ident SWITCH LPAREN simple_type_spec ident RPAREN SEMI .  (10)
+
+	.  reduce 10
+
+
+state 306
+	union_name : ident .  (79)
+
+	.  reduce 79
+
+
+state 307
+	struct_declarator : UNION opt_ident SWITCH LPAREN simple_type_spec ident RPAREN union_name . LBRACE union_body RBRACE  (82)
+
+	LBRACE  shift 309
+	.  error
+
+
+state 308
+	opt_quotes : opt_quotes QUOTE . LPAREN STRING RPAREN  (20)
+	opt_quotes : opt_quotes QUOTE . LPAREN ident COMMA STRING RPAREN  (21)
+
+	LPAREN  shift 310
+	.  error
+
+
+state 309
+	struct_declarator : UNION opt_ident SWITCH LPAREN simple_type_spec ident RPAREN union_name LBRACE . union_body RBRACE  (82)
+
+	CASE  shift 195
+	DEFAULT  shift 196
+	.  error
+
+	union_body  goto 311
+	union_case  goto 198
+	case_list  goto 199
+	case_label  goto 200
+
+
+state 310
+	opt_quotes : opt_quotes QUOTE LPAREN . STRING RPAREN  (20)
+	opt_quotes : opt_quotes QUOTE LPAREN . ident COMMA STRING RPAREN  (21)
+
+	IDENT  shift 22
+	STRING  shift 312
+	TYPEIDENT  shift 24
+	.  error
+
+	ident  goto 313
+
+
+state 311
+	struct_declarator : UNION opt_ident SWITCH LPAREN simple_type_spec ident RPAREN union_name LBRACE union_body . RBRACE  (82)
+	union_body : union_body . union_case  (88)
+
+	CASE  shift 195
+	DEFAULT  shift 196
+	RBRACE  shift 314
+	.  error
+
+	union_case  goto 254
+	case_list  goto 199
+	case_label  goto 200
+
+
+state 312
+	opt_quotes : opt_quotes QUOTE LPAREN STRING . RPAREN  (20)
+
+	RPAREN  shift 315
+	.  error
+
+
+state 313
+	opt_quotes : opt_quotes QUOTE LPAREN ident . COMMA STRING RPAREN  (21)
+
+	COMMA  shift 316
+	.  error
+
+
+state 314
+	struct_declarator : UNION opt_ident SWITCH LPAREN simple_type_spec ident RPAREN union_name LBRACE union_body RBRACE .  (82)
+
+	.  reduce 82
+
+
+state 315
+	opt_quotes : opt_quotes QUOTE LPAREN STRING RPAREN .  (20)
+
+	.  reduce 20
+
+
+state 316
+	opt_quotes : opt_quotes QUOTE LPAREN ident COMMA . STRING RPAREN  (21)
+
+	STRING  shift 317
+	.  error
+
+
+state 317
+	opt_quotes : opt_quotes QUOTE LPAREN ident COMMA STRING . RPAREN  (21)
+
+	RPAREN  shift 318
+	.  error
+
+
+state 318
+	opt_quotes : opt_quotes QUOTE LPAREN ident COMMA STRING RPAREN .  (21)
+
+	.  reduce 21
+
+
+State 4 contains 1 shift/reduce conflict.
+State 37 contains 2 shift/reduce conflicts.
+State 47 contains 1 shift/reduce conflict.
+State 49 contains 1 shift/reduce conflict.
+State 63 contains 2 shift/reduce conflicts.
+State 64 contains 2 shift/reduce conflicts.
+State 80 contains 1 shift/reduce conflict.
+State 202 contains 1 shift/reduce conflict.
+State 264 contains 1 shift/reduce conflict.
+
+
+83 terminals, 51 nonterminals
+178 grammar rules, 319 states

@@ -1,0 +1,906 @@
+"ocamlbuild/log.ml" 18 892 896 "ocamlbuild/log.ml" 18 892 900
+type(
+  'a -> bool
+)
+ident(
+  def mode "ocamlbuild/log.ml" 18 892 909 "ocamlbuild/log.ml" 19 910 913
+)
+"ocamlbuild/log.ml" 18 892 901 "ocamlbuild/log.ml" 18 892 902
+type(
+  'a
+)
+"ocamlbuild/log.ml" 18 892 905 "ocamlbuild/log.ml" 18 892 909
+type(
+  bool
+)
+"ocamlbuild/log.ml" 22 929 933 "ocamlbuild/log.ml" 22 929 938
+type(
+  int ref
+)
+ident(
+  def level "ocamlbuild/log.ml" 24 948 948 "ocamlbuild/log.ml" 1 0 -1
+)
+"ocamlbuild/log.ml" 22 929 941 "ocamlbuild/log.ml" 22 929 944
+type(
+  int -> int ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"ocamlbuild/log.ml" 22 929 945 "ocamlbuild/log.ml" 22 929 946
+type(
+  int
+)
+"ocamlbuild/log.ml" 22 929 941 "ocamlbuild/log.ml" 22 929 946
+type(
+  int ref
+)
+"ocamlbuild/log.ml" 24 948 952 "ocamlbuild/log.ml" 24 948 967
+type(
+  bool ref
+)
+ident(
+  def classic_display "ocamlbuild/log.ml" 25 980 980 "ocamlbuild/log.ml" 1 0 -1
+)
+"ocamlbuild/log.ml" 24 948 970 "ocamlbuild/log.ml" 24 948 973
+type(
+  bool -> bool ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"ocamlbuild/log.ml" 24 948 974 "ocamlbuild/log.ml" 24 948 979
+type(
+  bool
+)
+"ocamlbuild/log.ml" 24 948 970 "ocamlbuild/log.ml" 24 948 979
+type(
+  bool ref
+)
+"ocamlbuild/log.ml" 25 980 984 "ocamlbuild/log.ml" 25 980 1000
+type(
+  Display.display option ref
+)
+ident(
+  def internal_display "ocamlbuild/log.ml" 26 1012 1012 "ocamlbuild/log.ml" 1 0 -1
+)
+"ocamlbuild/log.ml" 25 980 1003 "ocamlbuild/log.ml" 25 980 1006
+type(
+  Display.display option -> Display.display option ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"ocamlbuild/log.ml" 25 980 1007 "ocamlbuild/log.ml" 25 980 1011
+type(
+  Display.display option
+)
+"ocamlbuild/log.ml" 25 980 1003 "ocamlbuild/log.ml" 25 980 1011
+type(
+  Display.display option ref
+)
+"ocamlbuild/log.ml" 26 1012 1016 "ocamlbuild/log.ml" 26 1012 1032
+type(
+  Display.display lazy_t
+)
+ident(
+  def failsafe_display "ocamlbuild/log.ml" 28 1094 1094 "ocamlbuild/log.ml" 1 0 -1
+)
+"ocamlbuild/log.ml" 26 1012 1041 "ocamlbuild/log.ml" 26 1012 1055
+type(
+  ?channel:out_channel ->
+  ?mode:[ `Classic | `Sophisticated ] ->
+  ?columns:int ->
+  ?description:Display.tagline_description ->
+  ?log_file:string -> ?log_level:int -> unit -> Display.display
+)
+ident(
+  ext_ref Display.create
+)
+"ocamlbuild/log.ml" 26 1012 1062 "ocamlbuild/log.ml" 26 1012 1070
+type(
+  [ `Classic | `Sophisticated ]
+)
+"ocamlbuild/log.ml" 26 1012 1082 "ocamlbuild/log.ml" 26 1012 1083
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"ocamlbuild/log.ml" 26 1012 1083 "ocamlbuild/log.ml" 26 1012 1088
+type(
+  int ref
+)
+ident(
+  int_ref level "ocamlbuild/log.ml" 22 929 933 "ocamlbuild/log.ml" 22 929 938
+)
+"ocamlbuild/log.ml" 26 1012 1082 "ocamlbuild/log.ml" 26 1012 1088
+type(
+  int
+)
+"ocamlbuild/log.ml" 26 1012 1089 "ocamlbuild/log.ml" 26 1012 1091
+type(
+  unit
+)
+"ocamlbuild/log.ml" 26 1012 1040 "ocamlbuild/log.ml" 26 1012 1092
+call(
+  tail
+)
+type(
+  Display.display
+)
+"ocamlbuild/log.ml" 26 1012 1035 "ocamlbuild/log.ml" 26 1012 1092
+type(
+  Display.display lazy_t
+)
+"ocamlbuild/log.ml" 28 1094 1098 "ocamlbuild/log.ml" 28 1094 1104
+type(
+  Display.display option ref -> Display.display
+)
+ident(
+  def !- "ocamlbuild/log.ml" 33 1173 1173 "ocamlbuild/log.ml" 1 0 -1
+)
+"ocamlbuild/log.ml" 28 1094 1105 "ocamlbuild/log.ml" 28 1094 1106
+type(
+  Display.display option ref
+)
+ident(
+  def r "ocamlbuild/log.ml" 29 1109 1111 "ocamlbuild/log.ml" 31 1156 1171
+)
+"ocamlbuild/log.ml" 29 1109 1117 "ocamlbuild/log.ml" 29 1109 1118
+type(
+  Display.display option ref -> Display.display option
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"ocamlbuild/log.ml" 29 1109 1118 "ocamlbuild/log.ml" 29 1109 1119
+type(
+  Display.display option ref
+)
+ident(
+  int_ref r "ocamlbuild/log.ml" 28 1094 1105 "ocamlbuild/log.ml" 28 1094 1106
+)
+"ocamlbuild/log.ml" 29 1109 1117 "ocamlbuild/log.ml" 29 1109 1119
+type(
+  Display.display option
+)
+"ocamlbuild/log.ml" 30 1125 1129 "ocamlbuild/log.ml" 30 1125 1133
+type(
+  Display.display option
+)
+"ocamlbuild/log.ml" 30 1125 1137 "ocamlbuild/log.ml" 30 1125 1139
+type(
+  Display.display Lazy.t -> Display.display
+)
+ident(
+  ext_ref My_std.( !* )
+)
+"ocamlbuild/log.ml" 30 1125 1139 "ocamlbuild/log.ml" 30 1125 1155
+type(
+  Display.display Lazy.t
+)
+ident(
+  int_ref failsafe_display "ocamlbuild/log.ml" 26 1012 1016 "ocamlbuild/log.ml" 26 1012 1032
+)
+"ocamlbuild/log.ml" 30 1125 1137 "ocamlbuild/log.ml" 30 1125 1155
+call(
+  tail
+)
+type(
+  Display.display
+)
+"ocamlbuild/log.ml" 31 1156 1165 "ocamlbuild/log.ml" 31 1156 1166
+type(
+  Display.display
+)
+ident(
+  def x "ocamlbuild/log.ml" 31 1156 1170 "ocamlbuild/log.ml" 31 1156 1171
+)
+"ocamlbuild/log.ml" 31 1156 1160 "ocamlbuild/log.ml" 31 1156 1166
+type(
+  Display.display option
+)
+"ocamlbuild/log.ml" 31 1156 1170 "ocamlbuild/log.ml" 31 1156 1171
+type(
+  Display.display
+)
+ident(
+  int_ref x "ocamlbuild/log.ml" 31 1156 1165 "ocamlbuild/log.ml" 31 1156 1166
+)
+"ocamlbuild/log.ml" 29 1109 1111 "ocamlbuild/log.ml" 31 1156 1171
+type(
+  Display.display
+)
+"ocamlbuild/log.ml" 33 1173 1177 "ocamlbuild/log.ml" 33 1173 1181
+type(
+  string option -> unit
+)
+ident(
+  def init "ocamlbuild/log.ml" 42 1441 1441 "ocamlbuild/log.ml" 1 0 -1
+)
+"ocamlbuild/log.ml" 33 1173 1182 "ocamlbuild/log.ml" 33 1173 1190
+type(
+  string option
+)
+ident(
+  def log_file "ocamlbuild/log.ml" 34 1193 1195 "ocamlbuild/log.ml" 40 1359 1439
+)
+"ocamlbuild/log.ml" 34 1193 1199 "ocamlbuild/log.ml" 34 1193 1203
+type(
+  [> `Classic | `Sophisticated ]
+)
+ident(
+  def mode "ocamlbuild/log.ml" 40 1359 1361 "ocamlbuild/log.ml" 40 1359 1439
+)
+"ocamlbuild/log.ml" 35 1206 1213 "ocamlbuild/log.ml" 35 1206 1214
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"ocamlbuild/log.ml" 35 1206 1214 "ocamlbuild/log.ml" 35 1206 1229
+type(
+  bool ref
+)
+ident(
+  int_ref classic_display "ocamlbuild/log.ml" 24 948 952 "ocamlbuild/log.ml" 24 948 967
+)
+"ocamlbuild/log.ml" 35 1206 1213 "ocamlbuild/log.ml" 35 1206 1229
+type(
+  bool
+)
+"ocamlbuild/log.ml" 35 1206 1230 "ocamlbuild/log.ml" 35 1206 1232
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( || )
+)
+"ocamlbuild/log.ml" 35 1206 1233 "ocamlbuild/log.ml" 35 1206 1235
+type(
+  bool Lazy.t -> bool
+)
+ident(
+  ext_ref My_std.( !* )
+)
+"ocamlbuild/log.ml" 35 1206 1235 "ocamlbuild/log.ml" 35 1206 1254
+type(
+  bool Lazy.t
+)
+ident(
+  ext_ref My_unix.is_degraded
+)
+"ocamlbuild/log.ml" 35 1206 1233 "ocamlbuild/log.ml" 35 1206 1254
+call(
+  stack
+)
+type(
+  bool
+)
+"ocamlbuild/log.ml" 35 1206 1255 "ocamlbuild/log.ml" 35 1206 1257
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( || )
+)
+"ocamlbuild/log.ml" 35 1206 1258 "ocamlbuild/log.ml" 35 1206 1259
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"ocamlbuild/log.ml" 35 1206 1259 "ocamlbuild/log.ml" 35 1206 1264
+type(
+  int ref
+)
+ident(
+  int_ref level "ocamlbuild/log.ml" 22 929 933 "ocamlbuild/log.ml" 22 929 938
+)
+"ocamlbuild/log.ml" 35 1206 1258 "ocamlbuild/log.ml" 35 1206 1264
+type(
+  int
+)
+"ocamlbuild/log.ml" 35 1206 1265 "ocamlbuild/log.ml" 35 1206 1267
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <= )
+)
+"ocamlbuild/log.ml" 35 1206 1268 "ocamlbuild/log.ml" 35 1206 1269
+type(
+  int
+)
+"ocamlbuild/log.ml" 35 1206 1258 "ocamlbuild/log.ml" 35 1206 1269
+type(
+  bool
+)
+"ocamlbuild/log.ml" 35 1206 1270 "ocamlbuild/log.ml" 35 1206 1272
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( || )
+)
+"ocamlbuild/log.ml" 35 1206 1273 "ocamlbuild/log.ml" 35 1206 1276
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"ocamlbuild/log.ml" 35 1206 1278 "ocamlbuild/log.ml" 35 1206 1299
+type(
+  unit -> bool
+)
+ident(
+  ext_ref My_unix.stdout_isatty
+)
+"ocamlbuild/log.ml" 35 1206 1300 "ocamlbuild/log.ml" 35 1206 1302
+type(
+  unit
+)
+"ocamlbuild/log.ml" 35 1206 1277 "ocamlbuild/log.ml" 35 1206 1303
+call(
+  stack
+)
+type(
+  bool
+)
+"ocamlbuild/log.ml" 35 1206 1273 "ocamlbuild/log.ml" 35 1206 1303
+type(
+  bool
+)
+"ocamlbuild/log.ml" 35 1206 1258 "ocamlbuild/log.ml" 35 1206 1303
+type(
+  bool
+)
+"ocamlbuild/log.ml" 35 1206 1233 "ocamlbuild/log.ml" 35 1206 1303
+type(
+  bool
+)
+"ocamlbuild/log.ml" 35 1206 1213 "ocamlbuild/log.ml" 35 1206 1303
+type(
+  bool
+)
+"ocamlbuild/log.ml" 36 1309 1315 "ocamlbuild/log.ml" 36 1309 1323
+type(
+  [> `Classic | `Sophisticated ] as 'a
+)
+"ocamlbuild/log.ml" 38 1333 1339 "ocamlbuild/log.ml" 38 1333 1353
+type(
+  'a
+)
+"ocamlbuild/log.ml" 35 1206 1210 "ocamlbuild/log.ml" 38 1333 1353
+type(
+  'a
+)
+"ocamlbuild/log.ml" 40 1359 1361 "ocamlbuild/log.ml" 40 1359 1377
+type(
+  Display.display option ref
+)
+ident(
+  int_ref internal_display "ocamlbuild/log.ml" 25 980 984 "ocamlbuild/log.ml" 25 980 1000
+)
+"ocamlbuild/log.ml" 40 1359 1378 "ocamlbuild/log.ml" 40 1359 1380
+type(
+  Display.display option ref -> Display.display option -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"ocamlbuild/log.ml" 40 1359 1387 "ocamlbuild/log.ml" 40 1359 1401
+type(
+  ?channel:out_channel ->
+  ?mode:[ `Classic | `Sophisticated ] ->
+  ?columns:int ->
+  ?description:Display.tagline_description ->
+  ?log_file:string -> ?log_level:int -> unit -> Display.display
+)
+ident(
+  ext_ref Display.create
+)
+"ocamlbuild/log.ml" 40 1359 1403 "ocamlbuild/log.ml" 40 1359 1407
+type(
+  [ `Classic | `Sophisticated ]
+)
+ident(
+  int_ref mode "ocamlbuild/log.ml" 34 1193 1199 "ocamlbuild/log.ml" 34 1193 1203
+)
+"ocamlbuild/log.ml" 40 1359 1409 "ocamlbuild/log.ml" 40 1359 1417
+type(
+  string option
+)
+ident(
+  int_ref log_file "ocamlbuild/log.ml" 33 1173 1182 "ocamlbuild/log.ml" 33 1173 1190
+)
+"ocamlbuild/log.ml" 40 1359 1429 "ocamlbuild/log.ml" 40 1359 1430
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"ocamlbuild/log.ml" 40 1359 1430 "ocamlbuild/log.ml" 40 1359 1435
+type(
+  int ref
+)
+ident(
+  int_ref level "ocamlbuild/log.ml" 22 929 933 "ocamlbuild/log.ml" 22 929 938
+)
+"ocamlbuild/log.ml" 40 1359 1429 "ocamlbuild/log.ml" 40 1359 1435
+type(
+  int
+)
+"ocamlbuild/log.ml" 40 1359 1436 "ocamlbuild/log.ml" 40 1359 1438
+type(
+  unit
+)
+"ocamlbuild/log.ml" 40 1359 1386 "ocamlbuild/log.ml" 40 1359 1439
+call(
+  stack
+)
+type(
+  Display.display
+)
+"ocamlbuild/log.ml" 40 1359 1381 "ocamlbuild/log.ml" 40 1359 1439
+type(
+  Display.display option
+)
+"ocamlbuild/log.ml" 40 1359 1361 "ocamlbuild/log.ml" 40 1359 1439
+type(
+  unit
+)
+"ocamlbuild/log.ml" 34 1193 1195 "ocamlbuild/log.ml" 40 1359 1439
+type(
+  unit
+)
+"ocamlbuild/log.ml" 42 1441 1445 "ocamlbuild/log.ml" 42 1441 1456
+type(
+  int -> ('a, Format.formatter, unit) format -> 'a
+)
+ident(
+  def raw_dprintf "ocamlbuild/log.ml" 44 1516 1516 "ocamlbuild/log.ml" 1 0 -1
+)
+"ocamlbuild/log.ml" 42 1441 1457 "ocamlbuild/log.ml" 42 1441 1466
+type(
+  int
+)
+ident(
+  def log_level "ocamlbuild/log.ml" 42 1441 1469 "ocamlbuild/log.ml" 42 1441 1514
+)
+"ocamlbuild/log.ml" 42 1441 1469 "ocamlbuild/log.ml" 42 1441 1484
+type(
+  ?log_level:int ->
+  Display.display -> ('a, Format.formatter, unit) format -> 'a
+)
+ident(
+  ext_ref Display.dprintf
+)
+"ocamlbuild/log.ml" 42 1441 1486 "ocamlbuild/log.ml" 42 1441 1495
+type(
+  int
+)
+ident(
+  int_ref log_level "ocamlbuild/log.ml" 42 1441 1457 "ocamlbuild/log.ml" 42 1441 1466
+)
+"ocamlbuild/log.ml" 42 1441 1496 "ocamlbuild/log.ml" 42 1441 1498
+type(
+  Display.display option ref -> Display.display
+)
+ident(
+  int_ref !- "ocamlbuild/log.ml" 28 1094 1098 "ocamlbuild/log.ml" 28 1094 1104
+)
+"ocamlbuild/log.ml" 42 1441 1498 "ocamlbuild/log.ml" 42 1441 1514
+type(
+  Display.display option ref
+)
+ident(
+  int_ref internal_display "ocamlbuild/log.ml" 25 980 984 "ocamlbuild/log.ml" 25 980 1000
+)
+"ocamlbuild/log.ml" 42 1441 1496 "ocamlbuild/log.ml" 42 1441 1514
+call(
+  stack
+)
+type(
+  Display.display
+)
+"ocamlbuild/log.ml" 42 1441 1469 "ocamlbuild/log.ml" 42 1441 1514
+call(
+  tail
+)
+type(
+  ('a, Format.formatter, unit) format -> 'a
+)
+"ocamlbuild/log.ml" 44 1516 1520 "ocamlbuild/log.ml" 44 1516 1527
+type(
+  int -> ('a, Format.formatter, unit, unit, unit, unit) format6 -> 'a
+)
+ident(
+  def dprintf "ocamlbuild/log.ml" 45 1589 1589 "ocamlbuild/log.ml" 1 0 -1
+)
+"ocamlbuild/log.ml" 44 1516 1528 "ocamlbuild/log.ml" 44 1516 1537
+type(
+  int
+)
+ident(
+  def log_level "ocamlbuild/log.ml" 44 1516 1538 "ocamlbuild/log.ml" 44 1516 1588
+)
+"ocamlbuild/log.ml" 44 1516 1538 "ocamlbuild/log.ml" 44 1516 1541
+type(
+  ('a, Format.formatter, unit, unit, unit, unit) format6
+)
+ident(
+  def fmt "ocamlbuild/log.ml" 44 1516 1544 "ocamlbuild/log.ml" 44 1516 1588
+)
+"ocamlbuild/log.ml" 44 1516 1544 "ocamlbuild/log.ml" 44 1516 1555
+type(
+  int -> ('a, Format.formatter, unit) format -> 'a
+)
+ident(
+  int_ref raw_dprintf "ocamlbuild/log.ml" 42 1441 1445 "ocamlbuild/log.ml" 42 1441 1456
+)
+"ocamlbuild/log.ml" 44 1516 1556 "ocamlbuild/log.ml" 44 1516 1565
+type(
+  int
+)
+ident(
+  int_ref log_level "ocamlbuild/log.ml" 44 1516 1528 "ocamlbuild/log.ml" 44 1516 1537
+)
+"ocamlbuild/log.ml" 44 1516 1567 "ocamlbuild/log.ml" 44 1516 1574
+type(
+  ('a, Format.formatter, unit, unit, unit, 'a) format6
+)
+"ocamlbuild/log.ml" 44 1516 1574 "ocamlbuild/log.ml" 44 1516 1576
+type(
+  ('a, Format.formatter, unit, unit, unit, 'a) format6 ->
+  ('a, Format.formatter, unit, unit, unit, unit) format6 ->
+  ('a, Format.formatter, unit) format
+)
+ident(
+  ext_ref Pervasives.( ^^ )
+)
+"ocamlbuild/log.ml" 44 1516 1576 "ocamlbuild/log.ml" 44 1516 1579
+type(
+  ('a, Format.formatter, unit, unit, unit, unit) format6
+)
+ident(
+  int_ref fmt "ocamlbuild/log.ml" 44 1516 1538 "ocamlbuild/log.ml" 44 1516 1541
+)
+"ocamlbuild/log.ml" 44 1516 1579 "ocamlbuild/log.ml" 44 1516 1581
+type(
+  ('a, Format.formatter, unit, unit, unit, unit) format6 ->
+  (unit, Format.formatter, unit, unit, unit, unit) format6 ->
+  ('a, Format.formatter, unit, unit, unit, unit) format6
+)
+ident(
+  ext_ref Pervasives.( ^^ )
+)
+"ocamlbuild/log.ml" 44 1516 1581 "ocamlbuild/log.ml" 44 1516 1587
+type(
+  (unit, Format.formatter, unit, unit, unit, unit) format6
+)
+"ocamlbuild/log.ml" 44 1516 1576 "ocamlbuild/log.ml" 44 1516 1587
+call(
+  stack
+)
+type(
+  ('a, Format.formatter, unit, unit, unit, unit) format6
+)
+"ocamlbuild/log.ml" 44 1516 1566 "ocamlbuild/log.ml" 44 1516 1588
+call(
+  stack
+)
+type(
+  ('a, Format.formatter, unit) format
+)
+"ocamlbuild/log.ml" 44 1516 1544 "ocamlbuild/log.ml" 44 1516 1588
+call(
+  tail
+)
+type(
+  'a
+)
+"ocamlbuild/log.ml" 45 1589 1593 "ocamlbuild/log.ml" 45 1589 1600
+type(
+  ('a, Format.formatter, unit, unit, unit, unit) format6 -> 'a
+)
+ident(
+  def eprintf "ocamlbuild/log.ml" 47 1625 1625 "ocamlbuild/log.ml" 1 0 -1
+)
+"ocamlbuild/log.ml" 45 1589 1601 "ocamlbuild/log.ml" 45 1589 1604
+type(
+  ('a, Format.formatter, unit, unit, unit, unit) format6
+)
+ident(
+  def fmt "ocamlbuild/log.ml" 45 1589 1607 "ocamlbuild/log.ml" 45 1589 1623
+)
+"ocamlbuild/log.ml" 45 1589 1607 "ocamlbuild/log.ml" 45 1589 1614
+type(
+  int -> ('a, Format.formatter, unit, unit, unit, unit) format6 -> 'a
+)
+ident(
+  int_ref dprintf "ocamlbuild/log.ml" 44 1516 1520 "ocamlbuild/log.ml" 44 1516 1527
+)
+"ocamlbuild/log.ml" 45 1589 1615 "ocamlbuild/log.ml" 45 1589 1619
+type(
+  int
+)
+"ocamlbuild/log.ml" 45 1589 1620 "ocamlbuild/log.ml" 45 1589 1623
+type(
+  ('a, Format.formatter, unit, unit, unit, unit) format6
+)
+ident(
+  int_ref fmt "ocamlbuild/log.ml" 45 1589 1601 "ocamlbuild/log.ml" 45 1589 1604
+)
+"ocamlbuild/log.ml" 45 1589 1607 "ocamlbuild/log.ml" 45 1589 1623
+call(
+  tail
+)
+type(
+  'a
+)
+"ocamlbuild/log.ml" 47 1625 1629 "ocamlbuild/log.ml" 47 1625 1635
+type(
+  unit -> unit
+)
+ident(
+  def update "ocamlbuild/log.ml" 48 1675 1675 "ocamlbuild/log.ml" 1 0 -1
+)
+"ocamlbuild/log.ml" 47 1625 1636 "ocamlbuild/log.ml" 47 1625 1638
+type(
+  unit
+)
+"ocamlbuild/log.ml" 47 1625 1641 "ocamlbuild/log.ml" 47 1625 1655
+type(
+  Display.display -> unit
+)
+ident(
+  ext_ref Display.update
+)
+"ocamlbuild/log.ml" 47 1625 1656 "ocamlbuild/log.ml" 47 1625 1658
+type(
+  Display.display option ref -> Display.display
+)
+ident(
+  int_ref !- "ocamlbuild/log.ml" 28 1094 1098 "ocamlbuild/log.ml" 28 1094 1104
+)
+"ocamlbuild/log.ml" 47 1625 1658 "ocamlbuild/log.ml" 47 1625 1674
+type(
+  Display.display option ref
+)
+ident(
+  int_ref internal_display "ocamlbuild/log.ml" 25 980 984 "ocamlbuild/log.ml" 25 980 1000
+)
+"ocamlbuild/log.ml" 47 1625 1656 "ocamlbuild/log.ml" 47 1625 1674
+call(
+  stack
+)
+type(
+  Display.display
+)
+"ocamlbuild/log.ml" 47 1625 1641 "ocamlbuild/log.ml" 47 1625 1674
+call(
+  tail
+)
+type(
+  unit
+)
+"ocamlbuild/log.ml" 48 1675 1679 "ocamlbuild/log.ml" 48 1675 1684
+type(
+  ?pretend:bool -> string -> string -> Tags.t -> unit
+)
+ident(
+  def event "ocamlbuild/log.ml" 49 1742 1742 "ocamlbuild/log.ml" 1 0 -1
+)
+"ocamlbuild/log.ml" 48 1675 1686 "ocamlbuild/log.ml" 48 1675 1693
+type(
+  bool option
+)
+ident(
+  def pretend "ocamlbuild/log.ml" 48 1675 1694 "ocamlbuild/log.ml" 48 1675 1741
+)
+"ocamlbuild/log.ml" 48 1675 1694 "ocamlbuild/log.ml" 48 1675 1695
+type(
+  string
+)
+ident(
+  def x "ocamlbuild/log.ml" 48 1675 1698 "ocamlbuild/log.ml" 48 1675 1741
+)
+"ocamlbuild/log.ml" 48 1675 1698 "ocamlbuild/log.ml" 48 1675 1711
+type(
+  Display.display -> ?pretend:bool -> string -> string -> Tags.t -> unit
+)
+ident(
+  ext_ref Display.event
+)
+"ocamlbuild/log.ml" 48 1675 1712 "ocamlbuild/log.ml" 48 1675 1714
+type(
+  Display.display option ref -> Display.display
+)
+ident(
+  int_ref !- "ocamlbuild/log.ml" 28 1094 1098 "ocamlbuild/log.ml" 28 1094 1104
+)
+"ocamlbuild/log.ml" 48 1675 1714 "ocamlbuild/log.ml" 48 1675 1730
+type(
+  Display.display option ref
+)
+ident(
+  int_ref internal_display "ocamlbuild/log.ml" 25 980 984 "ocamlbuild/log.ml" 25 980 1000
+)
+"ocamlbuild/log.ml" 48 1675 1712 "ocamlbuild/log.ml" 48 1675 1730
+call(
+  stack
+)
+type(
+  Display.display
+)
+"ocamlbuild/log.ml" 48 1675 1732 "ocamlbuild/log.ml" 48 1675 1739
+type(
+  bool option
+)
+ident(
+  int_ref pretend "ocamlbuild/log.ml" 48 1675 1686 "ocamlbuild/log.ml" 48 1675 1693
+)
+"ocamlbuild/log.ml" 48 1675 1740 "ocamlbuild/log.ml" 48 1675 1741
+type(
+  string
+)
+ident(
+  int_ref x "ocamlbuild/log.ml" 48 1675 1694 "ocamlbuild/log.ml" 48 1675 1695
+)
+"ocamlbuild/log.ml" 48 1675 1698 "ocamlbuild/log.ml" 48 1675 1741
+call(
+  tail
+)
+type(
+  string -> Tags.t -> unit
+)
+"ocamlbuild/log.ml" 49 1742 1746 "ocamlbuild/log.ml" 49 1742 1753
+type(
+  (out_channel -> unit) -> unit
+)
+ident(
+  def display "ocamlbuild/log.ml" 51 1796 1796 "ocamlbuild/log.ml" 1 0 -1
+)
+"ocamlbuild/log.ml" 49 1742 1754 "ocamlbuild/log.ml" 49 1742 1755
+type(
+  out_channel -> unit
+)
+ident(
+  def x "ocamlbuild/log.ml" 49 1742 1758 "ocamlbuild/log.ml" 49 1742 1794
+)
+"ocamlbuild/log.ml" 49 1742 1758 "ocamlbuild/log.ml" 49 1742 1773
+type(
+  Display.display -> (out_channel -> unit) -> unit
+)
+ident(
+  ext_ref Display.display
+)
+"ocamlbuild/log.ml" 49 1742 1774 "ocamlbuild/log.ml" 49 1742 1776
+type(
+  Display.display option ref -> Display.display
+)
+ident(
+  int_ref !- "ocamlbuild/log.ml" 28 1094 1098 "ocamlbuild/log.ml" 28 1094 1104
+)
+"ocamlbuild/log.ml" 49 1742 1776 "ocamlbuild/log.ml" 49 1742 1792
+type(
+  Display.display option ref
+)
+ident(
+  int_ref internal_display "ocamlbuild/log.ml" 25 980 984 "ocamlbuild/log.ml" 25 980 1000
+)
+"ocamlbuild/log.ml" 49 1742 1774 "ocamlbuild/log.ml" 49 1742 1792
+call(
+  stack
+)
+type(
+  Display.display
+)
+"ocamlbuild/log.ml" 49 1742 1793 "ocamlbuild/log.ml" 49 1742 1794
+type(
+  out_channel -> unit
+)
+ident(
+  int_ref x "ocamlbuild/log.ml" 49 1742 1754 "ocamlbuild/log.ml" 49 1742 1755
+)
+"ocamlbuild/log.ml" 49 1742 1758 "ocamlbuild/log.ml" 49 1742 1794
+call(
+  tail
+)
+type(
+  unit
+)
+"ocamlbuild/log.ml" 51 1796 1800 "ocamlbuild/log.ml" 51 1796 1806
+type(
+  ?how:[ `Error | `Quiet | `Success ] -> unit -> unit
+)
+ident(
+  def finish "ocamlbuild/log.ml" 54 1863 1898 "ocamlbuild/log.ml" 1 0 -1
+)
+"ocamlbuild/log.ml" 51 1796 1808 "ocamlbuild/log.ml" 51 1796 1811
+type(
+  [ `Error | `Quiet | `Success ] option
+)
+ident(
+  def how "ocamlbuild/log.ml" 51 1796 1812 "ocamlbuild/log.ml" 54 1863 1898
+)
+"ocamlbuild/log.ml" 51 1796 1812 "ocamlbuild/log.ml" 51 1796 1814
+type(
+  unit
+)
+"ocamlbuild/log.ml" 52 1817 1825 "ocamlbuild/log.ml" 52 1817 1826
+type(
+  Display.display option ref -> Display.display option
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"ocamlbuild/log.ml" 52 1817 1826 "ocamlbuild/log.ml" 52 1817 1842
+type(
+  Display.display option ref
+)
+ident(
+  int_ref internal_display "ocamlbuild/log.ml" 25 980 984 "ocamlbuild/log.ml" 25 980 1000
+)
+"ocamlbuild/log.ml" 52 1817 1825 "ocamlbuild/log.ml" 52 1817 1842
+type(
+  Display.display option
+)
+"ocamlbuild/log.ml" 53 1848 1852 "ocamlbuild/log.ml" 53 1848 1856
+type(
+  Display.display option
+)
+"ocamlbuild/log.ml" 53 1848 1860 "ocamlbuild/log.ml" 53 1848 1862
+type(
+  unit
+)
+"ocamlbuild/log.ml" 54 1863 1872 "ocamlbuild/log.ml" 54 1863 1873
+type(
+  Display.display
+)
+ident(
+  def d "ocamlbuild/log.ml" 54 1863 1877 "ocamlbuild/log.ml" 54 1863 1898
+)
+"ocamlbuild/log.ml" 54 1863 1867 "ocamlbuild/log.ml" 54 1863 1873
+type(
+  Display.display option
+)
+"ocamlbuild/log.ml" 54 1863 1877 "ocamlbuild/log.ml" 54 1863 1891
+type(
+  ?how:[ `Error | `Quiet | `Success ] -> Display.display -> unit
+)
+ident(
+  ext_ref Display.finish
+)
+"ocamlbuild/log.ml" 54 1863 1893 "ocamlbuild/log.ml" 54 1863 1896
+type(
+  [ `Error | `Quiet | `Success ] option
+)
+ident(
+  int_ref how "ocamlbuild/log.ml" 51 1796 1808 "ocamlbuild/log.ml" 51 1796 1811
+)
+"ocamlbuild/log.ml" 54 1863 1897 "ocamlbuild/log.ml" 54 1863 1898
+type(
+  Display.display
+)
+ident(
+  int_ref d "ocamlbuild/log.ml" 54 1863 1872 "ocamlbuild/log.ml" 54 1863 1873
+)
+"ocamlbuild/log.ml" 54 1863 1877 "ocamlbuild/log.ml" 54 1863 1898
+call(
+  tail
+)
+type(
+  unit
+)
+"ocamlbuild/log.ml" 52 1817 1819 "ocamlbuild/log.ml" 54 1863 1898
+type(
+  unit
+)

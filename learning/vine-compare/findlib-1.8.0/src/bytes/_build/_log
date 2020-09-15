@@ -1,0 +1,8 @@
+### Starting build.
+# Target: bytes.ml.depends, tags: { extension:ml, file:bytes.ml, ocaml, ocamldep, quiet }
+/usr/local/bin/ocamldep.opt -modules bytes.ml > bytes.ml.depends # cached
+# Target: bytes.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:bytes.cmo, file:bytes.ml, implem, ocaml, quiet }
+/usr/local/bin/ocamlc.opt -c -o bytes.cmo bytes.ml # cached
+# Target: bytes.cma, tags: { byte, dont_link_with, extension:cma, file:bytes.cma, library, link, ocaml, quiet }
+/usr/local/bin/ocamlc.opt -a bytes.cmo -o bytes.cma # cached
+# Compilation successful.

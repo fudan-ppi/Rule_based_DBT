@@ -1,0 +1,91 @@
+"ocamlbuild/ocamlbuild_where.ml" 13 815 819 "ocamlbuild/ocamlbuild_where.ml" 13 815 825
+type(
+  string ref
+)
+ident(
+  def bindir "ocamlbuild/ocamlbuild_where.ml" 14 872 872 "ocamlbuild/ocamlbuild_where.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_where.ml" 13 815 828 "ocamlbuild/ocamlbuild_where.ml" 13 815 831
+type(
+  string -> string ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"ocamlbuild/ocamlbuild_where.ml" 13 815 832 "ocamlbuild/ocamlbuild_where.ml" 13 815 869
+type(
+  string
+)
+ident(
+  ext_ref Ocamlbuild_Myocamlbuild_config.bindir
+)
+"ocamlbuild/ocamlbuild_where.ml" 13 815 828 "ocamlbuild/ocamlbuild_where.ml" 13 815 869
+type(
+  string ref
+)
+"ocamlbuild/ocamlbuild_where.ml" 14 872 876 "ocamlbuild/ocamlbuild_where.ml" 14 872 882
+type(
+  string ref
+)
+ident(
+  def libdir "ocamlbuild/ocamlbuild_where.ml" 19 1023 1026 "ocamlbuild/ocamlbuild_where.ml" 1 0 -1
+)
+"ocamlbuild/ocamlbuild_where.ml" 14 872 885 "ocamlbuild/ocamlbuild_where.ml" 14 872 888
+type(
+  string -> string ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"ocamlbuild/ocamlbuild_where.ml" 15 895 897 "ocamlbuild/ocamlbuild_where.ml" 15 895 912
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Filename.concat
+)
+"ocamlbuild/ocamlbuild_where.ml" 16 913 922 "ocamlbuild/ocamlbuild_where.ml" 16 913 932
+type(
+  string -> string
+)
+ident(
+  ext_ref Sys.getenv
+)
+"ocamlbuild/ocamlbuild_where.ml" 16 913 933 "ocamlbuild/ocamlbuild_where.ml" 16 913 943
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_where.ml" 16 913 922 "ocamlbuild/ocamlbuild_where.ml" 16 913 943
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_where.ml" 17 944 954 "ocamlbuild/ocamlbuild_where.ml" 17 944 963
+type(
+  exn
+)
+"ocamlbuild/ocamlbuild_where.ml" 17 944 967 "ocamlbuild/ocamlbuild_where.ml" 17 944 1004
+type(
+  string
+)
+ident(
+  ext_ref Ocamlbuild_Myocamlbuild_config.libdir
+)
+"ocamlbuild/ocamlbuild_where.ml" 16 913 917 "ocamlbuild/ocamlbuild_where.ml" 17 944 1005
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_where.ml" 18 1006 1010 "ocamlbuild/ocamlbuild_where.ml" 18 1006 1022
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_where.ml" 14 872 889 "ocamlbuild/ocamlbuild_where.ml" 19 1023 1026
+call(
+  stack
+)
+type(
+  string
+)
+"ocamlbuild/ocamlbuild_where.ml" 14 872 885 "ocamlbuild/ocamlbuild_where.ml" 19 1023 1026
+type(
+  string ref
+)
